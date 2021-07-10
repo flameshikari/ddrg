@@ -14,6 +14,67 @@ except ImportError as error:
     exit(1)
 
 
+class AndroidFileHost:
+    """Based on https://github.com/kade-robertson/afh-dl"""
+
+    def __init__(self, **entries):
+        self.__dict__.update(entries)
+
+    def get(url):
+        mirror_url = r"https://androidfilehost.com/libs/otf/mirrors.otf.php"
+        url_matchers = [re.compile(r"fid=(?P<id>\d+)")]
+
+        for pattern in url_matchers:
+            result = pattern.search(url)
+            if result is not None:
+                file_match = result
+
+        if file_match:
+            fid = file_match.group('id')
+            init = requests.get("https://androidfilehost.com/?fid={}"
+                                .format(fid))
+
+            post_data = {
+                "submit": "submit",
+                "action": "getdownloadmirrors",
+                "fid": fid
+            }
+
+            mirror_headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/63.0.3239.132 Safari/537.36",
+
+                "Content-Type": "application/x-www-form-urlencoded; "
+                                "charset=UTF-8",
+
+                "Referer": "https://androidfilehost.com/?fid={}".format(fid),
+                "X-MOD-SBB-CTYPE": "xhr",
+                "X-Requested-With": "XMLHttpRequest"
+            }
+
+            mirror_data = requests.post(mirror_url,
+                                        headers=mirror_headers,
+                                        data=post_data,
+                                        cookies=init.cookies)
+            try:
+                mirrors = json.loads(mirror_data.text)
+                if not mirrors["STATUS"] == "1" or \
+                   not mirrors["CODE"] == "200":
+                    return None
+                else:
+                    mirror_opts = []
+                    for mirror in mirrors["MIRRORS"]:
+                        mirror_opts.append(AndroidFileHost(**mirror))
+            except Exception as e:
+                return None
+
+            servers = mirror_opts
+            if servers is None:
+                return
+            return servers[0].url
+
+
 def logger(message, level=1):
     """Simple logger with log levels and current time."""
     levels = {0: "done",
@@ -93,5 +154,7 @@ def get_iso_arch(target):
         return "unk"
 
 
+get_afh_url = AndroidFileHost.get
+
 __all__ = ["bs", "json", "re", "requests",
-           "get_iso_arch", "get_iso_size", "logger"]
+           "get_afh_url", "get_iso_arch", "get_iso_size", "logger"]
