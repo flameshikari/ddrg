@@ -2,7 +2,8 @@ from public import *  # noqa
 
 
 base_urls = [
-    "https://sourceforge.net/projects/archlabs-linux-minimo/rss?path=/ArchLabsMinimo/"
+    "https://sourceforge.net/projects/"
+    "archlabs-linux-minimo/rss?path=/ArchLabsMinimo/"
 ]
 
 
