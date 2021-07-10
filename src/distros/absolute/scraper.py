@@ -17,6 +17,5 @@ def init():
                 iso_arch = get_iso_arch(iso_url)
                 iso_size = get_iso_size(iso_url)
                 iso_version = re.search(r"-(\d{8})", iso_url).group(1)
-                array.append((iso_url, iso_arch,
-                              iso_size, iso_version))
+                array.append((iso_url, iso_arch, iso_size, iso_version))
     return array
