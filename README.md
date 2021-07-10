@@ -14,6 +14,11 @@
 
 <br>
 
+# To-Do
+
+- [ ] Option to generate a webpage
+- [ ] Option to select mirrors (currently uses mirrors based in Russia)
+
 # Requirements
 
 Python 3.6+ with packages included in [requirements.txt](./requirements.txt).
