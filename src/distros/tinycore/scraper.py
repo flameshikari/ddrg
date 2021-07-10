@@ -1,4 +1,5 @@
-from public import *
+from public import *  # noqa
+
 
 homepage = "https://mirrors.dotsrc.org/tinycorelinux/welcome.html"
 

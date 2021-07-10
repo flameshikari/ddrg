@@ -1,4 +1,4 @@
-from public import *
+from public import *  # noqa
 
 
 base_urls = [
