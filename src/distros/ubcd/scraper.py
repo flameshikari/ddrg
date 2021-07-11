@@ -2,7 +2,7 @@ from public import *  # noqa
 
 
 base_urls = [
-    "https://ftp.cc.uoc.gr/mirrors/linux/ubcd/"
+    "https://mirror.clientvps.com/ubcd/"
 ]
 
 
@@ -16,6 +16,6 @@ def init():
                 iso_url = base_url + filename
                 iso_arch = "bios"
                 iso_size = get_iso_size(iso_url)
-                iso_version = ".".join(filter(str.isdigit, filename))
+                iso_version = re.search(r"(\d+(\w+)?)\.iso", iso_url).group(1)
                 array.append((iso_url, iso_arch, iso_size, iso_version))
     return array
