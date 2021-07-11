@@ -1,9 +1,7 @@
 <p align="center">
-  <a href="https://www.drivedroid.io/">
-	  <img src="https://www.drivedroid.io/images/feature.svg" width="400" alt="">
-  </a>
+	<img src="https://www.drivedroid.io/images/feature.svg" width="400" alt="">
 </p>
-  <h1 align="center">Repository Generator</h1>
+  <h1 align="center"><a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator</h1>
   <p align="center">Generate a repository for the app that allow boot a PC using ISO files stored on your Android phone</p>
     <a href="https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid">
     <p align="center">
@@ -21,7 +19,7 @@
 
 # Requirements
 
-Python 3.6+ with packages included in [requirements.txt](./requirements.txt).
+Python 3.6+ with packages included in **[requirements.txt](./requirements.txt)**.
 
 I recommend to create a venv then install packages there.
 
@@ -31,19 +29,15 @@ I recommend to create a venv then install packages there.
 python ./src/main.py [-i dir] [-o dir]
 ```
 
-`-i dir` where [dir]() is a directory with distro scrapers ([./src/distros](./src/distros) is default).
+`-i dir` where **dir** is a directory with distro scrapers (**[./src/distros](./src/distros)** is default).
 
-
-
-`-o dir` where [dir]() is where the built repo will be saved ([./build](./build) is default).
+`-o dir` where **dir** is a directory where the built repo will be saved (**./build** is default).
 
 `-h` option is available anyway.
 
 # How to add a scraper
 
-Create a folder in [./src/distros](./src/distros) with next structure:
-
-
+Create a folder in **[./src/distros](./src/distros)** with next structure:
 
 ```
 distro_name
@@ -58,28 +52,81 @@ Let's take a look for every file.
 
 ### `info.toml`
 
+**info.toml** contains a distro name and a link to the official website. Arch Linux **[info.toml](./src/distros/arch/info.toml)** example:
+
 ```toml
-name = "Distro Name" # name of distro
+name = "Arch Linux" # name of distro
 url  = "https://example.com" # official site
+```
+
+If **info.toml** is missing or values ain't provided, fallback values will be used. Arch Linux fallback values will be next:
+
+```toml
+name = "arch" # distro folder name as value, also used in url
+url  = "https://distrowatch.com/table.php?distribution=arch"
 ```
 
 ### `logo.png`
 
-Should be 128x128px with transparent background.
+Should be 128x128px with transparent background. Arch Linux **[logo.png](./src/distros/arch/logo.png)** example:
 
-![](./src/misc/fallback_logo.png)
+<br><p align="center">
+  <img src="./src/distros/arch/logo.png" alt="Arch Linux"/>
+</p><br>
+
+If **logo.png** is missing, the **[fallback logo](./src/misc/fallback_logo.png)** will be used:
+
+<br><p align="center">
+  <img src="./src/misc/fallback_logo.png" alt="DriveDroid Logo"/>
+</p><br>
 
 ### `scraper.py`
 
+A scraper can be written as you like, as long as it returns the desired values.
+
+It must return an array of tuples (tuples contains `iso_url, iso_arch, iso_size, iso_version` in order).
+
+Arch Linux scraper returns next values:
+
 ```python
-# example for Arch Linux
+[
+  (
+    'https://mirror.yandex.ru/archlinux/iso/2021.05.01/archlinux-2021.05.01-x86_64.iso',
+    'x86_64',
+    792014848,
+    '2021.05.01'
+  ),
+  (
+    'https://mirror.yandex.ru/archlinux/iso/2021.06.01/archlinux-2021.06.01-x86_64.iso',
+    'x86_64',
+    811937792,
+    '2021.06.01'
+  ),
+  (
+    'https://mirror.yandex.ru/archlinux/iso/2021.07.01/archlinux-2021.07.01-x86_64.iso',
+    'x86_64',
+    817180672,
+    '2021.07.01'
+  ),
+  (
+    'https://mirror.yandex.ru/archlinux/iso/archboot/2020.07/archlinux-2020.07-1-archboot-network.iso',
+    'x86_64',
+    516947968,
+    '2020.07'
+  ),
+  (
+    'https://mirror.yandex.ru/archlinux/iso/archboot/2020.07/archlinux-2020.07-1-archboot.iso',
+    'x86_64',
+    1280491520,
+    '2020.07'
+  )
+]
+```
 
-# the scraper can be written as you like,
-# as long as it returns the desired values.
-# we can always improve it
+Arch Linux **[scraper.py](./src/distros/arch/scraper.py)** example:
 
-
-from public import * # should be specified
+```python
+from public import *  # noqa
 
 
 base_urls = [
@@ -88,7 +135,7 @@ base_urls = [
 ]
 
 
-def init(): # should be named 'init'
+def init():
     array = []
     for base_url in base_urls:
         html = bs(requests.get(base_url).text, "html.parser")
@@ -100,16 +147,11 @@ def init(): # should be named 'init'
                 for filename in html.find_all("a"):
                     filename = filename.get("href")
                     if filename.endswith(".iso"):
-                        iso_url = base_url + version + filename # string
-                        iso_arch = get_iso_arch(iso_url) # string
-                        iso_size = get_iso_size(iso_url) # integer
-                        iso_version = version[:-1] # string
+                        iso_url = base_url + version + filename
+                        iso_arch = get_iso_arch(iso_url)
+                        iso_size = get_iso_size(iso_url)
+                        iso_version = version[:-1]
                         array.append((iso_url, iso_arch,
                                       iso_size, iso_version))
-
-
-    # always should return tuple of tuples (tuples contains
-    # 'iso_url, iso_arch, iso_size, iso_version' in order)
-
     return array
 ```
