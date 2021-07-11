@@ -12,6 +12,13 @@
 
 <br>
 
+# Try already built repo
+
+Add the next link to image repositories in DriveDroid app:
+```
+https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
+```
+
 # To-Do
 
 - [ ] Option to generate a webpage
