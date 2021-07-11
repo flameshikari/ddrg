@@ -255,42 +255,6 @@
       },
       {
         "arch": "x86_64",
-        "size": 771751936,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210706-boot.iso",
-        "version": "8.4.2105"
-      },
-      {
-        "arch": "x86_64",
-        "size": 10299113472,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210706-dvd1.iso",
-        "version": "8.4.2105"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 734601216,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210706-boot.iso",
-        "version": "8.4.2105"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 8784875520,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210706-dvd1.iso",
-        "version": "8.4.2105"
-      },
-      {
-        "arch": "aarch64",
-        "size": 689467392,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210706-boot.iso",
-        "version": "8.4.2105"
-      },
-      {
-        "arch": "aarch64",
-        "size": 7589457920,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210706-dvd1.iso",
-        "version": "8.4.2105"
-      },
-      {
-        "arch": "x86_64",
         "size": 4712300544,
         "url": "https://mirror.yandex.ru/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso",
         "version": "7"
@@ -312,6 +276,42 @@
         "size": 602931200,
         "url": "https://mirror.yandex.ru/centos/7/isos/x86_64/CentOS-7-x86_64-NetInstall-2009.iso",
         "version": "7"
+      },
+      {
+        "arch": "x86_64",
+        "size": 771751936,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210706-boot.iso",
+        "version": "20210706"
+      },
+      {
+        "arch": "x86_64",
+        "size": 10299113472,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210706-dvd1.iso",
+        "version": "20210706"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 734601216,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210706-boot.iso",
+        "version": "20210706"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 8784875520,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210706-dvd1.iso",
+        "version": "20210706"
+      },
+      {
+        "arch": "aarch64",
+        "size": 689467392,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210706-boot.iso",
+        "version": "20210706"
+      },
+      {
+        "arch": "aarch64",
+        "size": 7589457920,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210706-dvd1.iso",
+        "version": "20210706"
       }
     ]
   },
@@ -976,7 +976,7 @@
       {
         "arch": "x86_64",
         "size": 1487339520,
-        "url": "https://fra1.dl.elementary.io/download/MTYyNjAzMjIzOA==/elementaryos-5.1-stable.20200814.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYyNjAzODMxMA==/elementaryos-5.1-stable.20200814.iso",
         "version": "5.1"
       }
     ]
@@ -995,6 +995,542 @@
     ]
   },
   {
+    "id": "fedora",
+    "name": "Fedora",
+    "url": "https://getfedora.org",
+    "releases": [
+      {
+        "arch": "aarch64",
+        "size": 634675200,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "armhfp",
+        "size": 706279424,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 678428672,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 2008135680,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/aarch64/iso/Fedora-Server-dvd-aarch64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 634667008,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/aarch64/iso/Fedora-Server-netinst-aarch64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "armhfp",
+        "size": 2104162304,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/armhfp/iso/Fedora-Server-dvd-armhfp-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "armhfp",
+        "size": 706269184,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/armhfp/iso/Fedora-Server-netinst-armhfp-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2101346304,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 678428672,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-netinst-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 2175203328,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2790850560,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2128625664,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1371701248,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1456766976,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2147483648,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1093238784,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1667891200,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1453916160,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-i3-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2007367680,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-34-1.2.iso",
+        "version": "34-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 669409280,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-33-1.3.iso",
+        "version": "33-1.3"
+      },
+      {
+        "arch": "armhfp",
+        "size": 735965184,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-33-1.3.iso",
+        "version": "33-1.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 2007926784,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/aarch64/iso/Fedora-Server-dvd-aarch64-33-1.3.iso",
+        "version": "33-1.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 669415424,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/aarch64/iso/Fedora-Server-netinst-aarch64-33-1.3.iso",
+        "version": "33-1.3"
+      },
+      {
+        "arch": "armhfp",
+        "size": 2080636928,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/armhfp/iso/Fedora-Server-dvd-armhfp-33-1.3.iso",
+        "version": "33-1.3"
+      },
+      {
+        "arch": "armhfp",
+        "size": 735877120,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/armhfp/iso/Fedora-Server-netinst-armhfp-33-1.3.iso",
+        "version": "33-1.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 669319168,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "armhfp",
+        "size": 736131072,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 719323136,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 2008027136,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/aarch64/iso/Fedora-Server-dvd-aarch64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 669517824,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/aarch64/iso/Fedora-Server-netinst-aarch64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "armhfp",
+        "size": 2080688128,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/armhfp/iso/Fedora-Server-dvd-armhfp-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "armhfp",
+        "size": 735930368,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/armhfp/iso/Fedora-Server-netinst-armhfp-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2076180480,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/x86_64/iso/Fedora-Server-dvd-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 719323136,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Server/x86_64/iso/Fedora-Server-netinst-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 2245246976,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2874408960,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2153693184,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1957183488,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1377550336,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1485881344,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2134900736,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1114193920,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1592279040,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2049490944,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/33/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-33-1.2.iso",
+        "version": "33-1.2"
+      },
+      {
+        "arch": "aarch64",
+        "size": 656582656,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "armhfp",
+        "size": 725131264,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 709885952,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "aarch64",
+        "size": 1981200384,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Server/aarch64/iso/Fedora-Server-dvd-aarch64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "aarch64",
+        "size": 656447488,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Server/aarch64/iso/Fedora-Server-netinst-aarch64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "armhfp",
+        "size": 2030292992,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Server/armhfp/iso/Fedora-Server-dvd-armhfp-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "armhfp",
+        "size": 725209088,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Server/armhfp/iso/Fedora-Server-netinst-armhfp-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2073034752,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Server/x86_64/iso/Fedora-Server-dvd-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 709885952,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Server/x86_64/iso/Fedora-Server-netinst-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "aarch64",
+        "size": 2150037504,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2690580480,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2064121856,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1886568448,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1320222720,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1466302464,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2020130816,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1109803008,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1505525760,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1966178304,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/32/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-32-1.6.iso",
+        "version": "32-1.6"
+      }
+    ]
+  },
+  {
+    "id": "freebsd",
+    "name": "FreeBSD",
+    "url": "https://freebsd.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 363548672,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 971974656,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 4784017408,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "arm64",
+        "size": 284246016,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "arm64",
+        "size": 748144640,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "arm64",
+        "size": 4136398848,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "i386",
+        "size": 299626496,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "i386",
+        "size": 792469504,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "i386",
+        "size": 4048691200,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc",
+        "size": 254842880,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc",
+        "size": 675284992,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc",
+        "size": 1312075776,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64",
+        "size": 289476608,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64",
+        "size": 794025984,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64",
+        "size": 4412641280,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 288913408,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 737144832,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 4043845632,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppcspe",
+        "size": 260702208,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppcspe",
+        "size": 683845632,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppcspe",
+        "size": 3863945216,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 259516416,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 697530368,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 4026677248,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-dvd1.iso",
+        "version": "13.0"
+      }
+    ]
+  },
+  {
     "id": "fwul",
     "name": "Forget Windows Use Linux",
     "url": "https://fwul.binbash.rocks",
@@ -1002,7 +1538,7 @@
       {
         "arch": "x86_64",
         "size": 1065353216,
-        "url": "https://aVA6.androidfilehost.com/dl/U-Tn7lJfwfBlbeH-i_b02g/1626118643/8889791610682936459/FWUL_v3.2_x86_64_forgetful.iso",
+        "url": "https://aVA6.androidfilehost.com/dl/wQ4xMmzTYELXrZg3HW7HBw/1626124746/8889791610682936459/FWUL_v3.2_x86_64_forgetful.iso",
         "version": "3.2"
       }
     ]
@@ -1472,6 +2008,19 @@
     ]
   },
   {
+    "id": "netboot",
+    "name": "Netboot",
+    "url": "https://netboot.xyz",
+    "releases": [
+      {
+        "arch": "legacy+uefi",
+        "size": 2383872,
+        "url": "https://boot.netboot.xyz/ipxe/netboot.xyz.iso",
+        "version": "2.0.41"
+      }
+    ]
+  },
+  {
     "id": "qubes",
     "name": "Qubes",
     "url": "https://qubes-os.org",
@@ -1584,6 +2133,25 @@
         "size": 4154949632,
         "url": "https://mirror.yandex.ru/slackware/slackware-iso/slackware-12.2-iso/slackware-12.2-install-dvd.iso",
         "version": "12.2"
+      }
+    ]
+  },
+  {
+    "id": "systemrescuecd",
+    "name": "SystemRescue",
+    "url": "https://system-rescue.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 751828992,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/8.03/systemrescue-8.03-amd64.iso",
+        "version": "8.03"
+      },
+      {
+        "arch": "i686",
+        "size": 737148928,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/8.03/systemrescue-8.03-i686.iso",
+        "version": "8.03"
       }
     ]
   },
@@ -2110,24 +2678,6 @@
       {
         "arch": "amd64",
         "size": 375390208,
-        "url": "https://downloads.vyos.io/rolling/current/amd64/vyos-1.4-rolling-202106251951-amd64.iso",
-        "version": "1.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 375390208,
-        "url": "https://downloads.vyos.io/rolling/current/amd64/vyos-1.4-rolling-202106252050-amd64.iso",
-        "version": "1.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 375390208,
-        "url": "https://downloads.vyos.io/rolling/current/amd64/vyos-1.4-rolling-202106260417-amd64.iso",
-        "version": "1.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 375390208,
         "url": "https://downloads.vyos.io/rolling/current/amd64/vyos-1.4-rolling-202106270801-amd64.iso",
         "version": "1.4"
       },
@@ -2159,6 +2709,12 @@
         "arch": "amd64",
         "size": 375390208,
         "url": "https://downloads.vyos.io/rolling/current/amd64/vyos-1.4-rolling-202107090351-amd64.iso",
+        "version": "1.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 376438784,
+        "url": "https://downloads.vyos.io/rolling/current/amd64/vyos-1.4-rolling-202107110814-amd64.iso",
         "version": "1.4"
       },
       {
