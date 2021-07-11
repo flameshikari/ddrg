@@ -12,25 +12,28 @@
 
 <br>
 
-# Try already built repo
+## Try Already Built Repo
 
 Add the next link to image repositories in DriveDroid app:
 ```
 https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
 ```
 
-# To-Do
+## Contents
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [How to Make a Scraper](#how-to-make-a-scraper)
+- [Roadmap](#roadmap)
+- [Credits](#credits)
+- [License](#license)
 
-- [ ] Option to generate a webpage
-- [ ] Option to select mirrors (currently uses mirrors based in Russia)
-
-# Requirements
+## Requirements
 
 Python 3.6+ with packages included in **[requirements.txt](./requirements.txt)**.
 
 I recommend to create a venv then install packages there.
 
-# Usage
+## Usage
 
 ```bash
 python ./src/main.py [-i dir] [-o dir]
@@ -42,7 +45,7 @@ python ./src/main.py [-i dir] [-o dir]
 
 `-h` option is available anyway.
 
-# How to add a scraper
+## How to Make a Scraper
 
 Create a folder in **[./src/distros](./src/distros)** with next structure:
 
@@ -91,7 +94,7 @@ If **logo.png** is missing, the **[fallback logo](./src/misc/fallback_logo.png)*
 
 A scraper can be written as you like, as long as it returns the desired values.
 
-It must return an array of tuples (tuples contains `iso_url, iso_arch, iso_size, iso_version` in order).
+It must return an array of tuples (every tuple contains **iso_url**, **iso_arch**, **iso_size**, **iso_version** in order).
 
 Arch Linux scraper returns next values:
 
@@ -130,6 +133,20 @@ Arch Linux scraper returns next values:
 ]
 ```
 
+A scraper includes `from public import *` in top which imports next stuff to the namespace:
+
+- **bs** (short for **BeautifulSoup**)
+- **json**
+- **re**
+- **requests**
+
+Also it includes these functions:
+
+- **get_afh_url(iso_url)** — returns a download link for the file from AndroidFileHost<br>
+**iso_url** must be like this: https://androidfilehost.com/?fid=8889791610682936459
+- **get_iso_arch(iso_url)** — returns the used processor architecture of **iso_url**
+- **get_iso_size(iso_url)** — returns the file size of **iso_url** in bytes
+
 Arch Linux **[scraper.py](./src/distros/arch/scraper.py)** example:
 
 ```python
@@ -162,3 +179,18 @@ def init():
                                       iso_size, iso_version))
     return array
 ```
+
+## Roadmap
+
+- [ ] Option to generate a webpage
+- [ ] Option to select mirrors (currently uses mirrors based in Russia)
+
+## Credits
+
+- [afh-dl](https://github.com/kade-robertson/afh-dl) by [kade-robertson](https://github.com/kade-robertson)
+
+## License
+
+**[MIT License](./src/distros/arch/scraper.py)**
+
+Copyright © 2021 flameshikari
