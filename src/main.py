@@ -3,7 +3,7 @@
 
 from argparse import ArgumentParser
 from datetime import datetime
-from importlib import import_module
+from importlib.machinery import SourceFileLoader
 from shutil import copyfile, rmtree
 
 from public import os, toml, json, logger
@@ -18,15 +18,20 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # parsing arguments passed to this script
 options = ArgumentParser()
+options.add_argument("-i", "--input",
+                     help="the dir with distros for parsing",
+                     default=f"{working_dir}/distros",
+                     type=str)
 options.add_argument("-o", "--output",
-                     help="set output folder",
+                     help="the dir for saving builded repo",
                      default=f"{working_dir}/../build",
                      type=str)
+
 options = options.parse_args()
 
 # setting other directories
 output_dir = os.path.abspath(options.output)
-distros_dir = f"{working_dir}/distros"
+distros_dir = os.path.abspath(options.input)
 
 # initialization of arrays
 repo, distros_errors = [], []
@@ -60,7 +65,9 @@ def get_distro_info(distro_id):
 def build_repo_entry(distro_id, distro_info):
     """Create a tulpe with distro values then return it."""
 
-    scraper = import_module(f"distros.{distro_id}.scraper")
+    target_file = f"{distros_dir}/{distro_id}/scraper.py"
+
+    scraper = SourceFileLoader("scraper", target_file).load_module()
 
     repo_entry = {}
     repo_entry_releases = []
