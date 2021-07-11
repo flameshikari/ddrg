@@ -138,14 +138,16 @@ def get_iso_arch(target):
     if any(arch in target for arch in archs_86_64):
         return "x86_64"
 
+    elif "powerpc" in target:
+        for ppc in archs_all:
+            if ppc in target.replace("powerpc", "ppc"):
+                return ppc
+
     elif any(arch in target for arch in archs_64):
         return "amd64"
 
     elif any(arch in target for arch in archs_86):
         return "i386"
-
-    elif "powerpc" in target:
-        return target.replace("powerpc", "ppc")
 
     elif "legacy" in target:
         return "bios"
