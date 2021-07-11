@@ -1,4 +1,4 @@
-src/distros/_disabled/*
+src/distros/_*
 __pycache__
 build
 env
