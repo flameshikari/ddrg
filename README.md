@@ -28,12 +28,22 @@ I recommend to create a venv then install packages there.
 # Usage
 
 ```bash
-python src/main.py [-o output_directory]
+python ./src/main.py [-i dir] [-o dir]
 ```
 
-# How to add scraper
+`-i dir` where [dir]() is a directory with distro scrapers ([./src/distros](./src/distros) is default).
 
-Create a folder in `src/distros` with next structure:
+
+
+`-o dir` where [dir]() is where the built repo will be saved ([./build](./build) is default).
+
+`-h` option is available anyway.
+
+# How to add a scraper
+
+Create a folder in [./src/distros](./src/distros) with next structure:
+
+
 
 ```
 distro_name
@@ -41,6 +51,8 @@ distro_name
 ├── logo.png
 └── scraper.py
 ```
+
+If **distro_name** starts with underscore (e.g. **_disabled**), it will not be counted.
 
 Let's take a look for every file.
 
