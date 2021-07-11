@@ -159,4 +159,4 @@ def get_iso_arch(target):
 get_afh_url = AndroidFileHost.get
 
 __all__ = ["bs", "json", "re", "requests",
-           "get_afh_url", "get_iso_arch", "get_iso_size", "logger"]
+           "get_afh_url", "get_iso_arch", "get_iso_size"]
