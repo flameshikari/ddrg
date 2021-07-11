@@ -20,5 +20,5 @@ def init():
                     iso_size = get_iso_size(iso_url)
                     iso_version = version[:-1]
                     array.append((iso_url, iso_arch,
-                                  iso_size, iso_version)
+                                  iso_size, iso_version))
     return array
