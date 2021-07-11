@@ -2,7 +2,8 @@ from public import *  # noqa
 
 
 base_urls = [
-    "https://sourceforge.net/projects/zorin-os/rss?path=/15/"
+    "https://sourceforge.net/projects/zorin-os/rss?path=/15/",
+    "https://sourceforge.net/projects/zorin-os/rss?path=/16/beta/"
 ]
 
 
