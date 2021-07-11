@@ -23,7 +23,7 @@ def init():
                 iso_arch = get_iso_arch(iso_url)
                 iso_size = get_iso_size(iso_url)
                 if "Stream" in filename:
-                    iso_verson = re.search(r"(\d{8})", iso_url).group(1)
+                    iso_version = re.search(r"(\d{8})", iso_url).group(1)
                 else:
                     iso_version = re.search(r"OS-(\d+(.\d+(.\d+)?)?)",
                                             iso_url).group(1)
