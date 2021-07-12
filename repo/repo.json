@@ -976,7 +976,7 @@
       {
         "arch": "x86_64",
         "size": 1487339520,
-        "url": "https://fra1.dl.elementary.io/download/MTYyNjA4MzA3OQ==/elementaryos-5.1-stable.20200814.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYyNjA5MTMxMQ==/elementaryos-5.1-stable.20200814.iso",
         "version": "5.1"
       }
     ]
@@ -1531,6 +1531,25 @@
     ]
   },
   {
+    "id": "freedos",
+    "name": "FreeDOS",
+    "url": "https://freedos.org",
+    "releases": [
+      {
+        "arch": "i386",
+        "size": 438777856,
+        "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.2/FD12CD.iso",
+        "version": "1.2"
+      },
+      {
+        "arch": "i386",
+        "size": 438657024,
+        "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.2/FD12LGCY.iso",
+        "version": "1.2"
+      }
+    ]
+  },
+  {
     "id": "fwul",
     "name": "Forget Windows Use Linux",
     "url": "https://fwul.binbash.rocks",
@@ -1538,8 +1557,136 @@
       {
         "arch": "x86_64",
         "size": 1065353216,
-        "url": "https://aVA6.androidfilehost.com/dl/BnfRAYqLyMWivd4InmTp4Q/1626169517/8889791610682936459/FWUL_v3.2_x86_64_forgetful.iso",
+        "url": "https://aVA6.androidfilehost.com/dl/xFLl1cBLzq4humn3n8NdLg/1626177764/8889791610682936459/FWUL_v3.2_x86_64_forgetful.iso",
         "version": "3.2"
+      }
+    ]
+  },
+  {
+    "id": "garuda",
+    "name": "Garuda",
+    "url": "https://garudalinux.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 2390882304,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/xfce/210621/garuda-xfce-linux-lts-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 2285402112,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/gnome/210621/garuda-gnome-linux-zen-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 2349547520,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/lxqt-kwin/210621/garuda-lxqt-kwin-linux-zen-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 1971970048,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/wayfire/210621/garuda-wayfire-linux-zen-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 2226786304,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/bspwm/210621/garuda-bspwm-linux-zen-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 2310686720,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/i3/210621/garuda-i3-linux-zen-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 1991520256,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/sway/210621/garuda-sway-linux-zen-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 1895184384,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/kde-barebones/210621/garuda-kde-barebones-linux-lts-210621.iso",
+        "version": "210621"
+      },
+      {
+        "arch": "amd64",
+        "size": 1784320000,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/gnome-barebones/210621/garuda-gnome-barebones-linux-lts-210621.iso",
+        "version": "210621"
+      }
+    ]
+  },
+  {
+    "id": "gentoo",
+    "name": "Gentoo",
+    "url": "https://gentoo.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 451936256,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210711T170538Z/install-amd64-minimal-20210711T170538Z.iso",
+        "version": "20210711T170538Z"
+      },
+      {
+        "arch": "amd64",
+        "size": 451936256,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210711T170538Z/install-amd64-minimal-20210711T170538Z.iso",
+        "version": "20210711T170538Z"
+      },
+      {
+        "arch": "amd64",
+        "size": 640679936,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210710T184839Z/admincd-amd64-20210710T184839Z.iso",
+        "version": "20210710T184839Z"
+      },
+      {
+        "arch": "i386",
+        "size": 419430400,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20210706T203912Z/install-x86-minimal-openrc-20210706T203912Z.iso",
+        "version": "20210706T203912Z"
+      },
+      {
+        "arch": "i386",
+        "size": 419430400,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20210706T203912Z/install-x86-minimal-openrc-20210706T203912Z.iso",
+        "version": "20210706T203912Z"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 675647488,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20210704T205146Z/install-ppc64le-minimal-20210704T205146Z.iso",
+        "version": "20210704T205146Z"
+      },
+      {
+        "arch": "sparc64",
+        "size": 274227200,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20210613T200518Z/install-sparc64-minimal-20210613T200518Z.iso",
+        "version": "20210613T200518Z"
+      },
+      {
+        "arch": "ia64",
+        "size": 154501120,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ia64/autobuilds/20200804T030526Z/install-ia64-minimal-20200804T030526Z.iso",
+        "version": "20200804T030526Z"
+      },
+      {
+        "arch": "alpha",
+        "size": 273620992,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20200215T160133Z/install-alpha-minimal-20200215T160133Z.iso",
+        "version": "20200215T160133Z"
+      },
+      {
+        "arch": "hppa",
+        "size": 146159616,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/hppa/autobuilds/20191101T093009Z/install-hppa-minimal-20191101T093009Z.iso",
+        "version": "20191101T093009Z"
       }
     ]
   },
