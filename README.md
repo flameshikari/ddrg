@@ -186,6 +186,18 @@ def init():
     return array
 ```
 
+## Misc
+
+Here's a snippet for nginx if you decided to self host the repository with website and you wanna access **repo.json** only by hostname. Place it in **server** section of your config:
+
+```nginx
+location = / {
+  if ($http_user_agent ~* 'okhttp') {
+    rewrite ^/(.*)$ /repo.json break;
+  }
+}
+```
+
 ## Roadmap
 
 - [x] Option to generate a webpage
