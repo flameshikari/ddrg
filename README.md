@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://www.drivedroid.io/images/feature.svg" width="400" alt="">
+	<img src="./logo.svg" width="400" alt="">
 </p>
   <h1 align="center"><a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator</h1>
   <p align="center">Generate a repository for the app that allow boot a PC using ISO files stored on your Android phone</p>
@@ -16,7 +16,7 @@
 
 Add the next link to image repositories in DriveDroid app:
 ```
-https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
+https://gitcdn.link/repo/flameshikari/ddrg/master/repo/repo.json
 ```
 
 ## Contents
