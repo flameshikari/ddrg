@@ -36,12 +36,14 @@ I recommend to create a venv then install packages there.
 ## Usage
 
 ```bash
-python ./src/main.py [-i dir] [-o dir]
+python ./src/main.py [-i dir] [-o dir] [-g]
 ```
 
 `-i dir` where **dir** is a directory with distro scrapers (**[./src/distros](./src/distros)** is default).
 
 `-o dir` where **dir** is a directory where the built repo will be saved (**./build** is default).
+
+`-g` will generate a webpage to present the content of repo.json.
 
 `-h` option is available anyway.
 
@@ -182,7 +184,7 @@ def init():
 
 ## Roadmap
 
-- [ ] Option to generate a webpage
+- [x] Option to generate a webpage
 - [ ] Option to select mirrors (currently uses mirrors based in Russia)
 
 ## Credits

@@ -4,9 +4,9 @@
 from argparse import ArgumentParser
 from datetime import datetime
 from importlib.machinery import SourceFileLoader
-from shutil import copyfile, rmtree
+from shutil import copyfile, copytree, rmtree
 
-from public import os, toml, json, logger
+from public import os, toml, json, strftime, logger, md
 
 
 # initialization of a timer to count the script execution time
@@ -18,6 +18,10 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # parsing arguments passed to this script
 options = ArgumentParser()
+options.add_argument("-g", "--generate",
+                     help="generate a webpage to present the content of repo.json",
+                     default=False,
+                     action="store_true")
 options.add_argument("-i", "--input",
                      help="the dir with distros for parsing",
                      default=f"{working_dir}/distros",
@@ -26,7 +30,6 @@ options.add_argument("-o", "--output",
                      help="the dir for saving builded repo",
                      default=f"{working_dir}/../build",
                      type=str)
-
 options = options.parse_args()
 
 # setting other directories
@@ -92,18 +95,71 @@ def build_repo_entry(distro_id, distro_info):
     return repo_entry
 
 
+def build_repo_html():
+
+    md_distros = []
+
+    md_distros_done = [x for x in distros_list if (x not in distros_errors)]
+
+    md_extras = [
+        "metadata",
+        "fenced-code-blocks",
+        "header-ids",
+        "footnotes",
+        "tables",
+    ]
+
+    with open(f"{output_dir}/repo.json", "r") as file:
+        repo_json = file.read()
+
+    with open(f"{working_dir}/misc/body.md", "r") as file:
+        md_source = file.read()
+
+    list_txt = open(f"{output_dir}/list.txt", "w")
+
+    for distro_id in md_distros_done:
+        distro_info = get_distro_info(distro_id)
+        list_txt.write(f"{distro_info[0]}\n")
+        md_distros.append(f"* ![](./logos/{distro_id}.png) " + \
+                          f"[{distro_info[0]}]({distro_info[1]}) ")
+
+    list_txt.close()
+
+    md_formatted = md_source.format(
+        count=len(md_distros_done),
+        time=strftime('%Y.%m.%d %H:%M:%S %Z'),
+        timezone=strftime('%Z'),
+        distros="\n".join(md_distros),
+        repo=repo_json)
+
+    md_converted = md(md_formatted, extras=md_extras)
+
+    with open(f"{working_dir}/misc/template.html", "r") as file:
+        html_template = file.read()
+
+    with open(f"{output_dir}/index.html", "w") as file:
+        file.write(html_template.format(markdown=md_converted))
+
+    copytree(f"{working_dir}/misc/html_assets", f"{output_dir}/assets")
+    copyfile(f"{working_dir}/misc/favicon.ico", f"{output_dir}/favicon.ico")
+
+
 if __name__ == "__main__":
 
-    print(open(f"{working_dir}/misc/main_logo.txt", "r").read())
+    print(open(f"{working_dir}/misc/ascii_logo.txt", "r").read())
 
     # remove previous output folder structure
     try:
         os.remove(f"{output_dir}/repo.json")
+        os.remove(f"{output_dir}/index.html")
+        os.remove(f"{output_dir}/favicon.ico")
+        os.remove(f"{output_dir}/list.txt")
     except:
         pass
 
     try:
-        rmtree(f"{output_dir}/logos")
+        rmtree(f"{output_dir}/logos/")
+        rmtree(f"{output_dir}/assets/")
     except:
         pass
 
@@ -142,6 +198,9 @@ if __name__ == "__main__":
 
         # copy distro logos to distro folders
         for distro_id in distros_list: copy_distro_logo(distro_id)
+
+        if options.generate:
+            build_repo_html()
 
         logger(f"the repository is built in {timer_stop}s")
 

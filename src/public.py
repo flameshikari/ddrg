@@ -8,6 +8,7 @@ try:
     import requests
     import toml
     from bs4 import BeautifulSoup as bs
+    from markdown2 import markdown as md
 
 except ImportError as error:
     print(f"{error}. Did you install packages from requirements.txt?")
