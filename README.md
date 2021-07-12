@@ -20,7 +20,7 @@ https://dd.hexed.pw
 ```
 or this:
 ```
-https://gitcdn.link/repo/flameshikari/ddrg/master/repo/repo.json
+https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
 ```
 
 ## Contents
