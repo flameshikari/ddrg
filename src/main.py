@@ -148,21 +148,6 @@ if __name__ == "__main__":
 
     print(open(f"{working_dir}/misc/ascii_logo.txt", "r").read())
 
-    # remove previous output folder structure
-    try:
-        os.remove(f"{output_dir}/repo.json")
-        os.remove(f"{output_dir}/index.html")
-        os.remove(f"{output_dir}/favicon.ico")
-        os.remove(f"{output_dir}/list.txt")
-    except:
-        pass
-
-    try:
-        rmtree(f"{output_dir}/logos/")
-        rmtree(f"{output_dir}/assets/")
-    except:
-        pass
-
     try:
         logger("started scraping distros")
         for distro_id in distros_list:
@@ -188,6 +173,21 @@ if __name__ == "__main__":
         if len(distros_errors) == len(distros_list):
             logger("the repository isn't built. check scrapers", 2)
             exit(2)
+
+        # remove previous output folder structure
+        try:
+            os.remove(f"{output_dir}/repo.json")
+            os.remove(f"{output_dir}/index.html")
+            os.remove(f"{output_dir}/favicon.ico")
+            os.remove(f"{output_dir}/list.txt")
+        except:
+            pass
+
+        try:
+            rmtree(f"{output_dir}/logos/")
+            rmtree(f"{output_dir}/assets/")
+        except:
+            pass
 
         # create output folder structure
         os.makedirs(f"{output_dir}/logos", exist_ok=True)
