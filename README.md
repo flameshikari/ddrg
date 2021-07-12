@@ -186,6 +186,8 @@ def init():
 
 - [x] Option to generate a webpage
 - [ ] Option to select mirrors (currently uses mirrors based in Russia)
+- [ ] Package this project perhaps
+- [ ] Probably make the code better
 
 ## Credits
 
