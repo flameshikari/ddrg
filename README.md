@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="./logo.svg" width="400" alt="">
+	<img src="./src/html/assets/logo.svg" width="400" alt="">
 </p>
   <h1 align="center"><a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator</h1>
   <p align="center">Generate a repository for the app that allow boot a PC using ISO files stored on your Android phone</p>

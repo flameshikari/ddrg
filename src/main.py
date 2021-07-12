@@ -112,7 +112,7 @@ def build_repo_html():
     with open(f"{output_dir}/repo.json", "r") as file:
         repo_json = file.read()
 
-    with open(f"{working_dir}/misc/body.md", "r") as file:
+    with open(f"{working_dir}/html/body.md", "r") as file:
         md_source = file.read()
 
     list_txt = open(f"{output_dir}/list.txt", "w")
@@ -120,8 +120,7 @@ def build_repo_html():
     for distro_id in md_distros_done:
         distro_info = get_distro_info(distro_id)
         list_txt.write(f"{distro_info[0]}\n")
-        md_distros.append(f"* ![](./logos/{distro_id}.png) " + \
-                          f"[{distro_info[0]}]({distro_info[1]}) ")
+        md_distros.append(f'* <img class="distro-logo" src="./logos/{distro_id}.png"/> <a href="{distro_info[1]}">{distro_info[0]}</a>')
 
     list_txt.close()
 
@@ -134,14 +133,14 @@ def build_repo_html():
 
     md_converted = md(md_formatted, extras=md_extras)
 
-    with open(f"{working_dir}/misc/template.html", "r") as file:
+    with open(f"{working_dir}/html/template.html", "r") as file:
         html_template = file.read()
 
     with open(f"{output_dir}/index.html", "w") as file:
         file.write(html_template.format(markdown=md_converted))
 
-    copytree(f"{working_dir}/misc/html_assets", f"{output_dir}/assets")
-    copyfile(f"{working_dir}/misc/favicon.ico", f"{output_dir}/favicon.ico")
+    copytree(f"{working_dir}/html/assets/", f"{output_dir}/assets")
+    copyfile(f"{working_dir}/html/favicon.ico", f"{output_dir}/favicon.ico")
 
 
 if __name__ == "__main__":

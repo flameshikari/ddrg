@@ -98,13 +98,6 @@ pre {
   max-width: 100%;
 }
 
-img {
-  width: 25px;
-  padding: 5px;
-  position: relative;
-  top: 11px;
-}
-
 code {
   line-height: 1.2;
   font-size: 11px;
@@ -143,6 +136,13 @@ hr {
   text-align: left;
   margin: 0 auto 0 0;
   color: #999;
+}
+
+.distro-logo {
+  width: 25px;
+  padding: 5px;
+  position: relative;
+  top: 11px;
 }
 
 .nt {

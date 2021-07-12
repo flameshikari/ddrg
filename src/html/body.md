@@ -1,3 +1,5 @@
+<p align="center"><img src="./assets/logo.svg" width="150" alt=""></p>
+
 ## **DriveDroid Repository**
 
 ### # Info
