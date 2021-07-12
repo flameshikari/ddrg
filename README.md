@@ -27,6 +27,7 @@ https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [How to Make a Scraper](#how-to-make-a-scraper)
+- [Misc](#misc)
 - [Roadmap](#roadmap)
 - [Credits](#credits)
 - [License](#license)
@@ -188,7 +189,7 @@ def init():
 
 ## Misc
 
-Here's a snippet for nginx if you decided to self host the repository with website and you wanna access **repo.json** only by hostname. Place it in **server** section of your config:
+Here's a snippet for **[nginx](https://nginx.org/)** if you decided to self host the repository with website and you wanna access **repo.json** only by hostname via DriveDroid. Place it in **server** section of your config:
 
 ```nginx
 location = / {
