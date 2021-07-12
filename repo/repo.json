@@ -976,7 +976,7 @@
       {
         "arch": "x86_64",
         "size": 1487339520,
-        "url": "https://fra1.dl.elementary.io/download/MTYyNjAzODMxMA==/elementaryos-5.1-stable.20200814.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYyNjA2NjQwNw==/elementaryos-5.1-stable.20200814.iso",
         "version": "5.1"
       }
     ]
@@ -1538,7 +1538,7 @@
       {
         "arch": "x86_64",
         "size": 1065353216,
-        "url": "https://aVA6.androidfilehost.com/dl/wQ4xMmzTYELXrZg3HW7HBw/1626124746/8889791610682936459/FWUL_v3.2_x86_64_forgetful.iso",
+        "url": "https://aVA6.androidfilehost.com/dl/l7UDs3DaJkbSdnjxbMRb7A/1626152843/8889791610682936459/FWUL_v3.2_x86_64_forgetful.iso",
         "version": "3.2"
       }
     ]
@@ -2025,6 +2025,12 @@
     "name": "Qubes",
     "url": "https://qubes-os.org",
     "releases": [
+      {
+        "arch": "x86_64",
+        "size": 5485101056,
+        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-beta1-x86_64.iso",
+        "version": "4.1.0"
+      },
       {
         "arch": "x86_64",
         "size": 5199888384,
@@ -2805,6 +2811,12 @@
         "arch": "amd64",
         "size": 331350016,
         "url": "https://downloads.vyos.io/rolling/equuleus/amd64/vyos-1.3-beta-202107092242-amd64.iso",
+        "version": "1.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 331350016,
+        "url": "https://downloads.vyos.io/rolling/equuleus/amd64/vyos-1.3-beta-202107102242-amd64.iso",
         "version": "1.3"
       }
     ]
