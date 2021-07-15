@@ -212,6 +212,6 @@ location = / {
 
 ## License
 
-**[MIT License](./src/distros/arch/scraper.py)**
+**[MIT License](./LICENSE)**
 
 Copyright © 2021 flameshikari
