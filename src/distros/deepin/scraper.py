@@ -1,24 +1,18 @@
 from public import *  # noqa
 
 
-base_url = "https://mirror.yandex.ru/mirrors/deepin/releases/"
-
-
 def init():
+
     array = []
+    base_url = "https://mirror.yandex.ru/mirrors/deepin/releases"
+
     html = bs(requests.get(base_url).text, "html.parser")
-    for version in html.find_all("a"):
-        version = version.get("href")
-        if version[0].isdigit():
-            html = bs(requests.get(base_url + version)
-                              .text, "html.parser")
-            for filename in html.find_all("a"):
-                filename = filename.get("href")
-                if filename.endswith(".iso"):
-                    iso_url = base_url + version + filename
-                    iso_arch = get_iso_arch(iso_url)
-                    iso_size = get_iso_size(iso_url)
-                    iso_version = version[:-1]
-                    array.append((iso_url, iso_arch,
-                                  iso_size, iso_version))
+
+    iso_version = html.find_all("a", {"href": re.compile("^.*/$")})[-1]["href"][:-1]
+    iso_url = f"{base_url}/{iso_version}/deepin-desktop-community-{iso_version}-amd64.iso"
+    iso_arch = get_iso_arch(iso_url)
+    iso_size = get_iso_size(iso_url)
+
+    array.append((iso_url, iso_arch, iso_size, iso_version))
+
     return array

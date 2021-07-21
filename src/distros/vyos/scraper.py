@@ -1,22 +1,30 @@
 from public import *  # noqa
 
 
-base_urls = [
-    "https://downloads.vyos.io/?dir=rolling/current/amd64/",
-    "https://downloads.vyos.io/?dir=rolling/equuleus/amd64/"
-]
-
-
 def init():
+
     array = []
-    for base_url in base_urls:
-        html = bs(requests.get(base_url).text, "html.parser")
-        for filename in html.find_all("a"):
-            filename = filename.get("href")
-            if filename.endswith(".iso") and "latest.iso" not in filename:
-                iso_url = "https://downloads.vyos.io/" + filename
-                iso_arch = get_iso_arch(iso_url)
-                iso_size = get_iso_size(iso_url)
-                iso_version = re.search("\d+\.\d+", iso_url).group(0)
-                array.append((iso_url, iso_arch, iso_size, iso_version))
+    iso_urls = []
+    base_urls = [
+        "https://vyos.net/get/nightly-builds",
+        "https://vyos.net/get/snapshots"
+    ]
+
+    html = bs(requests.get(base_urls[0]).text, "html.parser")
+    for x in [0, 1]:
+        iso_urls.append(html.find_all("ul")[x].find_all("a")[0]["href"])
+
+    html = bs(requests.get(base_urls[1]).text, "html.parser")
+    for x in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
+        iso_urls.append(x["href"])
+
+    for iso_url in iso_urls:
+
+        iso_arch = "amd64"
+        iso_size = get_iso_size(iso_url)
+        iso_version = re.search(r"vyos-(\d+.\d+(.\d+(-rc\d+)?)?)",
+                                iso_url).group(1)
+
+        array.append((iso_url, iso_arch, iso_size, iso_version))
+
     return array
