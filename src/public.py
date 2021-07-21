@@ -9,6 +9,7 @@ try:
     import toml
     from bs4 import BeautifulSoup as bs
     from markdown2 import markdown as md
+    from packaging.version import Version as check_version
 
 except ImportError as error:
     print(f"{error}. Did you install packages from requirements.txt?")
@@ -103,11 +104,11 @@ def get_iso_arch(target):
     archs_all = [
         "i386", "amd64",
         "arm64", "arm32", "armhfp", "armhf", "armel", "aarch64",
-        "i586", "i686-pae", "i686", "ia64",
+        "i486", "i586", "i686-pae", "i686", "ia64",
         "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
         "mips64el", "mipsel", "mips",
         "s390x", "hppa", "macppc", "alpha", "sparc64",
-        "bios", "efi"
+        "bios", "efi", "ipxe"
     ]
 
     archs_86_64 = [
@@ -159,5 +160,5 @@ def get_iso_arch(target):
 
 get_afh_url = AndroidFileHost.get
 
-__all__ = ["bs", "json", "re", "requests",
+__all__ = ["bs", "json", "re", "requests", "check_version",
            "get_afh_url", "get_iso_arch", "get_iso_size"]
