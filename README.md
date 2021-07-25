@@ -1,13 +1,12 @@
 <p align="center">
-	<img src="./src/html/assets/logo.svg" width="400" alt="">
+  <img src="./src/html/assets/logo.svg" width="400" alt="">
 </p>
   <h1 align="center"><a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator</h1>
-  <p align="center">Generate a repository for the app that allow boot a PC using ISO files stored on your Android phone</p>
-    <a href="https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid">
-    <p align="center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="150" alt="">
-    </p>
+  <p align="center">Generate a repository for the app that allow boot a PC using ISO files stored on your <a href="https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid">Android phone</a></p>
   </a>
+  <p align="center">
+    Check also an <a href="https://github.com/bobvanderlinden/distscraper">official scraper</a> written in JavaScript
+  </p>
 </p>
 
 <br>
@@ -18,7 +17,7 @@ Add the next link to image repositories in DriveDroid app:
 ```
 https://dd.hexed.pw
 ```
-or this:
+or
 ```
 https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
 ```
@@ -199,7 +198,8 @@ location = / {
 ## Roadmap
 
 - [x] Option to generate a webpage
-- [ ] Option to select mirrors (currently uses mirrors based in Russia)
+- [ ] Add a mechanism to retry scraping if a network error occurs
+- [ ] Option to select mirrors (mainly uses mirrors based in Russia)
 - [ ] Package this project perhaps
 - [ ] Probably make the code better
 
