@@ -6,9 +6,210 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2484336640,
-        "url": "https://slackware.uk/absolute/absolute64-20210628.iso",
-        "version": "20210628"
+        "size": 2488213504,
+        "url": "https://slackware.uk/absolute/absolute64-20210730.iso",
+        "version": "20210730"
+      }
+    ]
+  },
+  {
+    "id": "adminpe",
+    "name": "AdminPE",
+    "url": "https://adminpe.ru",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 4077293568,
+        "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/YHflGF3zn3vf3w/AdminPE-4.4-UEFI.iso",
+        "version": "4.4"
+      }
+    ]
+  },
+  {
+    "id": "alpine",
+    "name": "Alpine Linux",
+    "url": "https://alpinelinux.org",
+    "releases": [
+      {
+        "arch": "aarch64",
+        "size": 143405056,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/aarch64/alpine-standard-3.14.0-aarch64.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 18526208,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/ppc64le/alpine-standard-3.14.0-ppc64le.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "s390x",
+        "size": 64925696,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/s390x/alpine-standard-3.14.0-s390x.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "i386",
+        "size": 133169152,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86/alpine-standard-3.14.0-x86.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 143654912,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86_64/alpine-standard-3.14.0-x86_64.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "i386",
+        "size": 593494016,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86/alpine-extended-3.14.0-x86.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 616562688,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86_64/alpine-extended-3.14.0-x86_64.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "aarch64",
+        "size": 44582912,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/aarch64/alpine-virt-3.14.0-aarch64.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "armv7",
+        "size": 37711872,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/armv7/alpine-virt-3.14.0-armv7.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "i386",
+        "size": 41943040,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86/alpine-virt-3.14.0-x86.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 46137344,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86_64/alpine-virt-3.14.0-x86_64.iso",
+        "version": "3.14.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 195035136,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.14/releases/x86_64/alpine-xen-3.14.0-x86_64.iso",
+        "version": "3.14.0"
+      }
+    ]
+  },
+  {
+    "id": "antix",
+    "name": "antiX Linux",
+    "url": "https://antixlinux.com",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 1290797056,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4-runit_x64-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 731906048,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4-runit_x64-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 1289748480,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4_x64-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 731906048,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4_x64-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 1301282816,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 1263534080,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 422576128,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 415236096,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 710934528,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 728760320,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 176160768,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 171966464,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 176160768,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 171966464,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_x64-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 422576128,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 415236096,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_x64-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 728760320,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-base.iso",
+        "version": "19.4"
       }
     ]
   },
@@ -424,39 +625,39 @@
       },
       {
         "arch": "x86_64",
-        "size": 769654784,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210721-boot.iso",
-        "version": "20210721"
+        "size": 770703360,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210728-boot.iso",
+        "version": "20210728"
       },
       {
         "arch": "x86_64",
-        "size": 10270801920,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210721-dvd1.iso",
-        "version": "20210721"
+        "size": 10315890688,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20210728-dvd1.iso",
+        "version": "20210728"
       },
       {
         "arch": "ppc64le",
-        "size": 733323264,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210721-boot.iso",
-        "version": "20210721"
+        "size": 733999104,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210728-boot.iso",
+        "version": "20210728"
       },
       {
         "arch": "ppc64le",
-        "size": 8752300032,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210721-dvd1.iso",
-        "version": "20210721"
+        "size": 8787173376,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20210728-dvd1.iso",
+        "version": "20210728"
       },
       {
         "arch": "aarch64",
-        "size": 688398336,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210721-boot.iso",
-        "version": "20210721"
+        "size": 688578560,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210728-boot.iso",
+        "version": "20210728"
       },
       {
         "arch": "aarch64",
-        "size": 7556648960,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210721-dvd1.iso",
-        "version": "20210721"
+        "size": 7595563008,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20210728-dvd1.iso",
+        "version": "20210728"
       }
     ]
   },
@@ -1061,7 +1262,7 @@
       {
         "arch": "x86_64",
         "size": 1487339520,
-        "url": "https://fra1.dl.elementary.io/download/MTYyNzM0MTA1Ng==/elementaryos-5.1-stable.20200814.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYyNzY3OTIwMw==/elementaryos-5.1-stable.20200814.iso",
         "version": "5.1"
       }
     ]
@@ -1384,71 +1585,34 @@
     ]
   },
   {
-    "id": "garuda",
-    "name": "Garuda",
-    "url": "https://garudalinux.org",
-    "releases": [
-      {
-        "arch": "amd64",
-        "size": 2401415168,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/xfce/210720/garuda-xfce-linux-lts-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 2295107584,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/gnome/210720/garuda-gnome-linux-zen-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 2361405440,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/lxqt-kwin/210720/garuda-lxqt-kwin-linux-zen-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 1982259200,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/wayfire/210720/garuda-wayfire-linux-zen-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 2238468096,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/bspwm/210720/garuda-bspwm-linux-zen-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 2321823744,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/i3/210720/garuda-i3-linux-zen-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 2002307072,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/sway/210720/garuda-sway-linux-zen-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 1879218176,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/kde-barebones/210720/garuda-kde-barebones-linux-lts-210720.iso",
-        "version": "210720"
-      },
-      {
-        "arch": "amd64",
-        "size": 1771200512,
-        "url": "https://sourceforge.net/projects/garuda-linux/files/gnome-barebones/210720/garuda-gnome-barebones-linux-lts-210720.iso",
-        "version": "210720"
-      }
-    ]
-  },
-  {
     "id": "gentoo",
     "name": "Gentoo",
     "url": "https://gentoo.org",
     "releases": [
+      {
+        "arch": "ppc",
+        "size": 367781888,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20210729T033721Z/install-powerpc-minimal-20210729T033721Z.iso",
+        "version": "20210729"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 688566272,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20210729T033721Z/install-ppc64le-minimal-20210729T033721Z.iso",
+        "version": "20210729"
+      },
+      {
+        "arch": "sparc64",
+        "size": 274393088,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20210727T065247Z/install-sparc64-minimal-20210727T065247Z.iso",
+        "version": "20210727"
+      },
+      {
+        "arch": "i386",
+        "size": 586153984,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20210726T170538Z/admincd-x86-20210726T170538Z.iso",
+        "version": "20210726"
+      },
       {
         "arch": "amd64",
         "size": 452984832,
@@ -1466,30 +1630,6 @@
         "size": 640679936,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210725T170534Z/admincd-amd64-20210725T170534Z.iso",
         "version": "20210725"
-      },
-      {
-        "arch": "ppc",
-        "size": 367554560,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20210723T022237Z/install-powerpc-minimal-20210723T022237Z.iso",
-        "version": "20210723"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 687243264,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20210723T022237Z/install-ppc64le-minimal-20210723T022237Z.iso",
-        "version": "20210723"
-      },
-      {
-        "arch": "sparc64",
-        "size": 274032640,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20210720T065143Z/install-sparc64-minimal-20210720T065143Z.iso",
-        "version": "20210720"
-      },
-      {
-        "arch": "i386",
-        "size": 585105408,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20210719T170555Z/admincd-x86-20210719T170555Z.iso",
-        "version": "20210719"
       },
       {
         "arch": "i386",
@@ -1733,27 +1873,27 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1872756736,
+        "url": "https://files.kde.org/neon/images/user/20210729-0944/neon-user-20210729-0944.iso",
+        "version": "20210729"
+      },
+      {
+        "arch": "amd64",
+        "size": 1851785216,
+        "url": "https://files.kde.org/neon/images/testing/20210727-1820/neon-testing-20210727-1820.iso",
+        "version": "20210727"
+      },
+      {
+        "arch": "amd64",
         "size": 2481979392,
         "url": "https://files.kde.org/neon/images/developer/20210726-1846/neon-developer-20210726-1846.iso",
         "version": "20210726"
       },
       {
         "arch": "amd64",
-        "size": 1872756736,
-        "url": "https://files.kde.org/neon/images/user/20210725-1655/neon-user-20210725-1655.iso",
-        "version": "20210725"
-      },
-      {
-        "arch": "amd64",
         "size": 1851785216,
         "url": "https://files.kde.org/neon/images/unstable/20210725-0328/neon-unstable-20210725-0328.iso",
         "version": "20210725"
-      },
-      {
-        "arch": "amd64",
-        "size": 1850736640,
-        "url": "https://files.kde.org/neon/images/testing/20210720-1819/neon-testing-20210720-1819.iso",
-        "version": "20210720"
       }
     ]
   },
@@ -1834,6 +1974,19 @@
         "size": 1691189248,
         "url": "https://mirror.yandex.ru/ubuntu-cdimage/kubuntu/releases/xenial/release/kubuntu-16.04.6-desktop-i386.iso",
         "version": "16.04.6"
+      }
+    ]
+  },
+  {
+    "id": "linuxlite",
+    "name": "Linux Lite",
+    "url": "https://www.linuxliteos.com",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 10303,
+        "url": "https://osdn.net/dl/linuxlite/linux-lite-5.4-64bit.iso",
+        "version": "5.4"
       }
     ]
   },
@@ -2458,7 +2611,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4674551808,
+        "size": 4676648960,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2470,7 +2623,7 @@
       },
       {
         "arch": "i586",
-        "size": 4569694208,
+        "size": 4570742784,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2482,13 +2635,13 @@
       },
       {
         "arch": "aarch64",
-        "size": 3931437056,
+        "size": 3933554688,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 200656896,
+        "size": 200687616,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2506,43 +2659,43 @@
       },
       {
         "arch": "s390x",
-        "size": 3128152064,
+        "size": 3128154112,
         "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-DVD-s390x-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "s390x",
-        "size": 136386560,
+        "size": 136388608,
         "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-NET-s390x-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 901906432,
+        "size": 902430720,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 983367680,
+        "size": 986972160,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 954204160,
+        "size": 955449344,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 673185792,
+        "size": 673120256,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 837812224,
+        "size": 838860800,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2554,7 +2707,7 @@
       },
       {
         "arch": "i686",
-        "size": 895483904,
+        "size": 897581056,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2566,7 +2719,7 @@
       },
       {
         "arch": "aarch64",
-        "size": 883097600,
+        "size": 883032064,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2578,43 +2731,43 @@
       },
       {
         "arch": "aarch64",
-        "size": 929431552,
+        "size": 929759232,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 668467200,
+        "size": 668925952,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 901906432,
+        "size": 902430720,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 983367680,
+        "size": 986972160,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 954204160,
+        "size": 955449344,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 673185792,
+        "size": 673120256,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 837812224,
+        "size": 838860800,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2626,7 +2779,7 @@
       },
       {
         "arch": "i686",
-        "size": 895483904,
+        "size": 897581056,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2638,7 +2791,7 @@
       },
       {
         "arch": "aarch64",
-        "size": 883097600,
+        "size": 883032064,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2650,13 +2803,13 @@
       },
       {
         "arch": "aarch64",
-        "size": 929431552,
+        "size": 929759232,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 668467200,
+        "size": 668925952,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2710,43 +2863,43 @@
       },
       {
         "arch": "x86_64",
-        "size": 899088384,
+        "size": 898695168,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "x86_64",
-        "size": 988872704,
+        "size": 989265920,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "x86_64",
-        "size": 962396160,
+        "size": 962199552,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "x86_64",
-        "size": 645922816,
+        "size": 646250496,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "aarch64",
-        "size": 865665024,
+        "size": 865861632,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-aarch64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "aarch64",
-        "size": 957939712,
+        "size": 958070784,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-aarch64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "aarch64",
-        "size": 932052992,
+        "size": 932642816,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-aarch64-Media.iso",
         "version": "15.3"
       },
@@ -2758,43 +2911,43 @@
       },
       {
         "arch": "x86_64",
-        "size": 899088384,
+        "size": 898695168,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "x86_64",
-        "size": 988872704,
+        "size": 989265920,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "x86_64",
-        "size": 962396160,
+        "size": 962199552,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "x86_64",
-        "size": 645922816,
+        "size": 646250496,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-x86_64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "aarch64",
-        "size": 865665024,
+        "size": 865861632,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-aarch64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "aarch64",
-        "size": 957939712,
+        "size": 958070784,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-aarch64-Media.iso",
         "version": "15.3"
       },
       {
         "arch": "aarch64",
-        "size": 932052992,
+        "size": 932642816,
         "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-aarch64-Media.iso",
         "version": "15.3"
       },
@@ -2987,25 +3140,6 @@
     ]
   },
   {
-    "id": "psychos",
-    "name": "PsychOS",
-    "url": "https://psychoslinux.gitlab.io",
-    "releases": [
-      {
-        "arch": "i686",
-        "size": 4103211008,
-        "url": "https://gitlab.com/PsychOSLinux/distributions/raw/master/PsychOS_3.4.6.iso",
-        "version": "3.4.6"
-      },
-      {
-        "arch": "i486",
-        "size": 720965632,
-        "url": "https://archive.org/download/PsychOS486-1.6.5/PsychOS486-1.6.5.iso",
-        "version": "1.6.5"
-      }
-    ]
-  },
-  {
     "id": "puppy",
     "name": "Puppy Linux",
     "url": "https://puppylinux.com",
@@ -3075,6 +3209,37 @@
         "size": 214958080,
         "url": "http://distro.ibiblio.org/puppylinux/puppy-tahr/iso/tahrpup%20-6.0-CE/tahr-6.0.5_PAE.iso",
         "version": "6.0"
+      }
+    ]
+  },
+  {
+    "id": "q4os",
+    "name": "Q4OS",
+    "url": "https://q4os.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 976224256,
+        "url": "https://sourceforge.net/projects/q4os/files/stable/q4os-3.15-x64.r1.iso",
+        "version": "3.15"
+      },
+      {
+        "arch": "amd64",
+        "size": 752877568,
+        "url": "https://sourceforge.net/projects/q4os/files/stable/q4os-3.15-x64-tde.r1.iso",
+        "version": "3.15"
+      },
+      {
+        "arch": "amd64",
+        "size": 485490688,
+        "url": "https://sourceforge.net/projects/q4os/files/stable/q4os-3.14-x64-instcd.r5.iso",
+        "version": "3.14"
+      },
+      {
+        "arch": "i386",
+        "size": 446693376,
+        "url": "https://sourceforge.net/projects/q4os/files/stable/q4os-3.14-i386-instcd.r5.iso",
+        "version": "3.14"
       }
     ]
   },
@@ -3218,50 +3383,7 @@
     "id": "siduction",
     "name": "siduction",
     "url": "https://siduction.org",
-    "releases": [
-      {
-        "arch": "amd64",
-        "size": 2584854528,
-        "url": "http://ftp.uni-stuttgart.de/siduction/iso/cblues/cinnamon/siduction-21.1.1-cblues-cinnamon-amd64-202102190910.iso",
-        "version": "21.1.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 3047825408,
-        "url": "http://ftp.uni-stuttgart.de/siduction/iso/cblues/kde/siduction-21.1.1-cblues-kde-amd64-202102190822.iso",
-        "version": "21.1.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 2378508288,
-        "url": "http://ftp.uni-stuttgart.de/siduction/iso/cblues/lxde/siduction-21.1.1-cblues-lxde-amd64-202102190834.iso",
-        "version": "21.1.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 2395328512,
-        "url": "http://ftp.uni-stuttgart.de/siduction/iso/cblues/lxqt/siduction-21.1.1-cblues-lxqt-amd64-202102190844.iso",
-        "version": "21.1.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 2526918656,
-        "url": "http://ftp.uni-stuttgart.de/siduction/iso/cblues/xfce/siduction-21.1.1-cblues-xfce-amd64-202102190853.iso",
-        "version": "21.1.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 2069970944,
-        "url": "http://ftp.uni-stuttgart.de/siduction/iso/cblues/xorg/siduction-21.1.1-cblues-xorg-amd64-202102190902.iso",
-        "version": "21.1.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 891756544,
-        "url": "http://ftp.uni-stuttgart.de/siduction/iso/cblues/nox/siduction-21.1.0-cblues-nox-amd64-202102141954.iso",
-        "version": "21.1.0"
-      }
-    ]
+    "releases": []
   },
   {
     "id": "slackware",
@@ -3371,6 +3493,121 @@
         "size": 55820288,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
+      }
+    ]
+  },
+  {
+    "id": "sparky",
+    "name": "SparkyLinux",
+    "url": "https://sparkylinux.org",
+    "releases": [
+      {
+        "arch": "i686",
+        "size": 1391460352,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-5.15-i686-lxqt.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1441792000,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-5.15-x86_64-lxqt.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "i686",
+        "size": 1319108608,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-5.15-i686-xfce.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1317011456,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-5.15-x86_64-xfce.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "i686",
+        "size": 968884224,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-5.15-i686-minimalgui.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "x86_64",
+        "size": 985661440,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-5.15-x86_64-minimalgui.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "i686",
+        "size": 568328192,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-5.15-i686-minimalcli.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "x86_64",
+        "size": 565182464,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-5.15-x86_64-minimalcli.iso",
+        "version": "5.15"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1627389952,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-2021.06-x86_64-lxqt.iso",
+        "version": "2021.06"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1800404992,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-2021.06-x86_64-mate.iso",
+        "version": "2021.06"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1462763520,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-2021.06-x86_64-xfce.iso",
+        "version": "2021.06"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1954545664,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-2021.06-x86_64-kde.iso",
+        "version": "2021.06"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1173356544,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-2021.06-x86_64-minimalgui.iso",
+        "version": "2021.06"
+      },
+      {
+        "arch": "x86_64",
+        "size": 699400192,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-2021.06-x86_64-minimalcli.iso",
+        "version": "2021.06"
+      },
+      {
+        "arch": "x86_64",
+        "size": 4049600512,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/gameover/sparkylinux-2021.03-x86_64-gameover.iso",
+        "version": "2021.03"
+      },
+      {
+        "arch": "x86_64",
+        "size": 3143630848,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/multimedia/sparkylinux-2021.03-x86_64-multimedia.iso",
+        "version": "2021.03"
+      },
+      {
+        "arch": "i686",
+        "size": 1375731712,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/rescue/sparkylinux-2021.03-i686-rescue.iso",
+        "version": "2021.03"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1414529024,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/rescue/sparkylinux-2021.03-x86_64-rescue.iso",
+        "version": "2021.03"
       }
     ]
   },
@@ -3731,7 +3968,7 @@
       {
         "arch": "amd64",
         "size": 475004928,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202107242017-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202107280117-amd64.iso",
         "version": "1.4"
       },
       {
