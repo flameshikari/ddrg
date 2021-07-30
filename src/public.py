@@ -103,7 +103,7 @@ def get_iso_arch(target):
 
     archs_all = [
         "i386", "amd64",
-        "arm64", "arm32", "armhfp", "armhf", "armel", "aarch64",
+        "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
         "i486", "i586", "i686-pae", "i686", "ia64",
         "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
         "mips64el", "mipsel", "mips",
