@@ -105,115 +105,6 @@
     ]
   },
   {
-    "id": "antix",
-    "name": "antiX Linux",
-    "url": "https://antixlinux.com",
-    "releases": [
-      {
-        "arch": "amd64",
-        "size": 1290797056,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4-runit_x64-full.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 731906048,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4-runit_x64-base.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 1289748480,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4_x64-full.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 731906048,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4_x64-base.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "i386",
-        "size": 1301282816,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-full.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 1263534080,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-full.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "i386",
-        "size": 422576128,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-core.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 415236096,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-core.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 710934528,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-base.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "i386",
-        "size": 728760320,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-base.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "i386",
-        "size": 176160768,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-net.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 171966464,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-net.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "i386",
-        "size": 176160768,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-net.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 171966464,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_x64-net.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "i386",
-        "size": 422576128,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-core.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 415236096,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_x64-core.iso",
-        "version": "19.4"
-      },
-      {
-        "arch": "i386",
-        "size": 728760320,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-base.iso",
-        "version": "19.4"
-      }
-    ]
-  },
-  {
     "id": "arch",
     "name": "Arch Linux",
     "url": "https://archlinux.org",
@@ -243,6 +134,12 @@
     "name": "Arch Linux 32",
     "url": "https://archlinux32.org",
     "releases": [
+      {
+        "arch": "i686",
+        "size": 679477248,
+        "url": "https://mirror.yandex.ru/archlinux32/archisos/archlinux32-2021.07.31-i686.iso",
+        "version": "2021.07.31"
+      },
       {
         "arch": "i486",
         "size": 628318208,
@@ -1262,7 +1159,7 @@
       {
         "arch": "x86_64",
         "size": 1487339520,
-        "url": "https://fra1.dl.elementary.io/download/MTYyNzY3OTIwMw==/elementaryos-5.1-stable.20200814.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYyNzc1ODI3MA==/elementaryos-5.1-stable.20200814.iso",
         "version": "5.1"
       }
     ]
@@ -1984,7 +1881,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 10303,
+        "size": 10305,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.4-64bit.iso",
         "version": "5.4"
       }
@@ -2495,25 +2392,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 1955266560,
+        "size": 1961017344,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 1466302464,
+        "size": 1472069632,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 693108736,
+        "size": 697303040,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "i686",
-        "size": 674234368,
+        "size": 667942912,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-i686-linux.iso",
         "version": "21.05"
       }
@@ -2671,37 +2568,37 @@
       },
       {
         "arch": "x86_64",
-        "size": 902430720,
+        "size": 902823936,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 986972160,
+        "size": 986120192,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 955449344,
+        "size": 954925056,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 673120256,
+        "size": 673382400,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 838860800,
+        "size": 837812224,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 929038336,
+        "size": 927989760,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2743,37 +2640,37 @@
       },
       {
         "arch": "x86_64",
-        "size": 902430720,
+        "size": 902823936,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 986972160,
+        "size": 986120192,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 955449344,
+        "size": 954925056,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 673120256,
+        "size": 673382400,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 838860800,
+        "size": 837812224,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 929038336,
+        "size": 927989760,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -3140,6 +3037,25 @@
     ]
   },
   {
+    "id": "psychos",
+    "name": "PsychOS",
+    "url": "https://psychoslinux.gitlab.io",
+    "releases": [
+      {
+        "arch": "i686",
+        "size": 4103211008,
+        "url": "https://gitlab.com/PsychOSLinux/distributions/raw/master/PsychOS_3.4.6.iso",
+        "version": "3.4.6"
+      },
+      {
+        "arch": "i486",
+        "size": 720965632,
+        "url": "https://archive.org/download/PsychOS486-1.6.5/PsychOS486-1.6.5.iso",
+        "version": "1.6.5"
+      }
+    ]
+  },
+  {
     "id": "puppy",
     "name": "Puppy Linux",
     "url": "https://puppylinux.com",
@@ -3493,6 +3409,37 @@
         "size": 55820288,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
+      }
+    ]
+  },
+  {
+    "id": "solus",
+    "name": "Solus",
+    "url": "https://getsol.us",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 1947598848,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Budgie.iso",
+        "version": "4.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2174648320,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-GNOME.iso",
+        "version": "4.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1927495680,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-MATE.iso",
+        "version": "4.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2141192192,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Plasma.iso",
+        "version": "4.3"
       }
     ]
   },
