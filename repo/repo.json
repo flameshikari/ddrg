@@ -303,12 +303,6 @@
         "size": 1085616128,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-summer-0708-x86_64.iso",
         "version": "0708"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1084567552,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-summer-0608-x86_64.iso",
-        "version": "0608"
       }
     ]
   },
@@ -819,74 +813,74 @@
       },
       {
         "arch": "amd64",
-        "size": 563476480,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_amd64_cd2.iso",
+        "size": 563474432,
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_amd64_cd2.iso",
         "version": "4.0"
       },
       {
         "arch": "amd64",
         "size": 599586816,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_amd64_cd3.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_amd64_cd3.iso",
         "version": "4.0"
       },
       {
         "arch": "amd64",
-        "size": 647974912,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_amd64_cd4.iso",
+        "size": 647976960,
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_amd64_cd4.iso",
         "version": "4.0"
       },
       {
         "arch": "amd64",
-        "size": 3800039424,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_amd64_desktop.iso",
+        "size": 3790602240,
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_amd64_desktop.iso",
         "version": "4.0"
       },
       {
         "arch": "amd64",
         "size": 389021696,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_amd64_netinstall.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_amd64_netinstall.iso",
         "version": "4.0"
       },
       {
         "arch": "amd64",
         "size": 673185792,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_amd64_server.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_amd64_server.iso",
         "version": "4.0"
       },
       {
         "arch": "i386",
         "size": 569219072,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_i386_cd2.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_i386_cd2.iso",
         "version": "4.0"
       },
       {
         "arch": "i386",
         "size": 600461312,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_i386_cd3.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_i386_cd3.iso",
         "version": "4.0"
       },
       {
         "arch": "i386",
         "size": 660183040,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_i386_cd4.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_i386_cd4.iso",
         "version": "4.0"
       },
       {
         "arch": "i386",
-        "size": 3779067904,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_i386_desktop.iso",
+        "size": 3770679296,
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_i386_desktop.iso",
         "version": "4.0"
       },
       {
         "arch": "i386",
         "size": 424673280,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_i386_netinstall.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_i386_netinstall.iso",
         "version": "4.0"
       },
       {
         "arch": "i386",
         "size": 724566016,
-        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210802_i386_server.iso",
+        "url": "https://mirror.math.princeton.edu/pub/devuan/devuan_chimaera/installer-iso/devuan_chimaera_4.0.beta-20210809_i386_server.iso",
         "version": "4.0"
       },
       {
@@ -1025,9 +1019,9 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 1487339520,
-        "url": "https://fra1.dl.elementary.io/download/MTYyODM2Mjk0Mw==/elementaryos-5.1-stable.20200814.iso",
-        "version": "5.1"
+        "size": 2360967168,
+        "url": "https://fra1.dl.elementary.io/download/MTYyODk2Nzg1NQ==/elementaryos-6.0-stable.20210810.iso",
+        "version": "6.0"
       }
     ]
   },
@@ -1349,10 +1343,101 @@
     ]
   },
   {
+    "id": "garuda",
+    "name": "Garuda",
+    "url": "https://garudalinux.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 2440353792,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/xfce/210809/garuda-xfce-linux-lts-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 2368593920,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/gnome/210809/garuda-gnome-linux-zen-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 2435178496,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/lxqt-kwin/210809/garuda-lxqt-kwin-linux-zen-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 2027864064,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/wayfire/210809/garuda-wayfire-linux-zen-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 2317342720,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/bspwm/210809/garuda-bspwm-linux-zen-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 2394996736,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/i3/210809/garuda-i3-linux-zen-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 2048495616,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/sway/210809/garuda-sway-linux-zen-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 1908568064,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/kde-barebones/210809/garuda-kde-barebones-linux-lts-210809.iso",
+        "version": "210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 1798440960,
+        "url": "https://sourceforge.net/projects/garuda-linux/files/garuda/gnome-barebones/210809/garuda-gnome-barebones-linux-lts-210809.iso",
+        "version": "210809"
+      }
+    ]
+  },
+  {
     "id": "gentoo",
     "name": "Gentoo",
     "url": "https://gentoo.org",
     "releases": [
+      {
+        "arch": "sparc64",
+        "size": 274290688,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20210810T065138Z/install-sparc64-minimal-20210810T065138Z.iso",
+        "version": "20210810"
+      },
+      {
+        "arch": "i386",
+        "size": 585105408,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20210809T170551Z/admincd-x86-20210809T170551Z.iso",
+        "version": "20210809"
+      },
+      {
+        "arch": "amd64",
+        "size": 452984832,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210808T170546Z/install-amd64-minimal-20210808T170546Z.iso",
+        "version": "20210808"
+      },
+      {
+        "arch": "amd64",
+        "size": 452984832,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210808T170546Z/install-amd64-minimal-20210808T170546Z.iso",
+        "version": "20210808"
+      },
+      {
+        "arch": "amd64",
+        "size": 639631360,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210808T170546Z/admincd-amd64-20210808T170546Z.iso",
+        "version": "20210808"
+      },
       {
         "arch": "ppc",
         "size": 367757312,
@@ -1364,36 +1449,6 @@
         "size": 688586752,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20210806T005104Z/install-ppc64le-minimal-20210806T005104Z.iso",
         "version": "20210806"
-      },
-      {
-        "arch": "sparc64",
-        "size": 274307072,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20210803T065129Z/install-sparc64-minimal-20210803T065129Z.iso",
-        "version": "20210803"
-      },
-      {
-        "arch": "i386",
-        "size": 585105408,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20210802T170539Z/admincd-x86-20210802T170539Z.iso",
-        "version": "20210802"
-      },
-      {
-        "arch": "amd64",
-        "size": 452984832,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210801T170533Z/install-amd64-minimal-20210801T170533Z.iso",
-        "version": "20210801"
-      },
-      {
-        "arch": "amd64",
-        "size": 452984832,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210801T170533Z/install-amd64-minimal-20210801T170533Z.iso",
-        "version": "20210801"
-      },
-      {
-        "arch": "amd64",
-        "size": 640679936,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20210801T170533Z/admincd-amd64-20210801T170533Z.iso",
-        "version": "20210801"
       },
       {
         "arch": "i386",
@@ -1564,56 +1619,56 @@
       {
         "arch": "amd64",
         "size": 4733116416,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-installer-amd64.iso",
-        "version": "2021-W31"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-installer-amd64.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "arm64",
-        "size": 3442995200,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-installer-arm64.iso",
-        "version": "2021-W31"
+        "size": 3446288384,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-installer-arm64.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "i386",
         "size": 3674210304,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-installer-i386.iso",
-        "version": "2021-W31"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-installer-i386.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "amd64",
         "size": 397410304,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-installer-netinst-amd64.iso",
-        "version": "2021-W31"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-installer-netinst-amd64.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "arm64",
         "size": 330608640,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-installer-netinst-arm64.iso",
-        "version": "2021-W31"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-installer-netinst-arm64.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "i386",
         "size": 339738624,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-installer-netinst-i386.iso",
-        "version": "2021-W31"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-installer-netinst-i386.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "amd64",
         "size": 3936006144,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-live-amd64.iso",
-        "version": "2021-W31"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-live-amd64.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "arm64",
-        "size": 2800486400,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-live-arm64.iso",
-        "version": "2021-W31"
+        "size": 2800596992,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-live-arm64.iso",
+        "version": "2021-W32"
       },
       {
         "arch": "i386",
         "size": 3266228224,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W31-live-i386.iso",
-        "version": "2021-W31"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W32-live-i386.iso",
+        "version": "2021-W32"
       }
     ]
   },
@@ -1637,27 +1692,27 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 1879048192,
-        "url": "https://files.kde.org/neon/images/user/20210806-1520/neon-user-20210806-1520.iso",
-        "version": "20210806"
+        "size": 1880096768,
+        "url": "https://files.kde.org/neon/images/user/20210812-1129/neon-user-20210812-1129.iso",
+        "version": "20210812"
       },
       {
         "arch": "amd64",
         "size": 1858076672,
-        "url": "https://files.kde.org/neon/images/testing/20210806-1535/neon-testing-20210806-1535.iso",
-        "version": "20210806"
+        "url": "https://files.kde.org/neon/images/testing/20210810-1819/neon-testing-20210810-1819.iso",
+        "version": "20210810"
       },
       {
         "arch": "amd64",
-        "size": 1859125248,
-        "url": "https://files.kde.org/neon/images/unstable/20210806-1522/neon-unstable-20210806-1522.iso",
-        "version": "20210806"
+        "size": 2494562304,
+        "url": "https://files.kde.org/neon/images/developer/20210809-1846/neon-developer-20210809-1846.iso",
+        "version": "20210809"
       },
       {
         "arch": "amd64",
-        "size": 2481979392,
-        "url": "https://files.kde.org/neon/images/developer/20210802-1847/neon-developer-20210802-1847.iso",
-        "version": "20210802"
+        "size": 1864368128,
+        "url": "https://files.kde.org/neon/images/unstable/20210808-0328/neon-unstable-20210808-0328.iso",
+        "version": "20210808"
       }
     ]
   },
@@ -1748,7 +1803,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 10237,
+        "size": 10248,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.4-64bit.iso",
         "version": "5.4"
       }
@@ -2259,25 +2314,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 1961017344,
+        "size": 1966178304,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 1472069632,
+        "size": 1476395008,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 697303040,
+        "size": 701497344,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "i686",
-        "size": 674234368,
+        "size": 682622976,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-i686-linux.iso",
         "version": "21.05"
       }
@@ -2435,19 +2490,19 @@
       },
       {
         "arch": "x86_64",
-        "size": 913833984,
+        "size": 914685952,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 998965248,
+        "size": 999161856,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 966918144,
+        "size": 967245824,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2459,7 +2514,7 @@
       },
       {
         "arch": "i686",
-        "size": 837812224,
+        "size": 838860800,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2477,7 +2532,7 @@
       },
       {
         "arch": "i686",
-        "size": 611319808,
+        "size": 598736896,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2507,19 +2562,19 @@
       },
       {
         "arch": "x86_64",
-        "size": 913833984,
+        "size": 914685952,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 998965248,
+        "size": 999161856,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 966918144,
+        "size": 967245824,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2531,7 +2586,7 @@
       },
       {
         "arch": "i686",
-        "size": 837812224,
+        "size": 838860800,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2549,7 +2604,7 @@
       },
       {
         "arch": "i686",
-        "size": 611319808,
+        "size": 598736896,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2754,34 +2809,22 @@
     "url": "https://parabola.nu",
     "releases": [
       {
-        "arch": "i686",
-        "size": 414187520,
-        "url": "https://mirror.yandex.ru/mirrors/parabola/iso/i686-systemd-cli-2020.09/parabola-i686-systemd-cli-2020.09-netinstall.iso",
-        "version": "2020.09"
-      },
-      {
-        "arch": "x86_64",
-        "size": 478150656,
-        "url": "https://mirror.yandex.ru/mirrors/parabola/iso/x86_64-systemd-cli-2020.09/parabola-x86_64-systemd-cli-2020.09-netinstall.iso",
-        "version": "2020.09"
+        "arch": "amd64",
+        "size": 975515648,
+        "url": "https://repo.parabola.nu/iso/parabola-openrc-2021.08.11/parabola-openrc-2021.08.11-dual.iso",
+        "version": "2021.08.11"
       },
       {
         "arch": "amd64",
-        "size": 901775360,
-        "url": "https://mirror.yandex.ru/mirrors/parabola/iso/dual-openrc-cli-2020.08.03/parabola-dual-openrc-cli-2020.08.03-netinstall.iso",
-        "version": "2020.08.03"
+        "size": 962932736,
+        "url": "https://repo.parabola.nu/iso/parabola-2021.08.11/parabola-2021.08.11-dual.iso",
+        "version": "2021.08.11"
       },
       {
         "arch": "amd64",
-        "size": 1942355968,
-        "url": "https://mirror.yandex.ru/mirrors/parabola/iso/dual-openrc-lxde-2020.08.03/parabola-dual-openrc-lxde-2020.08.03-netinstall.iso",
-        "version": "2020.08.03"
-      },
-      {
-        "arch": "amd64",
-        "size": 887095296,
-        "url": "https://mirror.yandex.ru/mirrors/parabola/iso/dual-systemd-talking-2020.08.02/parabola-dual-systemd-talking-2020.08.02-netinstall.iso",
-        "version": "2020.08.02"
+        "size": 1858760704,
+        "url": "https://repo.parabola.nu/iso/parabola-openrc-lxde-2021.08.11/parabola-openrc-lxde-2021.08.11-dual.iso",
+        "version": "2021.08.11"
       },
       {
         "arch": "x86_64",
@@ -3465,8 +3508,8 @@
       {
         "arch": "amd64",
         "size": 1184440320,
-        "url": "https://mirrors.edge.kernel.org/tails/stable/tails-amd64-4.20/tails-amd64-4.20.iso",
-        "version": "4.20"
+        "url": "https://mirrors.edge.kernel.org/tails/stable/tails-amd64-4.21/tails-amd64-4.21.iso",
+        "version": "4.21"
       }
     ]
   },
@@ -3781,8 +3824,8 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 475004928,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202107280117-amd64.iso",
+        "size": 473956352,
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202108110714-amd64.iso",
         "version": "1.4"
       },
       {
@@ -3812,7 +3855,7 @@
       {
         "arch": "amd64",
         "size": 331350016,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202107121144-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202108110342-amd64.iso",
         "version": "1.3"
       },
       {
