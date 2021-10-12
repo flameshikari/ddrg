@@ -206,6 +206,9 @@ location = / {
 ## Credits
 
 - [afh-dl](https://github.com/kade-robertson/afh-dl) by [kade-robertson](https://github.com/kade-robertson)
+- [Yandex.Disk direct links](https://getfile.dokpub.com/yandex) by [DokPub](https://dokpub.com)
+
+
 
 ## License
 
