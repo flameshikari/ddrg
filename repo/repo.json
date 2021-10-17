@@ -789,7 +789,7 @@
       {
         "arch": "x86_64",
         "size": 2373058560,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNDQxMDg5NA==/elementaryos-6.0-stable.20211005.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNDQ5NzI5Mw==/elementaryos-6.0-stable.20211005.iso",
         "version": "6.0"
       }
     ]
@@ -1352,6 +1352,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1943011328,
+        "url": "https://files.kde.org/neon/images/unstable/20211017-0330/neon-unstable-20211017-0330.iso",
+        "version": "20211017"
+      },
+      {
+        "arch": "amd64",
         "size": 1967128576,
         "url": "https://files.kde.org/neon/images/user/20211014-1524/neon-user-20211014-1524.iso",
         "version": "20211014"
@@ -1367,12 +1373,6 @@
         "size": 2553282560,
         "url": "https://files.kde.org/neon/images/developer/20211011-1848/neon-developer-20211011-1848.iso",
         "version": "20211011"
-      },
-      {
-        "arch": "amd64",
-        "size": 1923088384,
-        "url": "https://files.kde.org/neon/images/unstable/20211010-0329/neon-unstable-20211010-0329.iso",
-        "version": "20211010"
       }
     ]
   },
@@ -1463,7 +1463,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9565,
+        "size": 9624,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2692,13 +2692,13 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 68597760,
+        "size": 68593664,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core-5in1.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 54972416,
+        "size": 54951936,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
         "version": "5.0"
       },
@@ -2716,13 +2716,13 @@
       },
       {
         "arch": "x86_64",
-        "size": 37756928,
+        "size": 37754880,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 55848960,
+        "size": 55842816,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
       }
@@ -3128,7 +3128,7 @@
       {
         "arch": "amd64",
         "size": 473956352,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202110150613-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202110170217-amd64.iso",
         "version": "1.4"
       },
       {
@@ -3170,7 +3170,7 @@
       {
         "arch": "amd64",
         "size": 331350016,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202110160342-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202110171720-amd64.iso",
         "version": "1.3"
       },
       {
