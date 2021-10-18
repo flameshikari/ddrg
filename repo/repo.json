@@ -789,7 +789,7 @@
       {
         "arch": "x86_64",
         "size": 2373058560,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNDQ5NzI5Mw==/elementaryos-6.0-stable.20211005.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNDU4MzY5Mg==/elementaryos-6.0-stable.20211005.iso",
         "version": "6.0"
       }
     ]
@@ -1178,6 +1178,30 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "amd64",
+        "size": 455081984,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211017T170544Z/install-amd64-minimal-20211017T170544Z.iso",
+        "version": "20211017"
+      },
+      {
+        "arch": "arm64",
+        "size": 485228544,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211017T213632Z/install-arm64-minimal-20211017T213632Z.iso",
+        "version": "20211017"
+      },
+      {
+        "arch": "amd64",
+        "size": 455081984,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211017T170544Z/install-amd64-minimal-20211017T170544Z.iso",
+        "version": "20211017"
+      },
+      {
+        "arch": "arm64",
+        "size": 485228544,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211017T213632Z/install-arm64-minimal-20211017T213632Z.iso",
+        "version": "20211017"
+      },
+      {
         "arch": "i386",
         "size": 421527552,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211011T170547Z/install-x86-minimal-20211011T170547Z.iso",
@@ -1191,32 +1215,8 @@
       },
       {
         "arch": "amd64",
-        "size": 454033408,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211010T170540Z/install-amd64-minimal-20211010T170540Z.iso",
-        "version": "20211010"
-      },
-      {
-        "arch": "arm64",
-        "size": 484933632,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211010T235129Z/install-arm64-minimal-20211010T235129Z.iso",
-        "version": "20211010"
-      },
-      {
-        "arch": "amd64",
-        "size": 454033408,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211010T170540Z/install-amd64-minimal-20211010T170540Z.iso",
-        "version": "20211010"
-      },
-      {
-        "arch": "amd64",
         "size": 643825664,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211010T170540Z/admincd-amd64-20211010T170540Z.iso",
-        "version": "20211010"
-      },
-      {
-        "arch": "arm64",
-        "size": 484933632,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211010T235129Z/install-arm64-minimal-20211010T235129Z.iso",
         "version": "20211010"
       },
       {
@@ -1463,7 +1463,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9624,
+        "size": 9628,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -1861,25 +1861,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4693426176,
+        "size": 4664066048,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 171966464,
+        "size": 173015040,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i586",
-        "size": 4589617152,
+        "size": 4561305600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i586",
-        "size": 149946368,
+        "size": 152043520,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-i586-Current.iso",
         "version": "rolling"
       },
@@ -1921,49 +1921,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 948174848,
+        "size": 949223424,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 996016128,
+        "size": 963772416,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 978190336,
+        "size": 978124800,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 660340736,
+        "size": 661127168,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 870318080,
+        "size": 869269504,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 929038336,
+        "size": 895483904,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 909115392,
+        "size": 908066816,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 586153984,
+        "size": 585105408,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -1993,49 +1993,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 948174848,
+        "size": 949223424,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 996016128,
+        "size": 963772416,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 978190336,
+        "size": 978124800,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 660340736,
+        "size": 661127168,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 870318080,
+        "size": 869269504,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 929038336,
+        "size": 895483904,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 909115392,
+        "size": 908066816,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 586153984,
+        "size": 585105408,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2976,147 +2976,39 @@
     "releases": [
       {
         "arch": "i686",
-        "size": 862978048,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218-cinnamon.iso",
-        "version": "20210218"
+        "size": 901775360,
+        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210930-xfce.iso",
+        "version": "20210930"
       },
       {
         "arch": "i686",
-        "size": 785383424,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218-enlightenment.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "i686",
-        "size": 1100808192,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218-gnome.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "i686",
-        "size": 731906048,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218-lxde.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "i686",
-        "size": 802160640,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218-lxqt.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "i686",
-        "size": 965738496,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218-mate.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "i686",
-        "size": 813694976,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218-xfce.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "i686",
-        "size": 469762048,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210218.iso",
-        "version": "20210218"
+        "size": 546308096,
+        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-i686-20210930.iso",
+        "version": "20210930"
       },
       {
         "arch": "x86_64",
-        "size": 875560960,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218-cinnamon.iso",
-        "version": "20210218"
+        "size": 913309696,
+        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210930-xfce.iso",
+        "version": "20210930"
       },
       {
         "arch": "x86_64",
-        "size": 799014912,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218-enlightenment.iso",
-        "version": "20210218"
+        "size": 568328192,
+        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210930.iso",
+        "version": "20210930"
       },
       {
         "arch": "x86_64",
-        "size": 1113096192,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218-gnome.iso",
-        "version": "20210218"
+        "size": 899678208,
+        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210930-xfce.iso",
+        "version": "20210930"
       },
       {
         "arch": "x86_64",
-        "size": 743440384,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218-lxde.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 811597824,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218-lxqt.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 979369984,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218-mate.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 826277888,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218-xfce.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 490733568,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-20210218.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 865075200,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218-cinnamon.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 787480576,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218-enlightenment.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1101889536,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218-gnome.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 731906048,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218-lxde.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 799014912,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218-lxqt.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 969932800,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218-mate.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 813694976,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218-xfce.iso",
-        "version": "20210218"
-      },
-      {
-        "arch": "x86_64",
-        "size": 477102080,
-        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210218.iso",
-        "version": "20210218"
+        "size": 553648128,
+        "url": "https://mirror.yandex.ru/mirrors/voidlinux/live/current/void-live-x86_64-musl-20210930.iso",
+        "version": "20210930"
       }
     ]
   },
@@ -3128,7 +3020,7 @@
       {
         "arch": "amd64",
         "size": 473956352,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202110170217-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202110180513-amd64.iso",
         "version": "1.4"
       },
       {
@@ -3164,13 +3056,19 @@
       {
         "arch": "amd64",
         "size": 331350016,
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/snapshot/vyos-1.3.0-epa2/vyos-1.3.0-epa2-amd64.iso",
+        "version": "1.3.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 331350016,
         "url": "https://s3.amazonaws.com/s3-us.vyos.io/snapshot/vyos-1.3.0-epa1/generic-iso/vyos-1.3.0-epa1-amd64.iso",
         "version": "1.3.0"
       },
       {
         "arch": "amd64",
         "size": 331350016,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202110171720-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202110180342-amd64.iso",
         "version": "1.3"
       },
       {
