@@ -105,6 +105,115 @@
     ]
   },
   {
+    "id": "antix",
+    "name": "antiX Linux",
+    "url": "https://antixlinux.com",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 1290797056,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4-runit_x64-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 731906048,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4-runit_x64-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 1289748480,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4_x64-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 731906048,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/4.19_kernel/antiX-19.4_x64-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 1301282816,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 1263534080,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-full.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 422576128,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 415236096,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 710934528,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 728760320,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-base.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 176160768,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_386-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 171966464,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/runit-buster/antiX-19.4-runit_x64-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 176160768,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 171966464,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_x64-net.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 422576128,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 415236096,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_x64-core.iso",
+        "version": "19.4"
+      },
+      {
+        "arch": "i386",
+        "size": 728760320,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/antiX-19.4_386-base.iso",
+        "version": "19.4"
+      }
+    ]
+  },
+  {
     "id": "arch",
     "name": "Arch Linux",
     "url": "https://archlinux.org",
@@ -789,7 +898,7 @@
       {
         "arch": "x86_64",
         "size": 2373058560,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNDU4MzY5Mg==/elementaryos-6.0-stable.20211005.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNDY3MDE4NQ==/elementaryos-6.0-stable.20211005.iso",
         "version": "6.0"
       }
     ]
@@ -1179,9 +1288,33 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 455081984,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211017T170544Z/install-amd64-minimal-20211017T170544Z.iso",
-        "version": "20211017"
+        "size": 456130560,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211018T200943Z/install-amd64-minimal-20211018T200943Z.iso",
+        "version": "20211018"
+      },
+      {
+        "arch": "amd64",
+        "size": 456130560,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211018T200943Z/install-amd64-minimal-20211018T200943Z.iso",
+        "version": "20211018"
+      },
+      {
+        "arch": "amd64",
+        "size": 645922816,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211018T200943Z/admincd-amd64-20211018T200943Z.iso",
+        "version": "20211018"
+      },
+      {
+        "arch": "i386",
+        "size": 423624704,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211018T170551Z/install-x86-minimal-20211018T170551Z.iso",
+        "version": "20211018"
+      },
+      {
+        "arch": "i386",
+        "size": 589299712,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211018T170551Z/admincd-x86-20211018T170551Z.iso",
+        "version": "20211018"
       },
       {
         "arch": "arm64",
@@ -1190,34 +1323,10 @@
         "version": "20211017"
       },
       {
-        "arch": "amd64",
-        "size": 455081984,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211017T170544Z/install-amd64-minimal-20211017T170544Z.iso",
-        "version": "20211017"
-      },
-      {
         "arch": "arm64",
         "size": 485228544,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211017T213632Z/install-arm64-minimal-20211017T213632Z.iso",
         "version": "20211017"
-      },
-      {
-        "arch": "i386",
-        "size": 421527552,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211011T170547Z/install-x86-minimal-20211011T170547Z.iso",
-        "version": "20211011"
-      },
-      {
-        "arch": "i386",
-        "size": 587202560,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211011T170547Z/admincd-x86-20211011T170547Z.iso",
-        "version": "20211011"
-      },
-      {
-        "arch": "amd64",
-        "size": 643825664,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211010T170540Z/admincd-amd64-20211010T170540Z.iso",
-        "version": "20211010"
       },
       {
         "arch": "ppc",
@@ -1352,6 +1461,18 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1934622720,
+        "url": "https://files.kde.org/neon/images/testing/20211019-1822/neon-testing-20211019-1822.iso",
+        "version": "20211019"
+      },
+      {
+        "arch": "amd64",
+        "size": 2562719744,
+        "url": "https://files.kde.org/neon/images/developer/20211018-1847/neon-developer-20211018-1847.iso",
+        "version": "20211018"
+      },
+      {
+        "arch": "amd64",
         "size": 1943011328,
         "url": "https://files.kde.org/neon/images/unstable/20211017-0330/neon-unstable-20211017-0330.iso",
         "version": "20211017"
@@ -1361,18 +1482,6 @@
         "size": 1967128576,
         "url": "https://files.kde.org/neon/images/user/20211014-1524/neon-user-20211014-1524.iso",
         "version": "20211014"
-      },
-      {
-        "arch": "amd64",
-        "size": 1932525568,
-        "url": "https://files.kde.org/neon/images/testing/20211012-1820/neon-testing-20211012-1820.iso",
-        "version": "20211012"
-      },
-      {
-        "arch": "amd64",
-        "size": 2553282560,
-        "url": "https://files.kde.org/neon/images/developer/20211011-1848/neon-developer-20211011-1848.iso",
-        "version": "20211011"
       }
     ]
   },
@@ -1463,7 +1572,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9628,
+        "size": 9559,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -1763,7 +1872,7 @@
       },
       {
         "arch": "i686",
-        "size": 692060160,
+        "size": 685768704,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-i686-linux.iso",
         "version": "21.05"
       }
@@ -3068,7 +3177,7 @@
       {
         "arch": "amd64",
         "size": 331350016,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202110180342-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202110190342-amd64.iso",
         "version": "1.3"
       },
       {
