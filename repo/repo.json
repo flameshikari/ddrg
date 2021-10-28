@@ -795,7 +795,7 @@
       {
         "arch": "x86_64",
         "size": 2373058560,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNTM2MTMxMA==/elementaryos-6.0-stable.20211005.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNTQ0NzY5OQ==/elementaryos-6.0-stable.20211005.iso",
         "version": "6.0"
       }
     ]
@@ -1358,6 +1358,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1967128576,
+        "url": "https://files.kde.org/neon/images/user/20211028-1329/neon-user-20211028-1329.iso",
+        "version": "20211028"
+      },
+      {
+        "arch": "amd64",
         "size": 1933574144,
         "url": "https://files.kde.org/neon/images/testing/20211026-1824/neon-testing-20211026-1824.iso",
         "version": "20211026"
@@ -1373,12 +1379,6 @@
         "size": 1948254208,
         "url": "https://files.kde.org/neon/images/unstable/20211024-0329/neon-unstable-20211024-0329.iso",
         "version": "20211024"
-      },
-      {
-        "arch": "amd64",
-        "size": 1967128576,
-        "url": "https://files.kde.org/neon/images/user/20211021-0945/neon-user-20211021-0945.iso",
-        "version": "20211021"
       }
     ]
   },
@@ -1469,7 +1469,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9557,
+        "size": 9561,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -1757,25 +1757,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2053521408,
+        "size": 2057551872,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 1484423168,
+        "size": 1490255872,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 710934528,
+        "size": 715128832,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "i686",
-        "size": 685768704,
+        "size": 692060160,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-i686-linux.iso",
         "version": "21.05"
       }
@@ -1870,7 +1870,356 @@
     "id": "opensuse",
     "name": "OpenSUSE",
     "url": "https://opensuse.org",
-    "releases": []
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 4666163200,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 174063616,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i586",
+        "size": 4561305600,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i586",
+        "size": 153092096,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-i586-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 3844091904,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 203055104,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 3846711296,
+        "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 172040192,
+        "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-NET-ppc64le-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "s390x",
+        "size": 2986475520,
+        "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-DVD-s390x-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "s390x",
+        "size": 136990720,
+        "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-NET-s390x-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 947453952,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 965541888,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 982843392,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 660799488,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 866123776,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 895483904,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 912261120,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 587202560,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 926220288,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 950272000,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 956563456,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 658112512,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 947453952,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 965541888,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 982843392,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 660799488,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 866123776,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 895483904,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 912261120,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 587202560,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 926220288,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 950272000,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 956563456,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 658112512,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 4686086144,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-x86_64-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 153092096,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-x86_64-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 4450146304,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-aarch64-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 175271936,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-aarch64-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 4377114624,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-ppc64le-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 140455936,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-ppc64le-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "s390x",
+        "size": 1819629568,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-s390x-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "s390x",
+        "size": 109719552,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-s390x-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 902037504,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 975568896,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 953942016,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 647626752,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 868745216,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 943128576,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 923271168,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 626589696,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 902037504,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 975568896,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 953942016,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 647626752,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 868745216,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 943128576,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 923271168,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 626589696,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-aarch64-Media.iso",
+        "version": "15.3"
+      }
+    ]
   },
   {
     "id": "ophcrack",
