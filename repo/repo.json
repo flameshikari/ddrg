@@ -801,7 +801,7 @@
       {
         "arch": "x86_64",
         "size": 2373058560,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNTc5MzUzNg==/elementaryos-6.0-stable.20211005.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNTg3OTcwNA==/elementaryos-6.0-stable.20211005.iso",
         "version": "6.0"
       }
     ]
@@ -826,117 +826,123 @@
     "releases": [
       {
         "arch": "aarch64",
-        "size": 634675200,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 631599104,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Everything/aarch64/iso/Fedora-Everything-netinst-aarch64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "armhfp",
-        "size": 706279424,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 706885632,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Everything/armhfp/iso/Fedora-Everything-netinst-armhfp-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 678428672,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 677380096,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Everything/x86_64/iso/Fedora-Everything-netinst-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "aarch64",
-        "size": 2008135680,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/aarch64/iso/Fedora-Server-dvd-aarch64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2111846400,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Server/aarch64/iso/Fedora-Server-dvd-aarch64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "aarch64",
-        "size": 634667008,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/aarch64/iso/Fedora-Server-netinst-aarch64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 631603200,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Server/aarch64/iso/Fedora-Server-netinst-aarch64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "armhfp",
-        "size": 2104162304,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/armhfp/iso/Fedora-Server-dvd-armhfp-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2205503488,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Server/armhfp/iso/Fedora-Server-dvd-armhfp-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "armhfp",
-        "size": 706269184,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/armhfp/iso/Fedora-Server-netinst-armhfp-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 706881536,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Server/armhfp/iso/Fedora-Server-netinst-armhfp-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 2101346304,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2232418304,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Server/x86_64/iso/Fedora-Server-dvd-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 678428672,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-netinst-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 677380096,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Server/x86_64/iso/Fedora-Server-netinst-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "aarch64",
-        "size": 2175203328,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2209687552,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Silverblue/aarch64/iso/Fedora-Silverblue-ostree-aarch64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 2790850560,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2804809728,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Silverblue/x86_64/iso/Fedora-Silverblue-ostree-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 2128625664,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2166128640,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-Cinnamon-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 1371701248,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2157920256,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-KDE-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 1456766976,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 1428750336,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-LXDE-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 2147483648,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 1445363712,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-LXQt-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 1093238784,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 2172518400,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-MATE_Compiz-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 1667891200,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 1161789440,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-SoaS-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 1453916160,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Spins/x86_64/iso/Fedora-i3-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 1647968256,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-Xfce-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       },
       {
         "arch": "x86_64",
-        "size": 2007367680,
-        "url": "https://mirror.yandex.ru/fedora/linux/releases/34/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-34-1.2.iso",
-        "version": "34-1.2"
+        "size": 1437204480,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Spins/x86_64/iso/Fedora-i3-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2009333760,
+        "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-35-1.2.iso",
+        "version": "35-1.2"
       }
     ]
   },
@@ -1190,16 +1196,46 @@
     "url": "https://gentoo.org",
     "releases": [
       {
-        "arch": "arm64",
-        "size": 486082560,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211031T230635Z/install-arm64-minimal-20211031T230635Z.iso",
-        "version": "20211031"
+        "arch": "amd64",
+        "size": 457179136,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211101T222649Z/install-amd64-minimal-20211101T222649Z.iso",
+        "version": "20211101"
+      },
+      {
+        "arch": "amd64",
+        "size": 457179136,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211101T222649Z/install-amd64-minimal-20211101T222649Z.iso",
+        "version": "20211101"
       },
       {
         "arch": "amd64",
         "size": 645922816,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211031T170530Z/admincd-amd64-20211031T170530Z.iso",
-        "version": "20211031"
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211101T001702Z/admincd-amd64-20211101T001702Z.iso",
+        "version": "20211101"
+      },
+      {
+        "arch": "ppc",
+        "size": 371226624,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211101T013637Z/install-powerpc-minimal-20211101T013637Z.iso",
+        "version": "20211101"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 692414464,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211101T013637Z/install-ppc64le-minimal-20211101T013637Z.iso",
+        "version": "20211101"
+      },
+      {
+        "arch": "i386",
+        "size": 424673280,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211101T170530Z/install-x86-minimal-20211101T170530Z.iso",
+        "version": "20211101"
+      },
+      {
+        "arch": "i386",
+        "size": 590348288,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211101T170530Z/admincd-x86-20211101T170530Z.iso",
+        "version": "20211101"
       },
       {
         "arch": "arm64",
@@ -1208,40 +1244,10 @@
         "version": "20211031"
       },
       {
-        "arch": "ppc",
-        "size": 370612224,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211028T152133Z/install-powerpc-minimal-20211028T152133Z.iso",
-        "version": "20211028"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 690706432,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211028T152133Z/install-ppc64le-minimal-20211028T152133Z.iso",
-        "version": "20211028"
-      },
-      {
-        "arch": "i386",
-        "size": 423624704,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211025T170550Z/install-x86-minimal-20211025T170550Z.iso",
-        "version": "20211025"
-      },
-      {
-        "arch": "i386",
-        "size": 589299712,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211025T170550Z/admincd-x86-20211025T170550Z.iso",
-        "version": "20211025"
-      },
-      {
-        "arch": "amd64",
-        "size": 457179136,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211024T170536Z/install-amd64-minimal-20211024T170536Z.iso",
-        "version": "20211024"
-      },
-      {
-        "arch": "amd64",
-        "size": 457179136,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211024T170536Z/install-amd64-minimal-20211024T170536Z.iso",
-        "version": "20211024"
+        "arch": "arm64",
+        "size": 486082560,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211031T230635Z/install-arm64-minimal-20211031T230635Z.iso",
+        "version": "20211031"
       },
       {
         "arch": "sparc64",
@@ -1475,7 +1481,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9567,
+        "size": 9564,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -1939,13 +1945,13 @@
       },
       {
         "arch": "x86_64",
-        "size": 947716096,
+        "size": 947322880,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 964296704,
+        "size": 964952064,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -1957,25 +1963,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 661454848,
+        "size": 660865024,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 868220928,
+        "size": 867172352,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 895483904,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 911212544,
+        "size": 912261120,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2011,13 +2017,13 @@
       },
       {
         "arch": "x86_64",
-        "size": 947716096,
+        "size": 947322880,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 964296704,
+        "size": 964952064,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2029,25 +2035,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 661454848,
+        "size": 660865024,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 868220928,
+        "size": 867172352,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 895483904,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 911212544,
+        "size": 912261120,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -3074,7 +3080,7 @@
       {
         "arch": "amd64",
         "size": 331350016,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202111010442-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202111020442-amd64.iso",
         "version": "1.3"
       },
       {
