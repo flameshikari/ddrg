@@ -801,7 +801,7 @@
       {
         "arch": "x86_64",
         "size": 2373058560,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNjA1MjQ4Ng==/elementaryos-6.0-stable.20211005.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNjEzODg5Mg==/elementaryos-6.0-stable.20211005.iso",
         "version": "6.0"
       }
     ]
@@ -1196,6 +1196,18 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "ppc",
+        "size": 371191808,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211104T014952Z/install-powerpc-minimal-20211104T014952Z.iso",
+        "version": "20211104"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 692404224,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211104T014952Z/install-ppc64le-minimal-20211104T014952Z.iso",
+        "version": "20211104"
+      },
+      {
         "arch": "sparc64",
         "size": 276209664,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20211102T065132Z/install-sparc64-minimal-20211102T065132Z.iso",
@@ -1217,18 +1229,6 @@
         "arch": "amd64",
         "size": 645922816,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211101T222649Z/admincd-amd64-20211101T222649Z.iso",
-        "version": "20211101"
-      },
-      {
-        "arch": "ppc",
-        "size": 371226624,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211101T013637Z/install-powerpc-minimal-20211101T013637Z.iso",
-        "version": "20211101"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 692414464,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211101T013637Z/install-ppc64le-minimal-20211101T013637Z.iso",
         "version": "20211101"
       },
       {
@@ -1481,7 +1481,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9562,
+        "size": 9556,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2822,9 +2822,9 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 1176215552,
-        "url": "https://mirrors.edge.kernel.org/tails/stable/tails-amd64-4.23/tails-amd64-4.23.iso",
-        "version": "4.23"
+        "size": 1184440320,
+        "url": "https://mirrors.edge.kernel.org/tails/stable/tails-amd64-4.24/tails-amd64-4.24.iso",
+        "version": "4.24"
       }
     ]
   },
@@ -3086,7 +3086,7 @@
       {
         "arch": "amd64",
         "size": 331350016,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202111040442-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202111050442-amd64.iso",
         "version": "1.3"
       },
       {
