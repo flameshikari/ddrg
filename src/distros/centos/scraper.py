@@ -25,9 +25,12 @@ def init():
             iso_url = f"{path}/{filename['href']}"
             iso_arch = get_iso_arch(iso_url)
             iso_size = get_iso_size(iso_url)
-            iso_version = re.search(r"(\d{8})", iso_url).group(1) \
-                if "stream" in subpath \
-                else re.search(r"OS-(\d+(.\d+(.\d+)?)?)", iso_url).group(1)
+            try:
+                iso_version = re.search(r"(\d{8})", iso_url).group(1) \
+                    if "stream" in subpath \
+                    else re.search(r"OS-(\d+(.\d+(.\d+)?)?)", iso_url).group(1)
+            except:
+                pass
 
             array.append((iso_url, iso_arch, iso_size, iso_version))
 
