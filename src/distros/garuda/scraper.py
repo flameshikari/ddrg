@@ -7,7 +7,7 @@ def init():
     base_url = "https://garudalinux.org/downloads.html"
 
     html = bs(requests.get(base_url).text, "html.parser")
-    regex = re.compile("^.*sourceforge.*\.iso$")
+    regex = re.compile("^.*mirrors.fossho.st.*\.iso$")
 
     for target in html.find_all("a", {"href": regex}):
 
