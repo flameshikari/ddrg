@@ -4,7 +4,7 @@ from public import *  # noqa
 def init():
 
     array = []
-    base_url = "https://mirror.truenetwork.ru/backbox"
+    base_url = "https://backbox.mirror.garr.it"
 
     html = bs(requests.get(base_url).text, "html.parser")
 
