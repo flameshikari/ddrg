@@ -18,7 +18,7 @@ def init():
             iso_url = f"{base_url}/{filename['href']}"
             iso_arch = get_iso_arch(iso_url)
             iso_size = get_iso_size(iso_url)
-            iso_version = re.search(r"-(\d{4}.[A-Z0-9]+)-",iso_url).group(1)
+            iso_version = re.search(r"-(\d{4}.\w+)-",iso_url).group(1)
 
             array.append((iso_url, iso_arch, iso_size, iso_version))
 
