@@ -105,6 +105,109 @@
     ]
   },
   {
+    "id": "antix",
+    "name": "antiX Linux",
+    "url": "https://antixlinux.com",
+    "releases": [
+      {
+        "arch": "i386",
+        "size": 189792256,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 188743680,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 465567744,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 458227712,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 825229312,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 811597824,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 828375040,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1333788672,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1454374912,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 468713472,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 461373440,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 814743552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1339031552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1458569216,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-full.iso",
+        "version": "21"
+      }
+    ]
+  },
+  {
     "id": "arch",
     "name": "Arch Linux",
     "url": "https://archlinux.org",
@@ -238,7 +341,182 @@
     "id": "arcolinux",
     "name": "ArcoLinux",
     "url": "https://arcolinux.com",
-    "releases": []
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 2062495744,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-awesome-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2056695808,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-bspwm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2306633728,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-budgie-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2127343616,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-cinnamon-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "efi",
+        "size": 2103783424,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-cutefish-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2054762496,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-cwm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1993781248,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-dusk-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2054762496,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-dwm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2077257728,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-fvwm3-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2302947328,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-gnome-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2058629120,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-hlwm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2056695808,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-i3-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2108665856,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-icewm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2103783424,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-jwm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2140008448,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-leftwm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2108665856,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-lxqt-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2267295744,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-mate-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2064429056,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-openbox-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2413441024,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-plasma-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2056695808,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-qtile-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2054762496,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-spectrwm-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2225418240,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-ukui-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2029072384,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-xfce-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2196189184,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-xmonad-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2281893888,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-xtended-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1650798592,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxd-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2707763200,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxl-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2338779136,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxs-lts-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1977085952,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxs-v21.11.05-x86_64.iso",
+        "version": "21.11.05"
+      }
+    ]
   },
   {
     "id": "astra",
@@ -263,7 +541,26 @@
     "id": "backbox",
     "name": "BackBox",
     "url": "https://backbox.org",
-    "releases": []
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 2650800128,
+        "url": "https://backbox.mirror.garr.it/backbox-7-desktop-amd64.iso",
+        "version": "7"
+      },
+      {
+        "arch": "amd64",
+        "size": 2509209600,
+        "url": "https://backbox.mirror.garr.it/backbox-6-desktop-amd64.iso",
+        "version": "6"
+      },
+      {
+        "arch": "i386",
+        "size": 2523463680,
+        "url": "https://backbox.mirror.garr.it/backbox-6-desktop-i386.iso",
+        "version": "6"
+      }
+    ]
   },
   {
     "id": "blackarch",
@@ -287,6 +584,176 @@
         "size": 4655556608,
         "url": "https://mirror.yandex.ru/mirrors/blackarch/iso/blackarch-linux-slim-2021.09.01-x86_64.iso",
         "version": "2021.09.01"
+      }
+    ]
+  },
+  {
+    "id": "bunsenlabs",
+    "name": "BunsenLabs",
+    "url": "https://bunsenlabs.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 1309868032,
+        "url": "https://kelaino.bunsenlabs.org/ddl/lithium-3-amd64.hybrid.iso",
+        "version": "3"
+      },
+      {
+        "arch": "i386",
+        "size": 706740224,
+        "url": "https://kelaino.bunsenlabs.org/ddl/lithium-3-cd-i386.hybrid.iso",
+        "version": "3"
+      },
+      {
+        "arch": "amd64",
+        "size": 1303511040,
+        "url": "https://kelaino.bunsenlabs.org/ddl/lithium-2.1-amd64.hybrid.iso",
+        "version": "2.1"
+      },
+      {
+        "arch": "i386",
+        "size": 697303040,
+        "url": "https://kelaino.bunsenlabs.org/ddl/lithium-2.1-cd-i386.hybrid.iso",
+        "version": "2.1"
+      }
+    ]
+  },
+  {
+    "id": "centos",
+    "name": "CentOS",
+    "url": "https://centos.org",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 827326464,
+        "url": "https://mirror.yandex.ru/centos/8/isos/x86_64/CentOS-8.5.2111-x86_64-boot.iso",
+        "version": "8.5.2111"
+      },
+      {
+        "arch": "x86_64",
+        "size": 10794041344,
+        "url": "https://mirror.yandex.ru/centos/8/isos/x86_64/CentOS-8.5.2111-x86_64-dvd1.iso",
+        "version": "8.5.2111"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 789970944,
+        "url": "https://mirror.yandex.ru/centos/8/isos/ppc64le/CentOS-8.5.2111-ppc64le-boot.iso",
+        "version": "8.5.2111"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 9282007040,
+        "url": "https://mirror.yandex.ru/centos/8/isos/ppc64le/CentOS-8.5.2111-ppc64le-dvd1.iso",
+        "version": "8.5.2111"
+      },
+      {
+        "arch": "aarch64",
+        "size": 745474048,
+        "url": "https://mirror.yandex.ru/centos/8/isos/aarch64/CentOS-8.5.2111-aarch64-boot.iso",
+        "version": "8.5.2111"
+      },
+      {
+        "arch": "aarch64",
+        "size": 8215996416,
+        "url": "https://mirror.yandex.ru/centos/8/isos/aarch64/CentOS-8.5.2111-aarch64-dvd1.iso",
+        "version": "8.5.2111"
+      },
+      {
+        "arch": "x86_64",
+        "size": 4712300544,
+        "url": "https://mirror.yandex.ru/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso",
+        "version": "7"
+      },
+      {
+        "arch": "x86_64",
+        "size": 10200547328,
+        "url": "https://mirror.yandex.ru/centos/7/isos/x86_64/CentOS-7-x86_64-Everything-2009.iso",
+        "version": "7"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1020264448,
+        "url": "https://mirror.yandex.ru/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso",
+        "version": "7"
+      },
+      {
+        "arch": "x86_64",
+        "size": 602931200,
+        "url": "https://mirror.yandex.ru/centos/7/isos/x86_64/CentOS-7-x86_64-NetInstall-2009.iso",
+        "version": "7"
+      },
+      {
+        "arch": "x86_64",
+        "size": 827326464,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20211117-boot.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "x86_64",
+        "size": 10841227264,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20211117-dvd1.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "x86_64",
+        "size": 827326464,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "x86_64",
+        "size": 10841227264,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 789958656,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20211117-boot.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 9349023744,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20211117-dvd1.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 789958656,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 9349023744,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "aarch64",
+        "size": 745170944,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20211117-boot.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "aarch64",
+        "size": 8269721600,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20211117-dvd1.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "aarch64",
+        "size": 745170944,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
+        "version": "20211117"
+      },
+      {
+        "arch": "aarch64",
+        "size": 8269721600,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
+        "version": "20211117"
       }
     ]
   },
@@ -795,7 +1262,7 @@
       {
         "arch": "x86_64",
         "size": 2392113152,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNzQwMjM1OA==/elementaryos-6.0-stable.20211103.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNzQxNzc3MQ==/elementaryos-6.0-stable.20211103.iso",
         "version": "6.0"
       }
     ]
@@ -1124,6 +1591,85 @@
     ]
   },
   {
+    "id": "garuda",
+    "name": "Garuda",
+    "url": "https://garudalinux.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 2565087232,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/dr460nized/211028/garuda-dr460nized-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2460387328,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/211028/garuda-xfce-linux-lts-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2518478848,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/211028/garuda-lxqt-kwin-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2375421952,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/wayfire/211028/garuda-wayfire-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2399518720,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/sway/211028/garuda-sway-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2317836288,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/qtile/211028/garuda-qtile-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2456246272,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/i3/211028/garuda-i3-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2371739648,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/bspwm/211028/garuda-bspwm-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2622595072,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/mate/211028/garuda-mate-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 114,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/cinnamon/211028/garuda-cinnamon-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2400923648,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/211028/garuda-gnome-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
+        "size": 2016444416,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/211028/garuda-kde-barebones-linux-lts-211028.iso",
+        "version": "211028"
+      }
+    ]
+  },
+  {
     "id": "gentoo",
     "name": "Gentoo",
     "url": "https://gentoo.org",
@@ -1284,6 +1830,169 @@
     ]
   },
   {
+    "id": "kali",
+    "name": "Kali Linux",
+    "url": "https://kali.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 3359047680,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3a-installer-amd64.iso",
+        "version": "2021.3a"
+      },
+      {
+        "arch": "amd64",
+        "size": 486539264,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3a-installer-netinst-amd64.iso",
+        "version": "2021.3a"
+      },
+      {
+        "arch": "arm64",
+        "size": 416591872,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3a-installer-netinst-arm64.iso",
+        "version": "2021.3a"
+      },
+      {
+        "arch": "i386",
+        "size": 429916160,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3a-installer-netinst-i386.iso",
+        "version": "2021.3a"
+      },
+      {
+        "arch": "amd64",
+        "size": 4028575744,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3a-live-amd64.iso",
+        "version": "2021.3a"
+      },
+      {
+        "arch": "arm64",
+        "size": 2840856576,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3a-live-arm64.iso",
+        "version": "2021.3a"
+      },
+      {
+        "arch": "i386",
+        "size": 3326685184,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3a-live-i386.iso",
+        "version": "2021.3a"
+      },
+      {
+        "arch": "amd64",
+        "size": 4893106176,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-installer-amd64.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "arm64",
+        "size": 3590631424,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-installer-arm64.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "i386",
+        "size": 3825205248,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-installer-i386.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 398458880,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-installer-netinst-amd64.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "arm64",
+        "size": 332705792,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-installer-netinst-arm64.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "i386",
+        "size": 340787200,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-installer-netinst-i386.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 4027592704,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-live-amd64.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "arm64",
+        "size": 2838767616,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-live-arm64.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "i386",
+        "size": 3326685184,
+        "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.3-live-i386.iso",
+        "version": "2021.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 5202247680,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-installer-amd64.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "arm64",
+        "size": 3859066880,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-installer-arm64.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "i386",
+        "size": 4001923072,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-installer-i386.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "amd64",
+        "size": 488636416,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-installer-netinst-amd64.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "arm64",
+        "size": 407154688,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-installer-netinst-arm64.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "i386",
+        "size": 409993216,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-installer-netinst-i386.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "amd64",
+        "size": 4396650496,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-live-amd64.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "arm64",
+        "size": 3132547072,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-live-arm64.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "amd64",
+        "size": 11539994624,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-live-everything-amd64.iso",
+        "version": "2021-W46"
+      },
+      {
+        "arch": "i386",
+        "size": 3487313920,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W46-live-i386.iso",
+        "version": "2021-W46"
+      }
+    ]
+  },
+  {
     "id": "kaos",
     "name": "KaOS",
     "url": "https://kaosx.us",
@@ -1414,7 +2123,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9565,
+        "size": 9569,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -1521,6 +2230,121 @@
         "size": 4499220480,
         "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-x86_64/Mageia-8-x86_64.iso",
         "version": "8"
+      }
+    ]
+  },
+  {
+    "id": "manjaro",
+    "name": "Manjaro",
+    "url": "https://manjaro.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 3521642496,
+        "url": "https://download.manjaro.org/gnome/21.2pre1/manjaro-gnome-21.2pre1-211119-linux515.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 2979536896,
+        "url": "https://download.manjaro.org/gnome/21.2pre1/manjaro-gnome-21.2pre1-minimal-211119-linux515.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 2989283328,
+        "url": "https://download.manjaro.org/gnome/21.2pre1/manjaro-gnome-21.2pre1-minimal-211119-linux54.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 3885817856,
+        "url": "https://download.manjaro.org/kde/21.2pre1/manjaro-kde-21.2pre1-211119-linux515.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 3183362048,
+        "url": "https://download.manjaro.org/kde/21.2pre1/manjaro-kde-21.2pre1-minimal-211119-linux515.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 3193096192,
+        "url": "https://download.manjaro.org/kde/21.2pre1/manjaro-kde-21.2pre1-minimal-211119-linux54.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 3556544512,
+        "url": "https://download.manjaro.org/xfce/21.2pre1/manjaro-xfce-21.2pre1-211119-linux515.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 2708332544,
+        "url": "https://download.manjaro.org/xfce/21.2pre1/manjaro-xfce-21.2pre1-minimal-211119-linux515.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 2718066688,
+        "url": "https://download.manjaro.org/xfce/21.2pre1/manjaro-xfce-21.2pre1-minimal-211119-linux54.iso",
+        "version": "21.2pre1"
+      },
+      {
+        "arch": "amd64",
+        "size": 3097077760,
+        "url": "https://download.manjaro.org/cinnamon/21.1.2/manjaro-cinnamon-21.1.2-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2067105792,
+        "url": "https://download.manjaro.org/cinnamon/21.1.2/manjaro-cinnamon-21.1.2-minimal-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 3485829120,
+        "url": "https://download.manjaro.org/deepin/21.1.2/manjaro-deepin-21.1.2-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2572531712,
+        "url": "https://download.manjaro.org/deepin/21.1.2/manjaro-deepin-21.1.2-minimal-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2969044992,
+        "url": "https://download.manjaro.org/i3/21.1.2/manjaro-i3-21.1.2-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2203774976,
+        "url": "https://download.manjaro.org/i3/21.1.2/manjaro-i3-21.1.2-minimal-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 3159799808,
+        "url": "https://download.manjaro.org/mate/21.1.2/manjaro-mate-21.1.2-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2343467008,
+        "url": "https://download.manjaro.org/mate/21.1.2/manjaro-mate-21.1.2-minimal-210907-linux513.iso",
+        "version": "21.1.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2343467008,
+        "url": "https://download.manjaro.org/mate/21.1.2/manjaro-mate-21.1.2-minimal-210907-linux513.iso",
+        "version": "21.1.2"
       }
     ]
   },
@@ -2151,7 +2975,7 @@
     "releases": [
       {
         "arch": "i386",
-        "size": 1576009728,
+        "size": 451,
         "url": "https://github.com/peppermintos/Peppermint-10/releases/download/10_20191210/Peppermint-10-20191210-i386.iso",
         "version": "10-20191210"
       },
@@ -2639,6 +3463,115 @@
     ]
   },
   {
+    "id": "sparky",
+    "name": "SparkyLinux",
+    "url": "https://sparkylinux.org",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 1617952768,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-6.1-x86_64-lxqt.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1476395008,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-6.1-x86_64-xfce.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1860173824,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-6.1-x86_64-kde.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1234173952,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-x86_64-minimalgui.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "x86_64",
+        "size": 699400192,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-x86_64-minimalcli.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "i686",
+        "size": 1199570944,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-i686-minimalgui.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "i686",
+        "size": 682622976,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-i686-minimalcli.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1741684736,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-2021.10-x86_64-lxqt.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1876951040,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/mate/sparkylinux-2021.10-x86_64-mate.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1629487104,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-2021.10-x86_64-xfce.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2012217344,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-2021.10-x86_64-kde.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1294991360,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-2021.10-x86_64-minimalgui.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 821035008,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-2021.10-x86_64-minimalcli.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 3394240512,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/gameover/sparkylinux-2021.10-x86_64-gameover.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 3116367872,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/multimedia/sparkylinux-2021.10-x86_64-multimedia.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1608515584,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/rescue/sparkylinux-2021.10-x86_64-rescue.iso",
+        "version": "2021.10"
+      },
+      {
+        "arch": "i686",
+        "size": 1375731712,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/rescue/sparkylinux-2021.03-i686-rescue.iso",
+        "version": "2021.03"
+      }
+    ]
+  },
+  {
     "id": "steamos",
     "name": "SteamOS",
     "url": "https://store.steampowered.com/steamos",
@@ -2658,9 +3591,9 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 789577728,
-        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/8.05/systemrescue-8.05-amd64.iso",
-        "version": "8.05"
+        "size": 780140544,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/8.06/systemrescue-8.06-amd64.iso",
+        "version": "8.06"
       },
       {
         "arch": "i686",
