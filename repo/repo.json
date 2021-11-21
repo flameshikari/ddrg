@@ -1262,7 +1262,7 @@
       {
         "arch": "x86_64",
         "size": 2392113152,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNzQxNzc3MQ==/elementaryos-6.0-stable.20211103.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNzQ1NjUzMw==/elementaryos-6.0-stable.20211103.iso",
         "version": "6.0"
       }
     ]
@@ -2123,7 +2123,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9569,
+        "size": 9563,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2975,7 +2975,7 @@
     "releases": [
       {
         "arch": "i386",
-        "size": 451,
+        "size": 1576009728,
         "url": "https://github.com/peppermintos/Peppermint-10/releases/download/10_20191210/Peppermint-10-20191210-i386.iso",
         "version": "10-20191210"
       },
@@ -3549,12 +3549,6 @@
         "arch": "x86_64",
         "size": 3394240512,
         "url": "http://sourceforge.net/projects/sparkylinux/files/gameover/sparkylinux-2021.10-x86_64-gameover.iso",
-        "version": "2021.10"
-      },
-      {
-        "arch": "x86_64",
-        "size": 3116367872,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/multimedia/sparkylinux-2021.10-x86_64-multimedia.iso",
         "version": "2021.10"
       },
       {
