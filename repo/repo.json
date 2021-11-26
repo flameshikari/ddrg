@@ -295,6 +295,12 @@
       {
         "arch": "x86_64",
         "size": 1129656320,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-2511-x86_64.iso",
+        "version": "2511"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1129656320,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-2111-x86_64.iso",
         "version": "2111"
       },
@@ -303,18 +309,6 @@
         "size": 513802240,
         "url": "https://sourceforge.net/projects/archbang/files/Vintage-ArchBang/ArchBang-2012-04-30-i686.iso",
         "version": "2012-04-30"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1128607744,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-1911-x86_64.iso",
-        "version": "1911"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1128607744,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-1411-x86_64.iso",
-        "version": "1411"
       },
       {
         "arch": "i686",
@@ -1268,7 +1262,7 @@
       {
         "arch": "x86_64",
         "size": 2392113152,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNzgwMjEzOQ==/elementaryos-6.0-stable.20211103.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzNzg4ODU0OA==/elementaryos-6.0-stable.20211103.iso",
         "version": "6.0"
       }
     ]
@@ -1693,6 +1687,18 @@
         "version": "20211124"
       },
       {
+        "arch": "i386",
+        "size": 424673280,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211124T214046Z/install-x86-minimal-20211124T214046Z.iso",
+        "version": "20211124"
+      },
+      {
+        "arch": "i386",
+        "size": 591396864,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211124T214046Z/admincd-x86-20211124T214046Z.iso",
+        "version": "20211124"
+      },
+      {
         "arch": "sparc64",
         "size": 276264960,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20211123T075136Z/install-sparc64-minimal-20211123T075136Z.iso",
@@ -1727,18 +1733,6 @@
         "size": 486189056,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211121T235130Z/install-arm64-minimal-20211121T235130Z.iso",
         "version": "20211121"
-      },
-      {
-        "arch": "i386",
-        "size": 424673280,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211115T170540Z/install-x86-minimal-20211115T170540Z.iso",
-        "version": "20211115"
-      },
-      {
-        "arch": "i386",
-        "size": 591396864,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211115T170540Z/admincd-x86-20211115T170540Z.iso",
-        "version": "20211115"
       },
       {
         "arch": "alpha",
@@ -2129,7 +2123,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9562,
+        "size": 9566,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2423,19 +2417,19 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 1984790528,
+        "size": 1990639616,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 1495203840,
+        "size": 1501102080,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.05"
       },
       {
         "arch": "x86_64",
-        "size": 721420288,
+        "size": 726663168,
         "url": "https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.05"
       },
@@ -2539,7 +2533,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4675600384,
+        "size": 4677697536,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2551,7 +2545,7 @@
       },
       {
         "arch": "i586",
-        "size": 4558159872,
+        "size": 4560257024,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2599,25 +2593,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 941686784,
+        "size": 941948928,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 957743104,
+        "size": 957939712,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 975306752,
+        "size": 974782464,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 652476416,
+        "size": 652607488,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2629,13 +2623,13 @@
       },
       {
         "arch": "i686",
-        "size": 905969664,
+        "size": 907018240,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 922746880,
+        "size": 923795456,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2671,25 +2665,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 941686784,
+        "size": 941948928,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 957743104,
+        "size": 957939712,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 975306752,
+        "size": 974782464,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 652476416,
+        "size": 652607488,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2701,13 +2695,13 @@
       },
       {
         "arch": "i686",
-        "size": 905969664,
+        "size": 907018240,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 922746880,
+        "size": 923795456,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
