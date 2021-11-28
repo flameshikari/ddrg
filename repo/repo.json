@@ -295,6 +295,12 @@
       {
         "arch": "x86_64",
         "size": 1129656320,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-2711-x86_64.iso",
+        "version": "2711"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1129656320,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-2511-x86_64.iso",
         "version": "2511"
       },
@@ -1262,7 +1268,7 @@
       {
         "arch": "x86_64",
         "size": 2392113152,
-        "url": "https://fra1.dl.elementary.io/download/MTYzNzk3NTE5NQ==/elementaryos-6.0-stable.20211103.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzODA2MTM1Mw==/elementaryos-6.0-stable.20211103.iso",
         "version": "6.0"
       }
     ]
@@ -1603,6 +1609,12 @@
       },
       {
         "arch": "amd64",
+        "size": 2400923648,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/211028/garuda-gnome-linux-zen-211028.iso",
+        "version": "211028"
+      },
+      {
+        "arch": "amd64",
         "size": 2460387328,
         "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/211028/garuda-xfce-linux-lts-211028.iso",
         "version": "211028"
@@ -1651,14 +1663,8 @@
       },
       {
         "arch": "amd64",
-        "size": 114,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/cinnamon/211028/garuda-cinnamon-linux-zen-211028.iso",
-        "version": "211028"
-      },
-      {
-        "arch": "amd64",
-        "size": 2400923648,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/211028/garuda-gnome-linux-zen-211028.iso",
+        "size": 2457718784,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/cinnamon/211028/garuda-cinnamon-linux-zen-211028.iso",
         "version": "211028"
       },
       {
@@ -3826,7 +3832,7 @@
       {
         "arch": "amd64",
         "size": 473956352,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202111260317-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202111271642-amd64.iso",
         "version": "1.4"
       },
       {
@@ -3880,7 +3886,7 @@
       {
         "arch": "amd64",
         "size": 338690048,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202111261857-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202111270443-amd64.iso",
         "version": "1.3"
       },
       {
