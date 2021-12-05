@@ -224,6 +224,12 @@
         "size": 815792128,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang32/archbang32-beta-0509-i686.iso",
         "version": "0509"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1140142080,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-0412-x86_64.iso",
+        "version": "0412"
       }
     ]
   },
@@ -1171,7 +1177,7 @@
       {
         "arch": "x86_64",
         "size": 2430320640,
-        "url": "https://fra1.dl.elementary.io/download/MTYzODU3OTY5Mw==/elementaryos-6.0-stable.20211130.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzODY2NjA5Ng==/elementaryos-6.0-stable.20211130.iso",
         "version": "6.0"
       }
     ]
@@ -2019,7 +2025,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9579,
+        "size": 9580,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -3722,7 +3728,7 @@
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112030318-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112041824-amd64.iso",
         "version": "1.4"
       },
       {
@@ -3776,7 +3782,7 @@
       {
         "arch": "amd64",
         "size": 338690048,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112030443-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112041824-amd64.iso",
         "version": "1.3"
       },
       {
