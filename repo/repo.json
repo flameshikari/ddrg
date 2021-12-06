@@ -105,6 +105,109 @@
     ]
   },
   {
+    "id": "antix",
+    "name": "antiX Linux",
+    "url": "https://antixlinux.com",
+    "releases": [
+      {
+        "arch": "i386",
+        "size": 189792256,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 188743680,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 465567744,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 458227712,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 825229312,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 811597824,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 828375040,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1333788672,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1454374912,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 468713472,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 461373440,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 814743552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1339031552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1458569216,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-full.iso",
+        "version": "21"
+      }
+    ]
+  },
+  {
     "id": "arch",
     "name": "Arch Linux",
     "url": "https://archlinux.org",
@@ -195,24 +298,6 @@
     "name": "ArchBang",
     "url": "https://archbang.org",
     "releases": [
-      {
-        "arch": "x86_64",
-        "size": 1129656320,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-2711-x86_64.iso",
-        "version": "2711"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1129656320,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-2511-x86_64.iso",
-        "version": "2511"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1129656320,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-2111-x86_64.iso",
-        "version": "2111"
-      },
       {
         "arch": "i686",
         "size": 513802240,
@@ -1177,7 +1262,7 @@
       {
         "arch": "x86_64",
         "size": 2430320640,
-        "url": "https://fra1.dl.elementary.io/download/MTYzODY2NjA5Ng==/elementaryos-6.0-stable.20211130.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzODc1MjUyOQ==/elementaryos-6.0-stable.20211130.iso",
         "version": "6.0"
       }
     ]
@@ -1834,63 +1919,63 @@
       },
       {
         "arch": "amd64",
-        "size": 5207408640,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-installer-amd64.iso",
-        "version": "2021-W48"
+        "size": 3633545216,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-installer-amd64.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "arm64",
-        "size": 3862835200,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-installer-arm64.iso",
-        "version": "2021-W48"
+        "size": 2807869440,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-installer-arm64.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "i386",
-        "size": 4005838848,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-installer-i386.iso",
-        "version": "2021-W48"
+        "size": 2891120640,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-installer-i386.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "amd64",
         "size": 488636416,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-installer-netinst-amd64.iso",
-        "version": "2021-W48"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-installer-netinst-amd64.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "arm64",
         "size": 407154688,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-installer-netinst-arm64.iso",
-        "version": "2021-W48"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-installer-netinst-arm64.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "i386",
         "size": 409993216,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-installer-netinst-i386.iso",
-        "version": "2021-W48"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-installer-netinst-i386.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "amd64",
-        "size": 4396650496,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-live-amd64.iso",
-        "version": "2021-W48"
+        "size": 4361039872,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-live-amd64.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "arm64",
-        "size": 3133104128,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-live-arm64.iso",
-        "version": "2021-W48"
+        "size": 3098165248,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-live-arm64.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "amd64",
-        "size": 11595479040,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-live-everything-amd64.iso",
-        "version": "2021-W48"
+        "size": 11589085184,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-live-everything-amd64.iso",
+        "version": "2021-W49"
       },
       {
         "arch": "i386",
-        "size": 3487313920,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W48-live-i386.iso",
-        "version": "2021-W48"
+        "size": 3453792256,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W49-live-i386.iso",
+        "version": "2021-W49"
       }
     ]
   },
@@ -1914,6 +1999,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1987051520,
+        "url": "https://files.kde.org/neon/images/unstable/20211205-0329/neon-unstable-20211205-0329.iso",
+        "version": "20211205"
+      },
+      {
+        "arch": "amd64",
         "size": 2009071616,
         "url": "https://files.kde.org/neon/images/user/20211202-0948/neon-user-20211202-0948.iso",
         "version": "20211202"
@@ -1923,12 +2014,6 @@
         "size": 1980760064,
         "url": "https://files.kde.org/neon/images/testing/20211130-1820/neon-testing-20211130-1820.iso",
         "version": "20211130"
-      },
-      {
-        "arch": "amd64",
-        "size": 1990197248,
-        "url": "https://files.kde.org/neon/images/unstable/20211129-1709/neon-unstable-20211129-1709.iso",
-        "version": "20211129"
       },
       {
         "arch": "amd64",
@@ -2025,7 +2110,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9580,
+        "size": 9582,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2331,7 +2416,7 @@
       },
       {
         "arch": "x86_64",
-        "size": 803209216,
+        "size": 802160640,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
@@ -3309,31 +3394,31 @@
       },
       {
         "arch": "x86_64",
-        "size": 55226368,
+        "size": 55222272,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 54734848,
+        "size": 54726656,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 62871552,
+        "size": 62867456,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-loram.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 37750784,
+        "size": 37756928,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 56109056,
+        "size": 56072192,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
       }
@@ -3782,7 +3867,7 @@
       {
         "arch": "amd64",
         "size": 338690048,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112041824-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112050443-amd64.iso",
         "version": "1.3"
       },
       {
