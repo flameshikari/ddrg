@@ -1243,7 +1243,7 @@
       {
         "arch": "x86_64",
         "size": 2430320640,
-        "url": "https://fra1.dl.elementary.io/download/MTYzODkyNTM0MQ==/elementaryos-6.0-stable.20211130.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzOTAxMTczOA==/elementaryos-6.0-stable.20211130.iso",
         "version": "6.0"
       }
     ]
@@ -2049,7 +2049,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9586,
+        "size": 9582,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2355,7 +2355,7 @@
       },
       {
         "arch": "x86_64",
-        "size": 802160640,
+        "size": 803209216,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
@@ -2519,31 +2519,31 @@
       },
       {
         "arch": "x86_64",
-        "size": 941424640,
+        "size": 941948928,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 960364544,
+        "size": 960823296,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 973996032,
+        "size": 973471744,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 654573568,
+        "size": 654901248,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 881852416,
+        "size": 880803840,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2591,31 +2591,31 @@
       },
       {
         "arch": "x86_64",
-        "size": 941424640,
+        "size": 941948928,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 960364544,
+        "size": 960823296,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 973996032,
+        "size": 973471744,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 654573568,
+        "size": 654901248,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 881852416,
+        "size": 880803840,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -3296,31 +3296,6 @@
     ]
   },
   {
-    "id": "slax",
-    "name": "Slax",
-    "url": "https://slax.org",
-    "releases": [
-      {
-        "arch": "amd64",
-        "size": 277708800,
-        "url": "https://ftp.sh.cvut.cz/slax/Slax-9.x/slax-64bit-9.11.0.iso",
-        "version": "9.11.0"
-      },
-      {
-        "arch": "i386",
-        "size": 283435008,
-        "url": "https://ftp.sh.cvut.cz/slax/Slax-9.x/slax-32bit-9.11.0.iso",
-        "version": "9.11.0"
-      },
-      {
-        "arch": "ipxe",
-        "size": 929792,
-        "url": "https://ftp.sh.cvut.cz/slax/Slax-9.x/slax-ipxe.iso",
-        "version": "9.11.0"
-      }
-    ]
-  },
-  {
     "id": "slitaz",
     "name": "SliTaz",
     "url": "http://slitaz.org",
@@ -3649,7 +3624,7 @@
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112070546-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112081536-amd64.iso",
         "version": "1.4"
       },
       {
@@ -3703,7 +3678,7 @@
       {
         "arch": "amd64",
         "size": 338690048,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112060443-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112080938-amd64.iso",
         "version": "1.3"
       },
       {
