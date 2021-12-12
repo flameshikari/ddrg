@@ -299,12 +299,6 @@
     "url": "https://archbang.org",
     "releases": [
       {
-        "arch": "i686",
-        "size": 513802240,
-        "url": "https://sourceforge.net/projects/archbang/files/Vintage-ArchBang/ArchBang-2012-04-30-i686.iso",
-        "version": "2012-04-30"
-      },
-      {
         "arch": "x86_64",
         "size": 1150627840,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-1012-x86_64.iso",
@@ -315,12 +309,6 @@
         "size": 815792128,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang32/archbang32-beta-0509-i686.iso",
         "version": "0509"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1140142080,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-0412-x86_64.iso",
-        "version": "0412"
       }
     ]
   },
@@ -1249,7 +1237,7 @@
       {
         "arch": "x86_64",
         "size": 2430320640,
-        "url": "https://fra1.dl.elementary.io/download/MTYzOTE4NDU0NA==/elementaryos-6.0-stable.20211130.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTYzOTI3MDk2Mg==/elementaryos-6.0-stable.20211130.iso",
         "version": "6.0"
       }
     ]
@@ -2055,7 +2043,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9583,
+        "size": 9582,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2172,57 +2160,57 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 3136585728,
-        "url": "https://download.manjaro.org/gnome/21.1.6/manjaro-gnome-21.1.6-211017-linux513.iso",
-        "version": "21.1.6"
+        "size": 3510140928,
+        "url": "https://download.manjaro.org/gnome/21.2rc1/manjaro-gnome-21.2rc1-211211-linux515.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 2592788480,
-        "url": "https://download.manjaro.org/gnome/21.1.6/manjaro-gnome-21.1.6-minimal-211017-linux513.iso",
-        "version": "21.1.6"
+        "size": 2967457792,
+        "url": "https://download.manjaro.org/gnome/21.2rc1/manjaro-gnome-21.2rc1-minimal-211211-linux515.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 2622812160,
-        "url": "https://download.manjaro.org/gnome/21.1.6/manjaro-gnome-21.1.6-minimal-211017-linux54.iso",
-        "version": "21.1.6"
+        "size": 2917253120,
+        "url": "https://download.manjaro.org/gnome/21.2rc1/manjaro-gnome-21.2rc1-minimal-211211-linux510.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 3479134208,
-        "url": "https://download.manjaro.org/kde/21.1.6/manjaro-kde-21.1.6-211017-linux513.iso",
-        "version": "21.1.6"
+        "size": 3829334016,
+        "url": "https://download.manjaro.org/kde/21.2rc1/manjaro-kde-21.2rc1-211211-linux515.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 2768461824,
-        "url": "https://download.manjaro.org/kde/21.1.6/manjaro-kde-21.1.6-minimal-211017-linux513.iso",
-        "version": "21.1.6"
+        "size": 3159904256,
+        "url": "https://download.manjaro.org/kde/21.2rc1/manjaro-kde-21.2rc1-minimal-211211-linux515.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 2798473216,
-        "url": "https://download.manjaro.org/kde/21.1.6/manjaro-kde-21.1.6-minimal-211017-linux54.iso",
-        "version": "21.1.6"
+        "size": 3109699584,
+        "url": "https://download.manjaro.org/kde/21.2rc1/manjaro-kde-21.2rc1-minimal-211211-linux510.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 3148996608,
-        "url": "https://download.manjaro.org/xfce/21.1.6/manjaro-xfce-21.1.6-211017-linux513.iso",
-        "version": "21.1.6"
+        "size": 3543769088,
+        "url": "https://download.manjaro.org/xfce/21.2rc1/manjaro-xfce-21.2rc1-211210-linux515.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 2349264896,
-        "url": "https://download.manjaro.org/xfce/21.1.6/manjaro-xfce-21.1.6-minimal-211017-linux513.iso",
-        "version": "21.1.6"
+        "size": 2695610368,
+        "url": "https://download.manjaro.org/xfce/21.2rc1/manjaro-xfce-21.2rc1-minimal-211210-linux515.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
-        "size": 2379280384,
-        "url": "https://download.manjaro.org/xfce/21.1.6/manjaro-xfce-21.1.6-minimal-211017-linux54.iso",
-        "version": "21.1.6"
+        "size": 2645405696,
+        "url": "https://download.manjaro.org/xfce/21.2rc1/manjaro-xfce-21.2rc1-minimal-211210-linux510.iso",
+        "version": "21.2rc1"
       },
       {
         "arch": "amd64",
@@ -3758,7 +3746,7 @@
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112102152-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112110918-amd64.iso",
         "version": "1.4"
       },
       {
@@ -3812,7 +3800,7 @@
       {
         "arch": "amd64",
         "size": 338690048,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112100444-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/equuleus/vyos-1.3-beta-202112110443-amd64.iso",
         "version": "1.3"
       },
       {
