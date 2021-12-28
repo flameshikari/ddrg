@@ -105,6 +105,109 @@
     ]
   },
   {
+    "id": "antix",
+    "name": "antiX Linux",
+    "url": "https://antixlinux.com",
+    "releases": [
+      {
+        "arch": "i386",
+        "size": 189792256,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 188743680,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 465567744,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 458227712,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 825229312,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 811597824,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 828375040,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1333788672,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1454374912,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 468713472,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 461373440,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 814743552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1339031552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1458569216,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-full.iso",
+        "version": "21"
+      }
+    ]
+  },
+  {
     "id": "arch",
     "name": "Arch Linux",
     "url": "https://archlinux.org",
@@ -1127,7 +1230,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MDU2NjkwMA==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MDY1MzM1MA==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1527,46 +1630,46 @@
     "url": "https://gentoo.org",
     "releases": [
       {
-        "arch": "amd64",
-        "size": 459276288,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211226T170559Z/install-amd64-minimal-20211226T170559Z.iso",
-        "version": "20211226"
-      },
-      {
-        "arch": "amd64",
-        "size": 459276288,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211226T170559Z/install-amd64-minimal-20211226T170559Z.iso",
-        "version": "20211226"
-      },
-      {
         "arch": "i386",
-        "size": 422576128,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211220T170558Z/install-x86-minimal-20211220T170558Z.iso",
-        "version": "20211220"
+        "size": 425721856,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211227T170551Z/install-x86-minimal-20211227T170551Z.iso",
+        "version": "20211227"
       },
       {
         "arch": "i386",
         "size": 615514112,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211220T170558Z/admincd-x86-20211220T170558Z.iso",
-        "version": "20211220"
-      },
-      {
-        "arch": "arm64",
-        "size": 484626432,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211219T233639Z/install-arm64-minimal-20211219T233639Z.iso",
-        "version": "20211219"
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211227T170551Z/admincd-x86-20211227T170551Z.iso",
+        "version": "20211227"
       },
       {
         "arch": "amd64",
-        "size": 672137216,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211219T170551Z/admincd-amd64-20211219T170551Z.iso",
-        "version": "20211219"
+        "size": 459276288,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211226T170559Z/install-amd64-minimal-20211226T170559Z.iso",
+        "version": "20211226"
       },
       {
         "arch": "arm64",
-        "size": 484626432,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211219T233639Z/install-arm64-minimal-20211219T233639Z.iso",
-        "version": "20211219"
+        "size": 490086400,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211226T235150Z/install-arm64-minimal-20211226T235150Z.iso",
+        "version": "20211226"
+      },
+      {
+        "arch": "amd64",
+        "size": 459276288,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211226T170559Z/install-amd64-minimal-20211226T170559Z.iso",
+        "version": "20211226"
+      },
+      {
+        "arch": "amd64",
+        "size": 673185792,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20211226T170559Z/admincd-amd64-20211226T170559Z.iso",
+        "version": "20211226"
+      },
+      {
+        "arch": "arm64",
+        "size": 490086400,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20211226T235150Z/install-arm64-minimal-20211226T235150Z.iso",
+        "version": "20211226"
       },
       {
         "arch": "ppc",
@@ -1822,6 +1925,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 2606759936,
+        "url": "https://files.kde.org/neon/images/developer/20211227-1846/neon-developer-20211227-1846.iso",
+        "version": "20211227"
+      },
+      {
+        "arch": "amd64",
         "size": 1987051520,
         "url": "https://files.kde.org/neon/images/unstable/20211226-0328/neon-unstable-20211226-0328.iso",
         "version": "20211226"
@@ -1837,12 +1946,6 @@
         "size": 1981808640,
         "url": "https://files.kde.org/neon/images/testing/20211221-1822/neon-testing-20211221-1822.iso",
         "version": "20211221"
-      },
-      {
-        "arch": "amd64",
-        "size": 2606759936,
-        "url": "https://files.kde.org/neon/images/developer/20211220-1905/neon-developer-20211220-1905.iso",
-        "version": "20211220"
       }
     ]
   },
@@ -1933,7 +2036,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9585,
+        "size": 9581,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2343,7 +2446,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4699717632,
+        "size": 4698669056,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2403,31 +2506,31 @@
       },
       {
         "arch": "x86_64",
-        "size": 965410816,
+        "size": 966066176,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 985399296,
+        "size": 985137152,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 998899712,
+        "size": 999096320,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 672661504,
+        "size": 673316864,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 901775360,
+        "size": 902823936,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2439,13 +2542,13 @@
       },
       {
         "arch": "i686",
-        "size": 942669824,
+        "size": 941621248,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 613416960,
+        "size": 614465536,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2475,31 +2578,31 @@
       },
       {
         "arch": "x86_64",
-        "size": 965410816,
+        "size": 966066176,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 985399296,
+        "size": 985137152,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 998899712,
+        "size": 999096320,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 672661504,
+        "size": 673316864,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 901775360,
+        "size": 902823936,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2511,13 +2614,13 @@
       },
       {
         "arch": "i686",
-        "size": 942669824,
+        "size": 941621248,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 613416960,
+        "size": 614465536,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -3623,7 +3726,7 @@
       {
         "arch": "amd64",
         "size": 458227712,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112261734-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112270317-amd64.iso",
         "version": "1.4"
       },
       {
