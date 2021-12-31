@@ -214,15 +214,15 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 239075328,
-        "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.20-06.03-latest-x86_64.iso",
-        "version": "2021.12.20"
+        "size": 716177408,
+        "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.30-06.03-x86_64.iso",
+        "version": "2021.12.30"
       },
       {
         "arch": "x86_64",
-        "size": 714080256,
-        "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.20-06.03-x86_64.iso",
-        "version": "2021.12.20"
+        "size": 241172480,
+        "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.30-06.04-latest-x86_64.iso",
+        "version": "2021.12.30"
       },
       {
         "arch": "x86_64",
@@ -300,9 +300,9 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 1151676416,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-winter-beta-2912-x86_64.iso",
-        "version": "2912"
+        "size": 1150627840,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-winter-rc-3012-x86_64.iso",
+        "version": "3012"
       },
       {
         "arch": "x86_64",
@@ -1230,7 +1230,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MDgyNjEzMQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MDkxMjUzNQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1925,6 +1925,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 2012217344,
+        "url": "https://files.kde.org/neon/images/user/20211230-0945/neon-user-20211230-0945.iso",
+        "version": "20211230"
+      },
+      {
+        "arch": "amd64",
         "size": 1981808640,
         "url": "https://files.kde.org/neon/images/testing/20211228-1820/neon-testing-20211228-1820.iso",
         "version": "20211228"
@@ -1940,12 +1946,6 @@
         "size": 1987051520,
         "url": "https://files.kde.org/neon/images/unstable/20211226-0328/neon-unstable-20211226-0328.iso",
         "version": "20211226"
-      },
-      {
-        "arch": "amd64",
-        "size": 2010120192,
-        "url": "https://files.kde.org/neon/images/user/20211223-0945/neon-user-20211223-0945.iso",
-        "version": "20211223"
       }
     ]
   },
@@ -2036,7 +2036,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9584,
+        "size": 9577,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -3371,7 +3371,7 @@
       {
         "arch": "amd64",
         "size": 458227712,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112290317-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112300317-amd64.iso",
         "version": "1.4"
       },
       {
