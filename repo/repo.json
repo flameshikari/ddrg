@@ -344,177 +344,183 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2062495744,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-awesome-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2133372928,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-awesome-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2056695808,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-bspwm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2123460608,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-bspwm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2306633728,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-budgie-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2396794880,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-budgie-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2127343616,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-cinnamon-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2187669504,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-cinnamon-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "efi",
-        "size": 2103783424,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-cutefish-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2181574656,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-cutefish-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2054762496,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-cwm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2123460608,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-cwm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 1993781248,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-dusk-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2597335040,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-deepin-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2054762496,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-dwm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2121478144,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-dwm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2077257728,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-fvwm3-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2144120832,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-fvwm3-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2302947328,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-gnome-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2392305664,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-gnome-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2058629120,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-hlwm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2127425536,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-hlwm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2056695808,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-i3-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2123460608,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-i3-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2108665856,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-icewm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2177511424,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-icewm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2103783424,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-jwm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2173448192,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-jwm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2140008448,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-leftwm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2225516544,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-leftwm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2108665856,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-lxqt-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2198302720,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-lxqt-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2267295744,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-mate-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2358947840,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-mate-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2064429056,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-openbox-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2146119680,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-openbox-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2413441024,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-plasma-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2492379136,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-plasma-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2056695808,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-qtile-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2125443072,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-qtile-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2054762496,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-spectrwm-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2123460608,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-spectrwm-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2225418240,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-ukui-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2327769088,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-ukui-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2029072384,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-xfce-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2123460608,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-wmderland-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2196189184,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-xmonad-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2112696320,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-xfce-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2281893888,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxb-xtended-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2269442048,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-xmonad-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 1650798592,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxd-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2367795200,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxb-xtended-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2707763200,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxl-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 1731506176,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxd-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 2338779136,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxs-lts-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2786406400,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxl-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       },
       {
         "arch": "x86_64",
-        "size": 1977085952,
-        "url": "https://ant.seedhost.eu/arcolinux/iso/v21.11.05/./arcolinuxs-v21.11.05-x86_64.iso",
-        "version": "21.11.05"
+        "size": 2527408128,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxs-lts-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2056810496,
+        "url": "https://ant.seedhost.eu/arcolinux/iso/v22.01.10/./arcolinuxs-v22.01.10-x86_64.iso",
+        "version": "22.01.10"
       }
     ]
   },
@@ -1230,7 +1236,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MDkxMjUzNQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MDk5OTA0OQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1359,157 +1365,6 @@
         "size": 2009333760,
         "url": "https://mirror.yandex.ru/fedora/linux/releases/35/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-35-1.2.iso",
         "version": "35-1.2"
-      }
-    ]
-  },
-  {
-    "id": "freebsd",
-    "name": "FreeBSD",
-    "url": "https://freebsd.org",
-    "releases": [
-      {
-        "arch": "amd64",
-        "size": 363548672,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "amd64",
-        "size": 971974656,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "amd64",
-        "size": 4784017408,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-dvd1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "arm64",
-        "size": 284246016,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "arm64",
-        "size": 748144640,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "arm64",
-        "size": 4136398848,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-dvd1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "i386",
-        "size": 299626496,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "i386",
-        "size": 792469504,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "i386",
-        "size": 4048691200,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-dvd1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc",
-        "size": 254842880,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc",
-        "size": 675284992,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc",
-        "size": 1312075776,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-dvd1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc64",
-        "size": 289476608,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc64",
-        "size": 794025984,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc64",
-        "size": 4412641280,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-dvd1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 288913408,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 737144832,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 4043845632,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-dvd1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppcspe",
-        "size": 260702208,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppcspe",
-        "size": 683845632,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "ppcspe",
-        "size": 3863945216,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-dvd1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "amd64",
-        "size": 259516416,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-bootonly.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "amd64",
-        "size": 697530368,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-disc1.iso",
-        "version": "13.0"
-      },
-      {
-        "arch": "amd64",
-        "size": 4026677248,
-        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-dvd1.iso",
-        "version": "13.0"
       }
     ]
   },
@@ -2036,7 +1891,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9577,
+        "size": 9576,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2436,6 +2291,361 @@
         "size": 11796480,
         "url": "https://cdn.openbsd.org/pub/OpenBSD/7.0/sparc64/cd70.iso",
         "version": "7.0"
+      }
+    ]
+  },
+  {
+    "id": "opensuse",
+    "name": "OpenSUSE",
+    "url": "https://opensuse.org",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 4683988992,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 196083712,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i586",
+        "size": 4552916992,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i586",
+        "size": 156237824,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-i586-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 3900229632,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 228945920,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 3835783168,
+        "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 206413824,
+        "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-NET-ppc64le-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "s390x",
+        "size": 2941564928,
+        "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-DVD-s390x-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "s390x",
+        "size": 162355200,
+        "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-NET-s390x-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 969146368,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 988741632,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 990904320,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 674758656,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 903872512,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 932184064,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 936378368,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 617611264,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 942014464,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 967835648,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 971833344,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 668401664,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 969146368,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 988741632,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 990904320,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 674758656,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 903872512,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 932184064,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 936378368,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "i686",
+        "size": 617611264,
+        "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 942014464,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 967835648,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 971833344,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "aarch64",
+        "size": 668401664,
+        "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
+        "version": "rolling"
+      },
+      {
+        "arch": "x86_64",
+        "size": 4599054336,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-x86_64-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 153092096,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 4384090112,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-aarch64-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 175282176,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 4324939776,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-ppc64le-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 140505088,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-ppc64le-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "s390x",
+        "size": 1807558656,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-DVD-s390x-Current.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "s390x",
+        "size": 109279232,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-NET-s390x-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 905445376,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 975896576,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 957284352,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 650379264,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 869400576,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 943325184,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 923992064,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 627703808,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 905445376,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 975896576,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 957284352,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 650379264,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-x86_64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 869400576,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-GNOME-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 943325184,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-KDE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 923992064,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-XFCE-Live-aarch64-Media.iso",
+        "version": "15.3"
+      },
+      {
+        "arch": "aarch64",
+        "size": 627703808,
+        "url": "https://download.opensuse.org/distribution/leap/15.3/appliances/iso/openSUSE-Leap-15.3-Rescue-CD-aarch64-Media.iso",
+        "version": "15.3"
       }
     ]
   },
@@ -3370,8 +3580,8 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 458227712,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112300317-amd64.iso",
+        "size": 457179136,
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112310821-amd64.iso",
         "version": "1.4"
       },
       {
