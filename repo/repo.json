@@ -214,6 +214,12 @@
     "releases": [
       {
         "arch": "x86_64",
+        "size": 906309632,
+        "url": "https://mirror.yandex.ru/archlinux/iso/latest/archlinux-2022.01.01-x86_64.iso",
+        "version": "2022.01.01"
+      },
+      {
+        "arch": "x86_64",
         "size": 716177408,
         "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.30-06.03-x86_64.iso",
         "version": "2021.12.30"
@@ -223,12 +229,6 @@
         "size": 241172480,
         "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.30-06.04-latest-x86_64.iso",
         "version": "2021.12.30"
-      },
-      {
-        "arch": "x86_64",
-        "size": 891629568,
-        "url": "https://mirror.yandex.ru/archlinux/iso/latest/archlinux-2021.12.01-x86_64.iso",
-        "version": "2021.12.01"
       }
     ]
   },
@@ -1236,7 +1236,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MDk5OTA0OQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MTA4NTQ2MQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1369,6 +1369,157 @@
     ]
   },
   {
+    "id": "freebsd",
+    "name": "FreeBSD",
+    "url": "https://freebsd.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 363548672,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 971974656,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 4784017408,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-amd64-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "arm64",
+        "size": 284246016,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "arm64",
+        "size": 748144640,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "arm64",
+        "size": 4136398848,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-arm64-aarch64-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "i386",
+        "size": 299626496,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "i386",
+        "size": 792469504,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "i386",
+        "size": 4048691200,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-i386-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc",
+        "size": 254842880,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc",
+        "size": 675284992,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc",
+        "size": 1312075776,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64",
+        "size": 289476608,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64",
+        "size": 794025984,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64",
+        "size": 4412641280,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 288913408,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 737144832,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 4043845632,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpc64le-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppcspe",
+        "size": 260702208,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppcspe",
+        "size": 683845632,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "ppcspe",
+        "size": 3863945216,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-powerpc-powerpcspe-dvd1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 259516416,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-bootonly.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 697530368,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-disc1.iso",
+        "version": "13.0"
+      },
+      {
+        "arch": "amd64",
+        "size": 4026677248,
+        "url": "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/13.0/FreeBSD-13.0-RELEASE-riscv-riscv64-dvd1.iso",
+        "version": "13.0"
+      }
+    ]
+  },
+  {
     "id": "freedos",
     "name": "FreeDOS",
     "url": "https://freedos.org",
@@ -1407,75 +1558,75 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2613354496,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/dr460nized/211129/garuda-dr460nized-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2644822016,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/dr460nized/220101/garuda-dr460nized-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2469527552,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/211129/garuda-gnome-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2477742080,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/220101/garuda-gnome-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2507565056,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/211129/garuda-xfce-linux-lts-211129.iso",
-        "version": "211129"
+        "size": 114,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/220101/garuda-xfce-linux-lts-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2571380736,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/211129/garuda-lxqt-kwin-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2595919872,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/220101/garuda-lxqt-kwin-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2462836736,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/wayfire/211129/garuda-wayfire-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2487431168,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/wayfire/220101/garuda-wayfire-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2468544512,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/sway/211129/garuda-sway-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2493368320,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/sway/220101/garuda-sway-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2367981568,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/qtile/211129/garuda-qtile-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2393442304,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/qtile/220101/garuda-qtile-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2507497472,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/i3/211129/garuda-i3-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2542096384,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/i3/220101/garuda-i3-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2423701504,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/bspwm/211129/garuda-bspwm-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2444460032,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/bspwm/220101/garuda-bspwm-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2734282752,
-        "url": "https://mirrors.fossho.st/garuda/iso/community/mate/211129/garuda-mate-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2723264512,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/mate/220101/garuda-mate-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2508013568,
-        "url": "https://mirrors.fossho.st/garuda/iso/community/cinnamon/211129/garuda-cinnamon-linux-zen-211129.iso",
-        "version": "211129"
+        "size": 2534545408,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/cinnamon/220101/garuda-cinnamon-linux-zen-220101.iso",
+        "version": "220101"
       },
       {
         "arch": "amd64",
-        "size": 2050459648,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/211129/garuda-kde-barebones-linux-lts-211129.iso",
-        "version": "211129"
+        "size": 2082222080,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/220101/garuda-kde-barebones-linux-lts-220101.iso",
+        "version": "220101"
       }
     ]
   },
@@ -1891,7 +2042,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9576,
+        "size": 9582,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -3581,7 +3732,7 @@
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202112310821-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202201010920-amd64.iso",
         "version": "1.4"
       },
       {
