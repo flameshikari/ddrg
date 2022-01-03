@@ -305,12 +305,6 @@
         "version": "3012"
       },
       {
-        "arch": "x86_64",
-        "size": 1150627840,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-autumn-1912-x86_64.iso",
-        "version": "1912"
-      },
-      {
         "arch": "i686",
         "size": 815792128,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang32/archbang32-beta-0509-i686.iso",
@@ -1236,7 +1230,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MTA4NTQ2MQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MTE3MTg0Nw==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1570,8 +1564,8 @@
       },
       {
         "arch": "amd64",
-        "size": 114,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/220101/garuda-xfce-linux-lts-220101.iso",
+        "size": 2604449792,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/220101/garuda-xfce-linux-zen-220101.iso",
         "version": "220101"
       },
       {
@@ -1797,6 +1791,66 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 2991390720,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-amd64.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "arm64",
+        "size": 2466557952,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-arm64.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "i386",
+        "size": 2631450624,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-i386.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "amd64",
+        "size": 491782144,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-netinst-amd64.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "arm64",
+        "size": 409251840,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-netinst-arm64.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "i386",
+        "size": 412090368,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-netinst-i386.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "amd64",
+        "size": 3714691072,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-amd64.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "arm64",
+        "size": 2738931712,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-arm64.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "amd64",
+        "size": 11514669056,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-everything-amd64.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "i386",
+        "size": 3222286336,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-i386.iso",
+        "version": "2022-W01"
+      },
+      {
+        "arch": "amd64",
         "size": 3087007744,
         "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.4a-installer-amd64.iso",
         "version": "2021.4a"
@@ -1848,66 +1902,6 @@
         "size": 3168858112,
         "url": "https://mirror.truenetwork.ru/kali-images/current//kali-linux-2021.4a-live-i386.iso",
         "version": "2021.4a"
-      },
-      {
-        "arch": "amd64",
-        "size": 2947022848,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-installer-amd64.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "arm64",
-        "size": 2401792000,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-installer-arm64.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "i386",
-        "size": 2590310400,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-installer-i386.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "amd64",
-        "size": 489684992,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-installer-netinst-amd64.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "arm64",
-        "size": 408203264,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-installer-netinst-arm64.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "i386",
-        "size": 412090368,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-installer-netinst-i386.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "amd64",
-        "size": 3634606080,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-live-amd64.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "arm64",
-        "size": 2669301760,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-live-arm64.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "amd64",
-        "size": 11439476736,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-live-everything-amd64.iso",
-        "version": "2021-W52"
-      },
-      {
-        "arch": "i386",
-        "size": 3145936896,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2021-W52-live-i386.iso",
-        "version": "2021-W52"
       }
     ]
   },
@@ -1931,6 +1925,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1988100096,
+        "url": "https://files.kde.org/neon/images/unstable/20220102-0329/neon-unstable-20220102-0329.iso",
+        "version": "20220102"
+      },
+      {
+        "arch": "amd64",
         "size": 2012217344,
         "url": "https://files.kde.org/neon/images/user/20211230-0945/neon-user-20211230-0945.iso",
         "version": "20211230"
@@ -1946,12 +1946,6 @@
         "size": 2606759936,
         "url": "https://files.kde.org/neon/images/developer/20211227-1846/neon-developer-20211227-1846.iso",
         "version": "20211227"
-      },
-      {
-        "arch": "amd64",
-        "size": 1987051520,
-        "url": "https://files.kde.org/neon/images/unstable/20211226-0328/neon-unstable-20211226-0328.iso",
-        "version": "20211226"
       }
     ]
   },
@@ -2042,7 +2036,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9582,
+        "size": 9579,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2336,25 +2330,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2126544896,
+        "size": 2118221824,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 1732902912,
+        "size": 1726365696,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 804257792,
+        "size": 796917760,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "i686",
-        "size": 778043392,
+        "size": 770703360,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-i686-linux.iso",
         "version": "21.11"
       }
@@ -2512,25 +2506,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 969146368,
+        "size": 970457088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 988741632,
+        "size": 987168768,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 990904320,
+        "size": 992346112,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 674758656,
+        "size": 675282944,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2542,7 +2536,7 @@
       },
       {
         "arch": "i686",
-        "size": 932184064,
+        "size": 933232640,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2584,25 +2578,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 969146368,
+        "size": 970457088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 988741632,
+        "size": 987168768,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 990904320,
+        "size": 992346112,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 674758656,
+        "size": 675282944,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2614,7 +2608,7 @@
       },
       {
         "arch": "i686",
-        "size": 932184064,
+        "size": 933232640,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -3307,37 +3301,37 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 69158912,
+        "size": 65341440,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core-5in1.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 55216128,
+        "size": 55287808,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 54806528,
+        "size": 54882304,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 62869504,
+        "size": 62951424,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-loram.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 37844992,
+        "size": 37924864,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 56102912,
+        "size": 56158208,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
       }
@@ -3732,7 +3726,7 @@
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202201010920-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202201020317-amd64.iso",
         "version": "1.4"
       },
       {
