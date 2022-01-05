@@ -666,75 +666,75 @@
       },
       {
         "arch": "x86_64",
-        "size": 875560960,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20211214-boot.iso",
-        "version": "20211214"
+        "size": 877658112,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220104-boot.iso",
+        "version": "20220104"
       },
       {
         "arch": "x86_64",
-        "size": 11019485184,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20211214-dvd1.iso",
-        "version": "20211214"
+        "size": 11042553856,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220104-dvd1.iso",
+        "version": "20220104"
       },
       {
         "arch": "x86_64",
-        "size": 875560960,
+        "size": 877658112,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
-        "version": "20211214"
+        "version": "20220104"
       },
       {
         "arch": "x86_64",
-        "size": 11019485184,
+        "size": 11042553856,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
-        "version": "20211214"
+        "version": "20220104"
       },
       {
         "arch": "ppc64le",
-        "size": 839981056,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20211214-boot.iso",
-        "version": "20211214"
+        "size": 842747904,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220104-boot.iso",
+        "version": "20220104"
       },
       {
         "arch": "ppc64le",
-        "size": 9485414400,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20211214-dvd1.iso",
-        "version": "20211214"
+        "size": 9487921152,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220104-dvd1.iso",
+        "version": "20220104"
       },
       {
         "arch": "ppc64le",
-        "size": 839981056,
+        "size": 842747904,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
-        "version": "20211214"
+        "version": "20220104"
       },
       {
         "arch": "ppc64le",
-        "size": 9485414400,
+        "size": 9487921152,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
-        "version": "20211214"
+        "version": "20220104"
       },
       {
         "arch": "aarch64",
-        "size": 791425024,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20211214-boot.iso",
-        "version": "20211214"
+        "size": 793978880,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220104-boot.iso",
+        "version": "20220104"
       },
       {
         "arch": "aarch64",
-        "size": 8390803456,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20211214-dvd1.iso",
-        "version": "20211214"
+        "size": 8396642304,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220104-dvd1.iso",
+        "version": "20220104"
       },
       {
         "arch": "aarch64",
-        "size": 791425024,
+        "size": 793978880,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
-        "version": "20211214"
+        "version": "20220104"
       },
       {
         "arch": "aarch64",
-        "size": 8390803456,
+        "size": 8396642304,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
-        "version": "20211214"
+        "version": "20220104"
       }
     ]
   },
@@ -1230,7 +1230,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MTI1ODI1NQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MTM0NDY1Ng==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1636,6 +1636,12 @@
         "version": "20220103"
       },
       {
+        "arch": "i386",
+        "size": 613416960,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220103T170538Z/admincd-x86-20220103T170538Z.iso",
+        "version": "20220103"
+      },
+      {
         "arch": "amd64",
         "size": 457179136,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220102T170545Z/install-amd64-minimal-20220102T170545Z.iso",
@@ -1675,12 +1681,6 @@
         "arch": "ppc64le",
         "size": 697886720,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211227T093653Z/install-ppc64le-minimal-20211227T093653Z.iso",
-        "version": "20211227"
-      },
-      {
-        "arch": "i386",
-        "size": 615514112,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20211227T170551Z/admincd-x86-20211227T170551Z.iso",
         "version": "20211227"
       },
       {
@@ -1925,6 +1925,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1981808640,
+        "url": "https://files.kde.org/neon/images/testing/20220104-1820/neon-testing-20220104-1820.iso",
+        "version": "20220104"
+      },
+      {
+        "arch": "amd64",
         "size": 2606759936,
         "url": "https://files.kde.org/neon/images/developer/20220103-1848/neon-developer-20220103-1848.iso",
         "version": "20220103"
@@ -1940,12 +1946,6 @@
         "size": 2012217344,
         "url": "https://files.kde.org/neon/images/user/20211230-0945/neon-user-20211230-0945.iso",
         "version": "20211230"
-      },
-      {
-        "arch": "amd64",
-        "size": 1981808640,
-        "url": "https://files.kde.org/neon/images/testing/20211228-1820/neon-testing-20211228-1820.iso",
-        "version": "20211228"
       }
     ]
   },
@@ -2153,57 +2153,57 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 3516258304,
-        "url": "https://download.manjaro.org/gnome/21.2.0/manjaro-gnome-21.2.0-211220-linux515.iso",
-        "version": "21.2.0"
+        "size": 3556491264,
+        "url": "https://download.manjaro.org/gnome/21.2.1/manjaro-gnome-21.2.1-220103-linux515.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 2974005248,
-        "url": "https://download.manjaro.org/gnome/21.2.0/manjaro-gnome-21.2.0-minimal-211220-linux515.iso",
-        "version": "21.2.0"
+        "size": 3012313088,
+        "url": "https://download.manjaro.org/gnome/21.2.1/manjaro-gnome-21.2.1-minimal-220103-linux515.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 2923802624,
-        "url": "https://download.manjaro.org/gnome/21.2.0/manjaro-gnome-21.2.0-minimal-211220-linux510.iso",
-        "version": "21.2.0"
+        "size": 2962178048,
+        "url": "https://download.manjaro.org/gnome/21.2.1/manjaro-gnome-21.2.1-minimal-220103-linux510.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 3828590592,
-        "url": "https://download.manjaro.org/kde/21.2.0/manjaro-kde-21.2.0-211220-linux515.iso",
-        "version": "21.2.0"
+        "size": 3847217152,
+        "url": "https://download.manjaro.org/kde/21.2.1/manjaro-kde-21.2.1-220103-linux515.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 3159078912,
-        "url": "https://download.manjaro.org/kde/21.2.0/manjaro-kde-21.2.0-minimal-211220-linux515.iso",
-        "version": "21.2.0"
+        "size": 3177447424,
+        "url": "https://download.manjaro.org/kde/21.2.1/manjaro-kde-21.2.1-minimal-220103-linux515.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 3108876288,
-        "url": "https://download.manjaro.org/kde/21.2.0/manjaro-kde-21.2.0-minimal-211220-linux510.iso",
-        "version": "21.2.0"
+        "size": 3127316480,
+        "url": "https://download.manjaro.org/kde/21.2.1/manjaro-kde-21.2.1-minimal-220103-linux510.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 3542652928,
-        "url": "https://download.manjaro.org/xfce/21.2.0/manjaro-xfce-21.2.0-211220-linux515.iso",
-        "version": "21.2.0"
+        "size": 3577503744,
+        "url": "https://download.manjaro.org/xfce/21.2.1/manjaro-xfce-21.2.1-220103-linux515.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 2694060032,
-        "url": "https://download.manjaro.org/xfce/21.2.0/manjaro-xfce-21.2.0-minimal-211220-linux515.iso",
-        "version": "21.2.0"
+        "size": 2775756800,
+        "url": "https://download.manjaro.org/xfce/21.2.1/manjaro-xfce-21.2.1-minimal-220103-linux515.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
-        "size": 2643849216,
-        "url": "https://download.manjaro.org/xfce/21.2.0/manjaro-xfce-21.2.0-minimal-211220-linux510.iso",
-        "version": "21.2.0"
+        "size": 2725625856,
+        "url": "https://download.manjaro.org/xfce/21.2.1/manjaro-xfce-21.2.1-minimal-220103-linux510.iso",
+        "version": "21.2.1"
       },
       {
         "arch": "amd64",
@@ -2330,25 +2330,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2118221824,
+        "size": 2143289344,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 1726365696,
+        "size": 1749565440,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 796917760,
+        "size": 821035008,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "i686",
-        "size": 770703360,
+        "size": 787480576,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-i686-linux.iso",
         "version": "21.11"
       }
@@ -2446,7 +2446,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4683988992,
+        "size": 4686086144,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2458,7 +2458,7 @@
       },
       {
         "arch": "i586",
-        "size": 4552916992,
+        "size": 4553965568,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2470,13 +2470,13 @@
       },
       {
         "arch": "aarch64",
-        "size": 3900229632,
+        "size": 3888390144,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 228945920,
+        "size": 228960256,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2506,25 +2506,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 970129408,
+        "size": 969801728,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 988282880,
+        "size": 987561984,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 992608256,
+        "size": 992149504,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 675020800,
+        "size": 675807232,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2548,55 +2548,55 @@
       },
       {
         "arch": "i686",
-        "size": 617611264,
+        "size": 616562688,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 942014464,
+        "size": 945684480,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 967835648,
+        "size": 969474048,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 971833344,
+        "size": 966918144,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 668401664,
+        "size": 670957568,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 970129408,
+        "size": 969801728,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 988282880,
+        "size": 987561984,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 992608256,
+        "size": 992149504,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 675020800,
+        "size": 675807232,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2620,31 +2620,31 @@
       },
       {
         "arch": "i686",
-        "size": 617611264,
+        "size": 616562688,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 942014464,
+        "size": 945684480,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 967835648,
+        "size": 969474048,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 971833344,
+        "size": 966918144,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 668401664,
+        "size": 670957568,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -3725,8 +3725,8 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 457179136,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202201020317-amd64.iso",
+        "size": 489684992,
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202201041316-amd64.iso",
         "version": "1.4"
       },
       {
