@@ -1216,9 +1216,9 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 769224704,
-        "url": "https://mirror.tochlab.net/pub/DragonFlyBSD/iso-images/dfly-x86_64-6.0.1_REL.iso",
-        "version": "6.0.1"
+        "size": 762122240,
+        "url": "https://mirror.tochlab.net/pub/DragonFlyBSD/iso-images/dfly-x86_64-6.2.0_REL.iso",
+        "version": "6.2.0"
       }
     ]
   },
@@ -1230,7 +1230,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MTM0NDY1Ng==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MTQzMTA1MQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -2036,7 +2036,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9579,
+        "size": 9586,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
