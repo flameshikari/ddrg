@@ -217,18 +217,6 @@
         "size": 906309632,
         "url": "https://mirror.yandex.ru/archlinux/iso/latest/archlinux-2022.01.01-x86_64.iso",
         "version": "2022.01.01"
-      },
-      {
-        "arch": "x86_64",
-        "size": 716177408,
-        "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.30-06.03-x86_64.iso",
-        "version": "2021.12.30"
-      },
-      {
-        "arch": "x86_64",
-        "size": 241172480,
-        "url": "https://mirror.yandex.ru/archlinux/iso/archboot/latest/archlinux-archboot-2021.12.30-06.04-latest-x86_64.iso",
-        "version": "2021.12.30"
       }
     ]
   },
@@ -1230,7 +1218,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MTQzMTA1MQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MTUxNzQ1OQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -2036,7 +2024,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9586,
+        "size": 122,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -3726,7 +3714,7 @@
       {
         "arch": "amd64",
         "size": 489684992,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202201041316-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202201060842-amd64.iso",
         "version": "1.4"
       },
       {
