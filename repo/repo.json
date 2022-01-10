@@ -105,109 +105,6 @@
     ]
   },
   {
-    "id": "antix",
-    "name": "antiX Linux",
-    "url": "https://antixlinux.com",
-    "releases": [
-      {
-        "arch": "i386",
-        "size": 189792256,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_386-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 184549376,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_x64-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 188743680,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_386-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 184549376,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_x64-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 465567744,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 458227712,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 825229312,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 811597824,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 828375040,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 1333788672,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-full.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 1454374912,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-full.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 468713472,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 461373440,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 814743552,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 1339031552,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-full.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 1458569216,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-full.iso",
-        "version": "21"
-      }
-    ]
-  },
-  {
     "id": "arch",
     "name": "Arch Linux",
     "url": "https://archlinux.org",
@@ -1224,7 +1121,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MTY5MDI2Ng==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MTc3NjQ5NQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1785,63 +1682,63 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2991390720,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-amd64.iso",
-        "version": "2022-W01"
+        "size": 2994323456,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-amd64.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "arm64",
-        "size": 2466557952,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-arm64.iso",
-        "version": "2022-W01"
+        "size": 2468966400,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-arm64.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "i386",
-        "size": 2631450624,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-i386.iso",
-        "version": "2022-W01"
+        "size": 2634022912,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-i386.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "amd64",
-        "size": 491782144,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-netinst-amd64.iso",
-        "version": "2022-W01"
+        "size": 492830720,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-netinst-amd64.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "arm64",
         "size": 409251840,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-netinst-arm64.iso",
-        "version": "2022-W01"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-netinst-arm64.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "i386",
         "size": 412090368,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-installer-netinst-i386.iso",
-        "version": "2022-W01"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-netinst-i386.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "amd64",
-        "size": 3714691072,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-amd64.iso",
-        "version": "2022-W01"
+        "size": 3718328320,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-amd64.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "arm64",
-        "size": 2738931712,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-arm64.iso",
-        "version": "2022-W01"
+        "size": 2744446976,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-arm64.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "amd64",
-        "size": 11514669056,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-everything-amd64.iso",
-        "version": "2022-W01"
+        "size": 11521445888,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-everything-amd64.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "i386",
-        "size": 3222286336,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W01-live-i386.iso",
-        "version": "2022-W01"
+        "size": 3229577216,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-i386.iso",
+        "version": "2022-W02"
       },
       {
         "arch": "amd64",
@@ -2030,7 +1927,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9586,
+        "size": 9578,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2324,25 +2221,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2143289344,
+        "size": 2136997888,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 1751285760,
+        "size": 1743126528,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 821035008,
+        "size": 813694976,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "i686",
-        "size": 787480576,
+        "size": 795869184,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-i686-linux.iso",
         "version": "21.11"
       }
@@ -2440,7 +2337,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4687134720,
+        "size": 4685037568,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2452,7 +2349,7 @@
       },
       {
         "arch": "i586",
-        "size": 4555014144,
+        "size": 4553965568,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2500,49 +2397,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 969932800,
+        "size": 967835648,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 987103232,
+        "size": 987889664,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 991821824,
+        "size": 991756288,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 675282944,
+        "size": 675545088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 905969664,
+        "size": 904921088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 933232640,
+        "size": 932184064,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 937426944,
+        "size": 936378368,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 617611264,
+        "size": 615514112,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2572,49 +2469,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 969932800,
+        "size": 967835648,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 987103232,
+        "size": 987889664,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 991821824,
+        "size": 991756288,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 675282944,
+        "size": 675545088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 905969664,
+        "size": 904921088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 933232640,
+        "size": 932184064,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 937426944,
+        "size": 936378368,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 617611264,
+        "size": 615514112,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -3295,19 +3192,19 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 65341440,
+        "size": 65353728,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core-5in1.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 55287808,
+        "size": 55302144,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 54882304,
+        "size": 54913024,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
         "version": "5.0"
       },
@@ -3319,13 +3216,13 @@
       },
       {
         "arch": "x86_64",
-        "size": 37924864,
+        "size": 37926912,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 56158208,
+        "size": 56184832,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
       }
