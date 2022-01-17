@@ -105,109 +105,6 @@
     ]
   },
   {
-    "id": "antix",
-    "name": "antiX Linux",
-    "url": "https://antixlinux.com",
-    "releases": [
-      {
-        "arch": "i386",
-        "size": 189792256,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_386-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 184549376,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_x64-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 188743680,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_386-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 184549376,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_x64-net.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 465567744,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 458227712,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 825229312,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 811597824,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 828375040,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 1333788672,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-full.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 1454374912,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-full.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 468713472,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 461373440,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-core.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 814743552,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-base.iso",
-        "version": "21"
-      },
-      {
-        "arch": "i386",
-        "size": 1339031552,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-full.iso",
-        "version": "21"
-      },
-      {
-        "arch": "amd64",
-        "size": 1458569216,
-        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-full.iso",
-        "version": "21"
-      }
-    ]
-  },
-  {
     "id": "arch",
     "name": "Arch Linux",
     "url": "https://archlinux.org",
@@ -1230,7 +1127,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MjI5NDk1Mg==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MjM4MTMwNQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1625,6 +1522,91 @@
     ]
   },
   {
+    "id": "gentoo",
+    "name": "Gentoo",
+    "url": "https://gentoo.org",
+    "releases": [
+      {
+        "arch": "alpha",
+        "size": 325421056,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220115T003441Z/install-alpha-minimal-20220115T003441Z.iso",
+        "version": "20220115"
+      },
+      {
+        "arch": "i386",
+        "size": 422576128,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220110T170554Z/install-x86-minimal-20220110T170554Z.iso",
+        "version": "20220110"
+      },
+      {
+        "arch": "i386",
+        "size": 613416960,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220110T170554Z/admincd-x86-20220110T170554Z.iso",
+        "version": "20220110"
+      },
+      {
+        "arch": "arm64",
+        "size": 492670976,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220109T232200Z/install-arm64-minimal-20220109T232200Z.iso",
+        "version": "20220109"
+      },
+      {
+        "arch": "amd64",
+        "size": 673185792,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220109T170538Z/admincd-amd64-20220109T170538Z.iso",
+        "version": "20220109"
+      },
+      {
+        "arch": "arm64",
+        "size": 492670976,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220109T232200Z/install-arm64-minimal-20220109T232200Z.iso",
+        "version": "20220109"
+      },
+      {
+        "arch": "amd64",
+        "size": 457179136,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220102T170545Z/install-amd64-minimal-20220102T170545Z.iso",
+        "version": "20220102"
+      },
+      {
+        "arch": "amd64",
+        "size": 457179136,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220102T170545Z/install-amd64-minimal-20220102T170545Z.iso",
+        "version": "20220102"
+      },
+      {
+        "arch": "ppc",
+        "size": 394086400,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211227T093653Z/install-powerpc-minimal-20211227T093653Z.iso",
+        "version": "20211227"
+      },
+      {
+        "arch": "ppc64le",
+        "size": 697886720,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ppc/autobuilds/20211227T093653Z/install-ppc64le-minimal-20211227T093653Z.iso",
+        "version": "20211227"
+      },
+      {
+        "arch": "sparc64",
+        "size": 276275200,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20211130T073639Z/install-sparc64-minimal-20211130T073639Z.iso",
+        "version": "20211130"
+      },
+      {
+        "arch": "ia64",
+        "size": 154501120,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/ia64/autobuilds/20200804T030526Z/install-ia64-minimal-20200804T030526Z.iso",
+        "version": "20200804"
+      },
+      {
+        "arch": "hppa",
+        "size": 146159616,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/hppa/autobuilds/20191101T093009Z/install-hppa-minimal-20191101T093009Z.iso",
+        "version": "20191101"
+      }
+    ]
+  },
+  {
     "id": "gparted",
     "name": "GParted",
     "url": "https://gparted.org",
@@ -1706,63 +1688,63 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2994323456,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-amd64.iso",
-        "version": "2022-W02"
+        "size": 2974679040,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-installer-amd64.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "arm64",
-        "size": 2468966400,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-arm64.iso",
-        "version": "2022-W02"
+        "size": 2435379200,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-installer-arm64.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "i386",
-        "size": 2634022912,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-i386.iso",
-        "version": "2022-W02"
+        "size": 2617245696,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-installer-i386.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "amd64",
         "size": 492830720,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-netinst-amd64.iso",
-        "version": "2022-W02"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-installer-netinst-amd64.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "arm64",
         "size": 409251840,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-netinst-arm64.iso",
-        "version": "2022-W02"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-installer-netinst-arm64.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "i386",
         "size": 412090368,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-installer-netinst-i386.iso",
-        "version": "2022-W02"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-installer-netinst-i386.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "amd64",
-        "size": 3718328320,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-amd64.iso",
-        "version": "2022-W02"
+        "size": 3701583872,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-live-amd64.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "arm64",
-        "size": 2744446976,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-arm64.iso",
-        "version": "2022-W02"
+        "size": 2718570496,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-live-arm64.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "amd64",
-        "size": 11521445888,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-everything-amd64.iso",
-        "version": "2022-W02"
+        "size": 11449364480,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-live-everything-amd64.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "i386",
-        "size": 3229577216,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W02-live-i386.iso",
-        "version": "2022-W02"
+        "size": 3206557696,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W03-live-i386.iso",
+        "version": "2022-W03"
       },
       {
         "arch": "amd64",
@@ -1840,6 +1822,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1982857216,
+        "url": "https://files.kde.org/neon/images/unstable/20220116-0330/neon-unstable-20220116-0330.iso",
+        "version": "20220116"
+      },
+      {
+        "arch": "amd64",
         "size": 1974468608,
         "url": "https://files.kde.org/neon/images/testing/20220114-1339/neon-testing-20220114-1339.iso",
         "version": "20220114"
@@ -1855,12 +1843,6 @@
         "size": 2609905664,
         "url": "https://files.kde.org/neon/images/developer/20220110-1853/neon-developer-20220110-1853.iso",
         "version": "20220110"
-      },
-      {
-        "arch": "amd64",
-        "size": 1988100096,
-        "url": "https://files.kde.org/neon/images/unstable/20220102-0329/neon-unstable-20220102-0329.iso",
-        "version": "20220102"
       }
     ]
   },
@@ -2245,19 +2227,19 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2136997888,
+        "size": 2134900736,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 1743126528,
+        "size": 1741422592,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 813694976,
+        "size": 821035008,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
@@ -3185,31 +3167,31 @@
       },
       {
         "arch": "x86_64",
-        "size": 55302144,
+        "size": 55312384,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 54913024,
+        "size": 54919168,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 62951424,
+        "size": 62955520,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-loram.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 37926912,
+        "size": 37931008,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 56184832,
+        "size": 56162304,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
       }
@@ -3375,15 +3357,15 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 793772032,
-        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/8.07/systemrescue-8.07-amd64.iso",
-        "version": "8.07"
+        "size": 808452096,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.00/systemrescue-9.00-amd64.iso",
+        "version": "9.00"
       },
       {
         "arch": "i686",
-        "size": 757071872,
-        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/8.04/systemrescue-8.04-i686.iso",
-        "version": "8.04"
+        "size": 839909376,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.00/systemrescue-9.00-i686.iso",
+        "version": "9.00"
       }
     ]
   },
