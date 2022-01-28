@@ -1133,7 +1133,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MzI0NTQyMA==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MzMzMTgyNw==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1613,6 +1613,25 @@
     ]
   },
   {
+    "id": "gparted",
+    "name": "GParted",
+    "url": "https://gparted.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 415236096,
+        "url": "https://downloads.sourceforge.net/gparted/gparted-live-1.3.1-1-amd64.iso",
+        "version": "1.3.1-1"
+      },
+      {
+        "arch": "i686",
+        "size": 400556032,
+        "url": "https://downloads.sourceforge.net/gparted/gparted-live-1.3.1-1-i686.iso",
+        "version": "1.3.1-1"
+      }
+    ]
+  },
+  {
     "id": "grml",
     "name": "grml",
     "url": "https://grml.org",
@@ -1914,7 +1933,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9553,
+        "size": 9558,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -2031,6 +2050,60 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 3528622080,
+        "url": "https://download.manjaro.org/gnome/21.2.2/manjaro-gnome-21.2.2-220123-linux515.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2942316544,
+        "url": "https://download.manjaro.org/gnome/21.2.2/manjaro-gnome-21.2.2-minimal-220123-linux515.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2892773376,
+        "url": "https://download.manjaro.org/gnome/21.2.2/manjaro-gnome-21.2.2-minimal-220123-linux510.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 3974447104,
+        "url": "https://download.manjaro.org/kde/21.2.2/manjaro-kde-21.2.2-220123-linux515.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 3262750720,
+        "url": "https://download.manjaro.org/kde/21.2.2/manjaro-kde-21.2.2-minimal-220123-linux515.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 3213203456,
+        "url": "https://download.manjaro.org/kde/21.2.2/manjaro-kde-21.2.2-minimal-220123-linux510.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 3687383040,
+        "url": "https://download.manjaro.org/xfce/21.2.2/manjaro-xfce-21.2.2-220123-linux515.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2843238400,
+        "url": "https://download.manjaro.org/xfce/21.2.2/manjaro-xfce-21.2.2-minimal-220123-linux515.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
+        "size": 2793695232,
+        "url": "https://download.manjaro.org/xfce/21.2.2/manjaro-xfce-21.2.2-minimal-220123-linux510.iso",
+        "version": "21.2.2"
+      },
+      {
+        "arch": "amd64",
         "size": 3696459776,
         "url": "https://download.manjaro.org/cinnamon/21.2.2/manjaro-cinnamon-21.2.2-220123-linux515.iso",
         "version": "21.2.2"
@@ -2070,60 +2143,6 @@
         "size": 2507227136,
         "url": "https://download.manjaro.org/mate/21.2.2/manjaro-mate-21.2.2-minimal-220123-linux515.iso",
         "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 3556491264,
-        "url": "https://download.manjaro.org/gnome/21.2.1/manjaro-gnome-21.2.1-220103-linux515.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 3012313088,
-        "url": "https://download.manjaro.org/gnome/21.2.1/manjaro-gnome-21.2.1-minimal-220103-linux515.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 2962178048,
-        "url": "https://download.manjaro.org/gnome/21.2.1/manjaro-gnome-21.2.1-minimal-220103-linux510.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 3847217152,
-        "url": "https://download.manjaro.org/kde/21.2.1/manjaro-kde-21.2.1-220103-linux515.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 3177447424,
-        "url": "https://download.manjaro.org/kde/21.2.1/manjaro-kde-21.2.1-minimal-220103-linux515.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 3127316480,
-        "url": "https://download.manjaro.org/kde/21.2.1/manjaro-kde-21.2.1-minimal-220103-linux510.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 3577503744,
-        "url": "https://download.manjaro.org/xfce/21.2.1/manjaro-xfce-21.2.1-220103-linux515.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 2775756800,
-        "url": "https://download.manjaro.org/xfce/21.2.1/manjaro-xfce-21.2.1-minimal-220103-linux515.iso",
-        "version": "21.2.1"
-      },
-      {
-        "arch": "amd64",
-        "size": 2725625856,
-        "url": "https://download.manjaro.org/xfce/21.2.1/manjaro-xfce-21.2.1-minimal-220103-linux510.iso",
-        "version": "21.2.1"
       },
       {
         "arch": "amd64",
@@ -2305,25 +2324,25 @@
       },
       {
         "arch": "aarch64",
-        "size": 3749199872,
+        "size": 3937509376,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 245202944,
+        "size": 245512192,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "ppc64le",
-        "size": 3687985152,
+        "size": 3703296000,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "ppc64le",
-        "size": 220143616,
+        "size": 220581888,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-NET-ppc64le-Current.iso",
         "version": "rolling"
       },
@@ -2389,25 +2408,25 @@
       },
       {
         "arch": "aarch64",
-        "size": 926023680,
+        "size": 925958144,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 946470912,
+        "size": 946929664,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 917766144,
+        "size": 917504000,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 657457152,
+        "size": 657850368,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2461,25 +2480,25 @@
       },
       {
         "arch": "aarch64",
-        "size": 926023680,
+        "size": 925958144,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 946470912,
+        "size": 946929664,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 917766144,
+        "size": 917504000,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 657457152,
+        "size": 657850368,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2890,6 +2909,37 @@
     ]
   },
   {
+    "id": "q4os",
+    "name": "Q4OS",
+    "url": "https://q4os.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 976224256,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.15-x64.r1.iso",
+        "version": "3.15"
+      },
+      {
+        "arch": "amd64",
+        "size": 752877568,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.15-x64-tde.r1.iso",
+        "version": "3.15"
+      },
+      {
+        "arch": "amd64",
+        "size": 485490688,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.14-x64-instcd.r5.iso",
+        "version": "3.14"
+      },
+      {
+        "arch": "i386",
+        "size": 446693376,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.14-i386-instcd.r5.iso",
+        "version": "3.14"
+      }
+    ]
+  },
+  {
     "id": "qubes",
     "name": "Qubes",
     "url": "https://qubes-os.org",
@@ -3160,8 +3210,14 @@
       },
       {
         "arch": "x86_64",
-        "size": 699400192,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-x86_64-minimalcli.iso",
+        "size": 1860173824,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-6.1-x86_64-kde.iso",
+        "version": "6.1"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1234173952,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-x86_64-minimalgui.iso",
         "version": "6.1"
       },
       {
@@ -3171,10 +3227,10 @@
         "version": "6.1"
       },
       {
-        "arch": "x86_64",
-        "size": 1672478720,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-2021.12-x86_64-lxqt.iso",
-        "version": "2021.12"
+        "arch": "i686",
+        "size": 682622976,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-i686-minimalcli.iso",
+        "version": "6.1"
       },
       {
         "arch": "x86_64",
@@ -3184,8 +3240,8 @@
       },
       {
         "arch": "x86_64",
-        "size": 1563426816,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-2021.12-x86_64-xfce.iso",
+        "size": 1999634432,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-2021.12-x86_64-kde.iso",
         "version": "2021.12"
       },
       {
@@ -3213,6 +3269,12 @@
         "version": "2021.12"
       },
       {
+        "arch": "x86_64",
+        "size": 1656750080,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/rescue/sparkylinux-2021.12-x86_64-rescue.iso",
+        "version": "2021.12"
+      },
+      {
         "arch": "i686",
         "size": 1375731712,
         "url": "http://sourceforge.net/projects/sparkylinux/files/rescue/sparkylinux-2021.03-i686-rescue.iso",
@@ -3230,6 +3292,25 @@
         "size": 1469906944,
         "url": "https://repo.steampowered.com/download/SteamOSDVD.iso",
         "version": "2.195"
+      }
+    ]
+  },
+  {
+    "id": "systemrescuecd",
+    "name": "SystemRescue",
+    "url": "https://system-rescue.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 808452096,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.00/systemrescue-9.00-amd64.iso",
+        "version": "9.00"
+      },
+      {
+        "arch": "i686",
+        "size": 839909376,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.00/systemrescue-9.00-i686.iso",
+        "version": "9.00"
       }
     ]
   },
