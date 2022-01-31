@@ -1133,7 +1133,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MzUwNDYzOA==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MzU5MTAyMQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1533,6 +1533,18 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "amd64",
+        "size": 456130560,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220130T170547Z/install-amd64-minimal-20220130T170547Z.iso",
+        "version": "20220130"
+      },
+      {
+        "arch": "amd64",
+        "size": 456130560,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220130T170547Z/install-amd64-minimal-20220130T170547Z.iso",
+        "version": "20220130"
+      },
+      {
         "arch": "sparc64",
         "size": 278435840,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20220129T013513Z/install-sparc64-minimal-20220129T013513Z.iso",
@@ -1557,21 +1569,9 @@
         "version": "20220124"
       },
       {
-        "arch": "amd64",
-        "size": 456130560,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220123T170538Z/install-amd64-minimal-20220123T170538Z.iso",
-        "version": "20220123"
-      },
-      {
         "arch": "arm64",
         "size": 495650816,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220123T230658Z/install-arm64-minimal-20220123T230658Z.iso",
-        "version": "20220123"
-      },
-      {
-        "arch": "amd64",
-        "size": 456130560,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220123T170538Z/install-amd64-minimal-20220123T170538Z.iso",
         "version": "20220123"
       },
       {
@@ -1694,57 +1694,57 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2977595392,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-installer-amd64.iso",
-        "version": "2022-W04"
+        "size": 2980511744,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-amd64.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "arm64",
-        "size": 2440212480,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-installer-arm64.iso",
-        "version": "2022-W04"
+        "size": 2442604544,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-arm64.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "i386",
-        "size": 2618589184,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-installer-i386.iso",
-        "version": "2022-W04"
+        "size": 2621161472,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-i386.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "amd64",
-        "size": 492830720,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-installer-netinst-amd64.iso",
-        "version": "2022-W04"
+        "size": 493879296,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-netinst-amd64.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "arm64",
-        "size": 410300416,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-installer-netinst-arm64.iso",
-        "version": "2022-W04"
+        "size": 413446144,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-netinst-arm64.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "i386",
         "size": 413138944,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-installer-netinst-i386.iso",
-        "version": "2022-W04"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-netinst-i386.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "amd64",
         "size": 3705204736,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-live-amd64.iso",
-        "version": "2022-W04"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-live-amd64.iso",
+        "version": "2022-W05"
       },
       {
-        "arch": "amd64",
-        "size": 11453421568,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-live-everything-amd64.iso",
-        "version": "2022-W04"
+        "arch": "arm64",
+        "size": 2725730304,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-live-arm64.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "i386",
-        "size": 3209703424,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W04-live-i386.iso",
-        "version": "2022-W04"
+        "size": 3212849152,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-live-i386.iso",
+        "version": "2022-W05"
       },
       {
         "arch": "amd64",
@@ -1803,10 +1803,29 @@
     ]
   },
   {
+    "id": "kaos",
+    "name": "KaOS",
+    "url": "https://kaosx.us",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 3011051520,
+        "url": "https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.01-x86_64.iso",
+        "version": "2022.01"
+      }
+    ]
+  },
+  {
     "id": "kdeneon",
     "name": "KDE neon",
     "url": "https://neon.kde.org",
     "releases": [
+      {
+        "arch": "amd64",
+        "size": 1953497088,
+        "url": "https://files.kde.org/neon/images/unstable/20220130-0332/neon-unstable-20220130-0332.iso",
+        "version": "20220130"
+      },
       {
         "arch": "amd64",
         "size": 1977614336,
@@ -1818,12 +1837,6 @@
         "size": 2605711360,
         "url": "https://files.kde.org/neon/images/developer/20220117-1852/neon-developer-20220117-1852.iso",
         "version": "20220117"
-      },
-      {
-        "arch": "amd64",
-        "size": 1982857216,
-        "url": "https://files.kde.org/neon/images/unstable/20220116-0330/neon-unstable-20220116-0330.iso",
-        "version": "20220116"
       },
       {
         "arch": "amd64",
@@ -1920,7 +1933,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9555,
+        "size": 9562,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
         "version": "5.6"
       }
@@ -3184,21 +3197,9 @@
       },
       {
         "arch": "i686",
-        "size": 1199570944,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-i686-minimalgui.iso",
-        "version": "6.1"
-      },
-      {
-        "arch": "i686",
         "size": 682622976,
         "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-i686-minimalcli.iso",
         "version": "6.1"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1672478720,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-2021.12-x86_64-lxqt.iso",
-        "version": "2021.12"
       },
       {
         "arch": "x86_64",
@@ -3232,8 +3233,8 @@
       },
       {
         "arch": "x86_64",
-        "size": 3683647488,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/gameover/sparkylinux-2021.12-x86_64-gameover.iso",
+        "size": 3137339392,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/multimedia/sparkylinux-2021.12-x86_64-multimedia.iso",
         "version": "2021.12"
       },
       {
