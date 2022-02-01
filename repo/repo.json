@@ -509,42 +509,6 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 827326464,
-        "url": "https://mirror.yandex.ru/centos/8/isos/x86_64/CentOS-8.5.2111-x86_64-boot.iso",
-        "version": "8.5.2111"
-      },
-      {
-        "arch": "x86_64",
-        "size": 10794041344,
-        "url": "https://mirror.yandex.ru/centos/8/isos/x86_64/CentOS-8.5.2111-x86_64-dvd1.iso",
-        "version": "8.5.2111"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 789970944,
-        "url": "https://mirror.yandex.ru/centos/8/isos/ppc64le/CentOS-8.5.2111-ppc64le-boot.iso",
-        "version": "8.5.2111"
-      },
-      {
-        "arch": "ppc64le",
-        "size": 9282007040,
-        "url": "https://mirror.yandex.ru/centos/8/isos/ppc64le/CentOS-8.5.2111-ppc64le-dvd1.iso",
-        "version": "8.5.2111"
-      },
-      {
-        "arch": "aarch64",
-        "size": 745474048,
-        "url": "https://mirror.yandex.ru/centos/8/isos/aarch64/CentOS-8.5.2111-aarch64-boot.iso",
-        "version": "8.5.2111"
-      },
-      {
-        "arch": "aarch64",
-        "size": 8215996416,
-        "url": "https://mirror.yandex.ru/centos/8/isos/aarch64/CentOS-8.5.2111-aarch64-dvd1.iso",
-        "version": "8.5.2111"
-      },
-      {
-        "arch": "x86_64",
         "size": 4712300544,
         "url": "https://mirror.yandex.ru/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso",
         "version": "7"
@@ -1133,7 +1097,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MzU5MTAyMQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MzY3NzQxNQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1455,75 +1419,69 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2644822016,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/dr460nized/220101/garuda-dr460nized-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2533818368,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/dr460nized/220131/garuda-dr460nized-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2477742080,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/220101/garuda-gnome-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2369638400,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/220131/garuda-gnome-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2604449792,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/220101/garuda-xfce-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2404427776,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/220131/garuda-xfce-linux-lts-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2595919872,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/220101/garuda-lxqt-kwin-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2485450752,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/220131/garuda-lxqt-kwin-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2487431168,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/wayfire/220101/garuda-wayfire-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2382520320,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/sway/220131/garuda-sway-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2493368320,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/sway/220101/garuda-sway-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2282778624,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/qtile/220131/garuda-qtile-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2393442304,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/qtile/220101/garuda-qtile-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2430431232,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/i3/220131/garuda-i3-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2542096384,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/i3/220101/garuda-i3-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2333523968,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/bspwm/220131/garuda-bspwm-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2444460032,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/bspwm/220101/garuda-bspwm-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2612887552,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/mate/220131/garuda-mate-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2723264512,
-        "url": "https://mirrors.fossho.st/garuda/iso/community/mate/220101/garuda-mate-linux-zen-220101.iso",
-        "version": "220101"
+        "size": 2423752704,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/cinnamon/220131/garuda-cinnamon-linux-zen-220131.iso",
+        "version": "220131"
       },
       {
         "arch": "amd64",
-        "size": 2534545408,
-        "url": "https://mirrors.fossho.st/garuda/iso/community/cinnamon/220101/garuda-cinnamon-linux-zen-220101.iso",
-        "version": "220101"
-      },
-      {
-        "arch": "amd64",
-        "size": 2082222080,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/220101/garuda-kde-barebones-linux-lts-220101.iso",
-        "version": "220101"
+        "size": 2014052352,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/220131/garuda-kde-barebones-linux-lts-220131.iso",
+        "version": "220131"
       }
     ]
   },
@@ -1542,6 +1500,12 @@
         "arch": "amd64",
         "size": 456130560,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220130T170547Z/install-amd64-minimal-20220130T170547Z.iso",
+        "version": "20220130"
+      },
+      {
+        "arch": "amd64",
+        "size": 673185792,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220130T170547Z/admincd-amd64-20220130T170547Z.iso",
         "version": "20220130"
       },
       {
@@ -1572,12 +1536,6 @@
         "arch": "arm64",
         "size": 495650816,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220123T230658Z/install-arm64-minimal-20220123T230658Z.iso",
-        "version": "20220123"
-      },
-      {
-        "arch": "amd64",
-        "size": 673185792,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220123T170538Z/admincd-amd64-20220123T170538Z.iso",
         "version": "20220123"
       },
       {
@@ -1822,6 +1780,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 2573205504,
+        "url": "https://files.kde.org/neon/images/developer/20220131-1850/neon-developer-20220131-1850.iso",
+        "version": "20220131"
+      },
+      {
+        "arch": "amd64",
         "size": 1953497088,
         "url": "https://files.kde.org/neon/images/unstable/20220130-0332/neon-unstable-20220130-0332.iso",
         "version": "20220130"
@@ -1831,12 +1795,6 @@
         "size": 1977614336,
         "url": "https://files.kde.org/neon/images/testing/20220118-1826/neon-testing-20220118-1826.iso",
         "version": "20220118"
-      },
-      {
-        "arch": "amd64",
-        "size": 2605711360,
-        "url": "https://files.kde.org/neon/images/developer/20220117-1852/neon-developer-20220117-1852.iso",
-        "version": "20220117"
       },
       {
         "arch": "amd64",
@@ -1933,9 +1891,9 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9562,
-        "url": "https://osdn.net/dl/linuxlite/linux-lite-5.6-64bit.iso",
-        "version": "5.6"
+        "size": 9555,
+        "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
+        "version": "5.8"
       }
     ]
   },
@@ -2165,6 +2123,49 @@
     "releases": []
   },
   {
+    "id": "mx",
+    "name": "MX Linux",
+    "url": "https://mxlinux.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 1872756736,
+        "url": "https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-21_x64.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1877999616,
+        "url": "https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-21_386.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1800404992,
+        "url": "https://sourceforge.net/projects/mx-linux/files/Final/Xfce/MX-21_ahs_x64.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 2598371328,
+        "url": "https://sourceforge.net/projects/mx-linux/files/Final/KDE/MX-21_KDE_x64.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1501560832,
+        "url": "https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-21_fluxbox_x64.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1491075072,
+        "url": "https://sourceforge.net/projects/mx-linux/files/Final/Fluxbox/MX-21_fluxbox_386.iso",
+        "version": "21"
+      }
+    ]
+  },
+  {
     "id": "netboot",
     "name": "Netboot",
     "url": "https://netboot.xyz",
@@ -2184,25 +2185,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2134900736,
+        "size": 2136997888,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 1739718656,
+        "size": 1741422592,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 821035008,
+        "size": 822083584,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "i686",
-        "size": 788529152,
+        "size": 789577728,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-i686-linux.iso",
         "version": "21.11"
       }
@@ -2336,13 +2337,13 @@
       },
       {
         "arch": "ppc64le",
-        "size": 3703296000,
+        "size": 3691311104,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "ppc64le",
-        "size": 220581888,
+        "size": 222736384,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-NET-ppc64le-Current.iso",
         "version": "rolling"
       },
@@ -2909,6 +2910,37 @@
     ]
   },
   {
+    "id": "q4os",
+    "name": "Q4OS",
+    "url": "https://q4os.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 976224256,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.15-x64.r1.iso",
+        "version": "3.15"
+      },
+      {
+        "arch": "amd64",
+        "size": 752877568,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.15-x64-tde.r1.iso",
+        "version": "3.15"
+      },
+      {
+        "arch": "amd64",
+        "size": 485490688,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.14-x64-instcd.r5.iso",
+        "version": "3.14"
+      },
+      {
+        "arch": "i386",
+        "size": 446693376,
+        "url": "https://sourceforge.net/projects/q4os/files/oldstable/q4os-3.14-i386-instcd.r5.iso",
+        "version": "3.14"
+      }
+    ]
+  },
+  {
     "id": "qubes",
     "name": "Qubes",
     "url": "https://qubes-os.org",
@@ -3179,20 +3211,14 @@
       },
       {
         "arch": "x86_64",
-        "size": 1860173824,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-6.1-x86_64-kde.iso",
-        "version": "6.1"
-      },
-      {
-        "arch": "x86_64",
         "size": 1234173952,
         "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-x86_64-minimalgui.iso",
         "version": "6.1"
       },
       {
-        "arch": "x86_64",
-        "size": 699400192,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-x86_64-minimalcli.iso",
+        "arch": "i686",
+        "size": 1199570944,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-i686-minimalgui.iso",
         "version": "6.1"
       },
       {
@@ -3200,6 +3226,12 @@
         "size": 682622976,
         "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-i686-minimalcli.iso",
         "version": "6.1"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1672478720,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-2021.12-x86_64-lxqt.iso",
+        "version": "2021.12"
       },
       {
         "arch": "x86_64",
@@ -3233,14 +3265,14 @@
       },
       {
         "arch": "x86_64",
-        "size": 3137339392,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/multimedia/sparkylinux-2021.12-x86_64-multimedia.iso",
+        "size": 3683647488,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/gameover/sparkylinux-2021.12-x86_64-gameover.iso",
         "version": "2021.12"
       },
       {
         "arch": "x86_64",
-        "size": 1656750080,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/rescue/sparkylinux-2021.12-x86_64-rescue.iso",
+        "size": 3137339392,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/multimedia/sparkylinux-2021.12-x86_64-multimedia.iso",
         "version": "2021.12"
       },
       {
@@ -3303,33 +3335,33 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 17604608,
-        "url": "https://mirrors.dotsrc.org/tinycorelinux/12.x/x86_64/release/CorePure64-12.0.iso",
-        "version": "12.0"
+        "size": 17297408,
+        "url": "https://mirrors.dotsrc.org/tinycorelinux/13.x/x86_64/release/CorePure64-13.0.iso",
+        "version": "13.0"
       },
       {
         "arch": "x86_64",
-        "size": 30408704,
-        "url": "https://mirrors.dotsrc.org/tinycorelinux/12.x/x86_64/release/TinyCorePure64-12.0.iso",
-        "version": "12.0"
+        "size": 29360128,
+        "url": "https://mirrors.dotsrc.org/tinycorelinux/13.x/x86_64/release/TinyCorePure64-13.0.iso",
+        "version": "13.0"
       },
       {
         "arch": "i386",
-        "size": 15994880,
-        "url": "https://mirrors.dotsrc.org/tinycorelinux/12.x/x86/release/Core-12.0.iso",
-        "version": "12.0"
+        "size": 16027648,
+        "url": "https://mirrors.dotsrc.org/tinycorelinux/13.x/x86/release/Core-13.0.iso",
+        "version": "13.0"
       },
       {
         "arch": "i386",
         "size": 162529280,
-        "url": "https://mirrors.dotsrc.org/tinycorelinux/12.x/x86/release/CorePlus-12.0.iso",
-        "version": "12.0"
+        "url": "https://mirrors.dotsrc.org/tinycorelinux/13.x/x86/release/CorePlus-13.0.iso",
+        "version": "13.0"
       },
       {
         "arch": "i386",
         "size": 20971520,
-        "url": "https://mirrors.dotsrc.org/tinycorelinux/12.x/x86/release/TinyCore-12.0.iso",
-        "version": "12.0"
+        "url": "https://mirrors.dotsrc.org/tinycorelinux/13.x/x86/release/TinyCore-13.0.iso",
+        "version": "13.0"
       }
     ]
   },
