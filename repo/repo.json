@@ -643,74 +643,74 @@
       {
         "arch": "x86_64",
         "size": 859832320,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220201-boot.iso",
-        "version": "20220201"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220202-boot.iso",
+        "version": "20220202"
       },
       {
         "arch": "x86_64",
         "size": 11071913984,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220201-dvd1.iso",
-        "version": "20220201"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220202-dvd1.iso",
+        "version": "20220202"
       },
       {
         "arch": "x86_64",
         "size": 859832320,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
-        "version": "20220201"
+        "version": "20220202"
       },
       {
         "arch": "x86_64",
         "size": 11071913984,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
-        "version": "20220201"
+        "version": "20220202"
       },
       {
         "arch": "ppc64le",
-        "size": 825501696,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220201-boot.iso",
-        "version": "20220201"
+        "size": 825344000,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220202-boot.iso",
+        "version": "20220202"
       },
       {
         "arch": "ppc64le",
-        "size": 9488510976,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220201-dvd1.iso",
-        "version": "20220201"
+        "size": 9488216064,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220202-dvd1.iso",
+        "version": "20220202"
       },
       {
         "arch": "ppc64le",
-        "size": 825501696,
+        "size": 825344000,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
-        "version": "20220201"
+        "version": "20220202"
       },
       {
         "arch": "ppc64le",
-        "size": 9488510976,
+        "size": 9488216064,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
-        "version": "20220201"
+        "version": "20220202"
       },
       {
         "arch": "aarch64",
-        "size": 776953856,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220201-boot.iso",
-        "version": "20220201"
+        "size": 776990720,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220202-boot.iso",
+        "version": "20220202"
       },
       {
         "arch": "aarch64",
-        "size": 8515278848,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220201-dvd1.iso",
-        "version": "20220201"
+        "size": 8515377152,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220202-dvd1.iso",
+        "version": "20220202"
       },
       {
         "arch": "aarch64",
-        "size": 776953856,
+        "size": 776990720,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
-        "version": "20220201"
+        "version": "20220202"
       },
       {
         "arch": "aarch64",
-        "size": 8515278848,
+        "size": 8515377152,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
-        "version": "20220201"
+        "version": "20220202"
       }
     ]
   },
@@ -1206,7 +1206,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0Mzg1MDEzNg==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0MzkzNjU0NQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -2000,7 +2000,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9558,
+        "size": 9555,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -3248,37 +3248,6 @@
         "size": 56190976,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
-      }
-    ]
-  },
-  {
-    "id": "solus",
-    "name": "Solus",
-    "url": "https://getsol.us",
-    "releases": [
-      {
-        "arch": "x86_64",
-        "size": 1947598848,
-        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Budgie.iso",
-        "version": "4.3"
-      },
-      {
-        "arch": "x86_64",
-        "size": 2174648320,
-        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-GNOME.iso",
-        "version": "4.3"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1927495680,
-        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-MATE.iso",
-        "version": "4.3"
-      },
-      {
-        "arch": "x86_64",
-        "size": 2141192192,
-        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Plasma.iso",
-        "version": "4.3"
       }
     ]
   },
