@@ -1206,7 +1206,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0MzkzNjU0NQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NDAyMjkyNA==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1600,6 +1600,12 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "alpha",
+        "size": 325435392,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220203T170558Z/install-alpha-minimal-20220203T170558Z.iso",
+        "version": "20220203"
+      },
+      {
         "arch": "i386",
         "size": 422576128,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220131T170540Z/install-x86-minimal-20220131T170540Z.iso",
@@ -1634,12 +1640,6 @@
         "size": 278435840,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20220129T013513Z/install-sparc64-minimal-20220129T013513Z.iso",
         "version": "20220129"
-      },
-      {
-        "arch": "alpha",
-        "size": 325425152,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220127T170551Z/install-alpha-minimal-20220127T170551Z.iso",
-        "version": "20220127"
       },
       {
         "arch": "arm64",
@@ -2000,7 +2000,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9555,
+        "size": 9561,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2422,7 +2422,7 @@
       },
       {
         "arch": "i586",
-        "size": 4581228544,
+        "size": 4582277120,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2470,25 +2470,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 954007552,
+        "size": 952958976,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 962330624,
+        "size": 962723840,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 942342144,
+        "size": 941686784,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 660209664,
+        "size": 660602880,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2506,13 +2506,13 @@
       },
       {
         "arch": "i686",
-        "size": 888143872,
+        "size": 887095296,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 600834048,
+        "size": 599785472,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2542,25 +2542,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 954007552,
+        "size": 952958976,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 962330624,
+        "size": 962723840,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 942342144,
+        "size": 941686784,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 660209664,
+        "size": 660602880,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2578,13 +2578,13 @@
       },
       {
         "arch": "i686",
-        "size": 888143872,
+        "size": 887095296,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 600834048,
+        "size": 599785472,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -3037,45 +3037,9 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 5925502976,
-        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-rc4-x86_64.iso",
-        "version": "4.1.0-rc4"
-      },
-      {
-        "arch": "x86_64",
-        "size": 5787090944,
-        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-rc3-x86_64.iso",
-        "version": "4.1.0-rc3"
-      },
-      {
-        "arch": "x86_64",
-        "size": 5774508032,
-        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-rc2-x86_64.iso",
-        "version": "4.1.0-rc2"
-      },
-      {
-        "arch": "x86_64",
-        "size": 5774508032,
-        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-rc1-x86_64.iso",
-        "version": "4.1.0-rc1"
-      },
-      {
-        "arch": "x86_64",
-        "size": 5485101056,
-        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-beta1-x86_64.iso",
-        "version": "4.1.0-beta1"
-      },
-      {
-        "arch": "alpha",
-        "size": 5493489664,
-        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-alpha20201014-x86_64.iso",
-        "version": "4.1.0-alpha20201014"
-      },
-      {
-        "arch": "x86_64",
-        "size": 5199888384,
-        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.0.4-x86_64.iso",
-        "version": "4.0.4"
+        "size": 5954863104,
+        "url": "https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.0-x86_64.iso",
+        "version": "4.1.0"
       }
     ]
   },
@@ -3248,6 +3212,37 @@
         "size": 56190976,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
+      }
+    ]
+  },
+  {
+    "id": "solus",
+    "name": "Solus",
+    "url": "https://getsol.us",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 1947598848,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Budgie.iso",
+        "version": "4.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2174648320,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-GNOME.iso",
+        "version": "4.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1927495680,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-MATE.iso",
+        "version": "4.3"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2141192192,
+        "url": "https://mirrors.rit.edu/solus/images/4.3/Solus-4.3-Plasma.iso",
+        "version": "4.3"
       }
     ]
   },
