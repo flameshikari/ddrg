@@ -1,18 +1,5 @@
 [
   {
-    "id": "absolute",
-    "name": "Absolute Linux",
-    "url": "https://absolutelinux.org",
-    "releases": [
-      {
-        "arch": "amd64",
-        "size": 2616430592,
-        "url": "https://slackware.uk/absolute/absolute64-20220117.iso",
-        "version": "20220117"
-      }
-    ]
-  },
-  {
     "id": "adminpe",
     "name": "AdminPE",
     "url": "https://adminpe.ru",
@@ -306,9 +293,9 @@
       },
       {
         "arch": "x86_64",
-        "size": 1032138752,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-winter-2201-x86_64.iso",
-        "version": "2201"
+        "size": 1054158848,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-winter-0602-x86_64.iso",
+        "version": "0602"
       },
       {
         "arch": "i686",
@@ -1206,7 +1193,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NDEwOTMyOA==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NDE5NTcyOA==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1601,9 +1588,9 @@
     "releases": [
       {
         "arch": "alpha",
-        "size": 325435392,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220203T170558Z/install-alpha-minimal-20220203T170558Z.iso",
-        "version": "20220203"
+        "size": 325466112,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220206T001659Z/install-alpha-minimal-20220206T001659Z.iso",
+        "version": "20220206"
       },
       {
         "arch": "i386",
@@ -1761,57 +1748,57 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2980511744,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-amd64.iso",
-        "version": "2022-W05"
+        "size": 2994323456,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-installer-amd64.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "arm64",
-        "size": 2442604544,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-arm64.iso",
-        "version": "2022-W05"
+        "size": 2456924160,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-installer-arm64.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "i386",
-        "size": 2621161472,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-i386.iso",
-        "version": "2022-W05"
+        "size": 2634022912,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-installer-i386.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "amd64",
         "size": 493879296,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-netinst-amd64.iso",
-        "version": "2022-W05"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-installer-netinst-amd64.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "arm64",
         "size": 413446144,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-netinst-arm64.iso",
-        "version": "2022-W05"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-installer-netinst-arm64.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "i386",
         "size": 413138944,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-installer-netinst-i386.iso",
-        "version": "2022-W05"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-installer-netinst-i386.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "amd64",
-        "size": 3705204736,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-live-amd64.iso",
-        "version": "2022-W05"
+        "size": 3718328320,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-live-amd64.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "arm64",
-        "size": 2725730304,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-live-arm64.iso",
-        "version": "2022-W05"
+        "size": 2742480896,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-live-arm64.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "i386",
-        "size": 3212849152,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W05-live-i386.iso",
-        "version": "2022-W05"
+        "size": 3229577216,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W06-live-i386.iso",
+        "version": "2022-W06"
       },
       {
         "arch": "amd64",
@@ -1889,6 +1876,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1953497088,
+        "url": "https://files.kde.org/neon/images/unstable/20220206-2353/neon-unstable-20220206-2353.iso",
+        "version": "20220206"
+      },
+      {
+        "arch": "amd64",
         "size": 1945108480,
         "url": "https://files.kde.org/neon/images/testing/20220201-1820/neon-testing-20220201-1820.iso",
         "version": "20220201"
@@ -1898,12 +1891,6 @@
         "size": 2573205504,
         "url": "https://files.kde.org/neon/images/developer/20220131-1850/neon-developer-20220131-1850.iso",
         "version": "20220131"
-      },
-      {
-        "arch": "amd64",
-        "size": 1953497088,
-        "url": "https://files.kde.org/neon/images/unstable/20220130-0332/neon-unstable-20220130-0332.iso",
-        "version": "20220130"
       },
       {
         "arch": "amd64",
@@ -2000,7 +1987,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9573,
+        "size": 9556,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2294,7 +2281,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2136997888,
+        "size": 2134900736,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
@@ -2312,7 +2299,7 @@
       },
       {
         "arch": "i686",
-        "size": 789577728,
+        "size": 796917760,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-i686-linux.iso",
         "version": "21.11"
       }
@@ -3197,7 +3184,7 @@
       },
       {
         "arch": "i386",
-        "size": 62961664,
+        "size": 62965760,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-loram.iso",
         "version": "5.0"
       },
