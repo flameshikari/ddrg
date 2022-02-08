@@ -1193,7 +1193,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NDE5NTcyOA==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NDI4MjEzNQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1587,16 +1587,16 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "i386",
+        "size": 423624704,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220207T170556Z/install-x86-minimal-20220207T170556Z.iso",
+        "version": "20220207"
+      },
+      {
         "arch": "alpha",
         "size": 325466112,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220206T001659Z/install-alpha-minimal-20220206T001659Z.iso",
         "version": "20220206"
-      },
-      {
-        "arch": "i386",
-        "size": 422576128,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220131T170540Z/install-x86-minimal-20220131T170540Z.iso",
-        "version": "20220131"
       },
       {
         "arch": "i386",
@@ -1876,6 +1876,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 2575302656,
+        "url": "https://files.kde.org/neon/images/developer/20220207-1905/neon-developer-20220207-1905.iso",
+        "version": "20220207"
+      },
+      {
+        "arch": "amd64",
         "size": 1953497088,
         "url": "https://files.kde.org/neon/images/unstable/20220206-2353/neon-unstable-20220206-2353.iso",
         "version": "20220206"
@@ -1885,12 +1891,6 @@
         "size": 1945108480,
         "url": "https://files.kde.org/neon/images/testing/20220201-1820/neon-testing-20220201-1820.iso",
         "version": "20220201"
-      },
-      {
-        "arch": "amd64",
-        "size": 2573205504,
-        "url": "https://files.kde.org/neon/images/developer/20220131-1850/neon-developer-20220131-1850.iso",
-        "version": "20220131"
       },
       {
         "arch": "amd64",
@@ -1987,7 +1987,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9556,
+        "size": 9563,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2397,7 +2397,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4583325696,
+        "size": 4601151488,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2409,7 +2409,7 @@
       },
       {
         "arch": "i586",
-        "size": 4508876800,
+        "size": 4512022528,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2433,13 +2433,13 @@
       },
       {
         "arch": "ppc64le",
-        "size": 3607064576,
+        "size": 3607179264,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "ppc64le",
-        "size": 222769152,
+        "size": 222777344,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-NET-ppc64le-Current.iso",
         "version": "rolling"
       },
@@ -2457,43 +2457,43 @@
       },
       {
         "arch": "x86_64",
-        "size": 958070784,
+        "size": 957153280,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 966262784,
+        "size": 966328320,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 947060736,
+        "size": 947453952,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 660078592,
+        "size": 660996096,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 892338176,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 912261120,
+        "size": 911212544,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 892338176,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2529,43 +2529,43 @@
       },
       {
         "arch": "x86_64",
-        "size": 958070784,
+        "size": 957153280,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 966262784,
+        "size": 966328320,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 947060736,
+        "size": 947453952,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 660078592,
+        "size": 660996096,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 892338176,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 912261120,
+        "size": 911212544,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 892338176,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
