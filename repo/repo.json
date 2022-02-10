@@ -636,74 +636,74 @@
       {
         "arch": "x86_64",
         "size": 859832320,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220207-boot.iso",
-        "version": "20220207"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220208-boot.iso",
+        "version": "20220208"
       },
       {
         "arch": "x86_64",
         "size": 11072962560,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220207-dvd1.iso",
-        "version": "20220207"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220208-dvd1.iso",
+        "version": "20220208"
       },
       {
         "arch": "x86_64",
         "size": 859832320,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
-        "version": "20220207"
+        "version": "20220208"
       },
       {
         "arch": "x86_64",
         "size": 11072962560,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
-        "version": "20220207"
+        "version": "20220208"
       },
       {
         "arch": "ppc64le",
-        "size": 824813568,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220207-boot.iso",
-        "version": "20220207"
+        "size": 824698880,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220208-boot.iso",
+        "version": "20220208"
       },
       {
         "arch": "ppc64le",
-        "size": 9488510976,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220207-dvd1.iso",
-        "version": "20220207"
+        "size": 9488363520,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220208-dvd1.iso",
+        "version": "20220208"
       },
       {
         "arch": "ppc64le",
-        "size": 824813568,
+        "size": 824698880,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
-        "version": "20220207"
+        "version": "20220208"
       },
       {
         "arch": "ppc64le",
-        "size": 9488510976,
+        "size": 9488363520,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
-        "version": "20220207"
+        "version": "20220208"
       },
       {
         "arch": "aarch64",
-        "size": 777207808,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220207-boot.iso",
-        "version": "20220207"
+        "size": 777150464,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220208-boot.iso",
+        "version": "20220208"
       },
       {
         "arch": "aarch64",
-        "size": 8516339712,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220207-dvd1.iso",
-        "version": "20220207"
+        "size": 8516382720,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220208-dvd1.iso",
+        "version": "20220208"
       },
       {
         "arch": "aarch64",
-        "size": 777207808,
+        "size": 777150464,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
-        "version": "20220207"
+        "version": "20220208"
       },
       {
         "arch": "aarch64",
-        "size": 8516339712,
+        "size": 8516382720,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
-        "version": "20220207"
+        "version": "20220208"
       }
     ]
   },
@@ -1199,7 +1199,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NDM2ODUyNQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NDQ1NDkyNg==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1593,6 +1593,12 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "sparc64",
+        "size": 279087104,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20220208T075239Z/install-sparc64-minimal-20220208T075239Z.iso",
+        "version": "20220208"
+      },
+      {
         "arch": "i386",
         "size": 423624704,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220207T170556Z/install-x86-minimal-20220207T170556Z.iso",
@@ -1627,12 +1633,6 @@
         "size": 673185792,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220130T170547Z/admincd-amd64-20220130T170547Z.iso",
         "version": "20220130"
-      },
-      {
-        "arch": "sparc64",
-        "size": 278435840,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20220129T013513Z/install-sparc64-minimal-20220129T013513Z.iso",
-        "version": "20220129"
       },
       {
         "arch": "arm64",
@@ -1993,7 +1993,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9556,
+        "size": 9563,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2061,53 +2061,52 @@
     ]
   },
   {
-    "id": "mageia",
-    "name": "Mageia",
-    "url": "https://mageia.org",
-    "releases": [
-      {
-        "arch": "x86_64",
-        "size": 3201746944,
-        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-GNOME-x86_64/Mageia-8-Live-GNOME-x86_64.iso",
-        "version": "8"
-      },
-      {
-        "arch": "x86_64",
-        "size": 3600553984,
-        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-Plasma-x86_64/Mageia-8-Live-Plasma-x86_64.iso",
-        "version": "8"
-      },
-      {
-        "arch": "i586",
-        "size": 2703665152,
-        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-Xfce-i586/Mageia-8-Live-Xfce-i586.iso",
-        "version": "8"
-      },
-      {
-        "arch": "x86_64",
-        "size": 2943299584,
-        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-Xfce-x86_64/Mageia-8-Live-Xfce-x86_64.iso",
-        "version": "8"
-      },
-      {
-        "arch": "i586",
-        "size": 4398635008,
-        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-i586/Mageia-8-i586.iso",
-        "version": "8"
-      },
-      {
-        "arch": "x86_64",
-        "size": 4499220480,
-        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-x86_64/Mageia-8-x86_64.iso",
-        "version": "8"
-      }
-    ]
-  },
-  {
     "id": "manjaro",
     "name": "Manjaro",
     "url": "https://manjaro.org",
     "releases": [
+      {
+        "arch": "amd64",
+        "size": 3522797568,
+        "url": "https://download.manjaro.org/cinnamon/21.2.3/manjaro-cinnamon-21.2.3-220205-linux515.iso",
+        "version": "21.2.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 2444075008,
+        "url": "https://download.manjaro.org/cinnamon/21.2.3/manjaro-cinnamon-21.2.3-minimal-220205-linux515.iso",
+        "version": "21.2.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 3303161856,
+        "url": "https://download.manjaro.org/i3/21.2.3/manjaro-i3-21.2.3-220205-linux515.iso",
+        "version": "21.2.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 2386339840,
+        "url": "https://download.manjaro.org/i3/21.2.3/manjaro-i3-21.2.3-minimal-220205-linux515.iso",
+        "version": "21.2.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 3286630400,
+        "url": "https://download.manjaro.org/mate/21.2.3/manjaro-mate-21.2.3-220205-linux515.iso",
+        "version": "21.2.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 2357850112,
+        "url": "https://download.manjaro.org/mate/21.2.3/manjaro-mate-21.2.3-minimal-220205-linux515.iso",
+        "version": "21.2.3"
+      },
+      {
+        "arch": "amd64",
+        "size": 2357850112,
+        "url": "https://download.manjaro.org/mate/21.2.3/manjaro-mate-21.2.3-minimal-220205-linux515.iso",
+        "version": "21.2.3"
+      },
       {
         "arch": "amd64",
         "size": 3528622080,
@@ -2160,48 +2159,6 @@
         "arch": "amd64",
         "size": 2793695232,
         "url": "https://download.manjaro.org/xfce/21.2.2/manjaro-xfce-21.2.2-minimal-220123-linux510.iso",
-        "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 3696459776,
-        "url": "https://download.manjaro.org/cinnamon/21.2.2/manjaro-cinnamon-21.2.2-220123-linux515.iso",
-        "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 2631032832,
-        "url": "https://download.manjaro.org/cinnamon/21.2.2/manjaro-cinnamon-21.2.2-minimal-220123-linux515.iso",
-        "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 3476385792,
-        "url": "https://download.manjaro.org/i3/21.2.2/manjaro-i3-21.2.2-220123-linux515.iso",
-        "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 2563973120,
-        "url": "https://download.manjaro.org/i3/21.2.2/manjaro-i3-21.2.2-minimal-220123-linux515.iso",
-        "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 3430457344,
-        "url": "https://download.manjaro.org/mate/21.2.2/manjaro-mate-21.2.2-220123-linux515.iso",
-        "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 2507227136,
-        "url": "https://download.manjaro.org/mate/21.2.2/manjaro-mate-21.2.2-minimal-220123-linux515.iso",
-        "version": "21.2.2"
-      },
-      {
-        "arch": "amd64",
-        "size": 2507227136,
-        "url": "https://download.manjaro.org/mate/21.2.2/manjaro-mate-21.2.2-minimal-220123-linux515.iso",
         "version": "21.2.2"
       },
       {
@@ -2403,7 +2360,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4601151488,
+        "size": 4603248640,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2415,7 +2372,7 @@
       },
       {
         "arch": "i586",
-        "size": 4512022528,
+        "size": 4514119680,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2463,25 +2420,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 929300480,
+        "size": 929562624,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 937230336,
+        "size": 936706048,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 919142400,
+        "size": 918683648,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 632684544,
+        "size": 632422400,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2493,13 +2450,13 @@
       },
       {
         "arch": "i686",
-        "size": 911212544,
+        "size": 910163968,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 893386752,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2535,25 +2492,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 929300480,
+        "size": 929562624,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 937230336,
+        "size": 936706048,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 919142400,
+        "size": 918683648,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 632684544,
+        "size": 632422400,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2565,13 +2522,13 @@
       },
       {
         "arch": "i686",
-        "size": 911212544,
+        "size": 910163968,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 893386752,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -3246,45 +3203,45 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 1617952768,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-6.1-x86_64-lxqt.iso",
-        "version": "6.1"
+        "size": 1627389952,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/lxqt/sparkylinux-6.2-x86_64-lxqt.iso",
+        "version": "6.2"
       },
       {
         "arch": "x86_64",
-        "size": 1476395008,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-6.1-x86_64-xfce.iso",
-        "version": "6.1"
+        "size": 1486880768,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/xfce/sparkylinux-6.2-x86_64-xfce.iso",
+        "version": "6.2"
       },
       {
         "arch": "x86_64",
-        "size": 1860173824,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-6.1-x86_64-kde.iso",
-        "version": "6.1"
+        "size": 1869611008,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/kde/sparkylinux-6.2-x86_64-kde.iso",
+        "version": "6.2"
       },
       {
         "arch": "x86_64",
-        "size": 1234173952,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-x86_64-minimalgui.iso",
-        "version": "6.1"
+        "size": 1238368256,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.2-x86_64-minimalgui.iso",
+        "version": "6.2"
       },
       {
         "arch": "x86_64",
         "size": 699400192,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-x86_64-minimalcli.iso",
-        "version": "6.1"
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.2-x86_64-minimalcli.iso",
+        "version": "6.2"
       },
       {
         "arch": "i686",
-        "size": 1199570944,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.1-i686-minimalgui.iso",
-        "version": "6.1"
+        "size": 1203765248,
+        "url": "http://sourceforge.net/projects/sparkylinux/files/base/sparkylinux-6.2-i686-minimalgui.iso",
+        "version": "6.2"
       },
       {
         "arch": "i686",
         "size": 682622976,
-        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.1-i686-minimalcli.iso",
-        "version": "6.1"
+        "url": "http://sourceforge.net/projects/sparkylinux/files/cli/sparkylinux-6.2-i686-minimalcli.iso",
+        "version": "6.2"
       },
       {
         "arch": "x86_64",
