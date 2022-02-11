@@ -1199,7 +1199,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NDQ1NDkyNg==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NDU0MTM0OA==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1882,9 +1882,9 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 1977614336,
-        "url": "https://files.kde.org/neon/images/user/20220208-1421/neon-user-20220208-1421.iso",
-        "version": "20220208"
+        "size": 1983905792,
+        "url": "https://files.kde.org/neon/images/user/20220210-0946/neon-user-20220210-0946.iso",
+        "version": "20220210"
       },
       {
         "arch": "amd64",
@@ -1993,7 +1993,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9563,
+        "size": 9562,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2057,6 +2057,49 @@
         "size": 975175680,
         "url": "https://mirror.yandex.ru/ubuntu-cdimage/lubuntu/releases/xenial/release/lubuntu-16.04.6-desktop-i386.iso",
         "version": "16.04.6"
+      }
+    ]
+  },
+  {
+    "id": "mageia",
+    "name": "Mageia",
+    "url": "https://mageia.org",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 3201746944,
+        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-GNOME-x86_64/Mageia-8-Live-GNOME-x86_64.iso",
+        "version": "8"
+      },
+      {
+        "arch": "x86_64",
+        "size": 3600553984,
+        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-Plasma-x86_64/Mageia-8-Live-Plasma-x86_64.iso",
+        "version": "8"
+      },
+      {
+        "arch": "i586",
+        "size": 2703665152,
+        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-Xfce-i586/Mageia-8-Live-Xfce-i586.iso",
+        "version": "8"
+      },
+      {
+        "arch": "x86_64",
+        "size": 2943299584,
+        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-Live-Xfce-x86_64/Mageia-8-Live-Xfce-x86_64.iso",
+        "version": "8"
+      },
+      {
+        "arch": "i586",
+        "size": 4398635008,
+        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-i586/Mageia-8-i586.iso",
+        "version": "8"
+      },
+      {
+        "arch": "x86_64",
+        "size": 4499220480,
+        "url": "https://mirror.yandex.ru/mageia/iso/8/Mageia-8-x86_64/Mageia-8-x86_64.iso",
+        "version": "8"
       }
     ]
   },
@@ -2384,13 +2427,13 @@
       },
       {
         "arch": "aarch64",
-        "size": 3935768576,
+        "size": 3825346560,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 247617536,
+        "size": 247605248,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2468,25 +2511,25 @@
       },
       {
         "arch": "aarch64",
-        "size": 925368320,
+        "size": 903479296,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 942473216,
+        "size": 918355968,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 914292736,
+        "size": 892141568,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 654770176,
+        "size": 626786304,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2540,25 +2583,25 @@
       },
       {
         "arch": "aarch64",
-        "size": 925368320,
+        "size": 903479296,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 942473216,
+        "size": 918355968,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 914292736,
+        "size": 892141568,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 654770176,
+        "size": 626786304,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -3325,15 +3368,15 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 808452096,
-        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.00/systemrescue-9.00-amd64.iso",
-        "version": "9.00"
+        "size": 737148928,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.01/systemrescue-9.01-amd64.iso",
+        "version": "9.01"
       },
       {
         "arch": "i686",
-        "size": 839909376,
-        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.00/systemrescue-9.00-i686.iso",
-        "version": "9.00"
+        "size": 785383424,
+        "url": "https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/9.01/systemrescue-9.01-i686.iso",
+        "version": "9.01"
       }
     ]
   },
