@@ -1223,7 +1223,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NTMxODk3MQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NTQwNTMzMw==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1510,20 +1510,7 @@
     "id": "freedos",
     "name": "FreeDOS",
     "url": "https://freedos.org",
-    "releases": [
-      {
-        "arch": "i386",
-        "size": 438777856,
-        "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.2/FD12CD.iso",
-        "version": "1.2"
-      },
-      {
-        "arch": "i386",
-        "size": 438657024,
-        "url": "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.2/FD12LGCY.iso",
-        "version": "1.2"
-      }
-    ]
+    "releases": []
   },
   {
     "id": "fwul",
@@ -1625,20 +1612,20 @@
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220217T125149Z/install-amd64-minimal-20220217T125149Z.iso",
-        "version": "20220217"
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220219T142658Z/install-amd64-minimal-20220219T142658Z.iso",
+        "version": "20220219"
       },
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220217T125149Z/install-amd64-minimal-20220217T125149Z.iso",
-        "version": "20220217"
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220219T142658Z/install-amd64-minimal-20220219T142658Z.iso",
+        "version": "20220219"
       },
       {
         "arch": "amd64",
         "size": 673185792,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220217T125149Z/admincd-amd64-20220217T125149Z.iso",
-        "version": "20220217"
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220219T142658Z/admincd-amd64-20220219T142658Z.iso",
+        "version": "20220219"
       },
       {
         "arch": "alpha",
@@ -1838,57 +1825,57 @@
       },
       {
         "arch": "amd64",
-        "size": 2997256192,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-installer-amd64.iso",
-        "version": "2022-W07"
+        "size": 3008102400,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-installer-amd64.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "arm64",
-        "size": 2459332608,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-installer-arm64.iso",
-        "version": "2022-W07"
+        "size": 2471211008,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-installer-arm64.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "i386",
-        "size": 2640445440,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-installer-i386.iso",
-        "version": "2022-W07"
+        "size": 2650800128,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-installer-i386.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "amd64",
-        "size": 493879296,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-installer-netinst-amd64.iso",
-        "version": "2022-W07"
+        "size": 430964736,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-installer-netinst-amd64.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "arm64",
         "size": 413446144,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-installer-netinst-arm64.iso",
-        "version": "2022-W07"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-installer-netinst-arm64.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "i386",
         "size": 413138944,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-installer-netinst-i386.iso",
-        "version": "2022-W07"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-installer-netinst-i386.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "amd64",
-        "size": 3684839424,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-live-amd64.iso",
-        "version": "2022-W07"
+        "size": 3697963008,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-live-amd64.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "arm64",
-        "size": 2744758272,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-live-arm64.iso",
-        "version": "2022-W07"
+        "size": 2756169728,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-live-arm64.iso",
+        "version": "2022-W08"
       },
       {
         "arch": "i386",
-        "size": 3232739328,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W07-live-i386.iso",
-        "version": "2022-W07"
+        "size": 3246305280,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W08-live-i386.iso",
+        "version": "2022-W08"
       }
     ]
   },
@@ -2023,7 +2010,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9561,
+        "size": 9565,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -3168,44 +3155,7 @@
     "id": "slitaz",
     "name": "SliTaz",
     "url": "http://slitaz.org",
-    "releases": [
-      {
-        "arch": "x86_64",
-        "size": 65355776,
-        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core-5in1.iso",
-        "version": "5.0"
-      },
-      {
-        "arch": "x86_64",
-        "size": 55320576,
-        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
-        "version": "5.0"
-      },
-      {
-        "arch": "x86_64",
-        "size": 54933504,
-        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
-        "version": "5.0"
-      },
-      {
-        "arch": "i386",
-        "size": 62965760,
-        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-loram.iso",
-        "version": "5.0"
-      },
-      {
-        "arch": "x86_64",
-        "size": 37922816,
-        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
-        "version": "5.0"
-      },
-      {
-        "arch": "i386",
-        "size": 56164352,
-        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
-        "version": "5.0"
-      }
-    ]
+    "releases": []
   },
   {
     "id": "solus",
