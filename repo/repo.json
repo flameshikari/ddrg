@@ -1223,7 +1223,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NTQwNTMzMw==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NTQ5MTczNg==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1610,22 +1610,40 @@
     "url": "https://gentoo.org",
     "releases": [
       {
-        "arch": "amd64",
-        "size": 457179136,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220219T142658Z/install-amd64-minimal-20220219T142658Z.iso",
-        "version": "20220219"
+        "arch": "i386",
+        "size": 423624704,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220221T170529Z/install-x86-minimal-20220221T170529Z.iso",
+        "version": "20220221"
       },
       {
         "arch": "amd64",
         "size": 457179136,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220219T142658Z/install-amd64-minimal-20220219T142658Z.iso",
-        "version": "20220219"
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220220T170542Z/install-amd64-minimal-20220220T170542Z.iso",
+        "version": "20220220"
+      },
+      {
+        "arch": "arm64",
+        "size": 496259072,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220220T235324Z/install-arm64-minimal-20220220T235324Z.iso",
+        "version": "20220220"
+      },
+      {
+        "arch": "amd64",
+        "size": 457179136,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220220T170542Z/install-amd64-minimal-20220220T170542Z.iso",
+        "version": "20220220"
       },
       {
         "arch": "amd64",
         "size": 673185792,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220219T142658Z/admincd-amd64-20220219T142658Z.iso",
-        "version": "20220219"
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220220T170542Z/admincd-amd64-20220220T170542Z.iso",
+        "version": "20220220"
+      },
+      {
+        "arch": "arm64",
+        "size": 496259072,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220220T235324Z/install-arm64-minimal-20220220T235324Z.iso",
+        "version": "20220220"
       },
       {
         "arch": "alpha",
@@ -1647,27 +1665,9 @@
       },
       {
         "arch": "i386",
-        "size": 423624704,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220214T170538Z/install-x86-minimal-20220214T170538Z.iso",
-        "version": "20220214"
-      },
-      {
-        "arch": "i386",
         "size": 614465536,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/x86/autobuilds/20220214T170538Z/admincd-x86-20220214T170538Z.iso",
         "version": "20220214"
-      },
-      {
-        "arch": "arm64",
-        "size": 495650816,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220123T230658Z/install-arm64-minimal-20220123T230658Z.iso",
-        "version": "20220123"
-      },
-      {
-        "arch": "arm64",
-        "size": 495650816,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220123T230658Z/install-arm64-minimal-20220123T230658Z.iso",
-        "version": "20220123"
       },
       {
         "arch": "ppc",
@@ -2010,7 +2010,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9565,
+        "size": 9564,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2420,19 +2420,19 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4611637248,
+        "size": 4588568576,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 212860928,
+        "size": 213909504,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-NET-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i586",
-        "size": 4527751168,
+        "size": 4525654016,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2456,13 +2456,13 @@
       },
       {
         "arch": "ppc64le",
-        "size": 3616935936,
+        "size": 3621007360,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "ppc64le",
-        "size": 223039488,
+        "size": 223051776,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-NET-ppc64le-Current.iso",
         "version": "rolling"
       },
@@ -2480,49 +2480,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 924778496,
+        "size": 925040640,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 934281216,
+        "size": 935919616,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 918159360,
+        "size": 917569536,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 631963648,
+        "size": 630521856,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 913309696,
+        "size": 912261120,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 895483904,
+        "size": 894435328,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 597688320,
+        "size": 598736896,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2552,49 +2552,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 924778496,
+        "size": 925040640,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 934281216,
+        "size": 935919616,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 918159360,
+        "size": 917569536,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 631963648,
+        "size": 630521856,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 891289600,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 913309696,
+        "size": 912261120,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 895483904,
+        "size": 894435328,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 597688320,
+        "size": 598736896,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -3155,7 +3155,44 @@
     "id": "slitaz",
     "name": "SliTaz",
     "url": "http://slitaz.org",
-    "releases": []
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 65355776,
+        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core-5in1.iso",
+        "version": "5.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 55320576,
+        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
+        "version": "5.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 54933504,
+        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
+        "version": "5.0"
+      },
+      {
+        "arch": "i386",
+        "size": 62965760,
+        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-loram.iso",
+        "version": "5.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 37922816,
+        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
+        "version": "5.0"
+      },
+      {
+        "arch": "i386",
+        "size": 56164352,
+        "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
+        "version": "5.0"
+      }
+    ]
   },
   {
     "id": "solus",
