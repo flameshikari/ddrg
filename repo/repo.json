@@ -1235,7 +1235,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NjM1NTcyNQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NjQ0MjEyMg==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1622,6 +1622,12 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "alpha",
+        "size": 325675008,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220303T170529Z/install-alpha-minimal-20220303T170529Z.iso",
+        "version": "20220303"
+      },
+      {
         "arch": "sparc64",
         "size": 278691840,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/sparc/autobuilds/20220301T015013Z/install-sparc64-minimal-20220301T015013Z.iso",
@@ -1668,12 +1674,6 @@
         "size": 496154624,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220227T233703Z/install-arm64-minimal-20220227T233703Z.iso",
         "version": "20220227"
-      },
-      {
-        "arch": "alpha",
-        "size": 325574656,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220224T170555Z/install-alpha-minimal-20220224T170555Z.iso",
-        "version": "20220224"
       },
       {
         "arch": "ia64",
@@ -1895,7 +1895,14 @@
     "id": "kaos",
     "name": "KaOS",
     "url": "https://kaosx.us",
-    "releases": []
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 2997256192,
+        "url": "https://sourceforge.net/projects/kaosx/files/ISO/KaOS-2022.02-x86_64.iso",
+        "version": "2022.02"
+      }
+    ]
   },
   {
     "id": "kdeneon",
@@ -2015,7 +2022,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9558,
+        "size": 9552,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2425,7 +2432,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4640997376,
+        "size": 4646240256,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2437,7 +2444,7 @@
       },
       {
         "arch": "i586",
-        "size": 4556062720,
+        "size": 4558159872,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2449,19 +2456,19 @@
       },
       {
         "arch": "aarch64",
-        "size": 3858012160,
+        "size": 3864045568,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 248832000,
+        "size": 248838144,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "ppc64le",
-        "size": 3651342336,
+        "size": 3652603904,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
         "version": "rolling"
       },
@@ -2485,25 +2492,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 930152448,
+        "size": 930349056,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 937361408,
+        "size": 937230336,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 919863296,
+        "size": 920715264,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 632553472,
+        "size": 633077760,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2533,49 +2540,49 @@
       },
       {
         "arch": "aarch64",
-        "size": 903413760,
+        "size": 904331264,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 918552576,
+        "size": 917372928,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 892141568,
+        "size": 891944960,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 628162560,
+        "size": 627572736,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 930152448,
+        "size": 930349056,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 937361408,
+        "size": 937230336,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 919863296,
+        "size": 920715264,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 632553472,
+        "size": 633077760,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2605,25 +2612,25 @@
       },
       {
         "arch": "aarch64",
-        "size": 903413760,
+        "size": 904331264,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 918552576,
+        "size": 917372928,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 892141568,
+        "size": 891944960,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 628162560,
+        "size": 627572736,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2832,6 +2839,25 @@
         "size": 1939615744,
         "url": "https://mirror.yandex.ru/mirrors/parrot/iso/current/Parrot-xfce-4.11.3_amd64.iso",
         "version": "4.11.3"
+      }
+    ]
+  },
+  {
+    "id": "peppermintos",
+    "name": "Peppermint OS",
+    "url": "https://peppermintos.com",
+    "releases": [
+      {
+        "arch": "i386",
+        "size": 1576009728,
+        "url": "https://github.com/peppermintos/Peppermint-10/releases/download/10_20191210/Peppermint-10-20191210-i386.iso",
+        "version": "10-20191210"
+      },
+      {
+        "arch": "amd64",
+        "size": 1562378240,
+        "url": "https://github.com/peppermintos/Peppermint-10/releases/download/10_20191210/Peppermint-10-20191210-amd64.iso",
+        "version": "10-20191210"
       }
     ]
   },
