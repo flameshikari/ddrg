@@ -296,18 +296,6 @@
         "size": 815792128,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang32/archbang32-beta-0509-i686.iso",
         "version": "0509"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1046818816,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-0503-x86_64.iso",
-        "version": "0503"
-      },
-      {
-        "arch": "x86_64",
-        "size": 1046818816,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-0303-x86_64.iso",
-        "version": "0303"
       }
     ]
   },
@@ -648,74 +636,74 @@
       {
         "arch": "x86_64",
         "size": 893386752,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220228-boot.iso",
-        "version": "20220228"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220307-boot.iso",
+        "version": "20220307"
       },
       {
         "arch": "x86_64",
-        "size": 11150557184,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220228-dvd1.iso",
-        "version": "20220228"
+        "size": 11159994368,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220307-dvd1.iso",
+        "version": "20220307"
       },
       {
         "arch": "x86_64",
         "size": 893386752,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
-        "version": "20220228"
+        "version": "20220307"
       },
       {
         "arch": "x86_64",
-        "size": 11150557184,
+        "size": 11159994368,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
-        "version": "20220228"
+        "version": "20220307"
       },
       {
         "arch": "ppc64le",
-        "size": 856797184,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220228-boot.iso",
-        "version": "20220228"
+        "size": 857112576,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220307-boot.iso",
+        "version": "20220307"
       },
       {
         "arch": "ppc64le",
-        "size": 9569316864,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220228-dvd1.iso",
-        "version": "20220228"
+        "size": 9578459136,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220307-dvd1.iso",
+        "version": "20220307"
       },
       {
         "arch": "ppc64le",
-        "size": 856797184,
+        "size": 857112576,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
-        "version": "20220228"
+        "version": "20220307"
       },
       {
         "arch": "ppc64le",
-        "size": 9569316864,
+        "size": 9578459136,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
-        "version": "20220228"
+        "version": "20220307"
       },
       {
         "arch": "aarch64",
-        "size": 810584064,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220228-boot.iso",
-        "version": "20220228"
+        "size": 810500096,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220307-boot.iso",
+        "version": "20220307"
       },
       {
         "arch": "aarch64",
-        "size": 8617875456,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220228-dvd1.iso",
-        "version": "20220228"
+        "size": 8626315264,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220307-dvd1.iso",
+        "version": "20220307"
       },
       {
         "arch": "aarch64",
-        "size": 810584064,
+        "size": 810500096,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
-        "version": "20220228"
+        "version": "20220307"
       },
       {
         "arch": "aarch64",
-        "size": 8617875456,
+        "size": 8626315264,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
-        "version": "20220228"
+        "version": "20220307"
       }
     ]
   },
@@ -1235,7 +1223,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NjcwMTMzNg==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0Njc4NzcyNw==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1544,69 +1532,75 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 2533818368,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/dr460nized/220131/garuda-dr460nized-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2381228032,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/dr460nized/220308/garuda-dr460nized-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2369638400,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/220131/garuda-gnome-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2285533184,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/gnome/220308/garuda-gnome-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2404427776,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/220131/garuda-xfce-linux-lts-220131.iso",
-        "version": "220131"
+        "size": 2327867392,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/xfce/220308/garuda-xfce-linux-lts-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2485450752,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/220131/garuda-lxqt-kwin-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2339905536,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/lxqt-kwin/220308/garuda-lxqt-kwin-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2382520320,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/sway/220131/garuda-sway-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2287360000,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/wayfire/220308/garuda-wayfire-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2282778624,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/qtile/220131/garuda-qtile-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2299441152,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/sway/220308/garuda-sway-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2430431232,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/i3/220131/garuda-i3-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2192351232,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/qtile/220308/garuda-qtile-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2333523968,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/bspwm/220131/garuda-bspwm-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2334803968,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/i3/220308/garuda-i3-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2612887552,
-        "url": "https://mirrors.fossho.st/garuda/iso/community/mate/220131/garuda-mate-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2250047488,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/bspwm/220308/garuda-bspwm-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2423752704,
-        "url": "https://mirrors.fossho.st/garuda/iso/community/cinnamon/220131/garuda-cinnamon-linux-zen-220131.iso",
-        "version": "220131"
+        "size": 2500390912,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/mate/220308/garuda-mate-linux-zen-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
-        "size": 2014052352,
-        "url": "https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/220131/garuda-kde-barebones-linux-lts-220131.iso",
-        "version": "220131"
+        "size": 2338287616,
+        "url": "https://mirrors.fossho.st/garuda/iso/community/cinnamon/220308/garuda-cinnamon-linux-zen-220308.iso",
+        "version": "220308"
+      },
+      {
+        "arch": "amd64",
+        "size": 1865529344,
+        "url": "https://mirrors.fossho.st/garuda/iso/garuda/kde-barebones/220308/garuda-kde-barebones-linux-lts-220308.iso",
+        "version": "220308"
       },
       {
         "arch": "amd64",
@@ -1911,6 +1905,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1961885696,
+        "url": "https://files.kde.org/neon/images/testing/20220308-1821/neon-testing-20220308-1821.iso",
+        "version": "20220308"
+      },
+      {
+        "arch": "amd64",
         "size": 2516582400,
         "url": "https://files.kde.org/neon/images/developer/20220307-1848/neon-developer-20220307-1848.iso",
         "version": "20220307"
@@ -1920,12 +1920,6 @@
         "size": 1968177152,
         "url": "https://files.kde.org/neon/images/unstable/20220306-0330/neon-unstable-20220306-0330.iso",
         "version": "20220306"
-      },
-      {
-        "arch": "amd64",
-        "size": 1957691392,
-        "url": "https://files.kde.org/neon/images/testing/20220301-1821/neon-testing-20220301-1821.iso",
-        "version": "20220301"
       },
       {
         "arch": "amd64",
@@ -2022,7 +2016,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9554,
+        "size": 9558,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2432,7 +2426,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4642045952,
+        "size": 4643094528,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2480,13 +2474,13 @@
       },
       {
         "arch": "s390x",
-        "size": 2814898176,
+        "size": 2815172608,
         "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-DVD-s390x-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "s390x",
-        "size": 158992384,
+        "size": 158998528,
         "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-NET-s390x-Current.iso",
         "version": "rolling"
       },
@@ -2498,25 +2492,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 935723008,
+        "size": 936050688,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 918487040,
+        "size": 918814720,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 632422400,
+        "size": 631832576,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 896532480,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2528,13 +2522,13 @@
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 895483904,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 599785472,
+        "size": 600834048,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2570,25 +2564,25 @@
       },
       {
         "arch": "x86_64",
-        "size": 935723008,
+        "size": 936050688,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 918487040,
+        "size": 918814720,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 632422400,
+        "size": 631832576,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 896532480,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2600,13 +2594,13 @@
       },
       {
         "arch": "i686",
-        "size": 894435328,
+        "size": 895483904,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 599785472,
+        "size": 600834048,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -3405,8 +3399,8 @@
       {
         "arch": "amd64",
         "size": 1192667136,
-        "url": "https://mirrors.edge.kernel.org/tails/stable/tails-amd64-4.27/tails-amd64-4.27.iso",
-        "version": "4.27"
+        "url": "https://mirrors.edge.kernel.org/tails/stable/tails-amd64-4.28/tails-amd64-4.28.iso",
+        "version": "4.28"
       }
     ]
   },
