@@ -666,74 +666,74 @@
       {
         "arch": "x86_64",
         "size": 893386752,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220307-boot.iso",
-        "version": "20220307"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220310-boot.iso",
+        "version": "20220310"
       },
       {
         "arch": "x86_64",
-        "size": 11159994368,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220307-dvd1.iso",
-        "version": "20220307"
+        "size": 11169431552,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220310-dvd1.iso",
+        "version": "20220310"
       },
       {
         "arch": "x86_64",
         "size": 893386752,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
-        "version": "20220307"
+        "version": "20220310"
       },
       {
         "arch": "x86_64",
-        "size": 11159994368,
+        "size": 11169431552,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
-        "version": "20220307"
+        "version": "20220310"
       },
       {
         "arch": "ppc64le",
-        "size": 857112576,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220307-boot.iso",
-        "version": "20220307"
+        "size": 856754176,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220310-boot.iso",
+        "version": "20220310"
       },
       {
         "arch": "ppc64le",
-        "size": 9578459136,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220307-dvd1.iso",
-        "version": "20220307"
+        "size": 9587306496,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220310-dvd1.iso",
+        "version": "20220310"
       },
       {
         "arch": "ppc64le",
-        "size": 857112576,
+        "size": 856754176,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
-        "version": "20220307"
+        "version": "20220310"
       },
       {
         "arch": "ppc64le",
-        "size": 9578459136,
+        "size": 9587306496,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
-        "version": "20220307"
+        "version": "20220310"
       },
       {
         "arch": "aarch64",
-        "size": 810500096,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220307-boot.iso",
-        "version": "20220307"
+        "size": 810393600,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220310-boot.iso",
+        "version": "20220310"
       },
       {
         "arch": "aarch64",
-        "size": 8626315264,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220307-dvd1.iso",
-        "version": "20220307"
+        "size": 8635951104,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220310-dvd1.iso",
+        "version": "20220310"
       },
       {
         "arch": "aarch64",
-        "size": 810500096,
+        "size": 810393600,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
-        "version": "20220307"
+        "version": "20220310"
       },
       {
         "arch": "aarch64",
-        "size": 8626315264,
+        "size": 8635951104,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
-        "version": "20220307"
+        "version": "20220310"
       }
     ]
   },
@@ -1253,7 +1253,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0Njk2MDUyNQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NzA0NjkyMQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1646,6 +1646,12 @@
     "url": "https://gentoo.org",
     "releases": [
       {
+        "arch": "alpha",
+        "size": 325677056,
+        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220310T170530Z/install-alpha-minimal-20220310T170530Z.iso",
+        "version": "20220310"
+      },
+      {
         "arch": "amd64",
         "size": 459276288,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/amd64/autobuilds/20220308T160629Z/install-amd64-minimal-20220308T160629Z.iso",
@@ -1680,12 +1686,6 @@
         "size": 496263168,
         "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/arm64/autobuilds/20220306T235203Z/install-arm64-minimal-20220306T235203Z.iso",
         "version": "20220306"
-      },
-      {
-        "arch": "alpha",
-        "size": 325675008,
-        "url": "https://mirror.yandex.ru/gentoo-distfiles/releases/alpha/autobuilds/20220303T170529Z/install-alpha-minimal-20220303T170529Z.iso",
-        "version": "20220303"
       },
       {
         "arch": "i386",
@@ -2046,7 +2046,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9558,
+        "size": 9560,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2346,13 +2346,13 @@
       },
       {
         "arch": "x86_64",
-        "size": 1699577856,
+        "size": 1701249024,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 781189120,
+        "size": 780140544,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
