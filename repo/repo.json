@@ -287,6 +287,12 @@
     "releases": [
       {
         "arch": "x86_64",
+        "size": 1054158848,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-1203-x86_64.iso",
+        "version": "1203"
+      },
+      {
+        "arch": "x86_64",
         "size": 1045770240,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-0603-x86_64.iso",
         "version": "0603"
@@ -1253,7 +1259,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NzA0NjkyMQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NzEzMzMzMQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -2046,7 +2052,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9560,
+        "size": 9554,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
