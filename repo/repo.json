@@ -288,8 +288,8 @@
       {
         "arch": "x86_64",
         "size": 1054158848,
-        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-1203-x86_64.iso",
-        "version": "1203"
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-1303-x86_64.iso",
+        "version": "1303"
       },
       {
         "arch": "x86_64",
@@ -1259,7 +1259,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NzEzMzMzMQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NzIxOTczMQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1867,57 +1867,57 @@
       },
       {
         "arch": "amd64",
-        "size": 3024814080,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-installer-amd64.iso",
-        "version": "2022-W10"
+        "size": 2949906432,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-amd64.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "arm64",
-        "size": 2487906304,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-installer-arm64.iso",
-        "version": "2022-W10"
+        "size": 2413867008,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-arm64.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "i386",
-        "size": 2662367232,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-installer-i386.iso",
-        "version": "2022-W10"
+        "size": 2587770880,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-i386.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "amd64",
         "size": 437256192,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-installer-netinst-amd64.iso",
-        "version": "2022-W10"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-netinst-amd64.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "arm64",
         "size": 419737600,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-installer-netinst-arm64.iso",
-        "version": "2022-W10"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-netinst-arm64.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "i386",
         "size": 414187520,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-installer-netinst-i386.iso",
-        "version": "2022-W10"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-netinst-i386.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "amd64",
         "size": 3731419136,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-live-amd64.iso",
-        "version": "2022-W10"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-live-amd64.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "arm64",
-        "size": 2787309568,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-live-arm64.iso",
-        "version": "2022-W10"
+        "size": 2787903488,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-live-arm64.iso",
+        "version": "2022-W11"
       },
       {
         "arch": "i386",
         "size": 3249483776,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W10-live-i386.iso",
-        "version": "2022-W10"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-live-i386.iso",
+        "version": "2022-W11"
       }
     ]
   },
@@ -1941,6 +1941,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1971322880,
+        "url": "https://files.kde.org/neon/images/unstable/20220313-0329/neon-unstable-20220313-0329.iso",
+        "version": "20220313"
+      },
+      {
+        "arch": "amd64",
         "size": 1994391552,
         "url": "https://files.kde.org/neon/images/user/20220310-0945/neon-user-20220310-0945.iso",
         "version": "20220310"
@@ -1956,12 +1962,6 @@
         "size": 2516582400,
         "url": "https://files.kde.org/neon/images/developer/20220307-1848/neon-developer-20220307-1848.iso",
         "version": "20220307"
-      },
-      {
-        "arch": "amd64",
-        "size": 1968177152,
-        "url": "https://files.kde.org/neon/images/unstable/20220306-0330/neon-unstable-20220306-0330.iso",
-        "version": "20220306"
       }
     ]
   },
@@ -2052,7 +2052,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9554,
+        "size": 9558,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2864,19 +2864,19 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 69318656,
+        "size": 69322752,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core-5in1.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 55371776,
+        "size": 55367680,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 54951936,
+        "size": 54980608,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
         "version": "5.0"
       },
@@ -2888,13 +2888,13 @@
       },
       {
         "arch": "x86_64",
-        "size": 38275072,
+        "size": 39356416,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 56242176,
+        "size": 56240128,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
       }
