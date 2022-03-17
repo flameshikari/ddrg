@@ -19,75 +19,75 @@
     "releases": [
       {
         "arch": "aarch64",
-        "size": 168603648,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-standard-3.15.0-aarch64.iso",
-        "version": "3.15.0"
+        "size": 168087552,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-standard-3.15.1-aarch64.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "ppc64le",
-        "size": 121946112,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/ppc64le/alpine-standard-3.15.0-ppc64le.iso",
-        "version": "3.15.0"
+        "size": 121257984,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/ppc64le/alpine-standard-3.15.1-ppc64le.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "s390x",
-        "size": 72380416,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/s390x/alpine-standard-3.15.0-s390x.iso",
-        "version": "3.15.0"
+        "size": 71755776,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/s390x/alpine-standard-3.15.1-s390x.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "i386",
         "size": 147849216,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-standard-3.15.0-x86.iso",
-        "version": "3.15.0"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-standard-3.15.1-x86.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "x86_64",
-        "size": 166723584,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-standard-3.15.0-x86_64.iso",
-        "version": "3.15.0"
+        "size": 165675008,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-standard-3.15.1-x86_64.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "i386",
         "size": 659554304,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-extended-3.15.0-x86.iso",
-        "version": "3.15.0"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-extended-3.15.1-x86.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "x86_64",
-        "size": 689963008,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-extended-3.15.0-x86_64.iso",
-        "version": "3.15.0"
+        "size": 691011584,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-extended-3.15.1-x86_64.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "aarch64",
-        "size": 56270848,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-virt-3.15.0-aarch64.iso",
-        "version": "3.15.0"
+        "size": 55795712,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-virt-3.15.1-aarch64.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "armv7",
-        "size": 45084672,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/armv7/alpine-virt-3.15.0-armv7.iso",
-        "version": "3.15.0"
+        "size": 44681216,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/armv7/alpine-virt-3.15.1-armv7.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "i386",
-        "size": 48234496,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-virt-3.15.0-x86.iso",
-        "version": "3.15.0"
+        "size": 47185920,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-virt-3.15.1-x86.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "x86_64",
-        "size": 54525952,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-virt-3.15.0-x86_64.iso",
-        "version": "3.15.0"
+        "size": 53477376,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-virt-3.15.1-x86_64.iso",
+        "version": "3.15.1"
       },
       {
         "arch": "x86_64",
         "size": 220200960,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-xen-3.15.0-x86_64.iso",
-        "version": "3.15.0"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-xen-3.15.1-x86_64.iso",
+        "version": "3.15.1"
       }
     ]
   },
@@ -95,7 +95,104 @@
     "id": "antix",
     "name": "antiX Linux",
     "url": "https://antixlinux.com",
-    "releases": []
+    "releases": [
+      {
+        "arch": "i386",
+        "size": 189792256,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 188743680,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_386-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 184549376,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21-net_x64-net.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 465567744,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 458227712,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 825229312,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 811597824,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 828375040,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1333788672,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1454374912,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/antiX-21_x64-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 468713472,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 461373440,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-core.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 814743552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-base.iso",
+        "version": "21"
+      },
+      {
+        "arch": "i386",
+        "size": 1339031552,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_386-full.iso",
+        "version": "21"
+      },
+      {
+        "arch": "amd64",
+        "size": 1458569216,
+        "url": "https://sourceforge.net/projects/antix-linux/files/Final/antiX-21/runit-bullseye/antiX-21-runit_x64-full.iso",
+        "version": "21"
+      }
+    ]
   },
   {
     "id": "arch",
@@ -187,13 +284,69 @@
     "id": "archbang",
     "name": "ArchBang",
     "url": "https://archbang.org",
-    "releases": []
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 1054158848,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-1503-x86_64.iso",
+        "version": "1503"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1054158848,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-1303-x86_64.iso",
+        "version": "1303"
+      },
+      {
+        "arch": "x86_64",
+        "size": 1045770240,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-0603-x86_64.iso",
+        "version": "0603"
+      },
+      {
+        "arch": "i686",
+        "size": 815792128,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang32/archbang32-beta-0509-i686.iso",
+        "version": "0509"
+      }
+    ]
   },
   {
     "id": "archlabs",
     "name": "ArchLabs Linux",
     "url": "https://archlabslinux.com",
-    "releases": []
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 835006464,
+        "url": "https://sourceforge.net/projects/archlabs-linux-minimo/files/ArchLabsMinimo/archlabs-lts-2022.02.12-x86_64.iso",
+        "version": "2022.02.12"
+      },
+      {
+        "arch": "x86_64",
+        "size": 789917696,
+        "url": "https://sourceforge.net/projects/archlabs-linux-minimo/files/ArchLabsMinimo/archlabs-2022.02.12-x86_64.iso",
+        "version": "2022.02.12"
+      },
+      {
+        "arch": "x86_64",
+        "size": 959787008,
+        "url": "https://sourceforge.net/projects/archlabs-linux-minimo/files/ArchLabsMinimo/archlabs-2022.01.18-x86_64.iso",
+        "version": "2022.01.18"
+      },
+      {
+        "arch": "x86_64",
+        "size": 811937792,
+        "url": "https://sourceforge.net/projects/archlabs-linux-minimo/files/ArchLabsMinimo/archlabs-2021.05.02-x86_64.iso",
+        "version": "2021.05.02"
+      },
+      {
+        "arch": "x86_64",
+        "size": 786771968,
+        "url": "https://sourceforge.net/projects/archlabs-linux-minimo/files/ArchLabsMinimo/archlabs-2020.11.04-x86_64.iso",
+        "version": "2020.11.04"
+      }
+    ]
   },
   {
     "id": "arcolinux",
@@ -1112,7 +1265,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NzM5MjQ5Nw==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NzQ3ODkyNw==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1820,7 +1973,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9561,
+        "size": 9581,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2278,13 +2431,13 @@
       },
       {
         "arch": "s390x",
-        "size": 2786048000,
+        "size": 2784579584,
         "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-DVD-s390x-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "s390x",
-        "size": 150136832,
+        "size": 150120448,
         "url": "https://download.opensuse.org/ports/zsystems/tumbleweed/iso/openSUSE-Tumbleweed-NET-s390x-Current.iso",
         "version": "rolling"
       },
