@@ -1265,7 +1265,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NzY1MTkxMg==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NzcyMTA2OQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -2267,25 +2267,25 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2095104000,
+        "size": 2101542912,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 1701249024,
+        "size": 1707933696,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-plasma5-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "x86_64",
-        "size": 781189120,
+        "size": 787480576,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
       {
         "arch": "i686",
-        "size": 761266176,
+        "size": 754974720,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-i686-linux.iso",
         "version": "21.11"
       }
