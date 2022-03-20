@@ -7,7 +7,7 @@
       {
         "arch": "x86_64",
         "size": 4077293568,
-        "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/YHflGF3zn3vf3w/AdminPE-4.4-UEFI.iso",
+        "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/YHflGF3zn3vf3w/AdminPE_UEFI-4.4.iso",
         "version": "4.4"
       }
     ]
@@ -562,6 +562,25 @@
         "size": 2037002240,
         "url": "https://ant.seedhost.eu/arcolinux/iso/v22.03.07/./arcolinuxs-v22.03.07-x86_64.iso",
         "version": "22.03.07"
+      }
+    ]
+  },
+  {
+    "id": "astra",
+    "name": "Astra Linux",
+    "url": "https://astralinux.ru",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 2287255552,
+        "url": "https://mirror.yandex.ru/astra/stable/orel/iso/orel-2.12.43.6-15.11.2021_15.31.livecd.iso",
+        "version": "2.12.43.6"
+      },
+      {
+        "arch": "x86_64",
+        "size": 4672733184,
+        "url": "https://mirror.yandex.ru/astra/stable/orel/iso/orel-2.12.43-14.09.2021_10.29.iso",
+        "version": "2.12.43"
       }
     ]
   },
@@ -1265,7 +1284,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NzcyMTA2OQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NzczOTMxMA==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1973,7 +1992,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9580,
+        "size": 9571,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2203,6 +2222,19 @@
     "name": "Linux Mint",
     "url": "https://linuxmint.com",
     "releases": []
+  },
+  {
+    "id": "multiboot2k10",
+    "name": "MultiBoot 2k10",
+    "url": "https://winpesoft.com",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 4881436672,
+        "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/YHflGF3zn3vf3w/MultiBoot_2k10-7.37.iso",
+        "version": "7.37"
+      }
+    ]
   },
   {
     "id": "mx",
@@ -3005,6 +3037,25 @@
     ]
   },
   {
+    "id": "reactos",
+    "name": "ReactOS",
+    "url": "https://reactos.org",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 140509184,
+        "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/YHflGF3zn3vf3w/ReactOS_Boot-0.4.14.iso",
+        "version": "0.4.14"
+      },
+      {
+        "arch": "x86_64",
+        "size": 267386880,
+        "url": "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/YHflGF3zn3vf3w/ReactOS_Live-0.4.14.iso",
+        "version": "0.4.14"
+      }
+    ]
+  },
+  {
     "id": "rocky",
     "name": "Rocky Linux",
     "url": "https://rockylinux.org",
@@ -3140,37 +3191,37 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 69322752,
+        "size": 68841472,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core-5in1.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 55367680,
+        "size": 55429120,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 54980608,
+        "size": 55037952,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 63004672,
+        "size": 62488576,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-loram.iso",
         "version": "5.0"
       },
       {
         "arch": "x86_64",
-        "size": 39356416,
+        "size": 39368704,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling-preinit.iso",
         "version": "5.0"
       },
       {
         "arch": "i386",
-        "size": 56240128,
+        "size": 55758848,
         "url": "https://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso",
         "version": "5.0"
       }
@@ -3558,6 +3609,25 @@
     ]
   },
   {
+    "id": "vyos",
+    "name": "VyOS",
+    "url": "https://vyos.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 490733568,
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202203190317-amd64.iso",
+        "version": "1.4"
+      },
+      {
+        "arch": "amd64",
+        "size": 331350016,
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/snapshot/vyos-1.3.0-rc6/vyos-1.3.0-rc6-amd64.iso",
+        "version": "1.3.0"
+      }
+    ]
+  },
+  {
     "id": "xubuntu",
     "name": "Xubuntu",
     "url": "https://xubuntu.org",
@@ -3610,6 +3680,61 @@
     "id": "zorinos",
     "name": "Zorin OS",
     "url": "https://zorinos.com",
-    "releases": []
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 2882863104,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16-Core-64-bit-r4.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 2852126720,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16-Core-64-bit.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 5505712128,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16-Education-64-bit.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 5107415040,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16-Education-Lite-64-bit.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 2547646464,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16-Lite-64-bit.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 3058237440,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16.1-Core-64-bit.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 5581320192,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16.1-Education-64-bit.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 5117478912,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16.1-Education-Lite-64-bit.iso",
+        "version": "16.1"
+      },
+      {
+        "arch": "amd64",
+        "size": 2587770880,
+        "url": "https://mirrors.edge.kernel.org/zorinos-isos/16/Zorin-OS-16.1-Lite-64-bit.iso",
+        "version": "16.1"
+      }
+    ]
   }
 ]
