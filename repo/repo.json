@@ -1,5 +1,24 @@
 [
   {
+    "id": "absolute",
+    "name": "Absolute Linux",
+    "url": "https://absolutelinux.org",
+    "releases": [
+      {
+        "arch": "i386",
+        "size": 2554650624,
+        "url": "https://slackware.uk/absolute/absolute-15.0.iso",
+        "version": "15.0"
+      },
+      {
+        "arch": "x86_64",
+        "size": 3211788288,
+        "url": "https://slackware.uk/absolute/absolute64-live-current.iso",
+        "version": "15.0"
+      }
+    ]
+  },
+  {
     "id": "adminpe",
     "name": "AdminPE",
     "url": "https://adminpe.ru",
@@ -1041,6 +1060,25 @@
     ]
   },
   {
+    "id": "deepin",
+    "name": "Deepin",
+    "url": "https://deepin.org",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 3277746176,
+        "url": "https://mirror.yandex.ru/mirrors/deepin/releases/23/deepin-desktop-community-23-nightly-amd64.iso",
+        "version": "23"
+      },
+      {
+        "arch": "amd64",
+        "size": 3350884352,
+        "url": "https://mirror.yandex.ru/mirrors/deepin/releases/20.4/deepin-desktop-community-20.4-amd64.iso",
+        "version": "20.4"
+      }
+    ]
+  },
+  {
     "id": "devuan",
     "name": "Devuan",
     "url": "https://devuan.org",
@@ -1284,8 +1322,21 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0NzczOTMxMA==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0Nzc0MTEyNg==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
+      }
+    ]
+  },
+  {
+    "id": "endeavouros",
+    "name": "EndeavourOS",
+    "url": "https://endeavouros.com",
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 2023485440,
+        "url": "https://github.com/endeavouros-team/ISO/releases/download/1-EndeavourOS-ISO-releases-archive/EndeavourOS_Atlantis_neo-21_5.iso",
+        "version": "21.5"
       }
     ]
   },
@@ -1992,7 +2043,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9571,
+        "size": 9575,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2789,6 +2840,37 @@
     ]
   },
   {
+    "id": "parabola",
+    "name": "Parabola",
+    "url": "https://parabola.nu",
+    "releases": [
+      {
+        "arch": "amd64",
+        "size": 975515648,
+        "url": "https://repo.parabola.nu/iso/parabola-openrc-2021.08.11/parabola-openrc-2021.08.11-dual.iso",
+        "version": "2021.08.11"
+      },
+      {
+        "arch": "amd64",
+        "size": 962932736,
+        "url": "https://repo.parabola.nu/iso/parabola-2021.08.11/parabola-2021.08.11-dual.iso",
+        "version": "2021.08.11"
+      },
+      {
+        "arch": "amd64",
+        "size": 1858760704,
+        "url": "https://repo.parabola.nu/iso/parabola-openrc-lxde-2021.08.11/parabola-openrc-lxde-2021.08.11-dual.iso",
+        "version": "2021.08.11"
+      },
+      {
+        "arch": "x86_64",
+        "size": 162,
+        "url": "https://redirector.parabola.nu/iso/x86_64-experimental-lxde-2019.06-pre/parabola-x86_64-experimental-lxde-2019.06-pre-complete.iso",
+        "version": "2019.06"
+      }
+    ]
+  },
+  {
     "id": "parrotos",
     "name": "Parrot OS",
     "url": "https://parrotlinux.org",
@@ -3157,7 +3239,20 @@
     "id": "slackware",
     "name": "Slackware",
     "url": "http://slackware.com",
-    "releases": []
+    "releases": [
+      {
+        "arch": "x86_64",
+        "size": 3780542464,
+        "url": "https://slackware.uk/slackware/slackware-iso/slackware64-15.0-iso/slackware64-15.0-install-dvd.iso",
+        "version": "15.0"
+      },
+      {
+        "arch": "i386",
+        "size": 3918200832,
+        "url": "https://slackware.uk/slackware/slackware-iso/slackware-15.0-iso/slackware-15.0-install-dvd.iso",
+        "version": "15.0"
+      }
+    ]
   },
   {
     "id": "slax",
