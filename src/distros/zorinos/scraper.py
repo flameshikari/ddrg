@@ -12,16 +12,14 @@ def init():
     iso_version = version.group(1)
     base_version = version.group(2)
 
-    base_url = "https://sourceforge.net/projects/zorin-os/rss?path=/{}"
-    xml = bs(requests.get(base_url.format(base_version)).text, "xml")
+    base_url = "https://mirrors.edge.kernel.org/zorinos-isos/" + base_version
+    html = bs(requests.get(base_url.format(base_version)).text, "html.parser")
 
-    for item in xml.find_all("item"):
+    for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
 
-        content = item.find("content")
-        iso_url = content["url"][:-9]
-        if iso_version not in iso_url: continue
+        iso_url = f"{base_url}/{filename['href']}"
         iso_arch = get_iso_arch(iso_url)
-        iso_size = int(content["filesize"])
+        iso_size = get_iso_size(iso_url)
 
         array.append((iso_url, iso_arch, iso_size, iso_version))
 
