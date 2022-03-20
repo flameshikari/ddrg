@@ -10,8 +10,7 @@ def init():
 
     for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
 
-        iso_url = filename["href"].replace("redirector.parabola.nu",
-                                           "mirror.yandex.ru/mirrors/parabola")
+        iso_url = filename["href"]
         iso_arch = get_iso_arch(iso_url)
         iso_size = get_iso_size(iso_url)
         iso_version = re.search(r"-(\d+.\d+(.\d+)?)", iso_url).group(1)
