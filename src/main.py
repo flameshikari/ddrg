@@ -95,6 +95,11 @@ def build_repo_entry(distro_id, distro_info):
     return repo_entry
 
 
+def test_repo_entry(distro_id):
+    """For debug purposes"""
+    return build_repo_entry(distro_id, get_distro_info(distro_id))
+
+
 def build_repo_html():
 
     md_distros = []
