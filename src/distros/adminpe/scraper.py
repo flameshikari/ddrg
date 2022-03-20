@@ -5,7 +5,7 @@ def init():
 
     array = []
     base_url = "https://getfile.dokpub.com/yandex/get"
-    iso_url = "https://disk.yandex.ru/d/YHflGF3zn3vf3w/AdminPE-4.4-UEFI.iso"
+    iso_url = "https://disk.yandex.ru/d/YHflGF3zn3vf3w/AdminPE_UEFI-4.4.iso"
     
     iso_url = f"{base_url}/{iso_url}"
     iso_version = "4.4"
