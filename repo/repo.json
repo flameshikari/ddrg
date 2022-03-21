@@ -306,6 +306,12 @@
     "releases": [
       {
         "arch": "x86_64",
+        "size": 1055207424,
+        "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-2003-x86_64.iso",
+        "version": "2003"
+      },
+      {
+        "arch": "x86_64",
         "size": 1054158848,
         "url": "https://sourceforge.net/projects/archbang/files/ArchBang/archbang-spring-rc-1503-x86_64.iso",
         "version": "1503"
@@ -1322,7 +1328,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0Nzc0MTEyNg==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0NzgyNDUyNQ==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1858,57 +1864,57 @@
       },
       {
         "arch": "amd64",
-        "size": 2949906432,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-amd64.iso",
-        "version": "2022-W11"
+        "size": 2927411200,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-installer-amd64.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "arm64",
-        "size": 2413867008,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-arm64.iso",
-        "version": "2022-W11"
+        "size": 2394763264,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-installer-arm64.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "i386",
-        "size": 2587770880,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-i386.iso",
-        "version": "2022-W11"
+        "size": 2571075584,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-installer-i386.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "amd64",
-        "size": 437256192,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-netinst-amd64.iso",
-        "version": "2022-W11"
+        "size": 432013312,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-installer-netinst-amd64.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "arm64",
-        "size": 419737600,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-netinst-arm64.iso",
-        "version": "2022-W11"
+        "size": 415543296,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-installer-netinst-arm64.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "i386",
         "size": 414187520,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-installer-netinst-i386.iso",
-        "version": "2022-W11"
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-installer-netinst-i386.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "amd64",
-        "size": 3731419136,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-live-amd64.iso",
-        "version": "2022-W11"
+        "size": 3681234944,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-live-amd64.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "arm64",
-        "size": 2787903488,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-live-arm64.iso",
-        "version": "2022-W11"
+        "size": 2743019520,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-live-arm64.iso",
+        "version": "2022-W12"
       },
       {
         "arch": "i386",
-        "size": 3249483776,
-        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W11-live-i386.iso",
-        "version": "2022-W11"
+        "size": 3229577216,
+        "url": "https://mirror.truenetwork.ru/kali-images/kali-weekly//kali-linux-2022-W12-live-i386.iso",
+        "version": "2022-W12"
       }
     ]
   },
@@ -1932,6 +1938,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 1992294400,
+        "url": "https://files.kde.org/neon/images/unstable/20220320-0331/neon-unstable-20220320-0331.iso",
+        "version": "20220320"
+      },
+      {
+        "arch": "amd64",
         "size": 1994391552,
         "url": "https://files.kde.org/neon/images/user/20220317-0946/neon-user-20220317-0946.iso",
         "version": "20220317"
@@ -1947,12 +1959,6 @@
         "size": 2516582400,
         "url": "https://files.kde.org/neon/images/developer/20220314-1847/neon-developer-20220314-1847.iso",
         "version": "20220314"
-      },
-      {
-        "arch": "amd64",
-        "size": 1971322880,
-        "url": "https://files.kde.org/neon/images/unstable/20220313-0329/neon-unstable-20220313-0329.iso",
-        "version": "20220313"
       }
     ]
   },
@@ -2043,7 +2049,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9575,
+        "size": 9572,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2160,6 +2166,60 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 3553982464,
+        "url": "https://download.manjaro.org/gnome/21.2.5/manjaro-gnome-21.2.5-220314-linux515.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 2899019776,
+        "url": "https://download.manjaro.org/gnome/21.2.5/manjaro-gnome-21.2.5-minimal-220314-linux515.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 2849974272,
+        "url": "https://download.manjaro.org/gnome/21.2.5/manjaro-gnome-21.2.5-minimal-220314-linux510.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 3805800448,
+        "url": "https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-220314-linux515.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 3060520960,
+        "url": "https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-minimal-220314-linux515.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 3011471360,
+        "url": "https://download.manjaro.org/kde/21.2.5/manjaro-kde-21.2.5-minimal-220314-linux510.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 3572713472,
+        "url": "https://download.manjaro.org/xfce/21.2.5/manjaro-xfce-21.2.5-220314-linux515.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 2714609664,
+        "url": "https://download.manjaro.org/xfce/21.2.5/manjaro-xfce-21.2.5-minimal-220314-linux515.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
+        "size": 2665564160,
+        "url": "https://download.manjaro.org/xfce/21.2.5/manjaro-xfce-21.2.5-minimal-220314-linux510.iso",
+        "version": "21.2.5"
+      },
+      {
+        "arch": "amd64",
         "size": 3577833472,
         "url": "https://download.manjaro.org/cinnamon/21.2.5/manjaro-cinnamon-21.2.5-220314-linux515.iso",
         "version": "21.2.5"
@@ -2199,60 +2259,6 @@
         "size": 2391361536,
         "url": "https://download.manjaro.org/mate/21.2.5/manjaro-mate-21.2.5-minimal-220314-linux515.iso",
         "version": "21.2.5"
-      },
-      {
-        "arch": "amd64",
-        "size": 3519092736,
-        "url": "https://download.manjaro.org/gnome/21.2.4/manjaro-gnome-21.2.4-220301-linux515.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 2865022976,
-        "url": "https://download.manjaro.org/gnome/21.2.4/manjaro-gnome-21.2.4-minimal-220301-linux515.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 2816059392,
-        "url": "https://download.manjaro.org/gnome/21.2.4/manjaro-gnome-21.2.4-minimal-220301-linux510.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 3770230784,
-        "url": "https://download.manjaro.org/kde/21.2.4/manjaro-kde-21.2.4-220301-linux515.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 3023427584,
-        "url": "https://download.manjaro.org/kde/21.2.4/manjaro-kde-21.2.4-minimal-220301-linux515.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 2974455808,
-        "url": "https://download.manjaro.org/kde/21.2.4/manjaro-kde-21.2.4-minimal-220301-linux510.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 3533568000,
-        "url": "https://download.manjaro.org/xfce/21.2.4/manjaro-xfce-21.2.4-220301-linux515.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 2676496384,
-        "url": "https://download.manjaro.org/xfce/21.2.4/manjaro-xfce-21.2.4-minimal-220301-linux515.iso",
-        "version": "21.2.4"
-      },
-      {
-        "arch": "amd64",
-        "size": 2627532800,
-        "url": "https://download.manjaro.org/xfce/21.2.4/manjaro-xfce-21.2.4-minimal-220301-linux510.iso",
-        "version": "21.2.4"
       },
       {
         "arch": "amd64",
@@ -2478,7 +2484,7 @@
       },
       {
         "arch": "i586",
-        "size": 4516216832,
+        "size": 4515168256,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2502,13 +2508,13 @@
       },
       {
         "arch": "ppc64le",
-        "size": 3616247808,
+        "size": 3616993280,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-DVD-ppc64le-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "ppc64le",
-        "size": 213516288,
+        "size": 213602304,
         "url": "https://download.opensuse.org/ports/ppc/tumbleweed/iso/openSUSE-Tumbleweed-NET-ppc64le-Current.iso",
         "version": "rolling"
       },
@@ -2526,49 +2532,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 923533312,
+        "size": 920977408,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 927399936,
+        "size": 925368320,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 910819328,
+        "size": 909312000,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 627572736,
+        "size": 627048448,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 891289600,
+        "size": 890241024,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 905969664,
+        "size": 904921088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 889192448,
+        "size": 888143872,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 598736896,
+        "size": 595591168,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2598,49 +2604,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 923533312,
+        "size": 920977408,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 927399936,
+        "size": 925368320,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 910819328,
+        "size": 909312000,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 627572736,
+        "size": 627048448,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 891289600,
+        "size": 890241024,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 905969664,
+        "size": 904921088,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 889192448,
+        "size": 888143872,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 598736896,
+        "size": 595591168,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -3711,7 +3717,7 @@
       {
         "arch": "amd64",
         "size": 490733568,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202203190317-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202203200929-amd64.iso",
         "version": "1.4"
       },
       {
