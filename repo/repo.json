@@ -38,75 +38,75 @@
     "releases": [
       {
         "arch": "aarch64",
-        "size": 168087552,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-standard-3.15.1-aarch64.iso",
-        "version": "3.15.1"
+        "size": 168085504,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-standard-3.15.2-aarch64.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "ppc64le",
         "size": 121257984,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/ppc64le/alpine-standard-3.15.1-ppc64le.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/ppc64le/alpine-standard-3.15.2-ppc64le.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "s390x",
         "size": 71755776,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/s390x/alpine-standard-3.15.1-s390x.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/s390x/alpine-standard-3.15.2-s390x.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "i386",
         "size": 147849216,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-standard-3.15.1-x86.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-standard-3.15.2-x86.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "x86_64",
         "size": 165675008,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-standard-3.15.1-x86_64.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-standard-3.15.2-x86_64.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "i386",
         "size": 659554304,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-extended-3.15.1-x86.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-extended-3.15.2-x86.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "x86_64",
         "size": 691011584,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-extended-3.15.1-x86_64.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-extended-3.15.2-x86_64.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "aarch64",
-        "size": 55795712,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-virt-3.15.1-aarch64.iso",
-        "version": "3.15.1"
+        "size": 55793664,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/aarch64/alpine-virt-3.15.2-aarch64.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "armv7",
-        "size": 44681216,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/armv7/alpine-virt-3.15.1-armv7.iso",
-        "version": "3.15.1"
+        "size": 44677120,
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/armv7/alpine-virt-3.15.2-armv7.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "i386",
         "size": 47185920,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-virt-3.15.1-x86.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86/alpine-virt-3.15.2-x86.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "x86_64",
         "size": 53477376,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-virt-3.15.1-x86_64.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-virt-3.15.2-x86_64.iso",
+        "version": "3.15.2"
       },
       {
         "arch": "x86_64",
         "size": 220200960,
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-xen-3.15.1-x86_64.iso",
-        "version": "3.15.1"
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.15/releases/x86_64/alpine-xen-3.15.2-x86_64.iso",
+        "version": "3.15.2"
       }
     ]
   },
@@ -722,74 +722,74 @@
       {
         "arch": "x86_64",
         "size": 893386752,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220316-boot.iso",
-        "version": "20220316"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220322-boot.iso",
+        "version": "20220322"
       },
       {
         "arch": "x86_64",
-        "size": 11271143424,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220316-dvd1.iso",
-        "version": "20220316"
+        "size": 11277434880,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220322-dvd1.iso",
+        "version": "20220322"
       },
       {
         "arch": "x86_64",
         "size": 893386752,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
-        "version": "20220316"
+        "version": "20220322"
       },
       {
         "arch": "x86_64",
-        "size": 11271143424,
+        "size": 11277434880,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
-        "version": "20220316"
+        "version": "20220322"
       },
       {
         "arch": "ppc64le",
-        "size": 856696832,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220316-boot.iso",
-        "version": "20220316"
+        "size": 856997888,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220322-boot.iso",
+        "version": "20220322"
       },
       {
         "arch": "ppc64le",
-        "size": 9694296064,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220316-dvd1.iso",
-        "version": "20220316"
+        "size": 9699827712,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220322-dvd1.iso",
+        "version": "20220322"
       },
       {
         "arch": "ppc64le",
-        "size": 856696832,
+        "size": 856997888,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
-        "version": "20220316"
+        "version": "20220322"
       },
       {
         "arch": "ppc64le",
-        "size": 9694296064,
+        "size": 9699827712,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
-        "version": "20220316"
+        "version": "20220322"
       },
       {
         "arch": "aarch64",
-        "size": 810442752,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220316-boot.iso",
-        "version": "20220316"
+        "size": 810659840,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220322-boot.iso",
+        "version": "20220322"
       },
       {
         "arch": "aarch64",
-        "size": 8729417728,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220316-dvd1.iso",
-        "version": "20220316"
+        "size": 8734777344,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220322-dvd1.iso",
+        "version": "20220322"
       },
       {
         "arch": "aarch64",
-        "size": 810442752,
+        "size": 810659840,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
-        "version": "20220316"
+        "version": "20220322"
       },
       {
         "arch": "aarch64",
-        "size": 8729417728,
+        "size": 8734777344,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
-        "version": "20220316"
+        "version": "20220322"
       }
     ]
   },
@@ -1328,7 +1328,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0Nzk5NzMzMQ==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0ODA4MzcyMg==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -2049,7 +2049,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9572,
+        "size": 9574,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2356,7 +2356,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 2101542912,
+        "size": 2103607296,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso",
         "version": "21.11"
       },
@@ -2368,7 +2368,7 @@
       },
       {
         "arch": "x86_64",
-        "size": 788529152,
+        "size": 787480576,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
@@ -2472,7 +2472,7 @@
     "releases": [
       {
         "arch": "x86_64",
-        "size": 4601151488,
+        "size": 4602200064,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso",
         "version": "rolling"
       },
@@ -2484,7 +2484,7 @@
       },
       {
         "arch": "i586",
-        "size": 4515168256,
+        "size": 4516216832,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-DVD-i586-Current.iso",
         "version": "rolling"
       },
@@ -2496,13 +2496,13 @@
       },
       {
         "arch": "aarch64",
-        "size": 3792578560,
+        "size": 3793625088,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-DVD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 236263424,
+        "size": 236265472,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-NET-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2532,37 +2532,37 @@
       },
       {
         "arch": "x86_64",
-        "size": 921174016,
+        "size": 920584192,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 925696000,
+        "size": 924516352,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 909049856,
+        "size": 908918784,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 627638272,
+        "size": 627310592,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 889192448,
+        "size": 890241024,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 902823936,
+        "size": 903872512,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2574,19 +2574,19 @@
       },
       {
         "arch": "i686",
-        "size": 595591168,
+        "size": 596639744,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 898564096,
+        "size": 898760704,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 908984320,
+        "size": 910688256,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2598,43 +2598,43 @@
       },
       {
         "arch": "aarch64",
-        "size": 627965952,
+        "size": 627441664,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 921174016,
+        "size": 920584192,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 925696000,
+        "size": 924516352,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 909049856,
+        "size": 908918784,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 627638272,
+        "size": 627310592,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 889192448,
+        "size": 890241024,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 902823936,
+        "size": 903872512,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
@@ -2646,19 +2646,19 @@
       },
       {
         "arch": "i686",
-        "size": 595591168,
+        "size": 596639744,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 898564096,
+        "size": 898760704,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-aarch64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "aarch64",
-        "size": 908984320,
+        "size": 910688256,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -2670,7 +2670,7 @@
       },
       {
         "arch": "aarch64",
-        "size": 627965952,
+        "size": 627441664,
         "url": "https://download.opensuse.org/ports/aarch64/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-aarch64-Current.iso",
         "version": "rolling"
       },
@@ -3716,8 +3716,8 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 490733568,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202203220701-amd64.iso",
+        "size": 491782144,
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202203232058-amd64.iso",
         "version": "1.4"
       },
       {
