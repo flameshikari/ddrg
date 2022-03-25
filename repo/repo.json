@@ -722,74 +722,74 @@
       {
         "arch": "x86_64",
         "size": 893386752,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220322-boot.iso",
-        "version": "20220322"
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220323-boot.iso",
+        "version": "20220323"
       },
       {
         "arch": "x86_64",
-        "size": 11277434880,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220322-dvd1.iso",
-        "version": "20220322"
+        "size": 11276386304,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220323-dvd1.iso",
+        "version": "20220323"
       },
       {
         "arch": "x86_64",
         "size": 893386752,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-boot.iso",
-        "version": "20220322"
+        "version": "20220323"
       },
       {
         "arch": "x86_64",
-        "size": 11277434880,
+        "size": 11276386304,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-latest-dvd1.iso",
-        "version": "20220322"
+        "version": "20220323"
       },
       {
         "arch": "ppc64le",
-        "size": 856997888,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220322-boot.iso",
-        "version": "20220322"
+        "size": 856739840,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220323-boot.iso",
+        "version": "20220323"
       },
       {
         "arch": "ppc64le",
-        "size": 9699827712,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220322-dvd1.iso",
-        "version": "20220322"
+        "size": 9699678208,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-20220323-dvd1.iso",
+        "version": "20220323"
       },
       {
         "arch": "ppc64le",
-        "size": 856997888,
+        "size": 856739840,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-boot.iso",
-        "version": "20220322"
+        "version": "20220323"
       },
       {
         "arch": "ppc64le",
-        "size": 9699827712,
+        "size": 9699678208,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/ppc64le/CentOS-Stream-8-ppc64le-latest-dvd1.iso",
-        "version": "20220322"
+        "version": "20220323"
       },
       {
         "arch": "aarch64",
-        "size": 810659840,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220322-boot.iso",
-        "version": "20220322"
+        "size": 810573824,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220323-boot.iso",
+        "version": "20220323"
       },
       {
         "arch": "aarch64",
-        "size": 8734777344,
-        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220322-dvd1.iso",
-        "version": "20220322"
+        "size": 8734701568,
+        "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-20220323-dvd1.iso",
+        "version": "20220323"
       },
       {
         "arch": "aarch64",
-        "size": 810659840,
+        "size": 810573824,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-boot.iso",
-        "version": "20220322"
+        "version": "20220323"
       },
       {
         "arch": "aarch64",
-        "size": 8734777344,
+        "size": 8734701568,
         "url": "https://mirror.yandex.ru/centos/8-stream/isos/aarch64/CentOS-Stream-8-aarch64-latest-dvd1.iso",
-        "version": "20220322"
+        "version": "20220323"
       }
     ]
   },
@@ -1328,7 +1328,7 @@
       {
         "arch": "x86_64",
         "size": 2662367232,
-        "url": "https://fra1.dl.elementary.io/download/MTY0ODA4MzcyMg==/elementaryos-6.1-stable.20211218-rc.iso",
+        "url": "https://fra1.dl.elementary.io/download/MTY0ODE3MDE2Mg==/elementaryos-6.1-stable.20211218-rc.iso",
         "version": "6.1"
       }
     ]
@@ -1938,6 +1938,12 @@
     "releases": [
       {
         "arch": "amd64",
+        "size": 2016411648,
+        "url": "https://files.kde.org/neon/images/user/20220324-0945/neon-user-20220324-0945.iso",
+        "version": "20220324"
+      },
+      {
+        "arch": "amd64",
         "size": 1983905792,
         "url": "https://files.kde.org/neon/images/testing/20220322-1821/neon-testing-20220322-1821.iso",
         "version": "20220322"
@@ -1953,12 +1959,6 @@
         "size": 1992294400,
         "url": "https://files.kde.org/neon/images/unstable/20220320-0331/neon-unstable-20220320-0331.iso",
         "version": "20220320"
-      },
-      {
-        "arch": "amd64",
-        "size": 1994391552,
-        "url": "https://files.kde.org/neon/images/user/20220317-0946/neon-user-20220317-0946.iso",
-        "version": "20220317"
       }
     ]
   },
@@ -2049,7 +2049,7 @@
     "releases": [
       {
         "arch": "amd64",
-        "size": 9574,
+        "size": 9577,
         "url": "https://osdn.net/dl/linuxlite/linux-lite-5.8-64bit.iso",
         "version": "5.8"
       }
@@ -2368,7 +2368,7 @@
       },
       {
         "arch": "x86_64",
-        "size": 787480576,
+        "size": 788529152,
         "url": "https://channels.nixos.org/nixos-21.11/latest-nixos-minimal-x86_64-linux.iso",
         "version": "21.11"
       },
@@ -2532,49 +2532,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 920584192,
+        "size": 919994368,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 924516352,
+        "size": 926744576,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 908918784,
+        "size": 920190976,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 627310592,
+        "size": 643760128,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 890241024,
+        "size": 888143872,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 903872512,
+        "size": 905969664,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 888143872,
+        "size": 899678208,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 596639744,
+        "size": 608174080,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2604,49 +2604,49 @@
       },
       {
         "arch": "x86_64",
-        "size": 920584192,
+        "size": 919994368,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 924516352,
+        "size": 926744576,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 908918784,
+        "size": 920190976,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "x86_64",
-        "size": 627310592,
+        "size": 643760128,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-x86_64-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 890241024,
+        "size": 888143872,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-GNOME-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 903872512,
+        "size": 905969664,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-KDE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 888143872,
+        "size": 899678208,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-XFCE-Live-i686-Current.iso",
         "version": "rolling"
       },
       {
         "arch": "i686",
-        "size": 596639744,
+        "size": 608174080,
         "url": "https://download.opensuse.org/tumbleweed/iso/openSUSE-Tumbleweed-Rescue-CD-i686-Current.iso",
         "version": "rolling"
       },
@@ -2870,7 +2870,7 @@
       },
       {
         "arch": "x86_64",
-        "size": 162,
+        "size": 146,
         "url": "https://redirector.parabola.nu/iso/x86_64-experimental-lxde-2019.06-pre/parabola-x86_64-experimental-lxde-2019.06-pre-complete.iso",
         "version": "2019.06"
       }
@@ -3717,7 +3717,7 @@
       {
         "arch": "amd64",
         "size": 491782144,
-        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202203232058-amd64.iso",
+        "url": "https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202203240317-amd64.iso",
         "version": "1.4"
       },
       {
