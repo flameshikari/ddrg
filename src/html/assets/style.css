@@ -4,42 +4,43 @@
 }
 
 * {
+
   font-family: 'Fira Code';
   outline: none;
   text-decoration: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  word-break: break-word;
 }
 
 body {
-  background: #000;
-  background-image: url('./background.png');
+  background: #000500;
+  background-image: url('./pattern.png');
   background-repeat: repeat;
   color: #f8f8f8;
   line-height: 1;
-  padding: 30px;
+  padding: 40px;
   margin: auto;
-  max-width: 522px;
+  max-width: 500px;
   text-align: justify;
 }
 
-h2, h3, p {
-  margin-bottom: 24px;
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 48px;
 }
 
 h2 {
-  font-size: 36px;
-  text-align: center;
-  margin: 50px;
-}
-
-h3 {
   font-size: 24px;
-  font-weight: bold;
 }
 
 a {
-  color: #e28964;
-  margin: 0;
-  padding: 0;
+  color: #61d168;
   vertical-align: baseline;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -51,110 +52,21 @@ a:hover {
   opacity: 0.5;
 }
 
-li {
-  line-height: 24px;
-  margin-left: -2.5em;
-}
-
-ul {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-p, ul, ol, summary {
+p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 2;
   max-width: 100%;
   margin-left: 2em;
 }
 
-details summary {
-  cursor: pointer;
-  list-style-type: none;
+.distro_logo {
+  width: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  text-align: center;
 }
 
-summary:hover {
-  opacity: 0.5;
-}
-
-details summary::marker,
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details[open] summary:after {
-  content: "- Hide";
-}
-
-summary:after {
-  content: "+ Show";
-  color: #fff;
-  margin-right: 0.5em;
-}
-
-pre {
-  padding: 0px 14px;
-  max-width: 100%;
-}
-
-code {
-  line-height: 1.2;
-  font-size: 11px;
-}
-
-aside {
-  display: block;
-  float: right;
-  width: 390px;
-}
-
-blockquote {
-  border-left: .5em solid #eee;
-  padding: 0 2em;
-  margin-left: 0;
-  max-width: 476px;
-}
-
-blockquote cite {
-  font-size: 14px;
-  line-height: 20px;
-  color: #bfbfbf;
-}
-
-blockquote cite:before {
-  content: '\2014 \00A0';
-}
-
-blockquote p {
-  color: #666;
-  max-width: 460px;
-}
-
-hr {
-  width: 540px;
-  text-align: left;
-  margin: 0 auto 0 0;
-  color: #999;
-}
-
-.distro-logo {
-  width: 25px;
-  padding: 5px;
-  position: relative;
-  top: 11px;
-}
-
-.nt {
-  color: #e28964;
-  font-weight: bold
-}
-
-.mi {
-  color: #98dc9a;
-  font-weight: bold;
-}
-
-.s2 {
-  color: #859dc7
+.start {
+  text-align: start;
 }
