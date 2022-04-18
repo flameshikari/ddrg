@@ -1,7 +1,5 @@
-bs4
-lxml
+fake-useragent
 markdown2
 requests
 packaging
-pygments
 toml
