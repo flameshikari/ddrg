@@ -3,21 +3,21 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    version_url = "https://freedos.org/download"
+    values = []
+    exceptions = [
+        'tools', 'unofficial', 'pre-', 'previews',
+        'repos', 'fdbasews', 'fbasecd'
+        ]
+    regexp_url = re.compile(r'.*\d+\.\d+.*')
+    regexp_version = re.compile(r'.*\/(\d+\.\d+)\/.*')
+    url_base = "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/"
 
-    html = bs(requests.get(version_url).text, "html.parser")
-    iso_version = re.search(r"<h2>FreeDOS (\d+.\d+)</h2>", str(html)).group(1)
-
-    base_url = "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/{}"
-    html = bs(requests.get(base_url.format(iso_version)).text, "html.parser")
-
-    for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
-
-        iso_url = f"{base_url.format(iso_version)}/{filename['href']}"
+    for iso_url in get.urls(url_base, exclude=exceptions,
+                                      pattern=regexp_url,
+                                      recurse=True):
         iso_arch = "i386"
-        iso_size = get_iso_size(iso_url)
+        iso_size = get.size(iso_url)
+        iso_version = re.search(regexp_version, iso_url).group(1)
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
-        array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

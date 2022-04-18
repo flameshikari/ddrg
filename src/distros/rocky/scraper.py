@@ -3,18 +3,20 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    base_url = "https://rockylinux.org/download"
+    values = []
+    regexp_version = re.compile(r'-(\d+(\.\d+)?)')
+    url_bases = [
+        'https://rockylinux.org/download',
+        'https://rockylinux.org/alternative-images/'
+    ]
 
-    html = bs(requests.get(base_url).text, "html.parser")
+    for url_base in url_bases:
+        for iso_url in get.urls(url_base):
 
-    for target in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
+            iso_arch = get.arch(iso_url)
+            iso_size = get.size(iso_url)
+            iso_version = re.search(regexp_version, iso_url).group(1)
 
-        iso_url = target["href"]
-        iso_arch = get_iso_arch(iso_url)
-        iso_size = get_iso_size(iso_url)
-        iso_version = re.search(r"-(\d+(\.\d+)?)", iso_url).group(1)
+            values.append((iso_url, iso_arch, iso_size, iso_version))
 
-        array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

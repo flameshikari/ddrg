@@ -3,46 +3,19 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    base_url = "https://mirror.yandex.ru/debian-cd"
-    subpaths = [
-        "current-live/amd64/iso-hybrid",
-        "current-live/i386/iso-hybrid",
-        "current/amd64/iso-bd",
-        "current/amd64/iso-cd",
-        "current/amd64/iso-dvd",
-        "current/arm64/iso-cd",
-        "current/arm64/iso-dvd",
-        "current/armel/iso-cd",
-        "current/armel/iso-dvd",
-        "current/i386/iso-bd",
-        "current/i386/iso-cd",
-        "current/i386/iso-dvd",
-        "current/mips/iso-cd",
-        "current/mips/iso-dvd",
-        "current/mips64el/iso-cd",
-        "current/mips64el/iso-dvd",
-        "current/mipsel/iso-cd",
-        "current/mipsel/iso-dvd",
-        "current/multi-arch/iso-cd",
-        "current/ppc64el/iso-cd",
-        "current/ppc64el/iso-dvd",
-        "current/s390x/iso-cd",
-        "current/s390x/iso-dvd"
-    ]
+    values = []
+    exceptions = ['bt', 'jigdo', 'list', 'log', 'source']
+    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)')
+    url_bases = [
+        'https://mirror.yandex.ru/debian-cd/current/',
+        'https://mirror.yandex.ru/debian-cd/current-live/' ]
 
-    for subpath in subpaths:
+    for url_base in url_bases:
+        for iso_url in get.urls(url_base, exclude=exceptions,
+                                          recurse=True):
+            iso_arch = get.arch(iso_url)
+            iso_size = get.size(iso_url)
+            iso_version = re.search(regexp_version, iso_url).group(1)
+            values.append((iso_url, iso_arch, iso_size, iso_version))
 
-        path = f"{base_url}/{subpath}"
-        html = bs(requests.get(path).text, "html.parser")
-
-        for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
-
-            iso_url = f"{path}/{filename['href']}"
-            iso_arch = get_iso_arch(iso_url)
-            iso_size = get_iso_size(iso_url)
-            iso_version = re.search(r"-(\d+(.\d+(.\d+)?)?)", iso_url).group(1)
-
-            array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

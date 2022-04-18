@@ -3,16 +3,15 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    version_url = "https://www.hirensbootcd.org/download"
+    values = []
+    regexp_version = re.compile(r'\(v(\d+(.\d+(.\d+)?)?)\)')
+    url_version = 'https://www.hirensbootcd.org/download/'
+    response = rq.get(url_version)
 
-    html = bs(requests.get(version_url).text, "html.parser")
+    iso_version = re.search(regexp_version, str(response.text)).group(1)
+    iso_url = 'https://www.hirensbootcd.org/files/HBCD_PE_x64.iso'
+    iso_arch = get.arch(iso_url)
+    iso_size = get.size(iso_url)
+    values.append((iso_url, iso_arch, iso_size, iso_version))
 
-    iso_url = "https://www.hirensbootcd.org/files/HBCD_PE_x64.iso"
-    iso_arch = "amd64"
-    iso_size = get_iso_size(iso_url)
-    iso_version = re.search(r"\(v(\d+(.\d+(.\d+)?)?)\)", str(html)).group(1)
-
-    array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

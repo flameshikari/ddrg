@@ -3,24 +3,15 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    version_url = "https://zorinos.com/download"
+    values = []
+    regexp_version = re.compile(r'Zorin-OS-((\d+)\.?\d+)-')
+    url_base = 'https://mirrors.edge.kernel.org/zorinos-isos/'
 
-    html = bs(requests.get(version_url).text, "html.parser")
-    version = re.search(r"Zorin OS ((\d+).\d+)", str(html))
+    for iso_url in get.urls(url_base, recurse=True):
 
-    iso_version = version.group(1)
-    base_version = version.group(2)
+        iso_arch = get.arch(iso_url)
+        iso_size = get.size(iso_url)
+        iso_version = re.search(regexp_version, iso_url).group(1)
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
-    base_url = "https://mirrors.edge.kernel.org/zorinos-isos/" + base_version
-    html = bs(requests.get(base_url.format(base_version)).text, "html.parser")
-
-    for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
-
-        iso_url = f"{base_url}/{filename['href']}"
-        iso_arch = get_iso_arch(iso_url)
-        iso_size = get_iso_size(iso_url)
-
-        array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

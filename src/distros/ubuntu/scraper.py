@@ -3,23 +3,16 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    base_url = "https://mirror.yandex.ru/ubuntu-releases"
+    values = []
+    regexp_url = re.compile(r'.*\d+\.\d+\/.*')
+    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)')
+    url_base = 'https://mirror.yandex.ru/ubuntu-releases/'
 
-    html = bs(requests.get(base_url).text, "html.parser")
+    for iso_url in get.urls(url_base, pattern=regexp_url,
+                                      recurse=True):
+        iso_arch = get.arch(iso_url)
+        iso_size = get.size(iso_url)
+        iso_version = re.search(regexp_version, iso_url).group(1)
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
-    for version in html.find_all("a", {"href": re.compile("^[a-z].*$")}):
-
-        path = f"{base_url}/{version['href'][:-1]}"
-        html = bs(requests.get(path).text, "html.parser")
-
-        for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
-
-            iso_url = f"{path}/{filename['href']}"
-            iso_arch = get_iso_arch(iso_url)
-            iso_size = get_iso_size(iso_url)
-            iso_version = re.search(r"-(\d+.\d+(.\d+)?)", iso_url).group(1)
-
-            array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

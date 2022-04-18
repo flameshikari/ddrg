@@ -3,20 +3,15 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    base_url = "https://sourceforge.net/projects/archlabs-linux-minimo/rss?path=/ArchLabsMinimo"
+    values = []
+    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)-')
+    url_base = 'https://sourceforge.net/projects/archlabs-linux-minimo/files/ArchLabsMinimo/'
 
-    xml = bs(requests.get(base_url).text, "xml")
+    for iso_url in get.urls(url_base):
 
-    for item in xml.find_all("item"):
+        iso_arch = get.arch(iso_url)
+        iso_size = get.size(iso_url)
+        iso_version = re.search(regexp_version, iso_url).group(1)
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
-        content = item.find("content")
-
-        iso_url = content["url"][:-9]
-        iso_arch = get_iso_arch(iso_url)
-        iso_size = int(content["filesize"])
-        iso_version = re.search(r"-(\d+.\d+.\d+)", iso_url).group(1)
-
-        array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

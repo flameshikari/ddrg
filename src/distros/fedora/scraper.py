@@ -3,40 +3,23 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    base_url = "https://mirror.yandex.ru/fedora/linux/releases"
-    version_url = "https://getfedora.org/en/workstation/download"
-    subpaths = [
-        "Everything/aarch64",
-        "Everything/armhfp",
-        "Everything/x86_64",
-        "Server/aarch64",
-        "Server/armhfp",
-        "Server/x86_64",
-        "Silverblue/aarch64",
-        "Silverblue/x86_64",
-        "Spins/x86_64",
-        "Workstation/arch64",
-        "Workstation/x86_64"
+    values = []
+    regexp_version = re.compile(r'-(\d+(_\w+)?-\d+\.\d+)')
+    exceptions = [
+        'Container', 'Cloud', 'os',
+        'images', 'source', 'Spins', 'Modular'
+    ]
+    url_bases = [
+        'https://mirror.yandex.ru/fedora/linux/releases/35/',
+        'https://mirror.yandex.ru/fedora/linux/releases/test/36_Beta/'
     ]
 
-    html = bs(requests.get(version_url).text, "html.parser")
-    version = re.search(r"Fedora (\d+) Workstation", str(html)).group(1)
+    for url_base in url_bases:
+        for iso_url in get.urls(url_base, exclude=exceptions,
+                                          recurse=True):
+            iso_arch = get.arch(iso_url)
+            iso_size = get.size(iso_url)
+            iso_version = re.search(regexp_version, iso_url).group(1)
+            values.append((iso_url, iso_arch, iso_size, iso_version))
 
-    html = bs(requests.get(base_url).text, "html.parser")
-
-    for subpath in subpaths:
-
-        path = f"{base_url}/{version}/{subpath}/iso"
-        html = bs(requests.get(path).text, "html.parser")
-
-        for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
-
-            iso_url = f"{path}/{filename['href']}"
-            iso_arch = get_iso_arch(iso_url)
-            iso_size = get_iso_size(iso_url)
-            iso_version = re.search(r"-(\d+-\d+.\d+)", iso_url).group(1)
-
-            array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

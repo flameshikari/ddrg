@@ -3,19 +3,15 @@ from public import *  # noqa
 
 def init():
 
-    array = []
+    values = []
+    regexp_version = re.compile(r'v(\d+.\d+)')
+    url_base = 'https://leech.binbash.rocks:8008/mAid/stable/'
 
-    base_url = "https://leech.binbash.rocks:8008/mAid/stable"
-    html = bs(requests.get(base_url).text, "html.parser")
+    for iso_url in get.urls(url_base, recurse=True):
 
-    regex = re.compile("^.*\.iso$")
-    filename = html.find_all("a", {"href": regex})[0]["href"]
+        iso_arch = get.arch(iso_url)
+        iso_size = get.size(iso_url)
+        iso_version = re.search(regexp_version, iso_url).group(1)
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
-    iso_url = f"{base_url}/{filename}"
-    iso_arch = get_iso_arch(iso_url)
-    iso_size = get_iso_size(iso_url)
-    iso_version = re.search(r"v(\d+.\d+)", iso_url).group(1)
-
-    array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

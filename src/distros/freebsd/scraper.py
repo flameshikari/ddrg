@@ -3,21 +3,16 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    version_url = "https://www.freebsd.org/releases"
+    values = []
+    exceptions = ['-RC']
+    regexp_version = re.compile(r'-(\d+(\.\d+)?)')
+    url_base = 'https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/'
 
-    html = bs(requests.get(version_url).text, "html.parser")
-    iso_version = re.search(r"Release (\d+(.\d+)?)", str(html)).group(1)
+    for iso_url in get.urls(url_base, exclude=exceptions,
+                                      recurse=True):
+        iso_version = re.search(regexp_version, iso_url).group(1)
+        iso_arch = get.arch(iso_url)
+        iso_size = get.size(iso_url)
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
-    base_url = "https://mirror.yandex.ru/freebsd/releases/ISO-IMAGES/{}"
-    html = bs(requests.get(base_url.format(iso_version)).text, "html.parser")
-
-    for filename in html.find_all("a", {"href": re.compile("^.*\.iso$")}):
-
-        iso_url = f"{base_url.format(iso_version)}/{filename['href']}"
-        iso_arch = get_iso_arch(iso_url)
-        iso_size = get_iso_size(iso_url)
-
-        array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values

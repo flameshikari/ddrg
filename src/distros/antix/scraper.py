@@ -3,26 +3,17 @@ from public import *  # noqa
 
 def init():
 
-    array = []
-    version_url = "https://antixlinux.com/download/"
-    html = bs(requests.get(version_url).text, "html.parser")
+    values = []
+    regexp_version = re.compile(r'You should download antiX-(\d+(\.\d+(\.\d+)?)?)')
+    url_base = 'https://mirror.yandex.ru/mirrors/MX-Linux/MX-ISOs/ANTIX/Final/antiX-{}/'
+    url_version = 'https://antixlinux.com/download/'
+    response = rq.get(url_version)
+    iso_version = re.search(regexp_version, str(response.text)).group(1)
 
-    regex = re.compile("https://sourceforge.net.*")
-    base_url = html.find("a", {"href": regex})["href"] \
-                   .replace("files/", "rss?path=/")
-    
-    xml = bs(requests.get(base_url).text, "xml")
+    for iso_url in get.urls(url_base.format(iso_version)):
 
-    for item in xml.find_all("item"):
-        content = item.find("content")
-        iso_url = content["url"][:-9]
+        iso_arch = get.arch(iso_url)
+        iso_size = get.size(iso_url)
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
-        if iso_url.endswith(".iso"):
-
-            iso_arch = get_iso_arch(iso_url)
-            iso_size = get_iso_size(iso_url)
-            iso_version = re.search(r"antiX-(\d+(\.\d+(\.\d+)?)?)", iso_url).group(1)
-
-            array.append((iso_url, iso_arch, iso_size, iso_version))
-
-    return array
+    return values
