@@ -5,9 +5,15 @@ from argparse import ArgumentParser
 from datetime import datetime
 from importlib.machinery import SourceFileLoader
 from shutil import copyfile, copytree, rmtree
+from sys import exit
+from signal import signal, SIGINT
+import traceback
 
-from public import os, toml, json, strftime, logger, md
+from public import os, toml, json, strftime, logger, markdown, sleep, requests
 
+# ctrl+c handler
+def signal_handler(sig, frame): exit(130)
+signal(SIGINT, signal_handler)
 
 # initialization of a timer to count the script execution time
 timer = lambda: datetime.now().timestamp()
@@ -79,9 +85,23 @@ def build_repo_entry(distro_id, distro_info):
     repo_entry["name"] = distro_info[0]
     repo_entry["url"] = distro_info[1]
 
-    distro_values = sorted(scraper.init(),
-                           key=lambda x: x[3],
-                           reverse=True)
+    tries = 3
+
+    for i in range(tries):
+        try:
+            distro_values = sorted(scraper.init(),
+                                   key=lambda x: x[3],
+                                   reverse=True)
+        except requests.exceptions.RequestException as error:
+            if i < tries - 1: # i is zero indexed
+                logger(f"[{distro_id}] {str(error).lower()}, retrying in 10s", 1)
+                sleep(10)
+                continue
+            else:
+                raise
+        break
+
+
 
     for distro_value in distro_values:
         iso_url, iso_arch, iso_size, iso_version = distro_value
@@ -91,6 +111,9 @@ def build_repo_entry(distro_id, distro_info):
                                     "version": iso_version})
 
     repo_entry["releases"] = repo_entry_releases
+
+    if not repo_entry_releases:
+        raise Exception('releases is empty')
 
     return repo_entry
 
@@ -102,47 +125,45 @@ def test_repo_entry(distro_id):
 
 def build_repo_html():
 
-    md_distros = []
+    markdown_distros = []
 
-    md_distros_done = [x for x in distros_list if (x not in distros_errors)]
-
-    md_extras = [
-        "metadata",
-        "fenced-code-blocks",
-        "header-ids",
-        "footnotes",
-        "tables",
-    ]
+    markdown_distros_done = [x for x in distros_list if (x not in distros_errors)]
+    markdown_distros_error = [x for x in distros_errors]
 
     with open(f"{output_dir}/repo.json", "r") as file:
         repo_json = file.read()
 
     with open(f"{working_dir}/html/body.md", "r") as file:
-        md_source = file.read()
+        markdown_source = file.read()
 
-    list_txt = open(f"{output_dir}/list.txt", "w")
+    with open(f"{output_dir}/list.txt", "w") as file:
+        for distro_id in markdown_distros_done:
+            distro_info = get_distro_info(distro_id)
+            file.write(f"{distro_info[0]} ({distro_info[1]})\n")
+            markdown_distros.append(f'<a href="{distro_info[1]}"><img title="{distro_info[0]}" class="distro_logo" src="./logos/{distro_id}.png"/></a>')
 
-    for distro_id in md_distros_done:
-        distro_info = get_distro_info(distro_id)
-        list_txt.write(f"{distro_info[0]}\n")
-        md_distros.append(f'* <img class="distro-logo" src="./logos/{distro_id}.png"/> <a href="{distro_info[1]}">{distro_info[0]}</a>')
+    markdown_distro_count = f'contains [{len(markdown_distros_done)}](./list.txt)'
 
-    list_txt.close()
+    if markdown_distros_error:
+        with open(f"{output_dir}/missing.txt", "w") as file:
+            for distro_id in markdown_distros_error:
+                distro_info = get_distro_info(distro_id)
+                file.write(f"{distro_info[0]} ({distro_info[1]})\n")
+        markdown_distro_count += f' and missing [{len(markdown_distros_error)}](./missing.txt)'
 
-    md_formatted = md_source.format(
-        count=len(md_distros_done),
-        time=strftime('%Y.%m.%d %H:%M:%S %Z'),
-        timezone=strftime('%Z'),
-        distros="\n".join(md_distros),
-        repo=repo_json)
+    markdown_formatted = markdown_source.format(
+        count=markdown_distro_count,
+        time=strftime('%Y.%m.%d %H:%M:%S'),
+        timezone=strftime('%z')[:-2],
+        distros="\n".join(markdown_distros))
 
-    md_converted = md(md_formatted, extras=md_extras)
+    markdown_converted = markdown(markdown_formatted)
 
     with open(f"{working_dir}/html/template.html", "r") as file:
         html_template = file.read()
 
     with open(f"{output_dir}/index.html", "w") as file:
-        file.write(html_template.format(markdown=md_converted))
+        file.write(html_template.format(markdown=markdown_converted))
 
     copytree(f"{working_dir}/html/assets/", f"{output_dir}/assets")
     copyfile(f"{working_dir}/html/favicon.ico", f"{output_dir}/favicon.ico")
@@ -163,19 +184,20 @@ if __name__ == "__main__":
                 if os.path.isfile(f"{distros_dir}/{distro_id}/scraper.py"):
                     repo_entry = build_repo_entry(distro_id, distro_info)
                     repo.append(repo_entry)
-                    logger(f"{distro_id} is scraped", 0)
+                    logger(f"[{distro_id}] scraped", 0)
                 else:
                     raise Exception("missing scraper.py")
 
             except Exception as error:
                 distros_errors.append(distro_id)
-                logger(f"{distro_id} is failed: {str(error).lower()}", 2)
+                traceback.print_exc()
+                logger(f"[{distro_id}] {str(error).lower()}", 2)
                 continue
 
         timer_stop = round(timer() - timer_start)
 
         if len(distros_errors) == len(distros_list):
-            logger("the repository isn't built. check scrapers", 2)
+            logger("the repository isn't built, check scrapers", 2)
             exit(2)
 
         # remove previous output folder structure
@@ -184,6 +206,8 @@ if __name__ == "__main__":
             os.remove(f"{output_dir}/index.html")
             os.remove(f"{output_dir}/favicon.ico")
             os.remove(f"{output_dir}/list.txt")
+            os.remove(f"{output_dir}/missing.txt")
+            os.remove(f"{output_dir}/list.json")
         except:
             pass
 
@@ -217,5 +241,6 @@ if __name__ == "__main__":
         exit(130)
 
     except Exception as error:
+        traceback.print_exc()
         logger(str(error).lower(), 2)
         exit(2)
