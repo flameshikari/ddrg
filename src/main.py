@@ -59,6 +59,12 @@ def copy_distro_logo(distro_id):
                  f"{output_dir}/logos/{distro_id}.png")
 
 
+def test(func):
+    def inner():
+        iso_arch = None
+        return func
+    return inner
+
 def get_distro_info(distro_id):
     """Parse specific info.toml then return [distro name, distro url]."""
     try:
@@ -105,10 +111,12 @@ def build_repo_entry(distro_id, distro_info):
 
     for distro_value in distro_values:
         iso_url, iso_arch, iso_size, iso_version = distro_value
-        repo_entry_releases.append({"arch": iso_arch,
-                                    "size": iso_size,
-                                    "url": iso_url,
-                                    "version": iso_version})
+        a =  {"size": iso_size,
+              "url": iso_url,
+              "version": iso_version}
+        if iso_arch is not None: a['arch'] = iso_arch
+        repo_entry_releases.append(dict(sorted(a.items())))
+
 
     repo_entry["releases"] = repo_entry_releases
 

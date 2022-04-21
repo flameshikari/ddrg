@@ -3,6 +3,7 @@ import os
 import re
 from time import sleep, strftime
 
+
 try:
     import toml
     import requests
@@ -11,6 +12,7 @@ try:
     from fake_useragent import UserAgent as user_agent
     from packaging.version import Version as check_version
     from termcolor import colored
+
 
 except ImportError as error:
     print(f"{error}. Did you install packages from requirements.txt?")
@@ -36,5 +38,6 @@ def logger(message, level=1):
                           message=message))
 
 from parsers import get
+from main import test
 
-__all__ = ["json", "re", "rq", "requests", "check_version", "get", "user_agent"]
+__all__ = ["json", "re", "rq", "requests", "check_version", "get", "user_agent", "test"]
