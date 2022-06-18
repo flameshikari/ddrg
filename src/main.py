@@ -1,19 +1,37 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import json
+import logging
+import os
+import re
+
 from argparse import ArgumentParser
 from datetime import datetime
+from html import unescape
 from importlib.machinery import SourceFileLoader
-from shutil import copyfile, copytree, rmtree
+from random import choice
+from shutil import copy, rmtree
 from sys import exit
-from signal import signal, SIGINT
-import traceback
+from time import sleep, strftime
 
-from public import os, toml, json, strftime, logger, markdown, sleep, requests
+try:
+    import requests
+    from requests.adapters import HTTPAdapter
+    from requests.packages.urllib3.util.retry import Retry
+    from fake_useragent import UserAgent
+    from markdown2 import markdown
+    from packaging.version import Version as check_version
+    from termcolor import colored as color
+    from xmltodict import parse as xml_to_dict
 
-# ctrl+c handler
-def signal_handler(sig, frame): exit(130)
-signal(SIGINT, signal_handler)
+except ImportError as error:
+    print(f"{error}. Did you install packages from requirements.txt?")
+    exit(1)
+
+
+clear = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
+
 
 # initialization of a timer to count the script execution time
 timer = lambda: datetime.now().timestamp()
@@ -24,6 +42,14 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # parsing arguments passed to this script
 options = ArgumentParser()
+options.add_argument("-c", "--color",
+                     help="enable color output",
+                     default=False,
+                     action="store_true")
+options.add_argument("-d", "--distros",
+                     help="define specific distros to parse",
+                     default='all',
+                     type=str)
 options.add_argument("-g", "--generate",
                      help="generate a webpage to present the content of repo.json",
                      default=False,
@@ -34,9 +60,36 @@ options.add_argument("-i", "--input",
                      type=str)
 options.add_argument("-o", "--output",
                      help="the dir for saving builded repo",
-                     default=f"{working_dir}/../build",
+                     default=f"{working_dir}/../repo",
                      type=str)
+options.add_argument("-v", "--verbose",
+                     help="show debug info",
+                     default=False,
+                     action="store_true")
 options = options.parse_args()
+
+if options.verbose: level_log = logging.DEBUG
+else: level_log = logging.INFO
+
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+
+
+
+if options.color:
+    logging.addLevelName(logging.DEBUG, color(logging.getLevelName(logging.DEBUG), 'magenta'))
+    logging.addLevelName(logging.INFO, color(logging.getLevelName(logging.INFO), 'blue'))
+    logging.addLevelName(logging.WARNING, color(logging.getLevelName(logging.WARNING), 'yellow'))
+    logging.addLevelName(logging.ERROR, color(logging.getLevelName(logging.ERROR), 'red'))
+    logging.addLevelName(logging.CRITICAL, color(logging.getLevelName(logging.CRITICAL), 'red'))
+else:
+    # replace colored function to print 
+    def color(text, *args, **kwargs):
+        return text
+
+logging.basicConfig(level=level_log,
+                    format='[%(asctime)s] [%(levelname)s] %(message)s',
+                    datefmt='%H:%M:%S')
+
 
 # setting other directories
 output_dir = os.path.abspath(options.output)
@@ -44,36 +97,188 @@ distros_dir = os.path.abspath(options.input)
 
 # initialization of arrays
 repo, distros_errors = [], []
-distros_list = sorted([distro for distro in os.listdir(distros_dir)
-                       if not distro.startswith("_")])
+
+
+if options.distros == 'all':
+    distros_list = sorted([distro for distro in os.listdir(distros_dir)
+                           if not distro.startswith("_")])
+else:
+    distros_list = sorted(options.distros.split(','))
+
+
+# https://findwork.dev/blog/advanced-usage-python-requests-timeouts-retries-hooks/
+DEFAULT_TIMEOUT = 10 # seconds
+class TimeoutHTTPAdapter(HTTPAdapter):
+    def __init__(self, *args, **kwargs):
+        self.timeout = DEFAULT_TIMEOUT
+        if "timeout" in kwargs:
+            self.timeout = kwargs["timeout"]
+            del kwargs["timeout"]
+        super().__init__(*args, **kwargs)
+
+    def send(self, request, **kwargs):
+        timeout = kwargs.get("timeout")
+        if timeout is None:
+            kwargs["timeout"] = self.timeout
+        return super().send(request, **kwargs)
+retries = Retry(total=3, status_forcelist=[429, 500, 502, 503, 504])
+rq = requests.Session()
+
+rq.mount("http://",  TimeoutHTTPAdapter(max_retries=retries))
+rq.mount("https://", TimeoutHTTPAdapter(max_retries=retries))
+
+
+
+
+
+class get:
+
+    def size(target):
+        """Returns the file size of the target URL in bytes."""
+        try:
+            response = rq.get(target, stream=True).headers
+            # logging.debug(f"{color(response, 'green')}")
+            size = int(response['Content-Length'])
+            if size > 500:
+                return size
+            else:
+                return 0
+        except Exception as error:
+            logging.debug(f"{color('-', 'red')} {target}: {str(error).lower()}")
+            pass
+
+    def arch(target):
+        """Returns the used processor architecture of the target URL."""
+
+        archs_all = [
+            "i386", "amd64",
+            "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
+            "i486", "i586", "i686-pae", "i686", "ia64",
+            "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
+            "mips64el", "mipsel", "mips",
+            "s390x", "hppa", "macppc", "alpha", "sparc64",
+            "bios", "efi", "ipxe"
+        ]
+
+        archs_86_64 = ["86_64", "86-64", "96", "archboot"]
+        archs_64 = ["x64", "64bit", "dual", "64"]
+        archs_86 = ["x86", "x32", "32bit", "386", "32"]
+
+        for arch in archs_all:
+            if arch in target:
+                return arch
+
+        if any(arch in target for arch in archs_86_64):
+            return "x86_64"
+
+        elif "powerpc" in target:
+            for ppc in archs_all:
+                if ppc in target.replace("powerpc", "ppc"):
+                    return ppc
+
+        elif any(arch in target for arch in archs_64):
+            return "amd64"
+
+        elif any(arch in target for arch in archs_86):
+            return "i386"
+
+        elif "legacy" in target:
+            return "bios"
+
+        else:
+            return None
+
+
+    def urls(target, **kwargs):
+
+        array = []
+        args = dict(kwargs)
+
+        if 'exclude' in args: args['exclude'].append('../')
+
+        args.setdefault('exclude', ['../'])
+        args.setdefault('add_base', True)
+        args.setdefault('recurse', False)
+
+        if 'disk.yandex.ru' in target:
+            return 'https://getfile.dokpub.com/yandex/get/' + target
+
+        if 'sourceforge.net' in target and not target.endswith('.iso'):
+            sourceforge_array = []
+            rss = rq.get(target.replace('/files/', '/rss?path=/')).text
+            xml = xml_to_dict(rss)
+            for entry in xml['rss']['channel']['item']:
+                url = entry['media:content']['@url']
+                size = int(entry['media:content']['@filesize'])
+                sourceforge_array.append({'url': url, 'size': size})
+            return sourceforge_array
+
+        def scrape(target, **kwargs):
+            
+            response = rq.get(target)
+            pattern_html = re.compile(r'href=[\'|\"](.*?)[\'|\"]', re.S)
+            urls = re.findall(pattern_html, str(response.text))
+
+            for url in urls:
+                if url in target: continue
+                # if 'sourceforge.net' in target:
+                #    pattern = re.compile('/projects/.*/files')
+                #    if not re.findall(pattern, url):
+                #        continue
+                #    if url.startswith('/'):
+                #        url = 'https://sourceforge.net' + url
+                #    if url.startswith('http:'):
+                #        url = url.replace('http:', 'https:')
+                
+                else:
+                    if args['add_base']:
+                        if not url.startswith('http'):
+                            url = target + url
+                    if any(x in url for x in args['exclude']):
+                        continue
+                    if 'pattern' in args:
+                        pattern = re.compile(args['pattern'])
+                        if not re.search(pattern, url):
+                            continue
+
+                if args['recurse'] and url.endswith('/'):
+                    scrape(url, **args)
+                if not '.iso' in url: continue
+                if url.endswith('.iso/download'):
+                    url = url[:-9]
+                if url.endswith('.iso'):
+                    url = str(unescape(url.replace('/./', '/')))
+                    if url in target: continue
+                    array.append(url)
+                    logging.debug(f"{color('+', 'green')} {url}")
+
+        scrape(target, **args)
+
+        result = list(dict.fromkeys(array))
+
+        return array
 
 
 def copy_distro_logo(distro_id):
     """Copy specific logo.png to distro folder."""
-    try:
-        copyfile(f"{distros_dir}/{distro_id}/logo.png",
-                 f"{output_dir}/logos/{distro_id}.png")
+    logo_src = f'{distros_dir}/{distro_id}/logo.png'
+    logo_dst = f'{output_dir}/logos/{distro_id}.png'
+    if not os.path.exists(logo_src):
+        logos_dir = f'{working_dir}/assets/logos'
+        logo_src = f'{logos_dir}/{choice(os.listdir(logos_dir))}'
+    copy(logo_src, logo_dst)
 
-    except FileNotFoundError:
-        copyfile(f"{working_dir}/misc/fallback_logo.png",
-                 f"{output_dir}/logos/{distro_id}.png")
-
-
-def test(func):
-    def inner():
-        iso_arch = None
-        return func
-    return inner
 
 def get_distro_info(distro_id):
-    """Parse specific info.toml then return [distro name, distro url]."""
-    try:
-        target_toml = toml.load(f"{distros_dir}/{distro_id}/info.toml")
-        distro_info = (target_toml["name"], target_toml["url"])
-    except:
-        fallback_url = "https://distrowatch.com/table.php?distribution={}"
-        distro_info = [distro_id, fallback_url.format(distro_id)]
-
+    """Parse specific info.json then return [distro_name, distro_url]."""
+    target_json = f'{distros_dir}/{distro_id}/info.json'
+    with open(target_json, 'r') as file:
+        try:
+            target_json = json.load(file)
+            distro_info = (target_json['name'], target_json['url'])
+        except:
+            distro_url = f'https://google.com/search?q={distro_id}'
+            distro_info = [distro_id, distro_url]
     return distro_info
 
 
@@ -92,6 +297,7 @@ def build_repo_entry(distro_id, distro_info):
     repo_entry["url"] = distro_info[1]
 
     tries = 3
+    wait = 10
 
     for i in range(tries):
         try:
@@ -100,8 +306,8 @@ def build_repo_entry(distro_id, distro_info):
                                    reverse=True)
         except requests.exceptions.RequestException as error:
             if i < tries - 1: # i is zero indexed
-                logger(f"[{distro_id}] {str(error).lower()}, retrying in 10s", 1)
-                sleep(10)
+                logging.error(f"{distro_id}: {str(error).lower()}, retrying in {wait}s")
+                sleep(wait)
                 continue
             else:
                 raise
@@ -126,10 +332,6 @@ def build_repo_entry(distro_id, distro_info):
     return repo_entry
 
 
-def test_repo_entry(distro_id):
-    """For debug purposes"""
-    return build_repo_entry(distro_id, get_distro_info(distro_id))
-
 
 def build_repo_html():
 
@@ -141,7 +343,7 @@ def build_repo_html():
     with open(f"{output_dir}/repo.json", "r") as file:
         repo_json = file.read()
 
-    with open(f"{working_dir}/html/body.md", "r") as file:
+    with open(f"{working_dir}/assets/body.md", "r") as file:
         markdown_source = file.read()
 
     with open(f"{output_dir}/list.txt", "w") as file:
@@ -167,22 +369,36 @@ def build_repo_html():
 
     markdown_converted = markdown(markdown_formatted)
 
-    with open(f"{working_dir}/html/template.html", "r") as file:
+    with open(f"{working_dir}/assets/template.html", "r") as file:
         html_template = file.read()
 
     with open(f"{output_dir}/index.html", "w") as file:
         file.write(html_template.format(markdown=markdown_converted))
+    
+        html_assets_dir = f'{working_dir}/assets/html/'
+        for html_asset in os.listdir(html_assets_dir):
+            copy(f'{html_assets_dir}/{html_asset}', output_dir)
 
-    copytree(f"{working_dir}/html/assets/", f"{output_dir}/assets")
-    copyfile(f"{working_dir}/html/favicon.ico", f"{output_dir}/favicon.ico")
 
+
+logo = color(f"""\
+         __     _                __           _     __
+    ____/ /____(_)   _____  ____/ /________  (_)___/ /
+   / __  / ___/ / | / / _ \/ __  / ___/ __ \/ / __  /
+  / /_/ / /  / /| |/ /  __/ /_/ / /  / /_/ / / /_/ /
+  \__,_/_/  /_/ |___/\___/\__,_/_/ __\____/_/\__,_/
+     ________  ____  ____  _____(_) /_____  _______  __
+    / ___/ _ \/ __ \/ __ \/ ___/ / __/ __ \/ ___/ / / /
+   / /  /  __/ /_/ / /_/ (__  ) / /_/ /_/ / /  / /_/ /
+  /_/   \___/ .___/\____/____/_/\__/\____/_/   \__, /
+           /_/                                /____/
+""", 'white', attrs=['bold'])
 
 if __name__ == "__main__":
 
-    print(open(f"{working_dir}/misc/ascii_logo.txt", "r").read())
-
+    print(logo)
     try:
-        logger("started scraping distros")
+        logging.info("started scraping distros")
         for distro_id in distros_list:
             try:
                 distro_info = get_distro_info(distro_id)
@@ -192,20 +408,19 @@ if __name__ == "__main__":
                 if os.path.isfile(f"{distros_dir}/{distro_id}/scraper.py"):
                     repo_entry = build_repo_entry(distro_id, distro_info)
                     repo.append(repo_entry)
-                    logger(f"[{distro_id}] scraped", 0)
+                    logging.info(f"{color(distro_id, 'white', attrs=['underline'])} scraped")
                 else:
                     raise Exception("missing scraper.py")
 
             except Exception as error:
                 distros_errors.append(distro_id)
-                traceback.print_exc()
-                logger(f"[{distro_id}] {str(error).lower()}", 2)
+                logging.exception((f"[{distro_id}] {str(error).lower()}"))
                 continue
 
         timer_stop = round(timer() - timer_start)
 
         if len(distros_errors) == len(distros_list):
-            logger("the repository isn't built, check scrapers", 2)
+            logging.critical("the repository isn't built, check scrapers", exc_info=True)
             exit(2)
 
         # remove previous output folder structure
@@ -233,15 +448,16 @@ if __name__ == "__main__":
             json.dump(repo, repo_json, indent=2)
 
         # copy distro logos to distro folders
-        for distro_id in distros_list: copy_distro_logo(distro_id)
+        for distro_id in distros_list:
+            copy_distro_logo(distro_id)
 
         if options.generate:
             build_repo_html()
 
-        logger(f"the repository is built in {timer_stop}s")
+        logging.info(f"the repository is built in {timer_stop}s")
 
         if distros_errors:
-            logger(f"not included: {', '.join(distros_errors)}")
+            logging.warning(f"not included: {', '.join(distros_errors)}")
 
         exit(0)
 
@@ -249,6 +465,8 @@ if __name__ == "__main__":
         exit(130)
 
     except Exception as error:
-        traceback.print_exc()
-        logger(str(error).lower(), 2)
+        logging.critical(str(error).lower(), exc_info=True)
         exit(2)
+
+
+__all__ = ["json", "re", "rq", "requests", "check_version", "get"]
