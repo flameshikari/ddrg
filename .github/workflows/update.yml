@@ -19,6 +19,7 @@ jobs:
         python -m pip install -r requirements.txt
 
     - name: Build repository with website
+      continue-on-error: true
       run: python -u src/main.py -go repo
 
     - name: Upload artifacts
