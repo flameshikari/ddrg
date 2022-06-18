@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/html/assets/logo.svg" width="400" alt="">
+  <img src="./src/assets/html/logo.svg" width="400" alt="">
 </p>
   <h1 align="center"><a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator</h1>
   <p align="center">Generate a repository for the app that allow boot a PC using ISO files stored on your <a href="https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid">Android phone</a></p>
@@ -86,7 +86,7 @@ Should be 128x128px with transparent background. Arch Linux **[logo.png](./src/d
   <img src="./src/distros/arch/logo.png" alt="Arch Linux"/>
 </p><br>
 
-If **logo.png** is missing, the **[fallback logo](./src/misc/fallback_logo.png)** will be used:
+If **logo.png** is missing, the **[fallback logo](./src/distros/drivedroid/logo.png)** will be used:
 
 <br><p align="center">
   <img src="./src/misc/fallback_logo.png" alt="DriveDroid Logo"/>
