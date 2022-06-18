@@ -1,4 +1,4 @@
-from public import *  # noqa
+from main import *  # noqa
 
 
 def init():

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'custom';
+  src: url('./font.ttf');
+}
+
+* {
+  font-family: 'custom';
+  outline: none;
+  text-decoration: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  word-break: break-word;
+}
+
+body {
+  background: #000500;
+  background-image: url('./background.png');
+  background-repeat: repeat;
+  color: #f8f8f8;
+  line-height: 1;
+  padding: 40px;
+  margin: auto;
+  max-width: 500px;
+  text-align: justify;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: #61d168;
+  vertical-align: baseline;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+  max-width: 100%;
+  margin-left: 2em;
+}
+
+.distro_logo {
+  width: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.start {
+  text-align: start;
+}

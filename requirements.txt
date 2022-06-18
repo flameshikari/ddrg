@@ -1,5 +1,7 @@
 fake-useragent
 markdown2
-requests
 packaging
+requests
+termcolor
 toml
+xmltodict

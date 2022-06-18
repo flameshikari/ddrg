@@ -1,4 +1,4 @@
-from public import *  # noqa
+from main import *  # noqa
 
 
 def init():
@@ -7,7 +7,7 @@ def init():
     regexp_version = re.compile(r'-(\d+)-')
     url_base = 'https://sourceforge.net/projects/archbang/files/'
 
-    for iso_url in get.urls(url_base, recurse=True):
+    for iso_url in get.urls(url_base, recurse=True, add_base=False):
 
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)

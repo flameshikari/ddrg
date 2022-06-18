@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/html/assets/logo.svg" width="400" alt="">
+  <img src="./src/assets/html/logo.svg" width="400" alt="">
 </p>
   <h1 align="center"><a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator</h1>
   <p align="center">Generate a repository for the app that allow boot a PC using ISO files stored on your <a href="https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid">Android phone</a></p>
@@ -15,11 +15,7 @@
 
 Add the next link to image repositories in DriveDroid app:
 ```
-https://dd.hexed.pw
-```
-or
-```
-https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
+https://flameshikari.github.io/ddrg/repo.json
 ```
 
 ## Contents
@@ -90,10 +86,10 @@ Should be 128x128px with transparent background. Arch Linux **[logo.png](./src/d
   <img src="./src/distros/arch/logo.png" alt="Arch Linux"/>
 </p><br>
 
-If **logo.png** is missing, the **[fallback logo](./src/misc/fallback_logo.png)** will be used:
+If **logo.png** is missing, the **[fallback logo](./src/distros/drivedroid/logo.png)** will be used:
 
 <br><p align="center">
-  <img src="./src/misc/fallback_logo.png" alt="DriveDroid Logo"/>
+  <img src="./src/distros/drivedroid/logo.png" alt="DriveDroid Logo"/>
 </p><br>
 
 ### `scraper.py`
@@ -195,23 +191,7 @@ location = / {
 }
 ```
 
-## Roadmap
-
-- [x] Option to generate a webpage
-- [ ] Add a mechanism to retry scraping if a network error occurs
-- [ ] Option to select mirrors (mainly uses mirrors based in Russia)
-- [ ] Package this project perhaps
-- [ ] Probably make the code better
-
 ## Credits
 
 - [afh-dl](https://github.com/kade-robertson/afh-dl) by [kade-robertson](https://github.com/kade-robertson)
 - [Yandex.Disk direct links](https://getfile.dokpub.com/yandex) by [DokPub](https://dokpub.com)
-
-
-
-## License
-
-**[MIT License](./LICENSE)**
-
-Copyright © 2021 flameshikari
