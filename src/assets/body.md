@@ -8,7 +8,7 @@ This repository updated at [{time} UTC{timezone}](https://time.is/UTC{timezone})
 
 ## ► Setup
 
-**Install** [the app](https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid), **copy** [this link](./) and **paste** it in DriveDroid repos, **star** [the repo](https://github.com/flameshikari/ddrg) and **enjoy**!
+**Install** [the app](https://play.google.com/store/apps/details?id=com.softwarebakery.drivedroid), **copy** [this link](./repo.json) and **paste** it in DriveDroid repos, **star** [the repo](https://github.com/flameshikari/ddrg) and **enjoy**!
 
 ## ■ Distros
 
