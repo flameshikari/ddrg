@@ -15,11 +15,7 @@
 
 Add the next link to image repositories in DriveDroid app:
 ```
-https://dd.hexed.pw
-```
-or
-```
-https://raw.githubusercontent.com/flameshikari/ddrg/master/repo/repo.json
+https://flameshikari.github.io/ddrg/repo.json
 ```
 
 ## Contents
