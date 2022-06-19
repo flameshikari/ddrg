@@ -127,10 +127,6 @@ rq = requests.Session()
 rq.mount("http://",  TimeoutHTTPAdapter(max_retries=retries))
 rq.mount("https://", TimeoutHTTPAdapter(max_retries=retries))
 
-
-
-
-
 class get:
 
     def size(target):
@@ -206,11 +202,20 @@ class get:
         if 'sourceforge.net' in target and not target.endswith('.iso'):
             sourceforge_array = []
             rss = rq.get(target.replace('/files/', '/rss?path=/')).text
-            xml = xml_to_dict(rss)
-            for entry in xml['rss']['channel']['item']:
-                url = entry['media:content']['@url']
-                size = int(entry['media:content']['@filesize'])
+            xml = xml_to_dict(rss)['rss']['channel']['item']
+            if type(xml) is list:
+                for entry in xml:
+                    url = entry['media:content']['@url'][:-9]
+                    if not url.endswith('.iso'): continue
+                    size = int(entry['media:content']['@filesize'])
+                    sourceforge_array.append({'url': url, 'size': size})
+            elif type(xml) is dict:
+                entry = xml['media:content']
+                url = entry['@url'][:-9]
+                size = int(entry['@filesize'])
                 sourceforge_array.append({'url': url, 'size': size})
+            else:
+                logging.error("something wrong with sourceforge.net parser", exc_info=True)
             return sourceforge_array
 
         def scrape(target, **kwargs):
