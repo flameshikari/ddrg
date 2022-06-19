@@ -13,18 +13,16 @@
 
 ## ✔️ Try It Now
 
-This GitHub repository already contains generated repository for DriveDroid.
+Just add one of the next links to image repositories in DriveDroid app.
 
-To try it, add next link image repositories in DriveDroid app:
-
-```
-https://flameshikari.github.io/ddrg/repo.json
-```
-
-or next link which is my self-hosted mirror:
-
+### My own mirror
 ```
 https://dd.hexed.pw
+```
+
+### GitHub mirror:
+```
+https://flameshikari.github.io/ddrg/repo.json
 ```
 
 ## 📚 Documentation
