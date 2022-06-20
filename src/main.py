@@ -428,9 +428,8 @@ if __name__ == "__main__":
             exit(2)
 
         # remove previous output folder structure
-        
-        rmtree(f"{output_dir}/")
-
+        if os.path.exists(f"{output_dir}/repo.json"):
+            rmtree(output_dir)
 
         # create output folder structure
         os.makedirs(f"{output_dir}/logos", exist_ok=True)
