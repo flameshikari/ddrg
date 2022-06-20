@@ -14,7 +14,7 @@ from random import choice
 from secrets import token_hex as random_hex
 from shutil import copy, copytree, rmtree
 from sys import exit
-from time import sleep, strftime
+from time import gmtime, sleep, strftime
 
 try:
     import requests
@@ -447,6 +447,7 @@ if __name__ == "__main__":
                 continue
 
         timer_stop = round(timer() - timer_start)
+        build_time = strftime('%H:%M:%S', gmtime(timer_stop))
 
         if len(distros_errors) == len(distros_list):
             logging.critical("the repository isn't built, check scrapers", exc_info=True)
@@ -461,7 +462,7 @@ if __name__ == "__main__":
 
         # create repo.json in output folder
         with open(f"{output_dir}/repo.json", "w") as repo_json:
-            repo[0]['releases'][2]['url'] += f"{timer_stop} seconds"
+            repo[0]['releases'][2]['url'] += f"{build_time}"
             json.dump(repo, repo_json, indent=2)
 
         # copy distro logos to distro folders
@@ -471,7 +472,7 @@ if __name__ == "__main__":
         if options.generate:
             build_repo_html()
 
-        logging.info(f"the repository is built in {timer_stop}s")
+        logging.info(f"the repository is built, build time: {build_time}")
 
         if distros_errors:
             logging.warning(f"not included: {', '.join(distros_errors)}")
