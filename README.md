@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <img src="./src/website/assets/logo.svg" width="250" alt="">
+  <img src="./src/website/root/assets/logo.svg" width="250" alt="">
 </p>
   <h1 align="center">
     <a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator
@@ -11,11 +11,15 @@
 </p>
 <br>
 
+## 🚧 Disclaimer
+
+This tool is still in development, but it kinda works. Beware a lot of weird code! 
+
 ## ✔️ Try It Now
 
 Just add one of the next links to image repositories in DriveDroid app.
 
-### My own mirror
+### My own mirror:
 ```
 https://dd.hexed.pw
 ```
