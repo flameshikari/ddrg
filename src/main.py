@@ -11,6 +11,7 @@ from datetime import datetime
 from html import unescape
 from importlib.machinery import SourceFileLoader
 from random import choice
+from secrets import token_hex as random_hex
 from shutil import copy, copytree, rmtree
 from sys import exit
 from time import sleep, strftime
@@ -82,7 +83,7 @@ if options.color:
     logging.addLevelName(logging.ERROR, color(logging.getLevelName(logging.ERROR), 'red'))
     logging.addLevelName(logging.CRITICAL, color(logging.getLevelName(logging.CRITICAL), 'red'))
 else:
-    # replace colored function to print 
+    # replace colored function to print
     def color(text, *args, **kwargs):
         return text
 
@@ -219,7 +220,7 @@ class get:
             return sourceforge_array
 
         def scrape(target, **kwargs):
-            
+
             response = rq.get(target)
             pattern_html = re.compile(r'href=[\'|\"](.*?)[\'|\"]', re.S)
             urls = re.findall(pattern_html, str(response.text))
@@ -234,7 +235,7 @@ class get:
                 #        url = 'https://sourceforge.net' + url
                 #    if url.startswith('http:'):
                 #        url = url.replace('http:', 'https:')
-                
+
                 else:
                     if args['add_base']:
                         if not url.startswith('http'):
@@ -337,7 +338,6 @@ def build_repo_entry(distro_id, distro_info):
     return repo_entry
 
 
-
 def build_repo_html():
 
     markdown_distros = []
@@ -379,10 +379,35 @@ def build_repo_html():
 
     with open(f"{output_dir}/index.html", "w") as file:
         file.write(html_template.format(markdown=markdown_converted))
-    
-        html_assets_dir = f'{working_dir}/website/assets/'
-        copytree(html_assets_dir, f"{output_dir}/assets")
 
+        html_assets_dir = f'{working_dir}/website/root/'
+        copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
+
+
+filler = f"dd://{random_hex(32)}/┗  "
+repo_info =  {
+    "id": "repository",
+    "name": "+ Repo",
+    "url": "https://github.com/flameshikari/ddrg",
+    "releases": [
+        {
+            "size": 1,
+            "url": f"{filler}{strftime('%Y.%m.%d %H:%M:%S')} {strftime('%z')[:-2]}",
+            "version": "Last Update"
+        },
+        {
+            "size": 2,
+            "url": f"{filler}Contains: {len([x for x in distros_list if (x not in distros_errors)])} | Missing: {len([x for x in distros_errors])}",
+            "version": "Distro Count"
+        },
+        {
+            "size": 3,
+            "url": f"{filler}",
+            "version": "Build Time"
+        },
+    ]
+}
+repo.append(repo_info)
 
 
 logo = color(f"""\
@@ -436,6 +461,7 @@ if __name__ == "__main__":
 
         # create repo.json in output folder
         with open(f"{output_dir}/repo.json", "w") as repo_json:
+            repo[0]['releases'][2]['url'] += f"{timer_stop} seconds"
             json.dump(repo, repo_json, indent=2)
 
         # copy distro logos to distro folders
