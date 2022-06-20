@@ -4,7 +4,7 @@ from main import *  # noqa
 def init():
 
     values = []
-    exceptions = ['cd', 'CD']
+    exceptions = ['cd', 'CD'] + [f"_{str(i)}." for i in range(1, 4)]
     regexp_version = re.compile(r'_(\d+(\.\d+(\.\d+)?)?)')
     url_base = 'https://mirror.math.princeton.edu/pub/devuan/'
 
