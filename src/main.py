@@ -384,7 +384,7 @@ def build_repo_html():
         copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
 
 
-filler = f"dd://{random_hex(32)}/┗  "
+filler = f"drivedroid://{random_hex(64)}/┗  "
 repo_info =  {
     "id": "repository",
     "name": "+ Repo",
