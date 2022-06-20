@@ -147,37 +147,36 @@ class get:
     def arch(target):
         """Returns the used processor architecture of the target URL."""
 
-        archs_all = [
-            "i386", "amd64",
+        archs = [
             "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
             "i486", "i586", "i686-pae", "i686", "ia64",
-            "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
+            "macppc", "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
             "mips64el", "mipsel", "mips",
-            "s390x", "hppa", "macppc", "alpha", "sparc64",
+            "s390x", "hppa", "alpha", "sparc64",
             "bios", "efi", "ipxe"
         ]
 
-        archs_86_64 = ["86_64", "86-64", "96", "archboot"]
-        archs_64 = ["x64", "64bit", "dual", "64"]
-        archs_86 = ["x86", "x32", "32bit", "386", "32"]
-
-        for arch in archs_all:
-            if arch in target:
-                return arch
+        archs_86_64 = ["86_64", "86-64", "96"]
+        archs_64 = ["amd64", "x64", "64bit", "dual", "64"]
+        archs_86 = ["i386", "x86", "x32", "32bit", "386", "32"]
 
         if any(arch in target for arch in archs_86_64):
             return "x86_64"
-
-        elif "powerpc" in target:
-            for ppc in archs_all:
-                if ppc in target.replace("powerpc", "ppc"):
-                    return ppc
 
         elif any(arch in target for arch in archs_64):
             return "amd64"
 
         elif any(arch in target for arch in archs_86):
             return "i386"
+
+        for arch in archs:
+            if arch in target:
+                return arch
+
+        if "powerpc" in target:
+            for ppc in archs_all:
+                if ppc in target.replace("powerpc", "ppc"):
+                    return ppc
 
         elif "legacy" in target:
             return "bios"
@@ -378,36 +377,10 @@ def build_repo_html():
         html_template = file.read()
 
     with open(f"{output_dir}/index.html", "w") as file:
-        file.write(html_template.format(markdown=markdown_converted))
+        file.write(html_template.format(body=markdown_converted))
 
         html_assets_dir = f'{working_dir}/website/root/'
         copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
-
-
-filler = f"dd://{random_hex(32)}/┗  "
-repo_info =  {
-    "id": "repository",
-    "name": "+ Repo",
-    "url": "https://github.com/flameshikari/ddrg",
-    "releases": [
-        {
-            "size": 1,
-            "url": f"{filler}{strftime('%Y.%m.%d %H:%M:%S')} {strftime('%z')[:-2]}",
-            "version": "Last Update"
-        },
-        {
-            "size": 2,
-            "url": f"{filler}Contains: {len([x for x in distros_list if (x not in distros_errors)])} | Missing: {len([x for x in distros_errors])}",
-            "version": "Distro Count"
-        },
-        {
-            "size": 3,
-            "url": f"{filler}",
-            "version": "Build Time"
-        },
-    ]
-}
-repo.append(repo_info)
 
 
 logo = color(f"""\
@@ -426,6 +399,32 @@ logo = color(f"""\
 if __name__ == "__main__":
 
     print(logo)
+
+    filler = lambda: f"drivedroid://{random_hex(64)}/┗  "
+
+    repo.append({
+        "id": "repository",
+        "name": "+ Repo",
+        "url": "https://github.com/flameshikari/ddrg",
+        "releases": [
+            {
+                "size": 1,
+                "url": filler(),
+                "version": "Last Update"
+            },
+            {
+                "size": 2,
+                "url": filler(),
+                "version": "Distro Count"
+            },
+            {
+                "size": 3,
+                "url": filler(),
+                "version": "Build Time"
+            }
+        ]
+    })
+
     try:
         logging.info("started scraping distros")
         for distro_id in distros_list:
@@ -462,6 +461,8 @@ if __name__ == "__main__":
 
         # create repo.json in output folder
         with open(f"{output_dir}/repo.json", "w") as repo_json:
+            repo[0]['releases'][0]['url'] += f"{strftime('%Y.%m.%d %H:%M:%S')} {strftime('%z')[:-2]}"
+            repo[0]['releases'][1]['url'] += f"Contains: {len([x for x in distros_list if (x not in distros_errors)])} | Missing: {len([x for x in distros_errors])}"
             repo[0]['releases'][2]['url'] += f"{build_time}"
             json.dump(repo, repo_json, indent=2)
 
