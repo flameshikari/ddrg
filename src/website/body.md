@@ -1,6 +1,6 @@
-<center><img src="./logo.svg" width="150"/></center>
+<center><img src="./assets/logo.svg" width="150"/></center>
 
-# **[DriveDroid](https://www.drivedroid.io) Repository**
+# **[DriveDroid](https://www.drivedroid.io)<br>Repository**
 
 ## ● Status
 

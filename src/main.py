@@ -11,9 +11,10 @@ from datetime import datetime
 from html import unescape
 from importlib.machinery import SourceFileLoader
 from random import choice
-from shutil import copy, rmtree
+from secrets import token_hex as random_hex
+from shutil import copy, copytree, rmtree
 from sys import exit
-from time import sleep, strftime
+from time import gmtime, sleep, strftime
 
 try:
     import requests
@@ -82,7 +83,7 @@ if options.color:
     logging.addLevelName(logging.ERROR, color(logging.getLevelName(logging.ERROR), 'red'))
     logging.addLevelName(logging.CRITICAL, color(logging.getLevelName(logging.CRITICAL), 'red'))
 else:
-    # replace colored function to print 
+    # replace colored function to print
     def color(text, *args, **kwargs):
         return text
 
@@ -219,7 +220,7 @@ class get:
             return sourceforge_array
 
         def scrape(target, **kwargs):
-            
+
             response = rq.get(target)
             pattern_html = re.compile(r'href=[\'|\"](.*?)[\'|\"]', re.S)
             urls = re.findall(pattern_html, str(response.text))
@@ -234,7 +235,7 @@ class get:
                 #        url = 'https://sourceforge.net' + url
                 #    if url.startswith('http:'):
                 #        url = url.replace('http:', 'https:')
-                
+
                 else:
                     if args['add_base']:
                         if not url.startswith('http'):
@@ -269,7 +270,7 @@ def copy_distro_logo(distro_id):
     logo_src = f'{distros_dir}/{distro_id}/logo.png'
     logo_dst = f'{output_dir}/logos/{distro_id}.png'
     if not os.path.exists(logo_src):
-        logos_dir = f'{working_dir}/assets/logos'
+        logos_dir = f'{working_dir}/website/logos'
         logo_src = f'{logos_dir}/{choice(os.listdir(logos_dir))}'
     copy(logo_src, logo_dst)
 
@@ -337,7 +338,6 @@ def build_repo_entry(distro_id, distro_info):
     return repo_entry
 
 
-
 def build_repo_html():
 
     markdown_distros = []
@@ -348,7 +348,7 @@ def build_repo_html():
     with open(f"{output_dir}/repo.json", "r") as file:
         repo_json = file.read()
 
-    with open(f"{working_dir}/assets/body.md", "r") as file:
+    with open(f"{working_dir}/website/body.md", "r") as file:
         markdown_source = file.read()
 
     with open(f"{output_dir}/list.txt", "w") as file:
@@ -374,16 +374,40 @@ def build_repo_html():
 
     markdown_converted = markdown(markdown_formatted)
 
-    with open(f"{working_dir}/assets/template.html", "r") as file:
+    with open(f"{working_dir}/website/template.html", "r") as file:
         html_template = file.read()
 
     with open(f"{output_dir}/index.html", "w") as file:
         file.write(html_template.format(markdown=markdown_converted))
-    
-        html_assets_dir = f'{working_dir}/assets/html/'
-        for html_asset in os.listdir(html_assets_dir):
-            copy(f'{html_assets_dir}/{html_asset}', output_dir)
 
+        html_assets_dir = f'{working_dir}/website/root/'
+        copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
+
+
+filler = f"dd://{random_hex(32)}/┗  "
+repo_info =  {
+    "id": "repository",
+    "name": "+ Repo",
+    "url": "https://github.com/flameshikari/ddrg",
+    "releases": [
+        {
+            "size": 1,
+            "url": f"{filler}{strftime('%Y.%m.%d %H:%M:%S')} {strftime('%z')[:-2]}",
+            "version": "Last Update"
+        },
+        {
+            "size": 2,
+            "url": f"{filler}Contains: {len([x for x in distros_list if (x not in distros_errors)])} | Missing: {len([x for x in distros_errors])}",
+            "version": "Distro Count"
+        },
+        {
+            "size": 3,
+            "url": f"{filler}",
+            "version": "Build Time"
+        },
+    ]
+}
+repo.append(repo_info)
 
 
 logo = color(f"""\
@@ -423,33 +447,22 @@ if __name__ == "__main__":
                 continue
 
         timer_stop = round(timer() - timer_start)
+        build_time = strftime('%H:%M:%S', gmtime(timer_stop))
 
         if len(distros_errors) == len(distros_list):
             logging.critical("the repository isn't built, check scrapers", exc_info=True)
             exit(2)
 
         # remove previous output folder structure
-        try:
-            os.remove(f"{output_dir}/repo.json")
-            os.remove(f"{output_dir}/index.html")
-            os.remove(f"{output_dir}/favicon.ico")
-            os.remove(f"{output_dir}/list.txt")
-            os.remove(f"{output_dir}/missing.txt")
-            os.remove(f"{output_dir}/list.json")
-        except:
-            pass
-
-        try:
-            rmtree(f"{output_dir}/logos/")
-            rmtree(f"{output_dir}/assets/")
-        except:
-            pass
+        if os.path.exists(f"{output_dir}/repo.json"):
+            rmtree(output_dir)
 
         # create output folder structure
         os.makedirs(f"{output_dir}/logos", exist_ok=True)
 
         # create repo.json in output folder
         with open(f"{output_dir}/repo.json", "w") as repo_json:
+            repo[0]['releases'][2]['url'] += f"{build_time}"
             json.dump(repo, repo_json, indent=2)
 
         # copy distro logos to distro folders
@@ -459,7 +472,7 @@ if __name__ == "__main__":
         if options.generate:
             build_repo_html()
 
-        logging.info(f"the repository is built in {timer_stop}s")
+        logging.info(f"the repository is built, build time: {build_time}")
 
         if distros_errors:
             logging.warning(f"not included: {', '.join(distros_errors)}")

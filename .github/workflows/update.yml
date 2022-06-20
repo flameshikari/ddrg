@@ -39,3 +39,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: website
         publish_dir: ./repo
+        commit_message: daily update:
+        force_orphan: true
