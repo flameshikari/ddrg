@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'custom';
-  src: url('./font.ttf');
+  src: url('../assets/font.ttf');
 }
 
 * {
@@ -18,7 +18,7 @@
 
 body {
   background: #000500;
-  background-image: url('./background.png');
+  background-image: url('../assets/background.png');
   background-repeat: repeat;
   color: #f8f8f8;
   line-height: 1;

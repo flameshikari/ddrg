@@ -11,7 +11,7 @@ from datetime import datetime
 from html import unescape
 from importlib.machinery import SourceFileLoader
 from random import choice
-from shutil import copy, rmtree
+from shutil import copy, copytree, rmtree
 from sys import exit
 from time import sleep, strftime
 
@@ -269,7 +269,7 @@ def copy_distro_logo(distro_id):
     logo_src = f'{distros_dir}/{distro_id}/logo.png'
     logo_dst = f'{output_dir}/logos/{distro_id}.png'
     if not os.path.exists(logo_src):
-        logos_dir = f'{working_dir}/assets/logos'
+        logos_dir = f'{working_dir}/website/logos'
         logo_src = f'{logos_dir}/{choice(os.listdir(logos_dir))}'
     copy(logo_src, logo_dst)
 
@@ -348,7 +348,7 @@ def build_repo_html():
     with open(f"{output_dir}/repo.json", "r") as file:
         repo_json = file.read()
 
-    with open(f"{working_dir}/assets/body.md", "r") as file:
+    with open(f"{working_dir}/website/body.md", "r") as file:
         markdown_source = file.read()
 
     with open(f"{output_dir}/list.txt", "w") as file:
@@ -374,15 +374,14 @@ def build_repo_html():
 
     markdown_converted = markdown(markdown_formatted)
 
-    with open(f"{working_dir}/assets/template.html", "r") as file:
+    with open(f"{working_dir}/website/template.html", "r") as file:
         html_template = file.read()
 
     with open(f"{output_dir}/index.html", "w") as file:
         file.write(html_template.format(markdown=markdown_converted))
     
-        html_assets_dir = f'{working_dir}/assets/html/'
-        for html_asset in os.listdir(html_assets_dir):
-            copy(f'{html_assets_dir}/{html_asset}', output_dir)
+        html_assets_dir = f'{working_dir}/website/assets/'
+        copytree(html_assets_dir, f"{output_dir}/assets")
 
 
 
@@ -429,21 +428,9 @@ if __name__ == "__main__":
             exit(2)
 
         # remove previous output folder structure
-        try:
-            os.remove(f"{output_dir}/repo.json")
-            os.remove(f"{output_dir}/index.html")
-            os.remove(f"{output_dir}/favicon.ico")
-            os.remove(f"{output_dir}/list.txt")
-            os.remove(f"{output_dir}/missing.txt")
-            os.remove(f"{output_dir}/list.json")
-        except:
-            pass
+        
+        rmtree(f"{output_dir}/")
 
-        try:
-            rmtree(f"{output_dir}/logos/")
-            rmtree(f"{output_dir}/assets/")
-        except:
-            pass
 
         # create output folder structure
         os.makedirs(f"{output_dir}/logos", exist_ok=True)
