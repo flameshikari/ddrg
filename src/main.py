@@ -174,7 +174,7 @@ class get:
                 return arch
 
         if "powerpc" in target:
-            for ppc in archs_all:
+            for ppc in archs:
                 if ppc in target.replace("powerpc", "ppc"):
                     return ppc
 
@@ -197,7 +197,9 @@ class get:
         args.setdefault('recurse', False)
 
         if 'disk.yandex.ru' in target:
-            return 'https://getfile.dokpub.com/yandex/get/' + target
+            url = 'https://getfile.dokpub.com/yandex/get/' + target
+            logging.debug(f"{color('+', 'green')} {url}")
+            return url
 
         if 'sourceforge.net' in target and not target.endswith('.iso'):
             sourceforge_array = []
@@ -216,6 +218,9 @@ class get:
                 sourceforge_array.append({'url': url, 'size': size})
             else:
                 logging.error("something wrong with sourceforge.net parser", exc_info=True)
+            
+            for url in sourceforge_array: logging.debug(f"{color('+', 'green')} {url}")
+
             return sourceforge_array
 
         def scrape(target, **kwargs):
@@ -255,13 +260,14 @@ class get:
                     url = str(unescape(url.replace('/./', '/')))
                     if url in target: continue
                     array.append(url)
-                    logging.debug(f"{color('+', 'green')} {url}")
 
         scrape(target, **args)
 
         result = list(dict.fromkeys(array))
 
-        return array
+        for url in result: logging.debug(f"{color('+', 'green')} {url}")
+
+        return result
 
 
 def copy_distro_logo(distro_id):
