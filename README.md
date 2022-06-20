@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <img src="./src/assets/html/logo.svg" width="250" alt="">
+  <img src="./src/website/assets/logo.svg" width="250" alt="">
 </p>
   <h1 align="center">
     <a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator
