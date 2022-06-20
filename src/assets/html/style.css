@@ -29,9 +29,9 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
-  margin: 48px;
+  margin: 40px 0 40px 0;
 }
 
 h2 {
