@@ -378,7 +378,7 @@ def build_repo_html():
         html_template = file.read()
 
     with open(f"{output_dir}/index.html", "w") as file:
-        file.write(html_template.format(markdown=markdown_converted))
+        file.write(html_template.format(body=markdown_converted))
 
         html_assets_dir = f'{working_dir}/website/root/'
         copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
