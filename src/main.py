@@ -231,15 +231,6 @@ class get:
 
             for url in urls:
                 if url in target: continue
-                # if 'sourceforge.net' in target:
-                #    pattern = re.compile('/projects/.*/files')
-                #    if not re.findall(pattern, url):
-                #        continue
-                #    if url.startswith('/'):
-                #        url = 'https://sourceforge.net' + url
-                #    if url.startswith('http:'):
-                #        url = url.replace('http:', 'https:')
-
                 else:
                     if args['add_base']:
                         if not url.startswith('http'):
