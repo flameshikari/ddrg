@@ -174,7 +174,7 @@ class get:
                 return arch
 
         if "powerpc" in target:
-            for ppc in archs_all:
+            for ppc in archs:
                 if ppc in target.replace("powerpc", "ppc"):
                     return ppc
 
