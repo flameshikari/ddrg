@@ -148,6 +148,7 @@ class get:
         """Returns the used processor architecture of the target URL."""
 
         archs = [
+            "amd64", "i386", "86_64"
             "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
             "i486", "i586", "i686-pae", "i686", "ia64",
             "macppc", "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
@@ -156,9 +157,13 @@ class get:
             "bios", "efi", "ipxe"
         ]
 
-        archs_86_64 = ["86_64", "86-64", "96"]
-        archs_64 = ["amd64", "x64", "64bit", "dual", "64"]
-        archs_86 = ["i386", "x86", "x32", "32bit", "386", "32"]
+        archs_86_64 = ["86-64", "96"]
+        archs_64 = ["x64", "64bit", "dual", "64"]
+        archs_86 = ["x86", "x32", "32bit", "386", "32"]
+
+        for arch in archs:
+            if arch in target:
+                return arch
 
         if any(arch in target for arch in archs_86_64):
             return "x86_64"
@@ -169,11 +174,7 @@ class get:
         elif any(arch in target for arch in archs_86):
             return "i386"
 
-        for arch in archs:
-            if arch in target:
-                return arch
-
-        if "powerpc" in target:
+        elif "powerpc" in target:
             for ppc in archs:
                 if ppc in target.replace("powerpc", "ppc"):
                     return ppc
@@ -231,15 +232,6 @@ class get:
 
             for url in urls:
                 if url in target: continue
-                # if 'sourceforge.net' in target:
-                #    pattern = re.compile('/projects/.*/files')
-                #    if not re.findall(pattern, url):
-                #        continue
-                #    if url.startswith('/'):
-                #        url = 'https://sourceforge.net' + url
-                #    if url.startswith('http:'):
-                #        url = url.replace('http:', 'https:')
-
                 else:
                     if args['add_base']:
                         if not url.startswith('http'):
