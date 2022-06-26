@@ -148,7 +148,7 @@ class get:
         """Returns the used processor architecture of the target URL."""
 
         archs = [
-            "amd64", "i386", "86_64"
+            "amd64", "i386", "x86_64"
             "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
             "i486", "i586", "i686-pae", "i686", "ia64",
             "macppc", "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
@@ -157,7 +157,7 @@ class get:
             "bios", "efi", "ipxe"
         ]
 
-        archs_86_64 = ["86-64", "96"]
+        archs_86_64 = ["86_64", "86-64", "96"]
         archs_64 = ["x64", "64bit", "dual", "64"]
         archs_86 = ["x86", "x32", "32bit", "386", "32"]
 
