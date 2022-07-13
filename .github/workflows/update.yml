@@ -1,4 +1,4 @@
-name: 'update-repository'
+name: 'update repository'
 
 on:
   schedule:
