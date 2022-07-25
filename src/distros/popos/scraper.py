@@ -5,8 +5,10 @@ def init():
 
     values = []
     url_bases = [
+        'https://api.pop-os.org/builds/22.04/intel',
         'https://api.pop-os.org/builds/21.10/intel',
         'https://api.pop-os.org/builds/20.04/intel',
+        'https://api.pop-os.org/builds/22.04/nvidia',
         'https://api.pop-os.org/builds/21.10/nvidia',
         'https://api.pop-os.org/builds/20.04/nvidia'
     ]
