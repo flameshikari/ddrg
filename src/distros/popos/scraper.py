@@ -4,22 +4,26 @@ from main import *  # noqa
 def init():
 
     values = []
-    url_bases = [
-        'https://api.pop-os.org/builds/22.04/intel',
-        'https://api.pop-os.org/builds/21.10/intel',
-        'https://api.pop-os.org/builds/20.04/intel',
-        'https://api.pop-os.org/builds/22.04/nvidia',
-        'https://api.pop-os.org/builds/21.10/nvidia',
-        'https://api.pop-os.org/builds/20.04/nvidia'
-    ]
+    url_version = 'https://distrowatch.com/table.php?distribution=popos'
+    url_base = 'https://api.pop-os.org/builds/{}/{}'
+    regexp_version = re.compile(r'<td class="TablesInvert">(\d+\.\d+)</td>')
+    response = str(rq.get(url_version).text)
+    iso_versions = sorted(set(re.findall(regexp_version, response)), reverse=True)
 
-    for url_base in url_bases:
+    for iso_version in iso_versions:
+        for driver in ['intel', 'nvidia']:
+            try:
 
-        response = json.loads(rq.get(url_base).text)
-        iso_url = response['url']
-        iso_arch = 'amd64'
-        iso_size = response['size']
-        iso_version = response['version']
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+                url = url_base.format(iso_version, driver)
+                response = json.loads(rq.get(url).text)
 
+                iso_url = response['url']
+                iso_arch = get.arch(iso_url)
+                iso_size = response['size']
+                iso_version = response['version']
+
+                values.append((iso_url, iso_arch, iso_size, iso_version))
+
+            except: continue
+    
     return values

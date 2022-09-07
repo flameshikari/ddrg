@@ -338,6 +338,7 @@ def build_repo_entry(distro_id, distro_info):
 def build_repo_html():
 
     markdown_distros = []
+    content_json = {"contains": [], "missing": []}
 
     markdown_distros_done = [x for x in distros_list if (x not in distros_errors)]
     markdown_distros_error = [x for x in distros_errors]
@@ -348,20 +349,18 @@ def build_repo_html():
     with open(f"{working_dir}/website/body.md", "r") as file:
         markdown_source = file.read()
 
-    with open(f"{output_dir}/list.txt", "w") as file:
-        for distro_id in markdown_distros_done:
-            distro_info = get_distro_info(distro_id)
-            file.write(f"{distro_info[0]} ({distro_info[1]})\n")
-            markdown_distros.append(f'<a href="{distro_info[1]}"><img title="{distro_info[0]}" class="distro_logo" src="./logos/{distro_id}.png"/></a>')
+    for distro_id in markdown_distros_done:
+        distro_info = get_distro_info(distro_id)
+        markdown_distros.append(f'<a href="{distro_info[1]}"><img title="{distro_info[0]}" class="distro_logo" src="./logos/{distro_id}.png"/></a>')
+        content_json['contains'].append({"id": distro_id, "name": distro_info[0], "url": distro_info[1]})
 
-    markdown_distro_count = f'contains [{len(markdown_distros_done)}](./list.txt)'
+    markdown_distro_count = f'contains [{len(markdown_distros_done)}](./content.json)'
 
     if markdown_distros_error:
-        with open(f"{output_dir}/missing.txt", "w") as file:
-            for distro_id in markdown_distros_error:
-                distro_info = get_distro_info(distro_id)
-                file.write(f"{distro_info[0]} ({distro_info[1]})\n")
-        markdown_distro_count += f' and missing [{len(markdown_distros_error)}](./missing.txt)'
+        for distro_id in markdown_distros_error:
+            distro_info = get_distro_info(distro_id)
+            content_json['missing'].append({"id": distro_id, "name": distro_info[0], "url": distro_info[1]})
+        markdown_distro_count += f' and missing [{len(markdown_distros_error)}](./content.json)'
 
     markdown_formatted = markdown_source.format(
         count=markdown_distro_count,
@@ -374,11 +373,14 @@ def build_repo_html():
     with open(f"{working_dir}/website/template.html", "r") as file:
         html_template = file.read()
 
+    with open(f"{output_dir}/content.json", "w") as file:
+        file.write(json.dumps(content_json, indent=2))
+
     with open(f"{output_dir}/index.html", "w") as file:
         file.write(html_template.format(body=markdown_converted))
 
-        html_assets_dir = f'{working_dir}/website/root/'
-        copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
+    html_assets_dir = f'{working_dir}/website/root/'
+    copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
 
 
 logo = color(f"""\
@@ -486,4 +488,4 @@ if __name__ == "__main__":
         exit(2)
 
 
-__all__ = ["json", "re", "rq", "requests", "check_version", "get"]
+__all__ = ["json", "re", "rq", "requests", "check_version", "get", "xml_to_dict"]

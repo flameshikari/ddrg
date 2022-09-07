@@ -4,7 +4,7 @@ from main import *  # noqa
 def init():
 
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+)-')
+    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+(\.\d+(\.\d+)?)?)?)-')
     url_base = 'https://sourceforge.net/projects/linuxfxdevil/files/'
 
     for iso_url in get.urls(url_base, recurse=True, add_base=False):
