@@ -26,7 +26,7 @@ https://dd.hexed.pw
 
 ### GitHub mirror:
 ```
-https://flameshikari.github.io/ddrg/repo.json
+https://ddrg.hexed.pw/repo.json
 ```
 
 ## 📚 Documentation
