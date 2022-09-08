@@ -5,9 +5,24 @@ on:
     # 19:00 GMT (00:00 UTC+5)
     - cron: "0 19 * * *"
   workflow_dispatch:
+    inputs:
+      selected_distros:
+        description: 'Selected distros'
+        default: 'all'
+        required: false
+      output_dir:
+        description: 'Output directory'
+        default: 'repo'
+        required: false
+      timezone:
+        description: 'Timezone'
+        default: 'Asia/Yekaterinburg'
+        required: false
 
 env:
-  OUT_DIR: repo
+  OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
+  SELECTED_DISTROS: ${{ github.event.inputs.selected_distros }}
+  TIMEZONE: ${{ github.event.inputs.timezone }}
 
 jobs:
   build:
@@ -20,29 +35,27 @@ jobs:
     - name: Set timezone
       uses: szenius/set-timezone@v1.0
       with:
-        timezoneLinux: Asia/Yekaterinburg
+        timezoneLinux: ${{ env.TIMEZONE }}
 
     - name: Install packages
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install -r requirements.txt
+      run: pip install -r requirements.txt
 
-    - name: Build repository with the website
+    - name: Build repository
       continue-on-error: true
-      run: python -u src/main.py -go ${{ env.OUT_DIR }}
+      run: python -u src/main.py -g -o ${{ env.OUTPUT_DIR }} -d ${{ env.SELECTED_DISTROS }}
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ env.OUT_DIR }}
-        path: ${{ env.OUT_DIR }}
+        name: ${{ env.OUTPUT_DIR }}
+        path: ${{ env.OUTPUT_DIR }}
 
     - name: Deploy website to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: website
-        publish_dir: ${{ env.OUT_DIR }}
+        publish_dir: ${{ env.OUTPUT_DIR }}
         cname: ddrg.hexed.pw
         force_orphan: true
 
@@ -53,7 +66,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
-        source: ${{ env.OUT_DIR }}
+        source: ${{ env.OUTPUT_DIR }}
         target: ${{ secrets.SSH_DIR }}
         strip_components: 1
         rm: true
