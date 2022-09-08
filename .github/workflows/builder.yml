@@ -1,23 +1,20 @@
-name: 'update-repository'
+name: 'repository-builder'
 
 on:
-  schedule:
-    # 19:00 GMT (00:00 UTC+5)
-    - cron: "0 19 * * *"
   workflow_dispatch:
     inputs:
       selected_distros:
         description: 'Selected distros'
         default: 'all'
-        required: false
+        required: true
       output_dir:
         description: 'Output directory'
         default: 'repo'
-        required: false
+        required: true
       timezone:
         description: 'Timezone'
         default: 'Asia/Yekaterinburg'
-        required: false
+        required: true
 
 env:
   OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
@@ -56,7 +53,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: website
         publish_dir: ${{ env.OUTPUT_DIR }}
-        cname: ddrg.hexed.pw
+        cname: ${{ secrets.CNAME }}
         force_orphan: true
 
     - name: Deploy website to the server
