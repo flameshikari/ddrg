@@ -2,8 +2,12 @@ name: 'update-repository'
 
 on:
   schedule:
+    # 19:00 GMT (00:00 UTC+5)
     - cron: "0 19 * * *"
   workflow_dispatch:
+
+env:
+  OUT_DIR: repo
 
 jobs:
   build:
@@ -23,20 +27,32 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
 
-    - name: Build repository with website
+    - name: Build repository with the website
       continue-on-error: true
-      run: python -u src/main.py -go repo
+      run: python -u src/main.py -go ${{ env.OUT_DIR }}
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: repo
-        path: repo
+        name: ${{ env.OUT_DIR }}
+        path: ${{ env.OUT_DIR }}
 
-    - name: Deploy website
+    - name: Deploy website to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: website
-        publish_dir: ./repo
+        publish_dir: ${{ env.OUT_DIR }}
         force_orphan: true
+
+    - name: Deploy website to the server
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        port: ${{ secrets.SSH_PORT }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}
+        source: ${{ env.OUT_DIR }}
+        target: ${{ secrets.SSH_DIR }}
+        strip_components: 1
+        rm: true
