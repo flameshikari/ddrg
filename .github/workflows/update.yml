@@ -43,6 +43,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: website
         publish_dir: ${{ env.OUT_DIR }}
+        cname: ddrg.hexed.pw
         force_orphan: true
 
     - name: Deploy website to the server
