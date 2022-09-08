@@ -1,5 +1,6 @@
 fake-useragent
 markdown2
+natsort
 packaging
 requests
 termcolor
