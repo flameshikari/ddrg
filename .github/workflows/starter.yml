@@ -1,0 +1,22 @@
+name: 'build-starter'
+
+on:
+  schedule:
+    # 19:00 GMT (00:00 UTC+5)
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Trigger the repository builder
+      uses: benc-uk/workflow-dispatch@v1
+      with:
+        workflow: repository-builder
+        token: ${{ secrets.TOKEN }}
+        inputs: '{ "selected_distros": "all", "output_dir": "repo", "timezone": "Asia/Yekaterinburg" }'
