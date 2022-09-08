@@ -15,6 +15,7 @@ from secrets import token_hex as random_hex
 from shutil import copy, copytree, rmtree
 from sys import exit
 from time import gmtime, sleep, strftime
+from natsort import natsorted
 
 try:
     import requests
@@ -148,7 +149,6 @@ class get:
         """Returns the used processor architecture of the target URL."""
 
         archs = [
-            "amd64", "i386", "x86_64"
             "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
             "i486", "i586", "i686-pae", "i686", "ia64",
             "macppc", "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
@@ -161,10 +161,6 @@ class get:
         archs_64 = ["x64", "64bit", "dual", "64"]
         archs_86 = ["x86", "x32", "32bit", "386", "32"]
 
-        for arch in archs:
-            if arch in target:
-                return arch
-
         if any(arch in target for arch in archs_86_64):
             return "x86_64"
 
@@ -174,7 +170,11 @@ class get:
         elif any(arch in target for arch in archs_86):
             return "i386"
 
-        elif "powerpc" in target:
+        for arch in archs:
+            if arch in target:
+                return arch
+
+        if "powerpc" in target:
             for ppc in archs:
                 if ppc in target.replace("powerpc", "ppc"):
                     return ppc
@@ -304,9 +304,9 @@ def build_repo_entry(distro_id, distro_info):
 
     for i in range(tries):
         try:
-            distro_values = sorted(scraper.init(),
-                                   key=lambda x: x[3],
-                                   reverse=True)
+            distro_values = natsorted(scraper.init(),
+                                      key=lambda x: x[3],
+                                      reverse=True)
         except requests.exceptions.RequestException as error:
             if i < tries - 1: # i is zero indexed
                 logging.error(f"{distro_id}: {str(error).lower()}, retrying in {wait}s")
