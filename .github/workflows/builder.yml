@@ -15,6 +15,9 @@ on:
         description: 'Timezone'
         default: 'Asia/Yekaterinburg'
         required: true
+  push:
+    branches:
+    - master
 
 env:
   OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
