@@ -30,8 +30,7 @@ jobs:
         cat << EOF >> $GITHUB_ENV
         DATE=$(date +'%d-%m-%Y')
         OUTPUT_DIR=$([ -z $OUTPUT_DIR ] && echo "${{ secrets.OUTPUT_DIR }}" | base64 -d || echo ${{ github.event.inputs.output_dir }})
-        #SELECTED_DISTROS=$([ -z $SELECTED_DISTROS ] && echo "${{ secrets.SELECTED_DISTROS }}" | base64 -d || echo ${{ github.event.inputs.selected_distros }})
-        SELECTED_DISTROS=arch
+        SELECTED_DISTROS=$([ -z $SELECTED_DISTROS ] && echo "${{ secrets.SELECTED_DISTROS }}" | base64 -d || echo ${{ github.event.inputs.selected_distros }})
         TIMEZONE=$([ -z $TIMEZONE ] && echo "${{ secrets.TIMEZONE }}" | base64 -d || echo ${{ github.event.inputs.timezone }})
         EOF
 
