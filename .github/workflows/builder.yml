@@ -20,9 +20,9 @@ on:
     - master
 
 env:
-  OUTPUT_DIR: ${{ github.event.inputs.output_dir }}
-  SELECTED_DISTROS: ${{ github.event.inputs.selected_distros }}
-  TIMEZONE: ${{ github.event.inputs.timezone }}
+  OUTPUT_DIR: ${{ github.event.inputs.output_dir || 'repo' }}
+  SELECTED_DISTROS: ${{ github.event.inputs.selected_distros || 'all' }}
+  TIMEZONE: ${{ github.event.inputs.timezone || 'Asia/Yekaterinburg' }}
 
 jobs:
   build:
