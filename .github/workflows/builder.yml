@@ -1,72 +1,99 @@
-name: 'repository-builder'
+name: 'Builder'
 
 on:
+  push:
+    branches:
+    - master
+  schedule:
+    # 19:00 GMT (00:00 UTC+5)
+    - cron: '0 19 * * *'
   workflow_dispatch:
     inputs:
       selected_distros:
         description: 'Selected distros'
-        default: 'all'
-        required: true
       output_dir:
         description: 'Output directory'
-        default: 'repo'
-        required: true
       timezone:
         description: 'Timezone'
-        default: 'Asia/Yekaterinburg'
-        required: true
-  push:
-    branches:
-    - master
-
-env:
-  OUTPUT_DIR: ${{ github.event.inputs.output_dir || 'repo' }}
-  SELECTED_DISTROS: ${{ github.event.inputs.selected_distros || 'all' }}
-  TIMEZONE: ${{ github.event.inputs.timezone || 'Asia/Yekaterinburg' }}
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
 
     - name: Checkout
       uses: actions/checkout@v3
 
+    - name: Initiate variables
+      run: |
+        cat << EOF >> $GITHUB_ENV
+        DATE=$(date +'%d-%m-%Y')
+        OUTPUT_DIR=$([ -z $OUTPUT_DIR ] && echo "${{ secrets.OUTPUT_DIR }}" | base64 -d || echo ${{ github.event.inputs.output_dir }})
+        #SELECTED_DISTROS=$([ -z $SELECTED_DISTROS ] && echo "${{ secrets.SELECTED_DISTROS }}" | base64 -d || echo ${{ github.event.inputs.selected_distros }})
+        SELECTED_DISTROS=arch
+        TIMEZONE=$([ -z $TIMEZONE ] && echo "${{ secrets.TIMEZONE }}" | base64 -d || echo ${{ github.event.inputs.timezone }})
+        EOF
+
     - name: Set timezone
       uses: szenius/set-timezone@v1.0
       with:
         timezoneLinux: ${{ env.TIMEZONE }}
 
-    - name: Install packages
+    - name: Install dependencies
       run: pip install -r requirements.txt
 
-    - name: Build repository
+    - name: Build a repo
       continue-on-error: true
       run: python -u src/main.py -g -o ${{ env.OUTPUT_DIR }} -d ${{ env.SELECTED_DISTROS }}
 
-    - name: Upload artifacts
+    - name: Upload a named artifact
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ env.OUTPUT_DIR }}
+        name: ddrg_${{ env.DATE }}
         path: ${{ env.OUTPUT_DIR }}
+        retention-days: 90
 
-    - name: Deploy website to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Upload an artifact for GitHub Pages
+      uses: actions/upload-pages-artifact@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: website
-        publish_dir: ${{ env.OUTPUT_DIR }}
-        cname: ${{ secrets.CNAME }}
-        force_orphan: true
+        path: ${{ env.OUTPUT_DIR }}
+        retention-days: 1
 
-    - name: Deploy website to the server
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    steps:
+
+    - name: Deploy the repo to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
+
+    - name: Download the artifact
+      uses: actions/download-artifact@v3
+
+    - name: Unarchive the artifact
+      run: |
+        cd github-pages
+        tar -xf artifact.tar
+        rm artifact.tar
+
+    - name: Deploy the repo to the custom server
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
         port: ${{ secrets.SSH_PORT }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
-        source: ${{ env.OUTPUT_DIR }}
+        source: github-pages
         target: ${{ secrets.SSH_DIR }}
         strip_components: 1
         rm: true
