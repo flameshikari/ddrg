@@ -87,6 +87,7 @@ jobs:
 
     - name: Deploy the repo to the custom server
       uses: appleboy/scp-action@master
+      continue-on-error: true
       with:
         host: ${{ secrets.SSH_HOST }}
         port: ${{ secrets.SSH_PORT }}
