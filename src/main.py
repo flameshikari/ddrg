@@ -123,9 +123,12 @@ class TimeoutHTTPAdapter(HTTPAdapter):
         if timeout is None:
             kwargs["timeout"] = self.timeout
         return super().send(request, **kwargs)
+
 retries = Retry(total=3, status_forcelist=[429, 500, 502, 503, 504])
 rq = requests.Session()
-
+user_agent = str(UserAgent().firefox)
+headers = {'User-Agent': user_agent}
+rq.headers.update(headers)
 rq.mount("http://",  TimeoutHTTPAdapter(max_retries=retries))
 rq.mount("https://", TimeoutHTTPAdapter(max_retries=retries))
 
