@@ -3,7 +3,7 @@
   <img src="./src/website/root/assets/logo.svg" width="250" alt="">
 </p>
   <h1 align="center">
-    <a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator
+    <a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator <img src="https://github.com/flameshikari/ddrg/actions/workflows/builder.yml/badge.svg">
   </h1>
   <p align="center">
     <i>Generate a custom repository with distros you choose for DriveDroid</i>
