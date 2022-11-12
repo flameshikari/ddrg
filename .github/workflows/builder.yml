@@ -35,9 +35,9 @@ jobs:
         EOF
 
     - name: Set timezone
-      uses: szenius/set-timezone@v1.0
+      uses: zcong1993/setup-timezone@master
       with:
-        timezoneLinux: ${{ env.TIMEZONE }}
+        timezone: ${{ env.TIMEZONE }}
 
     - name: Install dependencies
       run: pip install -r requirements.txt
