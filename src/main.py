@@ -126,7 +126,12 @@ class TimeoutHTTPAdapter(HTTPAdapter):
 
 retries = Retry(total=3, status_forcelist=[429, 500, 502, 503, 504])
 rq = requests.Session()
-user_agent = str(UserAgent().firefox)
+
+try:
+    user_agent = str(UserAgent().firefox)
+except:
+    user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0'
+
 headers = {'User-Agent': user_agent}
 rq.headers.update(headers)
 rq.mount("http://",  TimeoutHTTPAdapter(max_retries=retries))
