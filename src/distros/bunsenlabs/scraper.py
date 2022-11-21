@@ -5,7 +5,7 @@ def init():
 
     values = []
     regexp_version = re.compile(r'-(\d+(.\d+)?)')
-    url_base = 'https://kelaino.bunsenlabs.org/ddl/'
+    url_base = 'https://ddl.bunsenlabs.org/ddl/'
 
     for iso_url in get.urls(url_base):
 
