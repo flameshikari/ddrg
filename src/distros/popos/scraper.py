@@ -4,11 +4,12 @@ from main import *  # noqa
 def init():
 
     values = []
-    url_version = 'https://distrowatch.com/table.php?distribution=popos'
+    # url_version = 'https://distrowatch.com/table.php?distribution=popos'
     url_base = 'https://api.pop-os.org/builds/{}/{}'
-    regexp_version = re.compile(r'<td class="TablesInvert">(\d+\.\d+)</td>')
-    response = str(rq.get(url_version).text)
-    iso_versions = sorted(set(re.findall(regexp_version, response)), reverse=True)
+    # regexp_version = re.compile(r'<td class="TablesInvert">(\d+\.\d+)</td>')
+    # response = str(rq.get(url_version).text)
+    # iso_versions = sorted(set(re.findall(regexp_version, response)), reverse=True)
+    iso_versions = ['22.04']
 
     for iso_version in iso_versions:
         for driver in ['intel', 'nvidia']:
