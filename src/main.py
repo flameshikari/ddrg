@@ -206,7 +206,7 @@ class get:
         args.setdefault('recurse', False)
 
         if 'disk.yandex.ru' in target:
-            url = 'https://getfile.dokpub.com/yandex/get/' + target
+            url = 'https://disk.hexed.pw/' + target
             logging.debug(f"{color('+', 'green')} {url}")
             return url
 
