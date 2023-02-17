@@ -3,6 +3,7 @@ markdown2
 natsort
 packaging
 requests
+selenium
 termcolor
 toml
 xmltodict
