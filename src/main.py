@@ -235,7 +235,7 @@ class get:
         def scrape(target, **kwargs):
 
             response = rq.get(target)
-            pattern_html = re.compile(r'href=[\'|\"](.*?)[\'|\"]', re.S)
+            pattern_html = re.compile(r'href=["\']?((?:.(?!["\']?\s+(?:\S+)=|\s*\/?[>"\']))+.\/?)["\']?', re.S)
             urls = re.findall(pattern_html, str(response.text))
 
             for url in urls:

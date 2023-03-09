@@ -5,7 +5,7 @@ def init():
 
     values = []
     regexp_url = re.compile(r'.*github.com.*.iso')
-    regexp_version = re.compile(r'_(\d+(_\d+)?)')
+    regexp_version = re.compile(r'-(\d+-\d+)')
     url_base = 'https://endeavouros.com/latest-release/'
 
     for iso_url in get.urls(url_base, pattern=regexp_url):

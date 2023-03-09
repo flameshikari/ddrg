@@ -4,7 +4,7 @@ from main import *  # noqa
 def init():
 
     values = []
-    regexp_version = re.compile(r'-(\d+(\.\d+)?)')
+    regexp_version = re.compile(r'-(\d+(\.\d+)?)-')
     url_base = 'https://getsol.us/download/'
 
     for iso_url in get.urls(url_base):
