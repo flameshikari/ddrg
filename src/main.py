@@ -157,6 +157,7 @@ class get:
         """Returns the used processor architecture of the target URL."""
 
         archs = [
+            "amd64", "i386", "x86_64",
             "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
             "i486", "i586", "i686-pae", "i686", "ia64",
             "macppc", "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
@@ -169,6 +170,10 @@ class get:
         archs_64 = ["x64", "64bit", "dual", "64"]
         archs_86 = ["x86", "x32", "32bit", "386", "32"]
 
+        for arch in archs:
+            if arch in target:
+                return arch
+
         if any(arch in target for arch in archs_86_64):
             return "x86_64"
 
@@ -178,11 +183,7 @@ class get:
         elif any(arch in target for arch in archs_86):
             return "i386"
 
-        for arch in archs:
-            if arch in target:
-                return arch
-
-        if "powerpc" in target:
+        elif "powerpc" in target:
             for ppc in archs:
                 if ppc in target.replace("powerpc", "ppc"):
                     return ppc
