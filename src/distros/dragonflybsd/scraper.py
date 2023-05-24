@@ -5,7 +5,7 @@ def init():
 
     values = []
     regexp_version = re.compile(r'-(\d+\.\d+\.\d+)')
-    url_base = 'https://mirror.tochlab.net/pub/DragonFlyBSD/iso-images/'
+    url_base = 'https://mirror.macomnet.net/pub/DragonFlyBSD/iso-images/'
 
     for iso_url in get.urls(url_base):
 
