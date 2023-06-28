@@ -207,7 +207,7 @@ class get:
         args.setdefault('recurse', False)
 
         if 'disk.yandex.ru' in target:
-            url = 'https://disk.hexed.pw/' + target
+            url = target.replace('yandex.ru', 'hexed.pw')
             logging.debug(f"{color('+', 'green')} {url}")
             return url
 

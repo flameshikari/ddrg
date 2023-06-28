@@ -4,11 +4,11 @@ from main import *  # noqa
 def init():
 
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)-')
+    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?).img')
 
     iso_urls = [
-        'https://disk.yandex.ru/d/YHflGF3zn3vf3w/memtest86-4.3.7-bios.img',
-        'https://disk.yandex.ru/d/YHflGF3zn3vf3w/memtest86-9.4-uefi.img'
+        'https://disk.yandex.ru/d/YHflGF3zn3vf3w/mt86-4.3.7.img',
+        'https://disk.yandex.ru/d/YHflGF3zn3vf3w/mt86-9.4.img'
     ]
 
     for iso_url in iso_urls:
