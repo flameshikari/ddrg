@@ -360,7 +360,7 @@ def build_repo_html():
 
     for distro_id in markdown_distros_done:
         distro_info = get_distro_info(distro_id)
-        markdown_distros.append(f'<a href="{distro_info[1]}"><img title="{distro_info[0]}" class="distro_logo" src="./logos/{distro_id}.png"/></a>')
+        markdown_distros.append(f'<a href="{distro_info[1]}"><img title="{distro_info[0]}" loading="lazy" class="distro_logo" src="./logos/{distro_id}.png"/></a>')
         content_json['contains'].append({"id": distro_id, "name": distro_info[0], "url": distro_info[1]})
 
     markdown_distro_count = f'contains [{len(markdown_distros_done)}](./content.json)'
