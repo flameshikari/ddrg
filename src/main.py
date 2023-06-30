@@ -134,8 +134,8 @@ except:
 
 headers = {'User-Agent': user_agent}
 rq.headers.update(headers)
-rq.mount("http://",  TimeoutHTTPAdapter(max_retries=retries))
-rq.mount("https://", TimeoutHTTPAdapter(max_retries=retries))
+rq.mount('http://',  TimeoutHTTPAdapter(max_retries=retries))
+rq.mount('https://', TimeoutHTTPAdapter(max_retries=retries))
 
 class get:
 
@@ -236,8 +236,10 @@ class get:
         def scrape(target, **kwargs):
 
             response = rq.get(target)
-            pattern_html = re.compile(r'href=["\']?((?:.(?!["\']?\s+(?:\S+)=|\s*\/?[>"\']))+.\/?)["\']?', re.S)
+            pattern_html = re.compile(r'href=["\']?\n?((?:.(?!["\']?\s+(?:\S+)=|\s*\/?[>"\']))+.\/?)\n?["\']?', re.S)
             urls = re.findall(pattern_html, str(response.text))
+
+            extensions = ['.iso', '.img']
 
             for url in urls:
                 if url in target: continue
@@ -254,10 +256,11 @@ class get:
 
                 if args['recurse'] and url.endswith('/'):
                     scrape(url, **args)
-                if not '.iso' in url: continue
-                if url.endswith('.iso/download'):
+
+                if not any(ext in url for ext in extensions): continue
+                if any(url.endswith(ext + '/download') for ext in extensions):
                     url = url[:-9]
-                if url.endswith('.iso'):
+                if any(url.endswith(ext) for ext in extensions):
                     url = str(unescape(url.replace('/./', '/')))
                     if url in target: continue
                     array.append(url)
