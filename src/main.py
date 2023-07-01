@@ -142,9 +142,13 @@ class get:
     def size(target):
         """Returns the file size of the target URL in bytes."""
         try:
-            response = requests.head(target, allow_redirects=True).headers
+            try:
+                response = rq.get(target, stream=True).headers
+                size = int(response['Content-Length'])
+            except:
+                response = requests.head(target, allow_redirects=True).headers
+                size = int(response['Content-Length'])
             #logging.debug(f"{color(response, 'green')}")
-            size = int(response['Content-Length'])
             if size > 500:
                 return size
             else:
@@ -243,6 +247,7 @@ class get:
             extensions = ['.iso', '.img']
 
             for url in urls:
+                sleep(0.1)
                 if url in target: continue
                 else:
                     if args['add_base']:
