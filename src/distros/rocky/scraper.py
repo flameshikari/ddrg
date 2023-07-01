@@ -4,9 +4,9 @@ from main import *  # noqa
 def init():
 
     values = []
-    regexp_version = re.compile(r'-(\d+(\.\d+)?)')
+    regexp_version = re.compile(r'rocky/(\d+(\.\d+)?)/')
     url_bases = [
-        'https://rockylinux.org/download',
+        'https://rockylinux.org/download/',
         'https://rockylinux.org/alternative-images/'
     ]
 

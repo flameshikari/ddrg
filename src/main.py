@@ -134,17 +134,21 @@ except:
 
 headers = {'User-Agent': user_agent}
 rq.headers.update(headers)
-rq.mount("http://",  TimeoutHTTPAdapter(max_retries=retries))
-rq.mount("https://", TimeoutHTTPAdapter(max_retries=retries))
+rq.mount('http://',  TimeoutHTTPAdapter(max_retries=retries))
+rq.mount('https://', TimeoutHTTPAdapter(max_retries=retries))
 
 class get:
 
     def size(target):
         """Returns the file size of the target URL in bytes."""
         try:
-            response = rq.get(target, stream=True).headers
-            # logging.debug(f"{color(response, 'green')}")
-            size = int(response['Content-Length'])
+            try:
+                response = rq.get(target, stream=True).headers
+                size = int(response['Content-Length'])
+            except:
+                response = requests.head(target, allow_redirects=True).headers
+                size = int(response['Content-Length'])
+            #logging.debug(f"{color(response, 'green')}")
             if size > 500:
                 return size
             else:
@@ -207,37 +211,40 @@ class get:
         args.setdefault('recurse', False)
 
         if 'disk.yandex.ru' in target:
-            url = 'https://disk.hexed.pw/' + target
+            url = target.replace('yandex.ru', 'hexed.pw')
             logging.debug(f"{color('+', 'green')} {url}")
             return url
 
-        if 'sourceforge.net' in target and not target.endswith('.iso'):
-            sourceforge_array = []
-            rss = rq.get(target.replace('/files/', '/rss?path=/')).text
-            xml = xml_to_dict(rss)['rss']['channel']['item']
-            if type(xml) is list:
-                for entry in xml:
-                    url = entry['media:content']['@url'][:-9]
-                    if not url.endswith('.iso'): continue
-                    size = int(entry['media:content']['@filesize'])
+        if 'sourceforge.net' in target:
+            if not target.endswith('.iso'):
+                sourceforge_array = []
+                rss = rq.get(target.replace('/files/', '/rss?path=/')).text
+                xml = xml_to_dict(rss)['rss']['channel']['item']
+                if type(xml) is list:
+                    for entry in xml:
+                        url = entry['media:content']['@url'][:-9]
+                        if not url.endswith('.iso'): continue
+                        size = int(entry['media:content']['@filesize'])
+                        sourceforge_array.append({'url': url, 'size': size})
+                elif type(xml) is dict:
+                    entry = xml['media:content']
+                    url = entry['@url'][:-9]
+                    size = int(entry['@filesize'])
                     sourceforge_array.append({'url': url, 'size': size})
-            elif type(xml) is dict:
-                entry = xml['media:content']
-                url = entry['@url'][:-9]
-                size = int(entry['@filesize'])
-                sourceforge_array.append({'url': url, 'size': size})
-            else:
-                logging.error("something wrong with sourceforge.net parser", exc_info=True)
-            
-            for url in sourceforge_array: logging.debug(f"{color('+', 'green')} {url}")
+                else:
+                    logging.error("something wrong with sourceforge.net parser", exc_info=True)
+                
+                for url in sourceforge_array: logging.debug(f"{color('+', 'green')} {url}")
 
-            return sourceforge_array
+                return sourceforge_array
 
         def scrape(target, **kwargs):
 
             response = rq.get(target)
-            pattern_html = re.compile(r'href=["\']?((?:.(?!["\']?\s+(?:\S+)=|\s*\/?[>"\']))+.\/?)["\']?', re.S)
+            pattern_html = re.compile(r'href=["\']?\n?((?:.(?!["\']?\s+(?:\S+)=|\s*\/?[>"\']))+.\/?)\n?["\']?', re.S)
             urls = re.findall(pattern_html, str(response.text))
+
+            extensions = ['.iso', '.img']
 
             for url in urls:
                 if url in target: continue
@@ -254,10 +261,11 @@ class get:
 
                 if args['recurse'] and url.endswith('/'):
                     scrape(url, **args)
-                if not '.iso' in url: continue
-                if url.endswith('.iso/download'):
+
+                if not any(ext in url for ext in extensions): continue
+                if any(url.endswith(ext + '/download') for ext in extensions):
                     url = url[:-9]
-                if url.endswith('.iso'):
+                if any(url.endswith(ext) for ext in extensions):
                     url = str(unescape(url.replace('/./', '/')))
                     if url in target: continue
                     array.append(url)
@@ -360,7 +368,7 @@ def build_repo_html():
 
     for distro_id in markdown_distros_done:
         distro_info = get_distro_info(distro_id)
-        markdown_distros.append(f'<a href="{distro_info[1]}"><img title="{distro_info[0]}" class="distro_logo" src="./logos/{distro_id}.png"/></a>')
+        markdown_distros.append(f'<a href="{distro_info[1]}"><img title="{distro_info[0]}" loading="lazy" class="distro_logo" src="./logos/{distro_id}.png"/></a>')
         content_json['contains'].append({"id": distro_id, "name": distro_info[0], "url": distro_info[1]})
 
     markdown_distro_count = f'contains [{len(markdown_distros_done)}](./content.json)'
