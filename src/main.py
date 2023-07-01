@@ -142,8 +142,8 @@ class get:
     def size(target):
         """Returns the file size of the target URL in bytes."""
         try:
-            response = rq.get(target, stream=True).headers
-            # logging.debug(f"{color(response, 'green')}")
+            response = requests.head(target, allow_redirects=True).headers
+            #logging.debug(f"{color(response, 'green')}")
             size = int(response['Content-Length'])
             if size > 500:
                 return size
@@ -211,27 +211,28 @@ class get:
             logging.debug(f"{color('+', 'green')} {url}")
             return url
 
-        if 'sourceforge.net' in target and not target.endswith('.iso'):
-            sourceforge_array = []
-            rss = rq.get(target.replace('/files/', '/rss?path=/')).text
-            xml = xml_to_dict(rss)['rss']['channel']['item']
-            if type(xml) is list:
-                for entry in xml:
-                    url = entry['media:content']['@url'][:-9]
-                    if not url.endswith('.iso'): continue
-                    size = int(entry['media:content']['@filesize'])
+        if 'sourceforge.net' in target:
+            if not target.endswith('.iso'):
+                sourceforge_array = []
+                rss = rq.get(target.replace('/files/', '/rss?path=/')).text
+                xml = xml_to_dict(rss)['rss']['channel']['item']
+                if type(xml) is list:
+                    for entry in xml:
+                        url = entry['media:content']['@url'][:-9]
+                        if not url.endswith('.iso'): continue
+                        size = int(entry['media:content']['@filesize'])
+                        sourceforge_array.append({'url': url, 'size': size})
+                elif type(xml) is dict:
+                    entry = xml['media:content']
+                    url = entry['@url'][:-9]
+                    size = int(entry['@filesize'])
                     sourceforge_array.append({'url': url, 'size': size})
-            elif type(xml) is dict:
-                entry = xml['media:content']
-                url = entry['@url'][:-9]
-                size = int(entry['@filesize'])
-                sourceforge_array.append({'url': url, 'size': size})
-            else:
-                logging.error("something wrong with sourceforge.net parser", exc_info=True)
-            
-            for url in sourceforge_array: logging.debug(f"{color('+', 'green')} {url}")
+                else:
+                    logging.error("something wrong with sourceforge.net parser", exc_info=True)
+                
+                for url in sourceforge_array: logging.debug(f"{color('+', 'green')} {url}")
 
-            return sourceforge_array
+                return sourceforge_array
 
         def scrape(target, **kwargs):
 
