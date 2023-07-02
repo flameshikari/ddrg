@@ -148,11 +148,7 @@ class get:
             except:
                 response = requests.head(target, allow_redirects=True).headers
                 size = int(response['Content-Length'])
-            #logging.debug(f"{color(response, 'green')}")
-            if size > 500:
-                return size
-            else:
-                return 0
+            return size
         except Exception as error:
             logging.debug(f"{color('-', 'red')} {target}: {str(error).lower()}")
             pass
