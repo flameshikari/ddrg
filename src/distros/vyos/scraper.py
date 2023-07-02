@@ -18,7 +18,7 @@ def init():
         for iso_url in get.urls(url_base, exclude=exceptions,
                                           pattern=regexp_url):
             iso_size = get.size(iso_url)
-            #if iso_size is None: continue
+            if iso_size is None: continue
             iso_arch = get.arch(iso_url)
             iso_version = re.search(regexp_version, iso_url).group(1) + ' ' + \
                           re.search(regexp_version_extra, iso_url).group(1)
