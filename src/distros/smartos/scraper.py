@@ -15,13 +15,12 @@ def init():
 
     values = []
     regexp_version = re.compile(r'-(\d+T\d+Z)\.iso')
-    url_base = 'https://us-central.manta.mnx.io'
-    url_version = 'https://us-central.manta.mnx.io/Joyent_Dev/public/SmartOS/smartos.html'
+    url_base = 'https://us-central.manta.mnx.io/Joyent_Dev/public/SmartOS/'
 
     try:
         driver = webdriver.Firefox(service_log_path=devnull, options=Options, executable_path='geckodriver.exe')
-        driver.get(url_version)
-        driver_wait(driver, 3).until(ec.presence_of_element_located((by.CLASS_NAME, 'links')))
+        driver.get(url_base + 'latest.html')
+        driver_wait(driver, 3).until(ec.url_contains('index.html'))
         source = driver.page_source
     finally:
         driver.quit()
@@ -31,10 +30,10 @@ def init():
 
     for iso_url in iso_urls:
 
-        iso_url = url_base + iso_url
+        iso_version = re.search(regexp_version, iso_url).group(1)
+        iso_url = f'{url_base}/{iso_version}/{iso_url}'
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
         values.append((iso_url, iso_arch, iso_size, iso_version))
 
     return values
