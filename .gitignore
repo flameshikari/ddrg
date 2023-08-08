@@ -1,4 +1,5 @@
 src/distros/_*
+!src/distros/_discounted
 __pycache__
 env
 repo
