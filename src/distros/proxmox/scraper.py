@@ -5,7 +5,7 @@ def init():
 
     values = []
     regexp_version = re.compile(r'_(\d+(\.\d+(-\d+)?)?)')
-    url_base = 'http://download.proxmox.com/iso/'
+    url_base = 'https://enterprise.proxmox.com/iso/'
 
     for iso_url in get.urls(url_base):
 
