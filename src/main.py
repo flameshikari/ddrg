@@ -159,7 +159,7 @@ class get:
         archs = [
             "amd64", "i386", "x86_64",
             "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
-            "i486", "i586", "i686-pae", "i686", "ia64",
+            "i486", "i586", "i686-pae", "i686", "ia64", "power9",
             "macppc", "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
             "mips64el", "mipsel", "mips",
             "s390x", "hppa", "alpha", "sparc64",
