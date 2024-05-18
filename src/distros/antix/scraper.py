@@ -4,8 +4,8 @@ from main import *  # noqa
 def init():
 
     values = []
-    regexp_version = re.compile(r'You should download antiX-(\d+(\.\d+(\.\d+)?)?)')
-    url_base = 'https://mirror.yandex.ru/mirrors/MX-Linux/MX-ISOs/ANTIX/Final/antiX-{}/'
+    regexp_version = re.compile(r'antiX-(\d+(\.\d+(\.\d+)?)?) files')
+    url_base = 'https://antixlinux.com/download/'
     url_version = 'https://antixlinux.com/download/'
     response = rq.get(url_version)
     iso_version = re.search(regexp_version, str(response.text)).group(1)
