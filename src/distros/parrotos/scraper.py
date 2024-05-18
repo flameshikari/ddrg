@@ -5,7 +5,7 @@ def init():
 
     values = []
     regexp_version = re.compile(r'-(\d+(.\d+(.\d+)?)?)')
-    url_base = 'https://mirror.truenetwork.ru/parrot/iso/current/'
+    url_base = 'https://mirror.truenetwork.ru/parrot/iso/'
 
     for iso_url in get.urls(url_base):
 
