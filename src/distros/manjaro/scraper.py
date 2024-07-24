@@ -5,13 +5,17 @@ def init():
 
     values = []
     regexp_version = re.compile(r'-(\d+\.\d+(.\d+)?)')
-    url_base = 'https://manjaro.org/downloads/'
+    url_bases = [
+        'https://manjaro.org/products/download/x86',
+        'https://manjaro-sway.download/'
+    ]
 
-    for iso_url in get.urls(url_base):
+    for url_base in url_bases:
+        for iso_url in get.urls(url_base):
 
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+            iso_arch = 'x86_64'
+            iso_size = get.size(iso_url)
+            iso_version = re.search(regexp_version, iso_url).group(1)
+            values.append((iso_url, iso_arch, iso_size, iso_version))
 
     return values
