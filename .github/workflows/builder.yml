@@ -1,9 +1,9 @@
 name: 'Builder'
 
 on:
-  push:
-    branches:
-    - master
+  # push:
+  #   branches:
+  #   - master
   schedule:
     # 19:00 GMT (00:00 UTC+5)
     - cron: '0 19 * * *'
