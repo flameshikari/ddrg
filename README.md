@@ -17,16 +17,9 @@ This tool is still in development, but it kinda works. Beware a lot of weird cod
 
 ## ✔️ Try It Now
 
-Just add one of the next links to image repositories in DriveDroid app.
-
-### My own mirror:
+Just add the next link to image repositories in DriveDroid app.
 ```
-https://dd.hexed.pw
-```
-
-### GitHub mirror:
-```
-https://ddrg.hexed.pw/repo.json
+https://dd.hexed.pw/repo.json
 ```
 
 ## 📚 Documentation
