@@ -4,7 +4,7 @@ from main import *  # noqa
 def init():
 
     values = []
-    regexp_version = re.compile(r'_(\d{4}.\d{2}(.\d{2})?)')
+    regexp_version = re.compile(r'-(\d{4}.\d{2}(.\d{2})?)')
     url_base = 'https://grml.org/download'
 
     for iso_url in get.urls(url_base):
