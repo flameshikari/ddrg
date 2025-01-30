@@ -23,7 +23,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Initiate variables
       run: |
@@ -35,9 +35,9 @@ jobs:
         EOF
 
     - name: Set timezone
-      uses: zcong1993/setup-timezone@master
+      uses: digipost/set-timezone@v3
       with:
-        timezone: ${{ env.TIMEZONE }}
+        timezoneLinux: ${{ env.TIMEZONE }}
 
     - name: Install dependencies
       run: pip install -r requirements.txt
@@ -47,14 +47,14 @@ jobs:
       run: python -u src/main.py -g -o ${{ env.OUTPUT_DIR }} -d ${{ env.SELECTED_DISTROS }}
 
     - name: Upload a named artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: ddrg_${{ env.DATE }}
         path: ${{ env.OUTPUT_DIR }}
         retention-days: 90
 
     - name: Upload an artifact for GitHub Pages
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v3
       with:
         path: ${{ env.OUTPUT_DIR }}
         retention-days: 1
@@ -74,26 +74,4 @@ jobs:
 
     - name: Deploy the repo to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v1
-
-    - name: Download the artifact
-      uses: actions/download-artifact@v3
-
-    - name: Unarchive the artifact
-      run: |
-        cd github-pages
-        tar -xf artifact.tar
-        rm artifact.tar
-
-    - name: Deploy the repo to the custom server
-      uses: appleboy/scp-action@master
-      continue-on-error: true
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        port: ${{ secrets.SSH_PORT }}
-        username: ${{ secrets.SSH_USER }}
-        key: ${{ secrets.SSH_KEY }}
-        source: github-pages
-        target: ${{ secrets.SSH_DIR }}
-        strip_components: 1
-        rm: true
+      uses: actions/deploy-pages@v4
