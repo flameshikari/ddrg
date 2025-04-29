@@ -5,9 +5,9 @@ def init():
 
     values = []
     regexp_version = re.compile(r'-(\d+(\.\d+(\.\d+)?)?)')
-    url_base = 'https://mxlinux.org/download-links/'
+    url_base = 'https://mirror.truenetwork.ru/mxlinux-cd/MX/Final/'
 
-    for iso_url in get.urls(url_base):
+    for iso_url in get.urls(url_base, recurse=True):
 
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)
