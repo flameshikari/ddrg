@@ -6,7 +6,7 @@ def init():
 
     values = []
     regexp_version = re.compile(r'[-|_](\d+\.\d+\.\d+|\d+_\d+|\d+-\d+)')
-    url_base = 'http://md.mirrors.hacktegic.com/endeavouros/iso/'
+    url_base = 'https://distrohub.kyiv.ua/endeavouros/iso/'
 
     for iso_url in get.urls(url_base):
         iso_arch = "x86_64"
