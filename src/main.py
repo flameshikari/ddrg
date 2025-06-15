@@ -52,6 +52,10 @@ options.add_argument("-d", "--distros",
                      help="define specific distros to parse",
                      default='all',
                      type=str)
+options.add_argument("-f", "--failed",
+                     help="gather urls from predefined json for failed distros",
+                     default=False,
+                     action="store_true")
 options.add_argument("-g", "--generate",
                      help="generate a webpage to present the content of repo.json",
                      default=False,
@@ -74,8 +78,6 @@ if options.verbose: level_log = logging.DEBUG
 else: level_log = logging.INFO
 
 logging.getLogger("urllib3").setLevel(logging.WARNING)
-
-
 
 if options.color:
     logging.addLevelName(logging.DEBUG, color(logging.getLevelName(logging.DEBUG), 'magenta'))
@@ -136,6 +138,9 @@ headers = {'User-Agent': user_agent}
 rq.headers.update(headers)
 rq.mount('http://',  TimeoutHTTPAdapter(max_retries=retries))
 rq.mount('https://', TimeoutHTTPAdapter(max_retries=retries))
+
+if options.failed:
+    current_json = rq.get('https://dd.hexed.pw/repo.json').json()
 
 class get:
 
@@ -275,6 +280,11 @@ class get:
         return result
 
 
+def find_by_id(json_array, target_id):
+    filtered = list(filter(lambda item: item.get('id') == target_id, json_array))
+    return filtered[0] if filtered else None
+
+
 def copy_distro_logo(distro_id):
     """Copy specific logo.png to distro folder."""
     logo_src = f'{distros_dir}/{distro_id}/logo.png'
@@ -312,8 +322,12 @@ def build_repo_entry(distro_id, distro_info):
     repo_entry["name"] = distro_info[0]
     repo_entry["url"] = distro_info[1]
 
+
+    TRIES = 3
     tries = 3
     wait = 10
+
+    distro_values = []
 
     for i in range(tries):
         try:
@@ -326,10 +340,21 @@ def build_repo_entry(distro_id, distro_info):
                 sleep(wait)
                 continue
             else:
-                raise
+                if options.failed:
+                    try:
+                        values = find_by_id(current_json, distro_id)['releases']
+                        distro_values = [
+                            distro_value['url'],
+                            distro_value.get('arch'),
+                            distro_value['size'],
+                            distro_value['version']
+                        ]
+                        break
+                    except:
+                        raise Exception(f'cannot find {distro_id} in cached json')
+                else:
+                    raise Exception(f'failed after {TRIES} tries')
         break
-
-
 
     for distro_value in distro_values:
         iso_url, iso_arch, iso_size, iso_version = distro_value
@@ -343,6 +368,8 @@ def build_repo_entry(distro_id, distro_info):
     repo_entry["releases"] = repo_entry_releases
 
     if not repo_entry_releases:
+        # logging.error(f"{distro_id}: no releases")
+        # return
         raise Exception('releases is empty')
 
     return repo_entry

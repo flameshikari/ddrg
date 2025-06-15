@@ -44,7 +44,7 @@ jobs:
 
     - name: Build a repo
       continue-on-error: true
-      run: python -u src/main.py -g -o ${{ env.OUTPUT_DIR }} -d ${{ env.SELECTED_DISTROS }}
+      run: python -u src/main.py -f -g -o ${{ env.OUTPUT_DIR }} -d ${{ env.SELECTED_DISTROS }}
 
     - name: Upload a named artifact
       uses: actions/upload-artifact@v4
