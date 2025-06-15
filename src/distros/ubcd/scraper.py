@@ -1,18 +1,16 @@
 from main import *  # noqa
 
-
 def init():
 
     values = []
-    regexp_version = re.compile(r'Current release: V(\d+(\.\d+(\.\d+)?)?)')
-    url_base = 'https://mirror.clientvps.com/ubcd/'
-    url_version = 'https://www.ultimatebootcd.com/download.html'
-    response = rq.get(url_version)
+    regexp_version = re.compile(r'(\d+).iso')
+    url_base = 'http://mirror.koddos.net/ubcd/'
 
-    iso_version = re.search(regexp_version, str(response.text)).group(1)
-    iso_url = f'{url_base}ubcd{iso_version.replace(".", "")}.iso'
-    iso_arch = 'bios'
-    iso_size = get.size(iso_url)
-    values.append((iso_url, iso_arch, iso_size, iso_version))
+    for iso_url in get.urls(url_base, recurse=True, exclude=['ubcdlive']):
+        iso_arch = 'bios'
+        iso_size = get.size(iso_url)
+        iso_version = '.'.join(list(re.search(regexp_version, str(iso_url)).group(1)))
+        
+        values.append((iso_url, iso_arch, iso_size, iso_version))
 
     return values
