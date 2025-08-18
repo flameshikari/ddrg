@@ -166,7 +166,7 @@ class get:
             "arm64", "arm32", "armhfp", "armhf", "armv7", "armel", "aarch64",
             "i486", "i586", "i686-pae", "i686", "ia64", "power9",
             "macppc", "ppc64le", "ppc64el", "ppc64", "ppcspe", "ppc",
-            "mips64el", "mipsel", "mips",
+            "mips64el", "mipsel", "mips", "loong64",
             "s390x", "hppa", "alpha", "sparc64",
             "bios", "efi", "ipxe"
         ]
@@ -423,7 +423,7 @@ def build_repo_html():
     copytree(html_assets_dir, output_dir, dirs_exist_ok=True)
 
 
-logo = color(f"""\
+logo = color(fr"""
          __     _                __           _     __
     ____/ /____(_)   _____  ____/ /________  (_)___/ /
    / __  / ___/ / | / / _ \/ __  / ___/ __ \/ / __  /
