@@ -41,7 +41,7 @@ jobs:
 
     - name: Build a repo
       continue-on-error: true
-      run: NO_COLOR=1 python -u src/main.py -vfHg -o ${{ env.OUTPUT_DIR }}
+      run: NO_COLOR=1 python -u src/main.py -vfH -o ${{ env.OUTPUT_DIR }}
 
     - name: Upload a named artifact
       uses: actions/upload-artifact@v4
