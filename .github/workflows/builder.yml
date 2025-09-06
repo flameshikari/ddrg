@@ -1,18 +1,18 @@
 name: 'Builder'
 
 on:
-  # push:
-  #   branches:
-  #   - master
   schedule:
     # 19:00 GMT (00:00 UTC+5)
     - cron: '0 19 * * *'
   workflow_dispatch:
     inputs:
-      output_dir:
-        description: 'Output directory'
       timezone:
-        description: 'Timezone'
+        description: Timezone
+        default: Asia/Yekaterinburg
+
+env:
+  output: build
+  FORCE_COLOR: 1
 
 jobs:
   build:
@@ -21,40 +21,25 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
-    - name: Initiate variables
-      run: |
-        cat << EOF >> $GITHUB_ENV
-        DATE=$(date +'%d-%m-%Y')
-        OUTPUT_DIR=$([ -z $OUTPUT_DIR ] && echo "${{ secrets.OUTPUT_DIR }}" | base64 -d || echo ${{ github.event.inputs.output_dir }})
-        TIMEZONE=$([ -z $TIMEZONE ] && echo "${{ secrets.TIMEZONE }}" | base64 -d || echo ${{ github.event.inputs.timezone }})
-        EOF
-
-    - name: Set timezone
+    - name: Set Timezone
       uses: digipost/set-timezone@v3
       with:
-        timezoneLinux: ${{ env.TIMEZONE }}
+        timezoneLinux: ${{ inputs.timezone }}
 
-    - name: Install dependencies
+    - name: Install Dependencies
       run: pip install -r requirements.txt
 
-    - name: Build a repo
+    - name: Build
       continue-on-error: true
-      run: NO_COLOR=1 python -u src/main.py -vfH -o ${{ env.OUTPUT_DIR }}
+      run: python -u src/main.py -vfH -o "${{ env.output }}"
 
-    - name: Upload a named artifact
-      uses: actions/upload-artifact@v4
+    - name: Upload Artifacts
+      uses: actions/upload-pages-artifact@v4
       with:
-        name: ddrg_${{ env.DATE }}
-        path: ${{ env.OUTPUT_DIR }}
-        retention-days: 90
-
-    - name: Upload an artifact for GitHub Pages
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ${{ env.OUTPUT_DIR }}
-        retention-days: 1
+        path: ${{ env.output }}
+        retention-days: 7
 
   deploy:
     name: Deploy
@@ -69,6 +54,6 @@ jobs:
     needs: build
     steps:
 
-    - name: Deploy the repo to GitHub Pages
+    - name: Deploy
       id: deployment
       uses: actions/deploy-pages@v4
