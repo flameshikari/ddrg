@@ -14,7 +14,7 @@ def init():
 
     for iso_url in get.urls(url_base):
 
-        iso_url = re.sub('rosa\w+\.ru', 'yandex.ru', iso_url)
+        iso_url = re.sub(r'rosa\w+\.ru', 'yandex.ru', iso_url)
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)
         iso_version = re.search(regexp_version, iso_url).group(1)
