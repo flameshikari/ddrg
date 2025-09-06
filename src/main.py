@@ -102,7 +102,7 @@ def load_distros(distros):
 
         try:
             modules[distro] = SourceFileLoader(distro, f'{target_dir}/scraper.py').load_module()
-        
+
         except Exception as error:
             logging.error(f"{color(distro, 'yellow', attrs=['underline'])}: {error}")
             continue
@@ -253,7 +253,7 @@ if __name__ == '__main__':
 
     if len(distros) == 0:
         logging.critical('no distros loaded')
-        exit(1)        
+        exit(1)
 
     # initialization of arrays
     repo, distros_errors = [], []
