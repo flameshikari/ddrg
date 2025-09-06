@@ -1,9 +1,9 @@
 <br>
 <p align="center">
-  <img src="./src/website/root/assets/logo.svg" width="250" alt="">
+  <img src="../src/website/root/assets/logo.svg" width="250" alt="">
 </p>
   <h1 align="center">
-    <a href="https://www.drivedroid.io/">DriveDroid</a> Repository Generator <img src="https://github.com/flameshikari/ddrg/actions/workflows/builder.yml/badge.svg">
+    <a target="_blank" href="https://softwarebakery.com/projects/drivedroid">DriveDroid</a> Repository Generator <img src="https://github.com/flameshikari/ddrg/actions/workflows/builder.yml/badge.svg">
   </h1>
 </p>
 
@@ -18,31 +18,9 @@ Just add the following link to the image repositories in DriveDroid:
 https://dd.hexed.pw/repo.json
 ```
 
-## 🐍 Installation
-
-### Requirements
-
-`Python 3.8+` with package `venv`. If `venv` is missing, try to search for `python-venv` via your system package manager and install it, else [search on Google](https://www.google.com/search?q=python+install+venv) how to install it in your system.
-
-### Virtual Environment
-
-Follow next commands to setup the repository generator:
-
-```bash
-# create the virtual environment
-python -m venv env
-
-# activate the virtual environment
-source env/bin/activate
-
-# install required packages
-pip install -r requirements.txt
-```
-
-
 ## 📝 Writing Scrapers
 
-Create a folder in **[distros](../tree/master/src/distros)** with the next structure:
+Create a folder in **[distros](../src/distros)** with the next structure:
 
 ```
 distro_name
@@ -54,10 +32,10 @@ If `distro_name` starts with the underscore (e.g. **_disabled**), it will be exc
 
 ### `logo.png`
 
-Should be 128x128px with transparent background. Arch Linux **[logo.png](../raw/master/src/distros/arch/logo.png)** example:
+Should be 128x128px with transparent background. Arch Linux **[logo.png](../src/distros/arch/logo.png)** example:
 
 <br><p align="center">
-  <img src="../raw/master/src/distros/arch/logo.png" alt="Arch Linux"/>
+  <img src="../src/distros/arch/logo.png" alt="Arch Linux"/>
 </p><br>
 
 ### `scraper.py`
@@ -66,7 +44,7 @@ A scraper can be written as you like, as long as it returns the desired values: 
 
 `from helpers import * ` at the top of a scraper includes helpful functions and classes from `helpers.py`.
 
-For example, **[Arch Linux](../raw/master/src/distros/arch/scraper.py)** scraper looks like this:
+For example, **[Arch Linux](../src/distros/arch/scraper.py)** scraper looks like this:
 
 ```python
 from helpers import *
