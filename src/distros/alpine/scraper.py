@@ -1,13 +1,18 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Alpine Linux',
+    'url': 'https://alpinelinux.org'
+}
 
 def init():
 
     values = []
     regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)')
-    url_base = 'https://alpinelinux.org/downloads/'
+    excludes = ['netboot', '_rc']
+    url_base = 'https://mirror.yandex.ru/mirrors/alpine/latest-stable/releases/'
 
-    for iso_url in get.urls(url_base):
+    for iso_url in get.urls(url_base, recursive=True, exclude=excludes):
 
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)

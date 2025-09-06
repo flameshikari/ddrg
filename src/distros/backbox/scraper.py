@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'BackBox',
+    'url': 'https://backbox.org'
+}
 
 def init():
 

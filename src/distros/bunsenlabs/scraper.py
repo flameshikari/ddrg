@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'BunsenLabs',
+    'url': 'https://bunsenlabs.org'
+}
 
 def init():
 

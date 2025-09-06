@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'ReactOS',
+    'url': 'https://reactos.org'
+}
 
 def init():
 

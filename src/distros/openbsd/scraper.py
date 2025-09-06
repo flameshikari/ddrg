@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'OpenBSD',
+    'url': 'https://openbsd.org'
+}
 
 def init():
 

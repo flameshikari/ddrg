@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'ROSA',
+    'url': 'https://rosalinux.ru'
+}
 
 def init():
 

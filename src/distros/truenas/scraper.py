@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'TrueNAS',
+    'url': 'https://truenas.com'
+}
 
 def init():
 

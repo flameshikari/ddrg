@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'KaOS',
+    'url': 'https://kaosx.us'
+}
 
 def init():
 

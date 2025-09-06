@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Kali Linux',
+    'url': 'https://kali.org'
+}
 
 def init():
 

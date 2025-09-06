@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'ArchBang',
+    'url': 'https://archbang.org'
+}
 
 def init():
 
@@ -7,7 +11,7 @@ def init():
     regexp_version = re.compile(r'-(\d+)-')
     url_base = 'https://sourceforge.net/projects/archbang/files/'
 
-    for iso_url in get.urls(url_base, recurse=True, add_base=False):
+    for iso_url in get.urls(url_base, recursive=True, add_base=False):
 
         iso_size = iso_url['size']
         iso_url = iso_url['url']

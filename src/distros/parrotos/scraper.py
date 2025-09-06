@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Parrot OS',
+    'url': 'https://parrotlinux.org'
+}
 
 def init():
 
@@ -12,7 +16,7 @@ def init():
         'current', 'testing'
     ]
 
-    for iso_url in get.urls(url_base, recurse=True, exclude=exclude):
+    for iso_url in get.urls(url_base, recursive=True, exclude=exclude):
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)
         iso_version = re.search(regexp_version, iso_url).group(1)

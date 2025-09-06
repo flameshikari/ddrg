@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'AlmaLinux',
+    'url': 'https://almalinux.org'
+}
 
 def init():
 
@@ -13,7 +17,7 @@ def init():
 
     for url_base in url_bases:
         for iso_url in get.urls(url_base, exclude=exceptions,
-                                          recurse=True):
+                                          recursive=True):
             iso_arch = get.arch(iso_url)
             iso_size = get.size(iso_url)
             iso_version = re.search(regexp_version, iso_url).group(1)

@@ -1,36 +1,17 @@
-from main import *  # noqa
+from helpers import *
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By as by
-from selenium.webdriver.support.ui import WebDriverWait as driver_wait
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.firefox.options import Options
-from os import devnull
-
-
-Options = Options()
-Options.headless = True
+info = {
+    'name': 'Endless OS',
+    'url': 'https://endlessos.com'
+}
 
 def init():
 
     values = []
-    regexp_version = re.compile(r'eos(\d+.\d+(.\d+)?)-')
-    url_base = 'https://support.endlessos.org/en/installation/direct-download'
+    regexp_version = re.compile(r'/(\d+\.\d+\.\d+(\.\d+)?)/')
+    url_base = 'https://images-cdn.endlessm.com/releases-eos-3.json'
 
-    try:
-        driver = webdriver.Firefox(service_log_path=devnull, options=Options, executable_path='geckodriver.exe')
-        driver.get(url_base)
-        driver_wait(driver, 3).until(ec.presence_of_element_located((by.CLASS_NAME, 'release')))
-        source = driver.page_source
-    finally:
-        driver.quit()
-
-    pattern = re.compile(r'href=[\'|\"](.*?)[\'|\"]', re.S)
-    urls = [url for url in
-        re.findall(pattern, str(source)) if url.endswith('.iso')]
-
-    for iso_url in urls:
-
+    for iso_url in get.urls(url_base, pattern=r'\.base\.'):
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)
         iso_version = re.search(regexp_version, iso_url).group(1)

@@ -1,4 +1,9 @@
-from main import *  # noqa
+from helpers import *
+
+info = {
+    'name': 'Ultimate Boot CD',
+    'url': 'https://ultimatebootcd.com'
+}
 
 def init():
 
@@ -6,7 +11,7 @@ def init():
     regexp_version = re.compile(r'(\d+).iso')
     url_base = 'http://mirror.koddos.net/ubcd/'
 
-    for iso_url in get.urls(url_base, recurse=True, exclude=['ubcdlive']):
+    for iso_url in get.urls(url_base, recursive=True, exclude=['ubcdlive']):
         iso_arch = 'bios'
         iso_size = get.size(iso_url)
         iso_version = '.'.join(list(re.search(regexp_version, str(iso_url)).group(1)))

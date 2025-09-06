@@ -9,8 +9,6 @@ on:
     - cron: '0 19 * * *'
   workflow_dispatch:
     inputs:
-      selected_distros:
-        description: 'Selected distros'
       output_dir:
         description: 'Output directory'
       timezone:
@@ -30,7 +28,6 @@ jobs:
         cat << EOF >> $GITHUB_ENV
         DATE=$(date +'%d-%m-%Y')
         OUTPUT_DIR=$([ -z $OUTPUT_DIR ] && echo "${{ secrets.OUTPUT_DIR }}" | base64 -d || echo ${{ github.event.inputs.output_dir }})
-        SELECTED_DISTROS=$([ -z $SELECTED_DISTROS ] && echo "${{ secrets.SELECTED_DISTROS }}" | base64 -d || echo ${{ github.event.inputs.selected_distros }})
         TIMEZONE=$([ -z $TIMEZONE ] && echo "${{ secrets.TIMEZONE }}" | base64 -d || echo ${{ github.event.inputs.timezone }})
         EOF
 
@@ -44,7 +41,7 @@ jobs:
 
     - name: Build a repo
       continue-on-error: true
-      run: python -u src/main.py -f -g -o ${{ env.OUTPUT_DIR }} -d ${{ env.SELECTED_DISTROS }}
+      run: NO_COLOR=1 python -u src/main.py -vfHg -o ${{ env.OUTPUT_DIR }}
 
     - name: Upload a named artifact
       uses: actions/upload-artifact@v4

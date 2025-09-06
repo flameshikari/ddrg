@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Qubes',
+    'url': 'https://qubes-os.org'
+}
 
 def init():
 

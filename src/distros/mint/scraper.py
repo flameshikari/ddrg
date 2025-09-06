@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Linux Mint',
+    'url': 'https://linuxmint.com'
+}
 
 def init():
 
@@ -9,7 +13,7 @@ def init():
     url_base = 'https://mirror.yandex.ru/linuxmint/'
 
     for iso_url in get.urls(url_base, exclude=exceptions,
-                                      recurse=True):
+                                      recursive=True):
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)
         iso_version = re.search(regexp_version, iso_url).group(1)

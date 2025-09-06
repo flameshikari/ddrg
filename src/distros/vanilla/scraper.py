@@ -1,11 +1,15 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Vanilla OS',
+    'url': 'https://vanillaos.org'
+}
 
 def init():
 
     values = []
-    regexp_version = re.compile(r'-(\d+.\d+(.\d+)?)')
-    url_base = 'https://github.com/Vanilla-OS/os/releases'
+    regexp_version = re.compile(r'\.(\d+)\.')
+    url_base = 'https://github.com/Vanilla-OS/live-iso/releases/latest'
 
     for iso_url in get.urls(url_base):
         iso_arch = 'amd64'

@@ -1,5 +1,9 @@
-from main import *  # noqa
-import yaml
+from helpers import *
+
+info = {
+    'name': 'Bazzite',
+    'url': 'https://bazzite.gg'
+}
 
 
 def build(name):
@@ -20,12 +24,12 @@ def init():
     images_live = build('build_iso_titanoboa')
 
     for image in images:
-        iso_url = f'{base_url}/{image}-stable-amd64.iso'
+        iso_url = get.urls(f'{base_url}/{image}-stable-amd64.iso')
         iso_size = get.size(iso_url)
         values.append((iso_url, iso_arch, iso_size, iso_version))
 
     for image in images_live:
-        iso_url = f'{base_url}/{image}-stable-live.iso'
+        iso_url = get.urls(f'{base_url}/{image}-stable-live.iso')
         iso_size = get.size(iso_url)
         values.append((iso_url, iso_arch, iso_size, 'Live'))
 

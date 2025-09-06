@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Peppermint OS',
+    'url': 'https://peppermintos.com'
+}
 
 def init():
 

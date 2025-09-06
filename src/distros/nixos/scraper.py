@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'NixOS',
+    'url': 'https://nixos.org'
+}
 
 def init():
 

@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'SystemRescue',
+    'url': 'https://system-rescue.org'
+}
 
 def init():
 

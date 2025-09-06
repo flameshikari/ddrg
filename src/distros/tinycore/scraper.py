@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Tiny Core Linux',
+    'url': 'https://mirrors.dotsrc.org/tinycorelinux'
+}
 
 def init():
 

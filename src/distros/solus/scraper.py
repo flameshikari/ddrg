@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Solus',
+    'url': 'https://getsol.us'
+}
 
 def init():
 

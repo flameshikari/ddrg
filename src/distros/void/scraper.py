@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Void Linux',
+    'url': 'https://voidlinux.org'
+}
 
 def init():
 

@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Deepin',
+    'url': 'https://deepin.org'
+}
 
 def init():
 
@@ -7,7 +11,7 @@ def init():
     url_base = "https://cdimage.deepin.com/releases/"
     regexp_version = re.compile(r'-(\d+(\.\d+(\.\d+)?)?|-\w+)-')
 
-    for iso_url in get.urls(url_base, recurse=True):
+    for iso_url in get.urls(url_base, recursive=True):
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)
         iso_version = re.search(regexp_version, iso_url).group(1)

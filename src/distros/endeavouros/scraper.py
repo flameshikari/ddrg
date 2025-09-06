@@ -1,12 +1,16 @@
-from main import *  # noqa
-from datetime import datetime
+from helpers import *
+
+info = {
+    'name': 'EndeavourOS',
+    'url': 'https://endeavouros.com'
+}
 
 
 def init():
 
     values = []
     regexp_version = re.compile(r'[-|_](\d+\.\d+\.\d+|\d+_\d+|\d+-\d+)')
-    url_base = 'https://distrohub.kyiv.ua/endeavouros/iso/'
+    url_base = 'https://ftp.belnet.be/mirror/endeavouros/iso/'
 
     for iso_url in get.urls(url_base):
         iso_arch = "x86_64"

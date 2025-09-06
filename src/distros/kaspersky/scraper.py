@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Kaspersky Rescue Disk',
+    'url': 'https://kaspersky.com/downloads/free-rescue-disk'
+}
 
 def init():
 

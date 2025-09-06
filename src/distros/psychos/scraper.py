@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'PsychOS',
+    'url': 'https://psychoslinux.gitlab.io'
+}
 
 def init():
 

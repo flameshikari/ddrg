@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Rocky Linux',
+    'url': 'https://rockylinux.org'
+}
 
 def init():
 

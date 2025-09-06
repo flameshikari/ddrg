@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Strelec WinPE',
+    'url': 'https://sergeistrelec.name'
+}
 
 def init():
 

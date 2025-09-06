@@ -1,15 +1,16 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'TempleOS',
+    'url': 'https://templeos.org'
+}
 
 def init():
 
     values = []
-    iso_urls = [
-        'https://templeos.org/Downloads/TempleOS.ISO',
-        'https://templeos.org/Downloads/TempleOSLite.ISO'
-    ]
+    url_base = 'https://templeos.org/Downloads/'
 
-    for iso_url in iso_urls:
+    for iso_url in get.urls(url_base):
     
         iso_size = get.size(iso_url)
         iso_arch = 'amd64'

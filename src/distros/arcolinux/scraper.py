@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'ArcoLinux',
+    'url': 'https://arcolinux.com'
+}
 
 def init():
 

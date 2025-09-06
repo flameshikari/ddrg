@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Absolute Linux',
+    'url': 'https://absolutelinux.org'
+}
 
 def init():
 

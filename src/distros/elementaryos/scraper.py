@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'elementary OS',
+    'url': 'https://elementary.io'
+}
 
 def init():
 
@@ -8,9 +12,7 @@ def init():
     regexp_version = re.compile(r'-(\d+(.\d+(.\d+)?)?)')
     url_base = 'https://elementary.io/'
 
-    for iso_url in get.urls(url_base, add_base=False,
-                                      pattern=regexp_url):
-        iso_url = 'http:' + iso_url
+    for iso_url in get.urls(url_base, add_base=False, pattern=regexp_url):
         iso_arch = "x86_64"
         iso_size = get.size(iso_url)
         iso_version = re.search(regexp_version, iso_url).group(1)

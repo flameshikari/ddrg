@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'FreeDOS',
+    'url': 'https://freedos.org'
+}
 
 def init():
 
@@ -14,7 +18,7 @@ def init():
 
     for iso_url in get.urls(url_base, exclude=exceptions,
                                       pattern=regexp_url,
-                                      recurse=True):
+                                      recursive=True):
         iso_arch = "i386"
         iso_size = get.size(iso_url)
         iso_version = re.search(regexp_version, iso_url).group(1)

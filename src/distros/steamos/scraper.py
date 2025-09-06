@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'SteamOS',
+    'url': 'https://store.steampowered.com/steamos'
+}
 
 def init():
 

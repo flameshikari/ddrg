@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'BlackArch Linux',
+    'url': 'https://blackarch.org'
+}
 
 def init():
 
