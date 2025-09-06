@@ -1,9 +1,7 @@
-fake-useragent
-markdown2
-natsort
-packaging
-requests
-selenium==4.9.1
-termcolor
-xmltodict
-pyyaml
+fake-useragent==2.2.0
+markdown2==2.5.4
+natsort==8.4.0
+PyYAML==6.0.2
+requests==2.32.5
+termcolor==3.1.0
+xmltodict==0.15.0
