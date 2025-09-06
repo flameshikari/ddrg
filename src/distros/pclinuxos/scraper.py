@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'PCLinuxOS',
+    'url': 'https://pclinuxos.com'
+}
 
 def init():
 

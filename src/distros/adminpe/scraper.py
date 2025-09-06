@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'AdminPE',
+    'url': 'https://adminpe.ru'
+}
 
 def init():
 

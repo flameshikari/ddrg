@@ -1,4 +1,9 @@
-from main import *  # noqa
+from helpers import *
+
+info = {
+    'name': 'DriveDroid',
+    'url': 'https://github.com/FrozenCow/drivedroid-image'
+}
 
 def init():
 

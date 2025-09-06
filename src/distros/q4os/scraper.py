@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Q4OS',
+    'url': 'https://q4os.org'
+}
 
 def init():
 
@@ -8,7 +12,6 @@ def init():
     url_base = 'https://sourceforge.net/projects/q4os/files/stable/'
 
     for iso_url in get.urls(url_base):
-
         iso_size = iso_url['size']
         iso_url = iso_url['url']
         iso_arch = get.arch(iso_url)

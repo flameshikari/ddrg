@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'IPFire',
+    'url': 'https://ipfire.org'
+}
 
 def init():
 

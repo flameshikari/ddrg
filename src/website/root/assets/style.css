@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'custom';
-  src: url('../assets/font.ttf');
+  src: url('../assets/font.woff2');
 }
 
 * {
@@ -18,7 +18,7 @@
 
 body {
   background: #000500;
-  background-image: url('../assets/background.png');
+  background-image: url('../assets/background.svg');
   background-repeat: repeat;
   color: #f8f8f8;
   line-height: 1;
@@ -45,6 +45,10 @@ a {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   -moz-transition: all 0.5s;
+}
+
+.color {
+  color: #61d168;
 }
 
 a:hover {

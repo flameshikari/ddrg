@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Dr.Web LiveDisk',
+    'url': 'https://free.drweb.com/aid_admin/'
+}
 
 def init():
 

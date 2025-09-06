@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Garuda',
+    'url': 'https://garudalinux.org'
+}
 
 def init():
 
@@ -7,7 +11,7 @@ def init():
     regexp_version = re.compile(r'-(\d+).iso')
     url_base = 'https://iso.builds.garudalinux.org/iso/latest/garuda/'
 
-    for iso_url in get.urls(url_base, recurse=True):
+    for iso_url in get.urls(url_base, recursive=True):
 
         iso_url = rq.get(iso_url, allow_redirects=False).headers['Location']
         iso_arch = "amd64"

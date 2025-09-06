@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Ophcrack',
+    'url': 'https://ophcrack.sourceforge.io'
+}
 
 def init():
 

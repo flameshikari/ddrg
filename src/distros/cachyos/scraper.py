@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'CachyOS',
+    'url': 'https://cachyos.org'
+}
 
 def init():
 
@@ -7,7 +11,7 @@ def init():
     regexp_version = re.compile(r'-(\d+)')
     url_base = 'https://mirror.cachyos.org/ISO/'
 
-    for iso_url in get.urls(url_base, recurse=True):
+    for iso_url in get.urls(url_base, recursive=True):
 
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)

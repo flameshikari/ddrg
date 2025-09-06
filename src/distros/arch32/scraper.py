@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Arch Linux 32',
+    'url': 'https://archlinux32.org'
+}
 
 def init():
 

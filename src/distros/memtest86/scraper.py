@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Memtest86',
+    'url': 'https://memtest86.com'
+}
 
 def init():
 

@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'VyOS',
+    'url': 'https://vyos.org'
+}
 
 def init():
 

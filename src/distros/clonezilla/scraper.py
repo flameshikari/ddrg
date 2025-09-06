@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Clonezilla',
+    'url': 'https://clonezilla.org'
+}
 
 def init():
 

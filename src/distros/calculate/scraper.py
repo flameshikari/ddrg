@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Calculate Linux',
+    'url': 'https://calculate-linux.org'
+}
 
 def init():
 

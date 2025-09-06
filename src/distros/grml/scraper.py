@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'grml',
+    'url': 'https://grml.org'
+}
 
 def init():
 

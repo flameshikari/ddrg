@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'KDE neon',
+    'url': 'https://neon.kde.org'
+}
 
 def init():
 

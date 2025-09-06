@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'OpenSUSE',
+    'url': 'https://opensuse.org'
+}
 
 def init():
 

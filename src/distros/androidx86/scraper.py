@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Android-x86',
+    'url': 'https://android-x86.org'
+}
 
 def init():
 
@@ -8,7 +12,7 @@ def init():
     exceptions = ['/Testing/']
     url_base = 'https://sourceforge.net/projects/android-x86/files/'
 
-    for iso_url in get.urls(url_base, recurse=True, exclude=exceptions):
+    for iso_url in get.urls(url_base, recursive=True, exclude=exceptions):
 
         iso_size = iso_url['size']
         iso_url = iso_url['url']            

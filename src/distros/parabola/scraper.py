@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Parabola',
+    'url': 'https://parabola.nu'
+}
 
 def init():
 
@@ -7,7 +11,7 @@ def init():
     regexp_version = re.compile(r'-(\d+.\d+(.\d+)?)')
     url_base = 'https://mirror.yandex.ru/mirrors/parabola/iso/'
 
-    for iso_url in get.urls(url_base, recurse=True):
+    for iso_url in get.urls(url_base, recursive=True):
 
         iso_arch = get.arch(iso_url)
         iso_size = get.size(iso_url)

@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'RED OS',
+    'url': 'https://redos.red-soft.ru'
+}
 
 def init():
 

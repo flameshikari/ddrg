@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Linux Lite',
+    'url': 'https://www.linuxliteos.com'
+}
 
 def init():
 

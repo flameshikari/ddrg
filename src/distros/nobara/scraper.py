@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Nobara',
+    'url': 'https://nobaraproject.org'
+}
 
 def init():
 

@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Oracle Linux',
+    'url': 'https://www.oracle.com/linux/'
+}
 
 def init():
 

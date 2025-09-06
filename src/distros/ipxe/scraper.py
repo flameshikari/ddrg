@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'iPXE',
+    'url': 'https://ipxe.org'
+}
 
 def init():
 
@@ -13,4 +17,3 @@ def init():
     values.append((iso_url, iso_arch, iso_size, iso_version))
 
     return values
-

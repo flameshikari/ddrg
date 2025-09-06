@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'ALT Linux',
+    'url': 'https://altlinux.org'
+}
 
 def init():
 

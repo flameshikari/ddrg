@@ -1,5 +1,9 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Gentoo',
+    'url': 'https://gentoo.org'
+}
 
 def init():
 

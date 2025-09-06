@@ -1,13 +1,17 @@
-from main import *  # noqa
+from helpers import *
 
+info = {
+    'name': 'Puppy Linux',
+    'url': 'https://puppylinux-woof-ce.github.io'
+}
 
 def init():
 
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+(-\d+)?)')
-    url_base = f'https://sourceforge.net/projects/pb-gh-releases/files/'
+    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?(-\d+)?|\d+-\d+)\.')
+    url_base = 'https://sourceforge.net/projects/pb-gh-releases/files/'
     
-    for iso_url in get.urls(url_base, recurse=True):
+    for iso_url in get.urls(url_base):
         iso_size = iso_url['size']
         iso_url = iso_url['url']
         iso_arch = get.arch(iso_url)
