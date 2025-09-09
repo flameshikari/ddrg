@@ -1,22 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Wubuntu',
-    'url': 'https://wubuntu.org'
-}
+info = ns(
+    name='Wubuntu',
+    url='https://wubuntu.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'(\d+\.\d+(\.\d+)?)-')
-    url_base = 'https://sourceforge.net/projects/windows-ubuntu/files/'
 
-    for iso_url in get.urls(url_base):
+    regexp = r'(\d+\.\d+(\.\d+)?)-'
+    
+    target = 'https://sourceforge.net/projects/windows-ubuntu/files/'
 
-        iso_size = iso_url['size']
-        iso_url = iso_url['url']
-        iso_arch = get.arch(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

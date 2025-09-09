@@ -1,19 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'iPXE',
-    'url': 'https://ipxe.org'
-}
+info = ns(
+    name='iPXE',
+    url='https://ipxe.org',
+)
 
+@scraper
 def init():
-
     values = []
-    url_version = 'https://api.github.com/repos/ipxe/ipxe/tags'
 
-    iso_url = 'https://boot.ipxe.org/ipxe.iso'
-    iso_arch = get.arch(iso_url)
-    iso_size = get.size(iso_url)
-    iso_version = json.loads(rq.get(url_version).text)[0]['name'][1:]
-    values.append((iso_url, iso_arch, iso_size, iso_version))
+    versions = rq.get('https://api.github.com/repos/ipxe/ipxe/tags').json()
+    
+    target = 'https://boot.ipxe.org/ipxe.iso'
+
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = versions[0]['name'][1:]
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

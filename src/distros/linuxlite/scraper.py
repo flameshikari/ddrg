@@ -1,22 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Linux Lite',
-    'url': 'https://www.linuxliteos.com'
-}
+info = ns(
+    name='Linux Lite',
+    url='https://linuxliteos.com',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+)?-')
-    url_base = 'https://sourceforge.net/projects/linux-lite/files/'
 
-    for iso_url in get.urls(url_base):
+    regexp = r'-(\d+\.\d+(\.\d+)?)-'
 
-        iso_size = iso_url['size']
-        iso_url = iso_url['url']
-        iso_arch = get.arch(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    target = 'https://sourceforge.net/projects/linux-lite/files/'
+    
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

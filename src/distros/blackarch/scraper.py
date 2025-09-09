@@ -1,21 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'BlackArch Linux',
-    'url': 'https://blackarch.org'
-}
+info = ns(
+    name='BlackArch Linux',
+    url='https://blackarch.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+\.\d+)-')
-    url_base = 'https://mirror.yandex.ru/mirrors/blackarch/iso/'
 
-    for iso_url in get.urls(url_base):
+    regexp = r'-(\d+\.\d+\.\d+)-'
 
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    target = 'https://mirror.yandex.ru/mirrors/blackarch/iso/'
+    
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

@@ -1,21 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Proxmox',
-    'url': 'https://proxmox.com'
-}
+info = ns(
+    name='Proxmox',
+    url='https://proxmox.com',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'_(\d+(\.\d+(-\d+)?)?)')
-    url_base = 'https://enterprise.proxmox.com/iso/'
 
-    for iso_url in get.urls(url_base):
+    regexp = r'_(\d+(\.\d+(-\d+)?)?)'
 
-        iso_arch = 'amd64'
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    target = 'https://enterprise.proxmox.com/iso/'
+    
+    for url, size in get.urls(target):
+
+        arch = 'amd64'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

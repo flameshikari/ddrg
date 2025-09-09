@@ -1,21 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'EndeavourOS',
-    'url': 'https://endeavouros.com'
-}
+info = ns(
+    name='EndeavourOS',
+    url='https://endeavouros.com',
+)
 
-
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'[-|_](\d+\.\d+\.\d+|\d+_\d+|\d+-\d+)')
-    url_base = 'https://ftp.belnet.be/mirror/endeavouros/iso/'
 
-    for iso_url in get.urls(url_base):
-        iso_arch = "x86_64"
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1).replace('-', '.').replace('_', '.')
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'[-|_](\d+\.\d+\.\d+|\d+_\d+|\d+-\d+)'
+
+    target = 'https://ftp.belnet.be/mirror/endeavouros/iso/'
+    
+    for url, size in get.urls(target):
+
+        arch = 'x86_64'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

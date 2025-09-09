@@ -1,20 +1,30 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Endless OS',
-    'url': 'https://endlessos.com'
-}
+info = ns(
+    name='Endless OS',
+    url='https://endlessos.com',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'/(\d+\.\d+\.\d+(\.\d+)?)/')
-    url_base = 'https://images-cdn.endlessm.com/releases-eos-3.json'
 
-    for iso_url in get.urls(url_base, pattern=r'\.base\.'):
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'/(\d+\.\d+\.\d+(\.\d+)?)/'
+
+    target = 'https://images-cdn.endlessm.com/releases-eos-3.json'
+
+    pattern = r'\.base\.'
+    
+    for url, size in get.urls(target, pattern=pattern):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

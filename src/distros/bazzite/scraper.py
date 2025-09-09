@@ -1,36 +1,41 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Bazzite',
-    'url': 'https://bazzite.gg'
-}
+info = ns(
+    name='Bazzite',
+    url='https://bazzite.gg',
+)
 
-
-def build(name):
-    base = f'https://raw.githubusercontent.com/ublue-os/bazzite/refs/heads/main/.github/workflows/{name}.yml'
-    return yaml.safe_load(rq.get(base).text)['jobs']['build-iso']['strategy']['matrix']['image_name']
-
-
-def init():
-
-    values = []
+def get_urls():
     base_url = 'https://download.bazzite.gg'
+    target_url = 'https://github.com/ublue-os/bazzite/raw/main/.github/workflows/{0}.yml'
+    filenames = ['build_iso', 'build_iso_titanoboa']
+    urls = []
+    for filename in filenames:
+        url = target_url.format(filename)
+        parsed = yaml.safe_load(rq.get(url).text)
+        image_names = parsed['jobs']['build-iso']['strategy']['matrix']['image_name']
+        for image_name in image_names:
+            url = f'{base_url}/{image_name}'
+            if 'titanoboa' in filename: url += '-stable-live.iso'
+            else: url += '-stable-amd64.iso'
+            urls.append(url)
+    return urls
 
-    iso_version = rq.get('https://api.github.com/repos/ublue-os/bazzite/releases').json()[0]['tag_name']
+@scraper
+def init():
+    values = []
 
-    iso_arch = 'x86_64'
+    version = rq.get('https://api.github.com/repos/ublue-os/bazzite/releases').json()[0]['tag_name']
+    
+    arch = 'x86_64'
 
-    images = build('build_iso')
-    images_live = build('build_iso_titanoboa')
+    for url, size in get.urls(get_urls()):
 
-    for image in images:
-        iso_url = get.urls(f'{base_url}/{image}-stable-amd64.iso')
-        iso_size = get.size(iso_url)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
-
-    for image in images_live:
-        iso_url = get.urls(f'{base_url}/{image}-stable-live.iso')
-        iso_size = get.size(iso_url)
-        values.append((iso_url, iso_arch, iso_size, 'Live'))
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

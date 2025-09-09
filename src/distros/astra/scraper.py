@@ -1,24 +1,41 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Astra Linux',
-    'url': 'https://astralinux.ru'
-}
+info = ns(
+    name='Astra Linux',
+    url='https://astralinux.ru',
+)
 
+@scraper
 def init():
-
     values = []
-    exceptions = ['repository', '-stable', 'smolensk', 'leningrad', 'current']
-    regexp_url = re.compile(r'.*\d+\.\d+.*')
-    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+(\.\d+)?)?)-')
-    url_base = 'https://mirror.yandex.ru/astra/stable/'
 
-    for iso_url in get.urls(url_base, exclude=exceptions,
-                                      pattern=regexp_url,
-                                      recursive=True):
-        iso_arch = 'x86_64'
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'-(\d+\.\d+(\.\d+(\.\d+)?)?)-'
+
+    target = 'https://mirror.yandex.ru/astra/stable/'
+    
+    exclude = [
+        'repository',
+        '-stable',
+        'smolensk',
+        'leningrad',
+        'current',
+    ]
+
+    pattern = r'.*\d+\.\d+.*'
+
+    for url, size in get.urls(target,
+                              exclude=exclude,
+                              pattern=pattern,
+                              recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

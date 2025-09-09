@@ -1,20 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Deepin',
-    'url': 'https://deepin.org'
-}
+info = ns(
+    name='Deepin',
+    url='https://deepin.org',
+)
 
+@scraper
 def init():
-
     values = []
-    url_base = "https://cdimage.deepin.com/releases/"
-    regexp_version = re.compile(r'-(\d+(\.\d+(\.\d+)?)?|-\w+)-')
 
-    for iso_url in get.urls(url_base, recursive=True):
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'-(\d+(\.\d+(\.\d+)?)?|-\w+)-'
+
+    target = 'https://cdimage.deepin.com/releases/'
+    
+    for url, size in get.urls(target, recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

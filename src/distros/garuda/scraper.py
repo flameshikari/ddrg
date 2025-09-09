@@ -1,23 +1,30 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Garuda',
-    'url': 'https://garudalinux.org'
-}
+info = ns(
+    name='Garuda',
+    url='https://garudalinux.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+).iso')
-    url_base = 'https://iso.builds.garudalinux.org/iso/latest/garuda/'
 
-    for iso_url in get.urls(url_base, recursive=True):
+    regexp = r'-(\d+).iso'
 
-        iso_url = rq.get(iso_url, allow_redirects=False).headers['Location']
-        iso_arch = "amd64"
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
+    target = 'https://iso.builds.garudalinux.org/iso/'
+    
+    exclude = ['unmaintained', 'latest']
 
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target, exclude=exclude, recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

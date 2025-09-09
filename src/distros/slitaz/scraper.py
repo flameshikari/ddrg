@@ -1,26 +1,33 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'SliTaz',
-    'url': 'http://slitaz.org'
-}
+info = ns(
+    name='SliTaz',
+    url='http://slitaz.org',
+)
 
+@scraper
 def init():
-
     values = []
 
-    url_version = "https://www.slitaz.org/en/"
-    regexp_version = re.compile(r'SliTaz (\d+(.\d+)?) Rolling')
-    iso_version = re.search(regexp_version,
-                            str(rq.get(url_version).text)).group(1)
-    url_base = 'https://mirror.slitaz.org/iso/latest/'
+    regexp = r'\/iso\/(\d+.\d+|\w+)\/'
 
-    for iso_url in get.urls(url_base):
-        
-        iso_size = get.size(iso_url)
-        if any(x in iso_url for x in ["rolling.iso", "loram.iso"]): iso_arch = "i386"
-        else: iso_arch = "x86_64"
+    target = 'https://mirror.slitaz.org/iso/'
+    
+    exclude = ['packages-', '-stable', '-rc', '/stable/', '/latest/']
 
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target, 
+                              exclude=exclude,
+                              recursive=True,
+                              follow=False):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp).capitalize()
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

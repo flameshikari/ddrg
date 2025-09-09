@@ -1,25 +1,31 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Manjaro',
-    'url': 'https://manjaro.org'
-}
+info = ns(
+    name='Manjaro',
+    url='https://manjaro.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+(.\d+)?)')
-    url_bases = [
+
+    regexp = r'-(\d+\.\d+(.\d+)?)'
+
+    target = [
         'https://manjaro.org/products/download/x86',
         'https://manjaro-sway.download/'
     ]
+    
+    for url, size in get.urls(target):
 
-    for url_base in url_bases:
-        for iso_url in get.urls(url_base):
+        arch = 'x86_64'
+        version = get.version(url, regexp)
 
-            iso_arch = 'x86_64'
-            iso_size = get.size(iso_url)
-            iso_version = re.search(regexp_version, iso_url).group(1)
-            values.append((iso_url, iso_arch, iso_size, iso_version))
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

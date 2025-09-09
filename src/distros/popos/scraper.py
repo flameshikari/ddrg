@@ -1,28 +1,35 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Pop!_OS',
-    'url': 'https://pop.system76.com'
-}
+info = ns(
+    name='Pop!_OS',
+    url='https://pop.system76.com',
+)
 
+def get_urls():
+    versions = ['24.04', '22.04']
+    vendors = ['intel', 'nvidia']
+    base = 'https://api.pop-os.org/builds'
+    matrix = [f'{base}/{iso}/{arch}' for iso in versions for arch in vendors]
+    return matrix
+
+@scraper
 def init():
-
     values = []
-    url_base = 'https://api.pop-os.org/builds/{}/{}'
-    iso_versions = ['24.04', '22.04']
-    arch_versions = ['intel', 'nvidia']
-    regexp_version = re.compile(r'_(\d+.\d+)_')
 
-    for iso_version in iso_versions:
-        for arch_version in arch_versions:
-            try:
-                iso_url = get.urls(url_base.format(iso_version, arch_version), json=True)[0]
-                iso_arch = get.arch(iso_url)
-                iso_size = get.size(iso_url)
-                iso_version = re.search(regexp_version, iso_url).group(1)
+    regexp = r'_(\d+.\d+)_'
 
-                values.append((iso_url, iso_arch, iso_size, iso_version))
-            except:
-                continue
+    target = get_urls()
     
+    for url, size in get.urls(target, json=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
+
     return values

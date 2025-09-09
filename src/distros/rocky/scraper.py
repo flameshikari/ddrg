@@ -1,27 +1,53 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Rocky Linux',
-    'url': 'https://rockylinux.org'
-}
+info = ns(
+    name='Rocky Linux',
+    url='https://rockylinux.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'rocky/(\d+(\.\d+)?)/')
-    exceptions = ['Rocky-Workstation-8-x86_64-latest.iso']
-    url_bases = [
-        'https://rockylinux.org/download/',
-        'https://rockylinux.org/alternative-images/'
+
+    regexp = r'-(\d+(\.\d+)?)-'
+    
+    target = 'https://download.rockylinux.org/pub/rocky/'
+    
+    exclude = [
+        'AppStream/',
+        'BaseOS/',
+        'CRB/',
+        'HighAvailability/',
+        'NFV/',
+        'RT/',
+        'SAP/',
+        'SAPHANA/',
+        'PowerTools/',
+        'ResilientStorage/',
+        'Devel/',
+        'devel/',
+        'extras/',
+        'images/',
+        'metadata/',
+        'nfv/',
+        'plus/',
+        '-latest',
     ]
 
-    for url_base in url_bases:
-        for iso_url in get.urls(url_base, exclude=exceptions):
+    for url, size in get.urls(target, recursive=True, exclude=exclude):
 
-            iso_arch = get.arch(iso_url)
-            iso_size = get.size(iso_url)
-            iso_version = re.search(regexp_version, iso_url).group(1)
+        arch = get.arch(url)
+        
+        try:
+            version = get.version(url, regexp)
+        except:
+            continue
 
-            values.append((iso_url, iso_arch, iso_size, iso_version))
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

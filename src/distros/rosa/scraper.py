@@ -1,24 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'ROSA',
-    'url': 'https://rosalinux.ru'
-}
+info = ns(
+    name='ROSA',
+    url='https://rosalinux.ru',
+)
 
+@scraper
 def init():
-
     values = []
 
-    regexp_version = re.compile(r'^.*\/iso\/\w+\.\w+\.R?(\d+(\.\d+)?)')
-    url_base = 'https://www.rosalinux.ru/rosa-linux-download-links/'
+    regexp = r'\.(\d+(\.\d+(\.\d+)?)?)?\.\w+'
+    
+    target = 'https://rosa.ru/rosa-linux-download-links/'
 
-    for iso_url in get.urls(url_base):
+    for url, size in get.urls(target):
 
-        iso_url = re.sub(r'rosa\w+\.ru', 'yandex.ru', iso_url)
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values
