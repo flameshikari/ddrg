@@ -13,7 +13,6 @@ def init():
 
     target = [
         'https://mirror.yandex.ru/fedora/linux/releases/',
-        'https://mirror.yandex.ru/fedora/linux/development/',
     ]
 
     exclude = [

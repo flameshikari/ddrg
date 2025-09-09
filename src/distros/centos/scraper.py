@@ -9,7 +9,7 @@ info = ns(
 def init():
     values = []
 
-    regexp = r'/?(\d+\.\d+(\.\d+)?|Stream-\d+(-\d+)?)/?'
+    regexp = r'/(\d+(\.\d+(\.\d+)?)?)(-\w+)?/'
 
     target = [
         'https://mirror.yandex.ru/centos/centos/',
@@ -65,6 +65,8 @@ def init():
 
         arch = get.arch(url)
         version = get.version(url, regexp).replace('-', ' ')
+
+        version = f'Stream {version}' if 'Stream' in url else version
 
         values.append(ns(
             arch=arch,
