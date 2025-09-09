@@ -30,6 +30,9 @@ if __name__ == '__main__':
 
     distros = load_distros(list_distros())
     ids = list(distros.keys())
+    total = len(ids)
+
+    log.custom.sys(f'loaded {color(total, 'yellow')} distro' + ('s' if total > 1 else ''))
 
     content = []
 
@@ -43,11 +46,14 @@ if __name__ == '__main__':
             id, module = distro
             info = ns(id=id, **vars(module.info))
             try:
+                log.custom.distro(id, ids, 'scraping', 'debug')
                 content.append(build.entry(distro))
                 copy(join(config.paths.input, id, 'logo.png'),
                      join(config.paths.output, 'logos', f'{id}.png'))
                 included.append(info)
-            except:
+                log.custom.distro(id, ids, 'scraped')
+            except Exception as error:
+                log.exception(error)
                 excluded.append(info)
 
         status = ns(

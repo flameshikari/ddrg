@@ -25,16 +25,27 @@ def init():
     log.basicConfig(
         level=log.DEBUG if config.args.verbose else log.INFO,
         datefmt='%H:%M:%S',
-        format=f'{color("%(asctime)s", 'dark_grey')} [%(levelname)s] %(message)s',
+        format=f'{color("%(asctime)s", 'dark_grey')} %(levelname)s {color('|', 'dark_grey')} %(message)s',
     )
 
-    def log_url(url, size, status = True):
-        if config.args.verbose:
-            status = color('+', 'green') if status else color('-', 'red') 
-            prefix = color('0'*(11 - len(str(size))), 'dark_grey') + color(str(size), 'blue')
-            log.debug(f"{status} {prefix} {color(url, 'dark_grey')}")
 
-    log.url = log_url
+    class custom:
+        def url(url, size, status = True):
+            if config.args.verbose:
+                status = color('  +', 'green') if status else color('-', 'red') 
+                prefix = color('0'*(11 - len(str(size))), 'dark_grey') + color(str(size), 'blue')
+                log.debug(f"{status} {prefix} {color(url, 'dark_grey')}")
+
+        def sys(message):
+            log.info(f'{message}')
+
+        def distro(id, ids, message, level = 'info'):
+            index = ids.index(id) + 1
+            prefix = f"{color(index, 'yellow')} {color('=', 'dark_grey')} {color(id, 'yellow')} {color('>', 'dark_grey')}"
+            getattr(log, level)(f'{prefix} {message}')
+
+
+    log.custom = custom
 
     return log
 

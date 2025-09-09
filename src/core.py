@@ -184,7 +184,7 @@ class parser:
         url = target
         size = get.size(url)
         if size:
-            log.url(url, size)
+            log.custom.url(url, size)
             return [(url, size)]
     
     def json(target, args):
@@ -207,7 +207,7 @@ class parser:
                         size = get.size(url)
                         if size:
                             array.append((url, size))
-                            log.url(url, size)
+                            log.custom.url(url, size)
 
         find(data)
         return array
@@ -234,7 +234,7 @@ class parser:
             url = asset['browser_download_url']
             if any(name.endswith(ext) for ext in exts):
                 values.append((url, size))
-                log.url(url, size)
+                log.custom.url(url, size)
         
         return values
 
@@ -257,14 +257,14 @@ class parser:
                     size = int(entry['media:content']['@filesize'])
                     if not any(x in url.replace('files/', '') for x in args['exclude']):
                         values.append((url, size))
-                        log.url(url, size)
+                        log.custom.url(url, size)
             elif type(xml) is dict:
                 entry = xml['media:content']
                 url = entry['@url'][:-9]
                 size = int(entry['@filesize'])
                 if not any(x in url for x in args['exclude']):
                     values.append((url, size))
-                    log.url(url, size)
+                    log.custom.url(url, size)
 
         if args['recursive']:
             response = rq.get(target)
@@ -308,7 +308,7 @@ class parser:
             if name.endswith('.iso') or name.endswith('.img'):
                 url = join(target.replace('/list/', '/'), name)
                 values.append((url, size))
-                log.url(url, size)
+                log.custom.url(url, size)
 
         return values
     
@@ -390,7 +390,7 @@ class parser:
                         size = get.size(url)
                         if size:
                             array.append((url, size))
-                            log.url(url, size)
+                            log.custom.url(url, size)
 
 
         scrape(target, **args)
@@ -422,7 +422,7 @@ class get:
                 status = response.status_code
                 headers = response.headers
                 if status != 200:
-                    log.url(target, status, False)
+                    log.custom.url(target, status, False)
                     return None
                 size = int(headers['Content-Length'])
             return size
