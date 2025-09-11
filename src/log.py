@@ -43,10 +43,6 @@ def init():
             prefix = f"{color(index, 'yellow')} {color('>', 'dark_grey')} {color(id, 'cyan')} {color('>', 'dark_grey')}"
             return f'{prefix} {message}'
 
-        def sep():
-            print()   
-
-
     class custom:
         def url(url, size, status=True):
             if config.args.verbose:
@@ -61,9 +57,6 @@ def init():
             index = ids.index(id) + 1
             prefix = f"{color(index, 'yellow')} {color('>', 'dark_grey')} {color(id, 'cyan')} {color('>', 'dark_grey')}"
             getattr(log, level)(f'{prefix} {message}')
-
-        def sep():
-            print()
 
     log.custom = custom
     log.fmt = fmt

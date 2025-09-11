@@ -11,12 +11,9 @@ def init():
 
     regexp = r'-(\d+)-x86_64'
 
-    target = [
-        'https://wiki.calculate-linux.org/desktop',
-        'https://wiki.calculate-linux.org/server'
-    ]
+    target = 'https://mirror.calculate-linux.org/release/'
     
-    for url, size in get.urls(target):
+    for url, size in get.urls(target, recursive=True):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

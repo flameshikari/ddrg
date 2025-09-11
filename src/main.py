@@ -35,7 +35,6 @@ if __name__ == '__main__':
     total = len(ids)
 
     log.custom.sys(f'initialized {color(total, 'yellow')} scraper' + ('s' if total > 1 else ''))
-    log.custom.sep()
 
     content = []
 
@@ -60,24 +59,24 @@ if __name__ == '__main__':
             id, module = distro
             info = ns(id=id, **vars(module.info))
 
-            if update and config.args.fallback:
-                if not id in update:
-                    releases = find_by_id(fallback_json, id)
-                    values = build.entry(distro, releases)
-                    included.append(info)
-                    log.info(log.fmt.distro(id, ids, 'used fallback values'))
-                    continue
-
             try:
-                log.custom.distro(id, ids, 'scraping')
                 try:
-                    values = build.entry(distro)
+                    if not id in update and config.args.fallback:
+                        releases = find_by_id(fallback_json, id)
+                        values = build.entry(distro, releases)
+                        log.custom.distro(id, ids, 'used cached values')
+                    else:
+                        log.custom.distro(id, ids, 'scraping')
+                        values = build.entry(distro)
+                    
                     if not values['releases']:
                         raise Exception('no urls found')
-                    
+
                     included.append(info)
                     content.append(values)
-                    log.custom.distro(id, ids, 'scraped')
+                    
+                    if not update: 
+                        log.custom.distro(id, ids, 'scraped')
                 
                 except Exception as error:
                     if config.args.fallback:
@@ -86,14 +85,13 @@ if __name__ == '__main__':
                             values = build.entry(distro, releases)
                             included.append(info)
                             outdated.append(info)
-                            log.warning(log.fmt.distro(id, ids, 'fallback values used'))
+                            content.append(values)
+                            log.warning(log.fmt.distro(id, ids, 'cached values used'))
                         except:
                             log.error(log.fmt.distro(id, ids, error))
-                            raise Exception(log.fmt.distro(id, ids, 'fallback values not found'))
+                            raise Exception(log.fmt.distro(id, ids, 'cached values not found'))
                     else:
                         raise Exception(log.fmt.distro(id, ids, error))
-                
-                content.append(values)
                 
             except Exception as error:
                 log.error(error)
@@ -101,7 +99,6 @@ if __name__ == '__main__':
             finally:
                 copy(join(config.paths.input, id, 'logo.png'),
                      join(config.paths.output, 'logos', f'{id}.png'))
-                log.custom.sep()
 
         if not included:
             log.custom.sys('all scrapers failed', 'critical')
