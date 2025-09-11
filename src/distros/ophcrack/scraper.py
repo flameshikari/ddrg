@@ -1,22 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Ophcrack',
-    'url': 'https://ophcrack.sourceforge.io'
-}
+info = ns(
+    name='Ophcrack',
+    url='https://ophcrack.sourceforge.io',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)\.iso')
-    url_base = 'https://sourceforge.net/projects/ophcrack/files/ophcrack-livecd/3.6.0/'
 
-    for iso_url in get.urls(url_base):
+    regexp = r'\/(\d+\.\d+(\.\d+)?)\w?\/'
 
-        iso_size = iso_url['size']
-        iso_url = iso_url['url']
-        iso_arch = 'x86_64'
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    target = 'https://sourceforge.net/projects/ophcrack/files/ophcrack-livecd/'
+    
+    for url, size in get.urls(target):
+
+        arch = 'x86_64'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

@@ -1,22 +1,37 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Ubuntu',
-    'url': 'https://ubuntu.com'
-}
+info = ns(
+    name='Ubuntu',
+    url='https://ubuntu.com',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_url = re.compile(r'.*\d+\.\d+\/.*')
-    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)')
-    url_base = 'https://mirror.yandex.ru/ubuntu-releases/'
 
-    for iso_url in get.urls(url_base, pattern=regexp_url,
-                                      recursive=True):
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'-(\d+\.\d+(\.\d+)?)-'
+    
+    target = 'https://mirror.yandex.ru/ubuntu-releases/releases/'
+
+    pattern = r'\/releases\/\w+\/'
+
+    exclude = [
+        'netboot/', 'cdicons/', 'include/'
+    ]
+
+    for url, size in get.urls(target,
+                              pattern=pattern,
+                              recursive=True,
+                              exclude=exclude):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

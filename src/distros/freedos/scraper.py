@@ -1,27 +1,39 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'FreeDOS',
-    'url': 'https://freedos.org'
-}
+info = ns(
+    name='FreeDOS',
+    url='https://freedos.org',
+)
 
+@scraper
 def init():
-
     values = []
-    exceptions = [
-        'tools', 'unofficial', 'pre-', 'previews',
-        'repos', 'fdbasews', 'fbasecd'
-        ]
-    regexp_url = re.compile(r'.*\d+\.\d+.*')
-    regexp_version = re.compile(r'.*\/(\d+\.\d+)\/.*')
-    url_base = "https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/"
 
-    for iso_url in get.urls(url_base, exclude=exceptions,
-                                      pattern=regexp_url,
-                                      recursive=True):
-        iso_arch = "i386"
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'.*\/(\d+\.\d+)\/.*'
+
+    target = 'https://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/'
+    
+    exclude = [
+        'pre-',
+        'test',
+        'tools',
+        'unofficial',
+        'previews',
+        'repos',
+        '1.0',
+        'src',
+    ]
+
+    for url, size in get.urls(target, recursive=True, exclude=exclude):
+
+        arch = 'i386'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

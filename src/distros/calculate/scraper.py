@@ -1,26 +1,31 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Calculate Linux',
-    'url': 'https://calculate-linux.org'
-}
+info = ns(
+    name='Calculate Linux',
+    url='https://calculate-linux.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+)-x86_64')
-    url_bases = [
+
+    regexp = r'-(\d+)-x86_64'
+
+    target = [
         'https://wiki.calculate-linux.org/desktop',
         'https://wiki.calculate-linux.org/server'
     ]
+    
+    for url, size in get.urls(target):
 
-    for url_base in url_bases:
-        for iso_url in get.urls(url_base):
-            
-            iso_arch = get.arch(iso_url)
-            iso_size = get.size(iso_url)
-            iso_version = re.search(regexp_version, iso_url).group(1)
+        arch = get.arch(url)
+        version = get.version(url, regexp)
 
-            values.append((iso_url, iso_arch, iso_size, iso_version))
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

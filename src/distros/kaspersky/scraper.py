@@ -1,26 +1,31 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Kaspersky Rescue Disk',
-    'url': 'https://kaspersky.com/downloads/free-rescue-disk'
-}
+info = ns(
+    name='Kaspersky Rescue Disk',
+    url='https://kaspersky.com/downloads/free-rescue-disk',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'/(\d+)/krd.iso')
 
-    iso_urls = [
+    regexp = r'/(\d+)/krd.iso'
+
+    target = [
         'https://rescuedisk.s.kaspersky-labs.com/updatable/2018/krd.iso',
         'https://rescuedisk.s.kaspersky-labs.com/updatable/2024/krd.iso'
     ]
+    
+    for url, size in get.urls(target):
 
-    iso_arch = 'x86_64'
+        arch = 'x86_64'
+        version = get.version(url, regexp)
 
-    for iso_url in iso_urls:
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

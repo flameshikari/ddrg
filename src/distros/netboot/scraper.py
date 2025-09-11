@@ -1,22 +1,30 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Netboot',
-    'url': 'https://netboot.xyz'
-}
+info = ns(
+    name='Netboot',
+    url='https://netboot.xyz',
+)
 
+@scraper
 def init():
-
     values = []
 
-    regexp_version =  re.compile(r'/(\d+\.\d+\.\d+)/')
-    base_url = 'https://github.com/netbootxyz/netboot.xyz/releases/latest'
+    regexp = r'/(\d+\.\d+\.\d+)/'
+    
+    target = 'https://github.com/netbootxyz/netboot.xyz/releases/latest'
 
-    for iso_url in get.urls(base_url):
+    archs = ['multiarch', 'arm64']
 
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target):
+
+        arch = next((arch for arch in archs if arch in url), 'x86_64')
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

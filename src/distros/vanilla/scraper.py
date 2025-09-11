@@ -1,21 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Vanilla OS',
-    'url': 'https://vanillaos.org'
-}
+info = ns(
+    name='Vanilla OS',
+    url='https://vanillaos.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'\.(\d+)\.')
-    url_base = 'https://github.com/Vanilla-OS/live-iso/releases/latest'
 
-    for iso_url in get.urls(url_base):
-        iso_arch = 'amd64'
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = re.compile(r'\.(\d+)\.')
+    
+    target = 'https://github.com/Vanilla-OS/live-iso/releases/latest'
+
+    for url, size in get.urls(target):
+
+        arch = 'amd64'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

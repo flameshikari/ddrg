@@ -1,25 +1,30 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'VyOS',
-    'url': 'https://vyos.org'
-}
+info = ns(
+    name='VyOS',
+    url='https://vyos.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_url = re.compile(r'.*\.iso')
-    regexp_version = re.compile(r'download/(.*)/vyos')
 
-    url_bases = [
-        'https://vyos.net/get/nightly-builds/',
-    ]
+    regexp = r'download/(.*)/vyos'
+    
+    target = 'https://vyos.net/get/nightly-builds/'
 
-    for url_base in url_bases:
-        for iso_url in get.urls(url_base, pattern=regexp_url):
-            iso_size = get.size(iso_url)
-            iso_arch = get.arch(iso_url)
-            iso_version = re.search(regexp_version, iso_url).group(1)
-            values.append((iso_url, iso_arch, iso_size, iso_version))
+    pattern = r'.*\.iso'
+
+    for url, size in get.urls(target, pattern=pattern):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

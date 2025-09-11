@@ -1,23 +1,30 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Slax',
-    'url': 'https://slax.org'
-}
+info = ns(
+    name='Slax',
+    url='https://slax.org',
+)
 
+@scraper
 def init():
-
     values = []
 
-    url_base = 'https://ftp.cvut.cz/mirrors/slax/'
-    excludes = ['Slax-old', 'Slax-Debian', 'Slax-Slackware', 'source']
-    regexp_version = re.compile(r'-(\d+(\.\d+(\.\d+)?)?)')
+    regexp = r'-(\d+(\.\d+(\.\d+)?)?)'
 
-    for iso_url in get.urls(url_base, exclude=excludes, pattern='Slax-', recursive=True):
+    target = 'https://ftp.cvut.cz/mirrors/slax/'
+    
+    exclude = ['old/', 'Debian', 'Slackware', 'source']
 
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target, exclude=exclude, recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

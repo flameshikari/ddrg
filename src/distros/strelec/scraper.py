@@ -1,19 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Strelec WinPE',
-    'url': 'https://sergeistrelec.name'
-}
+info = ns(
+    name='Strelec WinPE',
+    url='https://sergeistrelec.name',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'_(\d+\.\d+\.\d+)_')
 
-    iso_url = get.urls('https://disk.yandex.ru/d/YHflGF3zn3vf3w/strelec-winpe-11-10-8_2025.04.24_x86_64.img')
-    iso_version = re.search(regexp_version, iso_url).group(1)
-    iso_arch = get.arch(iso_url)
-    iso_size = get.size(iso_url)
-    values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = re.compile(r'_(\d+\.\d+\.\d+)_')
+    
+    target = 'yandex:strelec'
+
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

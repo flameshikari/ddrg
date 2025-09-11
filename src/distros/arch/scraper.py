@@ -1,23 +1,30 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Arch Linux',
-    'url': 'https://archlinux.org'
-}
+info = ns(
+    name='Arch Linux',
+    url='https://archlinux.org',
+)
 
+@scraper
 def init():
-
     values = []
-    exceptions = ['arch/', 'latest/', 'archlinux-x86_64']
-    regexp_version = re.compile(r'-(\d+.\d+(.\d+)?)')
-    url_base = 'https://mirror.yandex.ru/archlinux/iso/'
 
-    for iso_url in get.urls(url_base, exclude=exceptions,
-                                      recursive=True):
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'-(\d+.\d+(.\d+)?)'
+
+    target = 'https://mirror.yandex.ru/archlinux/iso/'
+    
+    exclude = ['archlinux-x86_64', 'arch/', 'latest/']
+
+    for url, size in get.urls(target, exclude=exclude, recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

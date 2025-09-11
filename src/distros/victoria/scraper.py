@@ -1,18 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Victoria',
-    'url': 'https://hdd.by/'
-}
+info = ns(
+    name='Victoria',
+    url='https://hdd.by',
+)
 
+@scraper
 def init():
-
     values = []
 
-    iso_url = get.urls('https://disk.yandex.ru/d/YHflGF3zn3vf3w/victoria_3.52c.iso')
-    iso_version = '3.52c'
-    iso_arch = 'bios'
-    iso_size = get.size(iso_url)
-    values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = re.compile(r'_(\d+(\.\d+(\w+)?)?)_')
+    
+    target = 'yandex:victoria'
+
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

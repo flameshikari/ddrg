@@ -1,22 +1,30 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Alpine Linux',
-    'url': 'https://alpinelinux.org'
-}
+info = ns(
+    name='Alpine Linux',
+    url='https://alpinelinux.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+(\.\d+)?)')
-    excludes = ['netboot', '_rc']
-    url_base = 'https://mirror.yandex.ru/mirrors/alpine/latest-stable/releases/'
 
-    for iso_url in get.urls(url_base, recursive=True, exclude=excludes):
+    regexp = r'-(\d+\.\d+(\.\d+)?)'
+    
+    target = 'https://mirror.yandex.ru/mirrors/alpine/latest-stable/releases/'
 
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    exclude = ['netboot', '_rc']
+
+    for url, size in get.urls(target, exclude=exclude, recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

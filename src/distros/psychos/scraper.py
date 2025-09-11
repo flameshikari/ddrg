@@ -1,21 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'PsychOS',
-    'url': 'https://psychoslinux.gitlab.io'
-}
+info = ns(
+    name='PsychOS',
+    url='https://psychoslinux.gitlab.io',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'(\d+.\d+.\d+).iso')
-    url_base = 'https://psychoslinux.gitlab.io/downloads.html'
 
-    for iso_url in get.urls(url_base):
+    regexp = r'(\d+.\d+.\d+).iso'
 
-        iso_arch = 'i486' if '486' in iso_url else 'i686'
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    target = 'https://psychoslinux.gitlab.io/downloads.html'
+    
+    for url, size in get.urls(target):
+
+        arch = 'i486' if '486' in url else 'i686'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

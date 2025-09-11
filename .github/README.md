@@ -40,34 +40,42 @@ Should be 128x128px with transparent background. Arch Linux **[logo.png](../src/
 
 ### `scraper.py`
 
-A scraper can be written as you like, as long as it returns the desired values: the array of tuples (every tuple contains **iso_url**, **iso_arch**, **iso_size**, **iso_version** in order) and contains `info` variable with the name and the homepage url of the distro (see the example below).
+A scraper can be written as you like, as long as it returns the desired values: the array of namespaces (namespaces should contain **arch**, **size**, **url**, **version**) and contains `info` variable (a namespace too) with the name and the homepage url of the distro (see the example below).
 
-`from helpers import * ` at the top of a scraper includes helpful functions and classes from `helpers.py`.
+`from shared import *` at the top of the scraper includes helpful functions and classes from `helpers.py`.
 
 For example, **[Arch Linux](../src/distros/arch/scraper.py)** scraper looks like this:
 
+
 ```python
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Arch Linux',
-    'url': 'https://archlinux.org'
-}
+info = ns(
+    name='Arch Linux',
+    url='https://archlinux.org',
+)
 
+@scraper
 def init():
-
     values = []
-    exceptions = ['arch/', 'latest/', 'archlinux-x86_64']
-    regexp_version = re.compile(r'-(\d+.\d+(.\d+)?)')
-    url_base = 'https://mirror.yandex.ru/archlinux/iso/'
 
-    for iso_url in get.urls(url_base, exclude=exceptions,
-                                      recursive=True):
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'-(\d+.\d+(.\d+)?)'
+
+    target = 'https://mirror.yandex.ru/archlinux/iso/'
+    
+    exclude = ['archlinux-x86_64', 'arch/', 'latest/']
+
+    for url, size in get.urls(target, exclude=exclude, recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values
 
@@ -77,36 +85,24 @@ This scraper returns values similar to the following:
 
 ```python
 [
-  (
-    'https://mirror.yandex.ru/archlinux/iso/2021.05.01/archlinux-2021.05.01-x86_64.iso',
-    'x86_64',
-    792014848,
-    '2021.05.01'
-  ),
-  (
-    'https://mirror.yandex.ru/archlinux/iso/2021.06.01/archlinux-2021.06.01-x86_64.iso',
-    'x86_64',
-    811937792,
-    '2021.06.01'
-  ),
-  (
-    'https://mirror.yandex.ru/archlinux/iso/2021.07.01/archlinux-2021.07.01-x86_64.iso',
-    'x86_64',
-    817180672,
-    '2021.07.01'
-  ),
-  (
-    'https://mirror.yandex.ru/archlinux/iso/archboot/2020.07/archlinux-2020.07-1-archboot-network.iso',
-    'x86_64',
-    516947968,
-    '2020.07'
-  ),
-  (
-    'https://mirror.yandex.ru/archlinux/iso/archboot/2020.07/archlinux-2020.07-1-archboot.iso',
-    'x86_64',
-    1280491520,
-    '2020.07'
-  )
+    namespace(
+        arch='x86_64', 
+        size=1357545472,
+        url='https://mirror.yandex.ru/archlinux/iso/2025.07.01/archlinux-2025.07.01-x86_64.iso',
+        version='2025.07.01'
+    ),
+    namespace(
+        arch='x86_64',
+        size=1378795520,
+        url='https://mirror.yandex.ru/archlinux/iso/2025.08.01/archlinux-2025.08.01-x86_64.iso',
+        version='2025.08.01'
+    ),
+    namespace(
+        arch='x86_64',
+        size=1506082816,
+        url='https://mirror.yandex.ru/archlinux/iso/2025.09.01/archlinux-2025.09.01-x86_64.iso',
+        version='2025.09.01'
+    )
 ]
 ```
 

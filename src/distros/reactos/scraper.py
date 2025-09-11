@@ -1,24 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'ReactOS',
-    'url': 'https://reactos.org'
-}
+info = ns(
+    name='ReactOS',
+    url='https://reactos.org',
+)
 
+@scraper
 def init():
-
     values = []
-    iso_version = '0.4.15'
-    iso_arch = 'x86_64'
-    iso_urls = [
-        f'https://disk.yandex.ru/d/YHflGF3zn3vf3w/reactos_{iso_version}.iso',
-        f'https://disk.yandex.ru/d/YHflGF3zn3vf3w/reactos_live_{iso_version}.iso'
-    ]
 
-    for iso_url in iso_urls:
+    regexp = re.compile(r'_(\d+\.\d+\.\d+)_')
+    
+    target = 'yandex:reactos'
 
-        iso_url = get.urls(iso_url)
-        iso_size = get.size(iso_url)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

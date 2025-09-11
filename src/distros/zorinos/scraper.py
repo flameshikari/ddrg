@@ -1,21 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Zorin OS',
-    'url': 'https://zorinos.com'
-}
+info = ns(
+    name='Zorin OS',
+    url='https://zorinos.com',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'Zorin-OS-((\d+)\.?\d+)-')
-    url_base = 'https://mirrors.edge.kernel.org/zorinos-isos/'
 
-    for iso_url in get.urls(url_base, recursive=True):
+    regexp = r'Zorin-OS-((\d+)\.?\d+)-'
+   
+    target = 'https://mirrors.edge.kernel.org/zorinos-isos/'
 
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target, recursive=True):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

@@ -1,19 +1,26 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'DriveDroid',
-    'url': 'https://github.com/FrozenCow/drivedroid-image'
-}
+info = ns(
+    name='DriveDroid',
+    url='https://github.com/FrozenCow/drivedroid-image',
+)
 
+@scraper
 def init():
-
     values = []
 
-    iso_url = get.urls('https://disk.yandex.ru/d/YHflGF3zn3vf3w/drivedroid.img')
-    iso_size = get.size(iso_url)
-    iso_version = 'Boot Tester'
-    iso_arch = None
+    target = 'yandex:drivedroid'
 
-    values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target):
+
+        arch = 'x86_64'
+        version = 'Boot Tester'
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

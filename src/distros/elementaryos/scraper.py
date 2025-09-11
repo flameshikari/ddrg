@@ -1,21 +1,53 @@
-from helpers import *
+# from helpers import *
 
-info = {
-    'name': 'elementary OS',
-    'url': 'https://elementary.io'
-}
+# info = {
+#     'name': 'elementary OS',
+#     'url': 'https://elementary.io'
+# }
 
+# def init():
+
+#     values = []
+#     regexp_url = re.compile(r'\/\/.*\.iso')
+#     regexp_version = re.compile(r'-(\d+(.\d+(.\d+)?)?)')
+#     url_base = 'https://elementary.io/'
+
+#     for iso_url in get.urls(url_base, add_base=False, pattern=regexp_url):
+#         iso_arch = "x86_64"
+#         iso_size = get.size(iso_url)
+#         iso_version = re.search(regexp_version, iso_url).group(1)
+#         values.append((iso_url, iso_arch, iso_size, iso_version))
+
+#     return values
+
+
+from shared import *
+
+info = ns(
+    name='elementary OS',
+    url='https://elementary.io',
+)
+
+@scraper
 def init():
-
     values = []
-    regexp_url = re.compile(r'\/\/.*\.iso')
-    regexp_version = re.compile(r'-(\d+(.\d+(.\d+)?)?)')
-    url_base = 'https://elementary.io/'
 
-    for iso_url in get.urls(url_base, add_base=False, pattern=regexp_url):
-        iso_arch = "x86_64"
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    regexp = r'-(\d+(.\d+(.\d+)?)?)'
+
+    target = 'https://elementary.io/'
+
+    pattern = r'\/\/.*\.iso'
+    
+    for url, size in get.urls(target, resolve_scheme=target, pattern=pattern):
+
+        arch = 'x86_64'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

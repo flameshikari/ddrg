@@ -1,23 +1,28 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'Gentoo',
-    'url': 'https://gentoo.org'
-}
+info = ns(
+    name='Gentoo',
+    url='https://gentoo.org',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+)T')
-    url_base = 'https://www.gentoo.org/downloads/'
 
-    for iso_url in get.urls(url_base):
+    regexp = r'-(\d+)T'
 
-        iso_url = re.sub('https://bouncer.gentoo.org/fetch/root/all/releases/',
-                         'https://mirror.yandex.ru/gentoo-distfiles/releases/', iso_url)
-        iso_arch = get.arch(iso_url)
-        iso_size = get.size(iso_url)
-        iso_version = re.search(regexp_version, iso_url).group(1)
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    target = 'https://www.gentoo.org/downloads/'
+    
+    for url, size in get.urls(target):
+
+        arch = get.arch(url)
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

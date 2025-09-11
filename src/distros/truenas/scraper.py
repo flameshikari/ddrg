@@ -1,25 +1,31 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'TrueNAS',
-    'url': 'https://truenas.com'
-}
+info = ns(
+    name='TrueNAS',
+    url='https://truenas.com',
+)
 
+@scraper
 def init():
-
     values = []
-    regexp_version = re.compile(r'-(\d+\.\d+(-\d+\.\d+)?)')
-    url_bases = [
+
+    regexp = r'-(\d+\.\d+(-\d+\.\d+)?)'
+    
+    target = [
         'https://www.truenas.com/download-truenas-core/',
         'https://www.truenas.com/download-truenas-scale/'
     ]
 
-    for url_base in url_bases:
-        for iso_url in get.urls(url_base):
-            iso_arch = 'amd64'
-            iso_size = get.size(iso_url)
-            iso_version = re.search(regexp_version, iso_url).group(1)
-            
-            values.append((iso_url, iso_arch, iso_size, iso_version))
+    for url, size in get.urls(target):
+
+        arch = 'amd64'
+        version = get.version(url, regexp)
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values

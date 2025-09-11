@@ -1,21 +1,26 @@
-from helpers import *
+from shared import *
 
-info = {
-    'name': 'TempleOS',
-    'url': 'https://templeos.org'
-}
+info = ns(
+    name='TempleOS',
+    url='https://templeos.org',
+)
 
+@scraper
 def init():
-
     values = []
-    url_base = 'https://templeos.org/Downloads/'
 
-    for iso_url in get.urls(url_base):
-    
-        iso_size = get.size(iso_url)
-        iso_arch = 'amd64'
-        iso_version = '5.03'
-        
-        values.append((iso_url, iso_arch, iso_size, iso_version))
+    target = 'https://templeos.org/Downloads/'
+
+    for url, size in get.urls(target):
+
+        arch = 'amd64'
+        version = '5.03'
+
+        values.append(ns(
+            arch=arch,
+            size=size,
+            url=url,
+            version=version
+        ))
 
     return values
