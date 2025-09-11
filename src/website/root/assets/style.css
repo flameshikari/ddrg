@@ -22,7 +22,7 @@ body {
   background-repeat: repeat;
   color: #f8f8f8;
   line-height: 1;
-  padding: 10ch;
+  padding: 40px;
   margin: auto;
   max-width: 50ch;
   text-align: justify;
@@ -69,10 +69,9 @@ p {
 }
 
 .distro_logo {
-  width: 2.875ch;
-  padding-left: 0.5ch;
-  padding-right: 0.5ch;
-  padding-bottom: 0.5ch;
+  width: 3ch;
+  padding-right: 0.4375ch;
+  padding-bottom: 1ch;
   text-align: center;
 }
 

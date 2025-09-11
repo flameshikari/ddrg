@@ -62,7 +62,7 @@ if __name__ == '__main__':
             try:
                 try:
                     if not id in update and config.args.fallback:
-                        releases = find_by_id(fallback_json, id)
+                        releases = find_by_id(fallback_json, id)['releases']
                         values = build.entry(distro, releases)
                         log.custom.distro(id, ids, 'used cached values')
                     else:
@@ -81,7 +81,7 @@ if __name__ == '__main__':
                 except Exception as error:
                     if config.args.fallback:
                         try:
-                            releases = find_by_id(fallback_json, id)
+                            releases = find_by_id(fallback_json, id)['releases']
                             values = build.entry(distro, releases)
                             included.append(info)
                             outdated.append(info)
