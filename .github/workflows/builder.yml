@@ -9,6 +9,9 @@ on:
       timezone:
         description: Timezone
         default: Asia/Yekaterinburg
+      fallback:
+        description: Fallback
+        default: https://dd.hexed.pw/repo.json
 
 env:
   output: build
@@ -33,7 +36,7 @@ jobs:
 
     - name: Build
       continue-on-error: true
-      run: python -u src/main.py -vfH -o "${{ env.output }}"
+      run: python -u src/main.py -f "${{ inputs.fallback }}" -vH -o "${{ env.output }}"
 
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v4
