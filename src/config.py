@@ -27,6 +27,10 @@ def init():
     parser.add_argument('-l', '--list',
         default=False, action='store_true',
         help='show available distros')
+    
+    parser.add_argument('-u', '--update',
+        default=[], action='append', metavar='NAME', nargs='+',
+        help='update specific distros gathering others from fallback')
 
     parser.add_argument('-i', '--input',
         default=join(root, 'distros'), type=str,

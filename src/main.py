@@ -11,6 +11,7 @@ from time import gmtime, strftime
 from os import makedirs
 from os.path import join
 from shutil import copy
+from itertools import chain
 
 from pathlib import Path as path
 
@@ -42,6 +43,8 @@ if __name__ == '__main__':
     excluded = []
     outdated = []
 
+    update = list(chain.from_iterable(config.args.update))
+
     try:
         os.makedirs(join(config.paths.output, 'logos'), exist_ok=True)
 
@@ -56,9 +59,17 @@ if __name__ == '__main__':
             values = []
             id, module = distro
             info = ns(id=id, **vars(module.info))
+
+            if update and config.args.fallback:
+                if not id in update:
+                    releases = find_by_id(fallback_json, id)
+                    values = build.entry(distro, releases)
+                    included.append(info)
+                    log.info(log.fmt.distro(id, ids, 'used fallback values'))
+                    continue
+
             try:
                 log.custom.distro(id, ids, 'scraping')
-                
                 try:
                     values = build.entry(distro)
                     if not values['releases']:

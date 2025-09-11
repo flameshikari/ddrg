@@ -12,6 +12,8 @@ on:
       fallback:
         description: Fallback
         default: https://dd.hexed.pw/repo.json
+      arguments:
+        description: Arguments
 
 env:
   output: build
@@ -36,7 +38,7 @@ jobs:
 
     - name: Build
       continue-on-error: true
-      run: python -u src/main.py -f "${{ inputs.fallback }}" -vH -o "${{ env.output }}"
+      run: python -u src/main.py -f "${{ inputs.fallback }}" -vH -o "${{ env.output }}" ${{ inputs.arguments }}
 
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v4
