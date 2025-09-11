@@ -570,40 +570,50 @@ class build:
     def html(status):
         target = 'repo.json'
 
-        included = status.distros.included
-        outdated = status.distros.outdated
-        excluded = status.distros.excluded
+        content = {
+            'included': {
+                'distros': status.distros.included,
+                'char': '■',
+            },
+            'outdated': {
+                'distros': status.distros.outdated,
+                'char': '▨',
+            },
+            'excluded': {
+                'distros': status.distros.excluded,
+                'char': '□',
+            },
+        }
 
-        html_included = []
-        html_outdated = []
-        html_excluded = []
+        html = ''
 
-        for info in included:
-            html_included.append(f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>')
+        for key, value in content.items():
+            distros = value['distros']
+            if distros:
+                html += f'<h3><span class="color">{value['char']}</span> {key.capitalize()}</h3>\n'
+                p = ''
+                for info in distros:
+                    p += f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>\n'
+                html += f'<p class="start">{p}</p>\n'
 
-        for info in outdated:
-            html_outdated.append(f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>')
 
-        for info in excluded:
-            html_excluded.append(f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>')
 
-        markdown_distro_count = f'includes [{len(included)}](/repo.json) of [{status.distros.total}](https://github.com/flameshikari/ddrg/tree/master/src/distros) distros'
+        markdown_distro_count = f'includes [{len(content['included']['distros'])}](/repo.json) of [{status.distros.total}](https://github.com/flameshikari/ddrg/tree/master/src/distros) distros'
 
-        if outdated:
-            markdown_distro_count += f' with [{len(outdated)}](/repo.json) outdated'
+        if content['outdated']['distros']:
+            markdown_distro_count += f' with [{len(content['outdated']['distros'])}](/repo.json) outdated'
 
         with open(f"{config.paths.root}/website/body.md", "r") as file:
             markdown_source = file.read()
 
         date = datetime.fromisoformat(status.last_update).strftime('%Y.%m.%d %H:%M:%S %z')
 
+
         markdown_formatted = markdown_source.format(
             count=markdown_distro_count,
             time=date,
             timezone=strftime('%z')[:-2],
-            included='\n'.join(html_included),
-            outdated='\n'.join(html_outdated),
-            excluded='\n'.join(html_excluded),
+            content=html,
         )
 
         markdown_converted = markdown(markdown_formatted)

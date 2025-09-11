@@ -22,9 +22,9 @@ body {
   background-repeat: repeat;
   color: #f8f8f8;
   line-height: 1;
-  padding: 40px;
+  padding: 10ch;
   margin: auto;
-  max-width: 500px;
+  max-width: 50ch;
   text-align: justify;
 }
 
@@ -40,6 +40,8 @@ h2 {
 
 h3 {
   font-weight: normal;
+  font-size: 16px;
+  line-height: 3ch;
 }
 
 a {
@@ -63,14 +65,14 @@ p {
   font-size: 16px;
   line-height: 2;
   max-width: 100%;
-  margin-left: 2em;
+  margin-left: 2ch;
 }
 
 .distro_logo {
-  width: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-bottom: 4px;
+  width: 2.875ch;
+  padding-left: 0.5ch;
+  padding-right: 0.5ch;
+  padding-bottom: 0.5ch;
   text-align: center;
 }
 
