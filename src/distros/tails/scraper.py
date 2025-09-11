@@ -11,7 +11,7 @@ def init():
 
     regexp = r'-(\d+\.\d+)'
     
-    target = 'https://tails.boum.org/install/download/index.en.html'
+    target = 'https://tails.net/install/download/index.en.html'
 
     exclude = ['wikimedia']
 

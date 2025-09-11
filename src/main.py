@@ -1,6 +1,8 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# total mess that need full rewrite in sane mind
+
 import os, json
 
 from sys import exit
@@ -12,12 +14,11 @@ from shutil import copy
 
 from pathlib import Path as path
 
-from core import load_distros, list_distros, build
+from core import load_distros, list_distros, build, find_by_id, rq
 from log import log, color
 
 from config import config
 from shared import ns
-
 
 if __name__ == '__main__':
 
@@ -32,7 +33,8 @@ if __name__ == '__main__':
     ids = list(distros.keys())
     total = len(ids)
 
-    log.custom.sys(f'loaded {color(total, 'yellow')} distro' + ('s' if total > 1 else ''))
+    log.custom.sys(f'initialized {color(total, 'yellow')} scraper' + ('s' if total > 1 else ''))
+    log.custom.sep()
 
     content = []
 
@@ -42,19 +44,68 @@ if __name__ == '__main__':
 
     try:
         os.makedirs(join(config.paths.output, 'logos'), exist_ok=True)
+
+        if config.args.fallback:
+            try:
+                fallback_json = rq.get(config.args.fallback).json()
+            except:
+                log.custom.sys('failed to load fallback json', 'warning')
+                config.args.fallback = None
+
         for distro in distros.items():
+            values = []
             id, module = distro
             info = ns(id=id, **vars(module.info))
             try:
-                log.custom.distro(id, ids, 'scraping', 'debug')
-                content.append(build.entry(distro))
+                log.custom.distro(id, ids, 'scraping')
+                
+                try:
+                    values = build.entry(distro)
+                    if not values['releases']:
+                        raise Exception('no urls found')
+                    
+                    included.append(info)
+                    content.append(values)
+                    log.custom.distro(id, ids, 'scraped')
+                
+                except Exception as error:
+                    if config.args.fallback:
+                        try:
+                            releases = find_by_id(fallback_json, id)
+                            values = build.entry(distro, releases)
+                            included.append(info)
+                            outdated.append(info)
+                            log.warning(log.fmt.distro(id, ids, 'fallback values used'))
+                        except:
+                            log.error(log.fmt.distro(id, ids, error))
+                            raise Exception(log.fmt.distro(id, ids, 'fallback values not found'))
+                    else:
+                        raise Exception(log.fmt.distro(id, ids, error))
+                
+                content.append(values)
+                
+            except Exception as error:
+                log.error(error)
+                excluded.append(info)
+            finally:
                 copy(join(config.paths.input, id, 'logo.png'),
                      join(config.paths.output, 'logos', f'{id}.png'))
-                included.append(info)
-                log.custom.distro(id, ids, 'scraped')
-            except Exception as error:
-                log.exception(error)
-                excluded.append(info)
+                log.custom.sep()
+
+        if not included:
+            log.custom.sys('all scrapers failed', 'critical')
+            exit(1)
+        else:
+            result = []
+            if included: result.append(f'{color(len(included), 'yellow')} included')
+            if outdated: result.append(f'{color(len(outdated), 'yellow')} outdated')
+            if excluded: result.append(f'{color(len(excluded), 'yellow')} excluded')
+
+            format = lambda a, m: log.custom.sys(f'{m} [{color(len(a), 'yellow')}] ' + ', '.join([color(x.id, 'cyan') for x in a]))
+            
+            if included: format(included, 'included')
+            if outdated: format(outdated, 'outdated')
+            if excluded: format(excluded, 'excluded')
 
         status = ns(
             build_time=round(timer() - timer_start),
@@ -74,6 +125,10 @@ if __name__ == '__main__':
 
         if config.args.html:
             build.html(status)
+            log.custom.sys('html built')
+
+        log.custom.sys('finish!')
+
 
     except KeyboardInterrupt:
         exit(130)

@@ -7,6 +7,7 @@ from re import search
 from urllib.parse import urlparse, urljoin
 from pathlib import Path as path
 from shutil import copytree
+from copy import deepcopy
 from sys import exit
 
 from datetime import datetime
@@ -26,6 +27,7 @@ try:
     from requests import Session
     from requests.adapters import HTTPAdapter
     from requests.packages.urllib3.util.retry import Retry
+    from requests.exceptions import RequestException
     from fake_useragent import UserAgent
     from termcolor import colored as color
     from natsort import natsorted
@@ -98,7 +100,7 @@ def requests_wrapper():
                 kwargs["timeout"] = self.timeout
             return super().send(request, **kwargs)
 
-    retries = Retry(total=3, status_forcelist=[429, 500, 502, 503, 504])
+    retries = Retry(total=10, status_forcelist=[429, 500, 502, 503, 504])
     rq = Session()
 
     rq.headers.update({
@@ -138,16 +140,18 @@ def load_distros(distros):
     for distro in distros:
         target_dir = f'{config.paths.input}/{distro}'
 
+
         if not path(target_dir).is_dir():
-            log.error(f"{color(distro, 'yellow', attrs=['underline'])}: distro not found")
+            log.custom.sys(f'distro {color(distro, 'cyan')} does not exists', 'warning')
+            
             continue
         else:
             if not exists(f'{target_dir}/scraper.py'):
-                log.error(f"{color(distro, 'yellow', attrs=['underline'])}: scraper not found")
+                log.custom.sys(f'{color(distro, 'cyan')} scraper not found', 'warning')
                 continue
 
             if not exists(f'{target_dir}/logo.png'):
-                log.error(f"{color(distro, 'yellow', attrs=['underline'])}: logo not found")
+                log.custom.sys(f'{color(distro, 'cyan')} logo not found', 'warning')
                 continue
 
         try:
@@ -173,8 +177,7 @@ def scraper(func):
         except KeyboardInterrupt:
             exit(130)
         except Exception as error:
-            log.exception(error)
-            raise Exception('error')
+            raise Exception(error)
         return values
     return wrapper
 
@@ -200,7 +203,7 @@ class parser:
                 for item in url:
                     find(item)
             elif isinstance(url, str):
-                if url.endswith('.iso') or url.endswith('.img'):
+                if any(url.endswith(ext) for ext in exts):
                     if re.search(pattern, url):
                         if not url.startswith('http'):
                             url = urljoin(f'http://{parsed.netloc}', url)
@@ -240,7 +243,7 @@ class parser:
 
     def sourceforge(target, args):
 
-        if target.endswith('.iso'): return
+        if any(target.endswith(ext) for ext in exts): return
 
         values = []
 
@@ -253,7 +256,7 @@ class parser:
             if type(xml) is list:
                 for entry in xml:
                     url = entry['media:content']['@url'][:-9]
-                    if not url.endswith('.iso'): continue
+                    if not any(url.endswith(ext) for ext in exts): continue
                     size = int(entry['media:content']['@filesize'])
                     if not any(x in url.replace('files/', '') for x in args['exclude']):
                         values.append((url, size))
@@ -305,7 +308,7 @@ class parser:
             name = file['name']
             size = file['size']
 
-            if name.endswith('.iso') or name.endswith('.img'):
+            if any(name.endswith(ext) for ext in exts):
                 url = join(target.replace('/list/', '/'), name)
                 values.append((url, size))
                 log.custom.url(url, size)
@@ -324,11 +327,9 @@ class parser:
 
             for url in urls:
 
+                url = url.strip()
+
                 if url.startswith('ftp://'): continue
-
-                # if url.startswith('//'):
-                #     url = 'http:' + url
-
 
                 if url in target: continue
                 else:
@@ -417,7 +418,7 @@ class get:
             if (type(target) == int):
                 size = target
             else:
-                sleep(0.05)
+                sleep(0.25)
                 response = rq.head(target, allow_redirects=True)
                 status = response.status_code
                 headers = response.headers
@@ -426,14 +427,18 @@ class get:
                     return None
                 size = int(headers['Content-Length'])
             return size
-        except Exception as error:
-            raise Exception(f'cannot get size for {color(path(target).name, 'blue')} [{color(target, 'dark_grey')}]: {error}')
+        except RequestException as error:
+            raise Exception('scraping failed ' + color('# ' + str(error), 'dark_grey'))
+        except Exception:
+            raise Exception(f'cannot get size for {color(path(target).name, 'blue')} {color('# ' + target, 'dark_grey')}')
 
     def urls(target, **kwargs):
 
         args = dict(kwargs)
 
-        args.setdefault('exclude', ['../', 'magnet:'])
+        exclude = ['../', 'magnet:']
+
+        args.setdefault('exclude', exclude)
         args.setdefault('add_base', True)
         args.setdefault('recursive', False)
         args.setdefault('json', False)
@@ -443,7 +448,8 @@ class get:
         args.setdefault('fix_scheme', None)
         args.setdefault('filter', None)
 
-        if 'exclude' in args: args['exclude'].append('../')
+        if 'exclude' in args:
+            args['exclude'] = exclude + args['exclude']
 
         result = []
 
@@ -463,7 +469,7 @@ class get:
             elif '//disk.yandex.ru/' in entry or entry.startswith('yandex:'):        
                 selected = parser.yandex
 
-            elif entry.endswith('.iso'):
+            elif any(entry.endswith(ext) for ext in exts):
                 selected = parser.url
 
             else:
@@ -517,7 +523,9 @@ class build:
             ]
         }
     
-    def entry(distro):
+    def entry(distro, releases = []):
+
+        releases = deepcopy(releases)
 
         id, module = distro
 
@@ -525,8 +533,11 @@ class build:
             'id': id,
             'name': module.info.name,
             'url': module.info.url,
-            'releases': [],
+            'releases': releases,
         }
+
+        if len(releases) > 0:
+            return entry
 
         releases = natsorted(
             module.init(),
@@ -557,21 +568,29 @@ class build:
 
 
     def html(status):
-        distros = []
-
         target = 'repo.json'
 
         included = status.distros.included
         outdated = status.distros.outdated
         excluded = status.distros.excluded
 
+        html_included = []
+        html_outdated = []
+        html_excluded = []
+
         for info in included:
-            distros.append(f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>')
+            html_included.append(f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>')
 
-        markdown_distro_count = f'contains [{len(included)}](./{target})'
+        for info in outdated:
+            html_outdated.append(f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>')
 
-        if excluded:
-            markdown_distro_count += f' and missing [{len(excluded)}](./{target})'
+        for info in excluded:
+            html_excluded.append(f'<a target="_blank" href="{info.url}"><img title="{info.name}" loading="lazy" class="distro_logo" src="./logos/{info.id}.png"/></a>')
+
+        markdown_distro_count = f'includes [{len(included)}](/repo.json) of [{status.distros.total}](https://github.com/flameshikari/ddrg/tree/master/src/distros) distros'
+
+        if outdated:
+            markdown_distro_count += f' with [{len(outdated)}](/repo.json) outdated'
 
         with open(f"{config.paths.root}/website/body.md", "r") as file:
             markdown_source = file.read()
@@ -582,7 +601,9 @@ class build:
             count=markdown_distro_count,
             time=date,
             timezone=strftime('%z')[:-2],
-            distros='\n'.join(distros),
+            included='\n'.join(html_included),
+            outdated='\n'.join(html_outdated),
+            excluded='\n'.join(html_excluded),
         )
 
         markdown_converted = markdown(markdown_formatted)

@@ -21,8 +21,8 @@ def init():
         help='generate html')
 
     parser.add_argument('-f', '--fallback',
-        default=False, action='store_true',
-        help='gather urls from predefined json for failed distros')
+        default=None, type=str,
+        help='gather urls from json for failed distros')
 
     parser.add_argument('-l', '--list',
         default=False, action='store_true',
