@@ -47,11 +47,19 @@ if __name__ == '__main__':
     try:
         os.makedirs(join(config.paths.output, 'logos'), exist_ok=True)
 
+        config.args.fallback = config.args.fallback.strip()
+
         if config.args.fallback:
             try:
-                fallback_json = rq.get(config.args.fallback).json()
-            except:
-                log.custom.sys('failed to load fallback json', 'warning')
+                from urllib.parse import urlparse
+                parsed = urlparse(config.args.fallback)
+                if parsed.scheme in ('http', 'https') and bool(parsed.netloc):
+                    fallback_json = rq.get(config.args.fallback).json()
+                else:
+                    with open(config.args.fallback, 'r') as f:
+                        fallback_json = f.read()
+            except Exception as error:
+                log.custom.sys('failed to load fallback json' + color('# ' + str(error), 'dark_grey'), 'warning')
                 config.args.fallback = None
 
         for distro in distros.items():
@@ -61,7 +69,7 @@ if __name__ == '__main__':
 
             try:
                 try:
-                    if not id in update and config.args.fallback:
+                    if update and id not in update and config.args.fallback:
                         releases = find_by_id(fallback_json, id)['releases']
                         values = build.entry(distro, releases)
                         log.custom.distro(id, ids, 'used cached values')

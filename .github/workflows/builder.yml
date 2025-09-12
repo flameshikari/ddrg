@@ -17,6 +17,7 @@ on:
 
 env:
   output: build
+  fallback: ${{ inputs.fallback || 'https://dd.hexed.pw/repo.json' }}
   FORCE_COLOR: 1
 
 jobs:
