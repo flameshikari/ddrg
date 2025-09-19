@@ -39,7 +39,7 @@ jobs:
 
     - name: Build
       continue-on-error: true
-      run: python -u src/main.py -f "${{ inputs.fallback }}" -vH -o "${{ env.output }}" ${{ inputs.arguments }}
+      run: python -u src/main.py -f "${{ env.fallback }}" -vH -o "${{ env.output }}" ${{ inputs.arguments }}
 
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v4
