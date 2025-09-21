@@ -1,7 +1,7 @@
 from shared import *
 
 info = ns(
-    name='ArchBang',
+    name='GreenBANG',
     url='https://archbang.org',
 )
 
