@@ -403,7 +403,7 @@ class get:
     def version(target, regexp):
         return re.search(regexp, target).group(1)
 
-    def arch(target):
+    def arch(target, fallback = None):
         target = path(target).name
         if 'powerpc' in target:
             target = target.replace('powerpc', 'ppc')
@@ -411,7 +411,8 @@ class get:
             for arch in value:
                 if arch in target:
                     return arch if key == 'all' else key
-        return None
+        
+        return fallback if fallback else None
 
     def size(target):
         try:
