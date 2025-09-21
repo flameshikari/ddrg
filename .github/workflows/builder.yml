@@ -18,6 +18,7 @@ on:
 env:
   output: build
   fallback: ${{ inputs.fallback || 'https://dd.hexed.pw/repo.json' }}
+  timezone: ${{ inputs.fallback || 'Asia/Yekaterinburg' }}
   FORCE_COLOR: 1
 
 jobs:
