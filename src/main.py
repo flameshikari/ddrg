@@ -47,9 +47,9 @@ if __name__ == '__main__':
     try:
         os.makedirs(join(config.paths.output, 'logos'), exist_ok=True)
 
-        config.args.fallback = config.args.fallback.strip()
 
         if config.args.fallback:
+            config.args.fallback = config.args.fallback.strip()
             try:
                 from urllib.parse import urlparse
                 parsed = urlparse(config.args.fallback)

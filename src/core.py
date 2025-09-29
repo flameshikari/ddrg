@@ -140,10 +140,8 @@ def load_distros(distros):
     for distro in distros:
         target_dir = f'{config.paths.input}/{distro}'
 
-
         if not path(target_dir).is_dir():
             log.custom.sys(f'distro {color(distro, 'cyan')} does not exists', 'warning')
-            
             continue
         else:
             if not exists(f'{target_dir}/scraper.py'):
@@ -318,7 +316,10 @@ class parser:
     def common(target, args):
         array = []
         def scrape(target, **kwargs):
-            response = rq.get(target)
+            try:
+                response = rq.get(target)
+            except:
+                response = rq.get(target, verify=False)
             soup = bs(str(response.text), 'html.parser')
             urls = [a['href'] for a in soup.find_all('a', href=True)]
 
