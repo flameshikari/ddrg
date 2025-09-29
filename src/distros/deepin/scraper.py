@@ -11,7 +11,7 @@ def init():
 
     regexp = r'-(\d+(\.\d+(\.\d+)?)?|-\w+)-'
 
-    target = 'https://cdimage.deepin.com/releases/'
+    target = 'https://mirror.truenetwork.ru/deepin-cd/'
     
     for url, size in get.urls(target, recursive=True):
 
