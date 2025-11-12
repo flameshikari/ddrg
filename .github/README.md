@@ -114,9 +114,7 @@ If your device doesn't support image hosting, try [this Magisk module](https://g
 
 ### nginx rewrite for okhttp
 
-Use this snippet if you decided to self-host a repository with a website and you wanna access repo.json only by hostname via DriveDroid app since it uses okhttp. Place the next lines in server section of your config.
-
-If you self-host a repository with a website and want the repo.json file accessible only by hostname, place the following snippet inside the `server` section of your **nginx** configuration:
+Use this snippet if you decided to self-host a repository with a website and you wanna access repo.json only by hostname via DriveDroid app since it uses okhttp. Place the next lines in nginx `server` section of your config (or adapt it to your reverse proxy server):
 
 ```nginx
 location = / {
