@@ -315,6 +315,9 @@ class parser:
     
     def common(target, args):
         array = []
+
+        base = urlparse(target)
+
         def scrape(target, **kwargs):
             try:
                 response = rq.get(target)
@@ -345,8 +348,11 @@ class parser:
                             url = urlparse(args['resolve_scheme']).scheme + ':' + url
 
                     if args['add_base'] == True:
-                        if not url.startswith('http'):
+                        if url.startswith('/'):
+                            url = base.scheme + '://' + base.netloc + url
+                        elif not url.startswith('http'):
                             url = target + url
+
                     else:
                         url = args['add_base'] + url
 
