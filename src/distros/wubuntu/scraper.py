@@ -11,7 +11,7 @@ def init():
 
     regexp = r'(\d+\.\d+(\.\d+)?)-'
     
-    target = 'https://sourceforge.net/projects/windows-ubuntu/files/'
+    target = 'https://sourceforge.net/projects/windows-linux/files/'
 
     for url, size in get.urls(target):
 
