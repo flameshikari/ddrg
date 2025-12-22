@@ -11,18 +11,10 @@ def init():
 
     regexp = r'-(\d+\.\d+(\.\d+)?)-'
     
-    target = 'https://mirror.yandex.ru/ubuntu-releases/releases/'
+    target = 'https://mirror.yandex.ru/ubuntu-releases/.pool/'
 
-    pattern = r'\/releases\/\w+\/'
 
-    exclude = [
-        'netboot/', 'cdicons/', 'include/'
-    ]
-
-    for url, size in get.urls(target,
-                              pattern=pattern,
-                              recursive=True,
-                              exclude=exclude):
+    for url, size in get.urls(target, recursive=True):
 
         arch = get.arch(url)
         version = get.version(url, regexp)
