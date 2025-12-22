@@ -10,6 +10,7 @@ def init():
     values = []
 
     regexp = r'-(\d+.\d+(.\d+)?)'
+    regexp_current = r'-(\d+_\w+_\d+)-'
 
     target = 'https://mirror.yandex.ru/slackware-iso/'
     
@@ -18,7 +19,8 @@ def init():
     for url, size in get.urls(target, exclude=exclude, recursive=True):
 
         arch = 'x86_64' if '64' in url else 'i386'
-        version = get.version(url, regexp)
+        version = get.version(url, regexp_current).replace('_', ' ') \
+            if 'current' in url else get.version(url, regexp)
 
         values.append(ns(
             arch=arch,
