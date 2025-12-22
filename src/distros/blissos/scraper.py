@@ -15,7 +15,7 @@ def init():
     
     exclude = ['Archive']
 
-    for url, size in get.urls(target, recursive=True, exclude=exclude):
+    for url, size in get.urls(target, exclude=exclude):
 
         arch = get.arch(url)
         version = get.version(url, regexp)
