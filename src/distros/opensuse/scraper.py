@@ -55,10 +55,10 @@ def init():
     regexp = r'\/(\d+\.\d+)\/'
 
     target = [
-        'https://mirror.linux-ia64.org/opensuse/slowroll/',
-        'https://mirror.linux-ia64.org/opensuse/tumbleweed/',
-        'https://mirror.linux-ia64.org/opensuse/distribution/leap/',
-        'https://mirror.linux-ia64.org/opensuse/distribution/leap-micro/',
+        'https://mirror.tspu.ru/opensuse/slowroll/',
+        'https://mirror.tspu.ru/opensuse/tumbleweed/',
+        'https://mirror.tspu.ru/opensuse/distribution/leap/',
+        'https://mirror.tspu.ru/opensuse/distribution/leap-micro/',
     ]
     
     exclude = [
