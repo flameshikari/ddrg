@@ -9,7 +9,7 @@ info = ns(
 def init():
     values = []
 
-    regexp = r'-(\d+\.\d+(\.\d+)?(-\d+)?|\d+-\d+)\.'
+    regexp = r'-(\d+\.\d+(\.\d+)?(-\d+)?|\d+-\d+|\d+)\.'
 
     target = 'https://sourceforge.net/projects/pb-gh-releases/files/'
     

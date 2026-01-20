@@ -11,9 +11,9 @@ def init():
 
     regexp = re.compile(r'\.(\d+)\.')
     
-    target = 'https://github.com/Vanilla-OS/live-iso/releases/latest'
+    target = 'stash:vanilla'
 
-    for url, size in get.urls(target):
+    for url, size in get.urls(target, recursive=False):
 
         arch = 'amd64'
         version = get.version(url, regexp)

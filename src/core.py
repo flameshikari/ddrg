@@ -187,7 +187,7 @@ class parser:
         if size:
             log.custom.url(url, size)
             return [(url, size)]
-    
+
     def json(target, args):
         array = []
         data = rq.get(target).json()
@@ -228,7 +228,7 @@ class parser:
         if response.status_code != 200:
             return f"Error: Release tag '{tag}' not found or API error."
         assets = response.json()['assets']
-        
+
         for asset in assets:
             name = asset['name']
             size = asset['size']
@@ -236,7 +236,7 @@ class parser:
             if any(name.endswith(ext) for ext in exts):
                 values.append((url, size))
                 log.custom.url(url, size)
-        
+
         return values
 
     def sourceforge(target, args):
@@ -246,7 +246,7 @@ class parser:
         values = []
 
         def scrape(path = '', limit = 5000):
-            rss = rq.get(target.replace('/files/', f'/rss?limit={limit}&path=/') + path).text            
+            rss = rq.get(target.replace('/files/', f'/rss?limit={limit}&path=/') + path).text
             try:
                 xml = xml_to_dict(rss)['rss']['channel']['item']
             except:
@@ -286,8 +286,16 @@ class parser:
 
         else:
             scrape()
-        
+
         return values
+
+    def stash(target, args):
+
+        if target.startswith('stash:'):
+            id = target.split(':')[1]
+            target = f'https://stash.hexed.pw/drivedroid/{id}/'
+
+        return parser.common(target, args)
 
     def yandex(target, args):
         shared = 'YHflGF3zn3vf3w'
@@ -312,7 +320,7 @@ class parser:
                 log.custom.url(url, size)
 
         return values
-    
+
     def common(target, args):
         array = []
 
@@ -324,10 +332,9 @@ class parser:
             except:
                 response = rq.get(target, verify=False)
             soup = bs(str(response.text), 'html.parser')
-            urls = [a['href'] for a in soup.find_all('a', href=True)]
 
-            # pattern_html = re.compile(r'href=["\']?\n?((?:.(?!["\']?\s+(?:\S+)=|\s*\/?[>"\']))*?\/?)\n?["\']?', re.S)
-            # urls = re.findall(pattern_html, str(response.text))
+            urls = [a['href'] for a in soup.find_all('a', href=True)]
+            urls += [button['data-url'] for button in soup.find_all('button', attrs={'data-url': True})]
 
             for url in urls:
 
@@ -357,10 +364,10 @@ class parser:
                         url = args['add_base'] + url
 
                     skip = False
-                    
+
                     if any(x in url for x in args['exclude']):
                         skip = True
-                    
+
                     if args['pattern'] != '.*':
                         pattern = re.compile(args['pattern'])
                         try:
@@ -379,10 +386,10 @@ class parser:
 
                 if not any(ext in url for ext in exts):
                     continue
-                
+
                 if any(url.endswith(ext + '/download') for ext in exts):
                     url = url[:-9]
-                
+
                 if any(url.endswith(ext) for ext in exts):
                     url = str(unescape(url.replace('/./', '/')))
                     if url in target: continue
@@ -418,7 +425,7 @@ class get:
             for arch in value:
                 if arch in target:
                     return arch if key == 'all' else key
-        
+
         return fallback if fallback else None
 
     def size(target):
@@ -474,8 +481,11 @@ class get:
             elif '//sourceforge.net/' in entry:
                 selected = parser.sourceforge
 
-            elif '//disk.yandex.ru/' in entry or entry.startswith('yandex:'):        
+            elif '//disk.yandex.ru/' in entry or entry.startswith('yandex:'):
                 selected = parser.yandex
+
+            elif entry.startswith('stash:'):
+                selected = parser.stash
 
             elif any(entry.endswith(ext) for ext in exts):
                 selected = parser.url
@@ -516,7 +526,7 @@ class build:
                 {
                     'size': 1,
                     'url': format(distro_count),
-                    'version': '•︎ Distro Count' 
+                    'version': '•︎ Distro Count'
                 },
                 {
                     'size': 2,
@@ -530,7 +540,7 @@ class build:
                 }
             ]
         }
-    
+
     def entry(distro, releases = []):
 
         releases = deepcopy(releases)
@@ -554,16 +564,16 @@ class build:
         )
 
         for release in releases:
-            
+
             values = {
                 'size': release.size,
                 'url': release.url,
                 'version': release.version,
             }
-            
+
             if release.arch != None:
                 values['arch'] = release.arch
-            
+
             values = dict(sorted(values.items()))
 
             entry['releases'].append(values)

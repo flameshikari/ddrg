@@ -16,7 +16,7 @@ def get_urls():
         image_names = parsed['jobs']['build-iso']['strategy']['matrix']['image_name']
         for image_name in image_names:
             url = f'{base_url}/{image_name}'
-            if 'titanoboa' in filename: url += '-stable-live.iso'
+            if 'titanoboa' in filename: url += '-stable-live-amd64.iso'
             else: url += '-stable-amd64.iso'
             urls.append(url)
     return urls

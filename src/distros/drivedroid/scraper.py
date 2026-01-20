@@ -9,7 +9,7 @@ info = ns(
 def init():
     values = []
 
-    target = 'yandex:drivedroid'
+    target = 'stash:drivedroid'
 
     for url, size in get.urls(target):
 

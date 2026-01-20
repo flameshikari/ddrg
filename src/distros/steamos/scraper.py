@@ -11,7 +11,7 @@ def init():
 
     regexp = re.compile(r'-(\d+\.\d+(\.\d+)?)_')
     
-    target = 'yandex:steamos'
+    target = 'stash:steamos'
 
     for url, size in get.urls(target):
 

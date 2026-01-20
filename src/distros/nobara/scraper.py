@@ -11,7 +11,7 @@ def init():
 
     regexp = r'Nobara-(\d+)-'
 
-    target = 'https://nobaraproject.org/download-nobara/'
+    target = 'https://nobaraproject.org/download.html'
     
     for url, size in get.urls(target):
 

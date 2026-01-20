@@ -9,7 +9,7 @@ info = ns(
 def init():
     values = []
 
-    regexp = r'-(\d+)-'
+    regexp = r'-(\d+)'
 
     target = 'https://sourceforge.net/projects/archbang/files/'
     
