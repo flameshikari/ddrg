@@ -50,7 +50,7 @@ archs = {
         'hppa', 'sparc64', 'sparc', 'alpha',
         'ipxe', 'bios', 'uefi',
     ],
-    'arm64': ['aarch64'],
+    'arm64': ['aarch64', 'A64FRE'],
     'arm': [
         'armhfp', 'armhf', 'armel', 'arm32', 'aarch32', 'armv7', 'armv6',
         'armv5', 'acorn32', 'cats', 'epoc32', 'evbarm', 'hpcarm',
@@ -75,7 +75,7 @@ archs = {
     ],
     'loong64': ['loongarch64', 'loongson'],
     'x86_64': ['86_64', '86-64', '96', 'xen'],
-    'amd64': ['x64', '64-bit', '64bit', 'dual'],
+    'amd64': ['x64', '64-bit', '64bit', 'dual', 'x86FRE'],
     'i386': ['x86', 'x32', '32-bit', '32bit', '386'],
     'bios': ['legacy'],
     'uefi': ['efi'],
