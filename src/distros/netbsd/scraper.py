@@ -9,7 +9,7 @@ info = ns(
 def init():
     values = []
 
-    regexp = r'/(\d+\.\d+)/'
+    regexp = r'/(\d+\.\d+(_RC\d+)?)/'
 
     target = 'https://mirror.yandex.ru/NetBSD/iso/'
 
