@@ -11,7 +11,7 @@ def init():
 
     regexp = r'/(\d+\.\d+\.\d+)/'
     
-    target = 'https://github.com/netbootxyz/netboot.xyz/releases/latest'
+    target = 'github:netbootxyz/netboot.xyz?latest'
 
     archs = ['multiarch', 'arm64']
 

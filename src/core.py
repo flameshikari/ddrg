@@ -215,27 +215,44 @@ class parser:
 
     def github(target, args):
         values = []
-        response = rq.head(target).headers
-        if 'Location' in response:
-            target = response['Location']
-        pattern = r'https://github\.com/([^/]+/[^/]+)/releases/tag/([^/]+)'
-        match = re.match(pattern, target)
-        if not match:
-            return "Error: URL format is incorrect"
-        repo, tag = match.groups()
-        api_url = f"https://api.github.com/repos/{repo}/releases/tags/{tag}"
-        response = rq.get(api_url)
-        if response.status_code != 200:
-            return f"Error: Release tag '{tag}' not found or API error."
-        assets = response.json()['assets']
 
-        for asset in assets:
-            name = asset['name']
-            size = asset['size']
-            url = asset['browser_download_url']
-            if any(name.endswith(ext) for ext in exts):
-                values.append((url, size))
-                log.custom.url(url, size)
+        latest = False
+
+        if target.startswith('github:'):
+            repo = target.split(':', 1)[1]
+            if '?' in repo:
+                repo, query = repo.split('?', 1)
+                if query == 'latest':
+                    latest = True
+        else:
+            pattern = r'https://github\.com/([^/]+/[^/]+)'
+            match = re.match(pattern, target)
+            if not match:
+                return values
+            repo = match.group(1)
+
+        if latest:
+            api_url = f"https://api.github.com/repos/{repo}/releases/latest"
+            response = rq.get(api_url)
+            if response.status_code != 200:
+                return values
+            releases = [response.json()]
+        else:
+            api_url = f"https://api.github.com/repos/{repo}/releases?per_page=1000"
+            response = rq.get(api_url)
+            if response.status_code != 200:
+                return values
+            releases = response.json()
+
+        for release in releases:
+            for asset in release.get('assets', []):
+                name = asset['name']
+                size = asset['size']
+                url = asset['browser_download_url']
+                if any(name.endswith(ext) for ext in exts):
+                    if not any(x in url for x in args['exclude']):
+                        values.append((url, size))
+                        log.custom.url(url, size)
 
         return values
 
@@ -475,7 +492,7 @@ class get:
             if entry.endswith('.json') or args['json']:
                 selected = parser.json
 
-            elif '//github.com/' in entry:
+            elif '//github.com/' in entry or entry.startswith('github:'):
                 selected = parser.github
 
             elif '//sourceforge.net/' in entry:

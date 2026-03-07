@@ -11,7 +11,7 @@ def init():
 
     regexp = r'/(\d+\.\d+\.\d+-\d+)/'
     
-    target = 'https://github.com/bigbugcc/OpenWrts/releases/latest'
+    target = 'github:bigbugcc/OpenWrts'
 
     for url, size in get.urls(target):
 

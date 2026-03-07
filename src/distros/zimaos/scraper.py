@@ -9,11 +9,13 @@ info = ns(
 def init():
     values = []
 
-    regexp = r'/(\d+\.\d+\.\d+)/'
-   
-    target = 'https://github.com/IceWhaleTech/ZimaOS/releases/latest'
+    exclude = ['-alpha', '-beta']
 
-    for url, size in get.urls(target):
+    regexp = r'/(\d+\.\d+\.\d+(-\d+|\.\d+)?)/'
+
+    target = 'github:IceWhaleTech/ZimaOS?latest'
+
+    for url, size in get.urls(target, exclude=exclude):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

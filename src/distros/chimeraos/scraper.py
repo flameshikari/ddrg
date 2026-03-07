@@ -11,7 +11,7 @@ def init():
 
     regexp = r'-(\d+\.\d+(\.\d+)?)-'
     
-    target = 'https://github.com/ChimeraOS/install-media/releases/latest'    
+    target = 'github:ChimeraOS/install-media?latest'    
 
     for url, size in get.urls(target):
 
