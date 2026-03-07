@@ -293,7 +293,7 @@ class parser:
 
         if target.startswith('stash:'):
             id = target.split(':')[1]
-            target = f'https://stash.hexed.pw/drivedroid/{id}/'
+            target = f'https://stash.hexed.pw/misc/ddrg/{id}/'
 
         return parser.common(target, args)
 
