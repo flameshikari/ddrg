@@ -13,7 +13,7 @@ def init():
 
     regexp = r'/(\d+\.\d+\.\d+(-\d+|\.\d+)?)/'
 
-    target = 'github:IceWhaleTech/ZimaOS?latest'
+    target = 'github:IceWhaleTech/ZimaOS'
 
     for url, size in get.urls(target, exclude=exclude):
 

@@ -11,12 +11,9 @@ def init():
 
     regexp = r'/(\d+)/krd.iso'
 
-    target = [
-        'https://rescuedisk.s.kaspersky-labs.com/updatable/2018/krd.iso',
-        'https://rescuedisk.s.kaspersky-labs.com/updatable/2024/krd.iso'
-    ]
+    target = 'https://rescuedisk.s.kaspersky-labs.com/updatable/'
     
-    for url, size in get.urls(target):
+    for url, size in get.urls(target, recursive=True, exclude=['bases/']):
 
         arch = 'x86_64'
         version = get.version(url, regexp)

@@ -98,14 +98,36 @@ def requests_wrapper():
             timeout = kwargs.get("timeout")
             if timeout is None:
                 kwargs["timeout"] = self.timeout
-            return super().send(request, **kwargs)
+            try:
+                return super().send(request, **kwargs)
+            except Exception as error:
+                log.custom.net('err', f"{request.method} {request.url} # {type(error).__name__}: {error}", 'debug')
+                raise
 
-    retries = Retry(total=10, status_forcelist=[429, 500, 502, 503, 504])
+    class LoggingRetry(Retry):
+        def increment(self, method=None, url=None, response=None, error=None, _pool=None, _stacktrace=None):
+            reason = error or (response.status if response is not None else 'unknown')
+            attempt = (self.total or 0)
+            log.custom.net('retry', f"{method or '?'} {url or '?'} # left={attempt} reason={reason}", 'debug')
+            return super().increment(method=method, url=url, response=response, error=error, _pool=_pool, _stacktrace=_stacktrace)
+
+    retries = LoggingRetry(total=10, status_forcelist=[429, 500, 502, 503, 504])
     rq = Session()
 
     rq.headers.update({
         'User-Agent': str(UserAgent().firefox)
     })
+
+    def log_response(response, *args, **kwargs):
+        elapsed = f"{response.elapsed.total_seconds():.2f}s"
+        status_color = 'green' if response.ok else 'red'
+        log.custom.net(
+            'http',
+            f"{response.request.method} {response.url} # {color(response.status_code, status_color)} {color(elapsed, 'dark_grey')}",
+            'debug',
+        )
+
+    rq.hooks['response'].append(log_response)
 
     rq.mount('http://',  TimeoutHTTPAdapter(max_retries=retries))
     rq.mount('https://', TimeoutHTTPAdapter(max_retries=retries))
@@ -262,11 +284,23 @@ class parser:
 
         values = []
 
+        def fetch(url, attempts=3):
+            response = rq.get(url)
+            for attempt in range(1, attempts):
+                if response.status_code != 403:
+                    break
+                new_ua = str(UserAgent().firefox)
+                log.custom.net('403', f"sourceforge 403 on {url}, sleeping 10s and retrying ({attempt}/{attempts - 1}) with new UA", 'debug')
+                sleep(10)
+                response = rq.get(url, headers={'User-Agent': new_ua})
+            return response
+
         def scrape(path = '', limit = 5000):
-            rss = rq.get(target.replace('/files/', f'/rss?limit={limit}&path=/') + path).text
+            rss = fetch(target.replace('/files/', f'/rss?limit={limit}&path=/') + path).text
             try:
                 xml = xml_to_dict(rss)['rss']['channel']['item']
-            except:
+            except Exception as error:
+                log.custom.net('parse', f"sourceforge rss empty or malformed for {target}{path} # {type(error).__name__}: {error}", 'debug')
                 return
             if type(xml) is list:
                 for entry in xml:
@@ -285,7 +319,7 @@ class parser:
                     log.custom.url(url, size)
 
         if args['recursive']:
-            response = rq.get(target)
+            response = fetch(target)
             soup = bs(response.text, 'html.parser')
             trs = soup.find_all('tr', class_='folder')
 
@@ -346,7 +380,8 @@ class parser:
         def scrape(target, **kwargs):
             try:
                 response = rq.get(target)
-            except:
+            except Exception as error:
+                log.custom.net('ssl', f"falling back to verify=False for {target} # {type(error).__name__}: {error}", 'debug')
                 response = rq.get(target, verify=False)
             soup = bs(str(response.text), 'html.parser')
 

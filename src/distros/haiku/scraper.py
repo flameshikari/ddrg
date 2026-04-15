@@ -11,7 +11,7 @@ def init():
 
     regexp = r'\/(r\d+\w+\d+(\.\d+)?)\/'
 
-    target = 'https://mirror.truenetwork.ru/haiku/release/'
+    target = 'https://mirror.truenetwork.ru/haiku/haiku/'
     
     for url, size in get.urls(target, recursive=True):
 

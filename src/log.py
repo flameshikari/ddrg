@@ -46,7 +46,7 @@ def init():
     class custom:
         def url(url, size, status=True):
             if config.args.verbose:
-                status = color('+', 'green') if status else color('-', 'red') 
+                status = color('+', 'green') if status else color('-', 'red')
                 prefix = color('0'*(11 - len(str(size))), 'dark_grey') + color(str(size), 'blue')
                 log.debug(f"{status} {prefix} {color(url, 'dark_grey')}")
 
@@ -56,6 +56,12 @@ def init():
         def distro(id, ids, message, level='info'):
             index = ids.index(id) + 1
             prefix = f"{color(index, 'yellow')} {color('>', 'dark_grey')} {color(id, 'cyan')} {color('>', 'dark_grey')}"
+            getattr(log, level)(f'{prefix} {message}')
+
+        def net(tag, message, level='debug'):
+            if not config.args.verbose and level == 'debug':
+                return
+            prefix = f"{color('~', 'magenta')} {color('>', 'dark_grey')} {color(tag, 'magenta')} {color('>', 'dark_grey')}"
             getattr(log, level)(f'{prefix} {message}')
 
     log.custom = custom

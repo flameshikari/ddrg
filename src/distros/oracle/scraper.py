@@ -16,7 +16,7 @@ def init():
 
     exclude = ['uek', 'src']
     
-    for url, size in get.urls(target, exclude=exclude, add_base=base):
+    for url, size in get.urls(target, exclude=exclude):
 
         arch = get.arch(url)
         version = get.version(url, regexp)
