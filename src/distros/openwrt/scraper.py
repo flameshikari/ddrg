@@ -1,15 +1,15 @@
 from shared import *
 
 info = ns(
-    name='OpenWRT',
-    url='https://openwrt.org',
+    name='OpenWRT [bigbugcc]',
+    url='https://github.com/bigbugcc/OpenWrts',
 )
 
 @scraper
 def init():
     values = []
 
-    regexp = r'/(\d+\.\d+\.\d+-\d+)/'
+    regexp = r'/download/[^/]*?(\d{4}\.\d{2}\.\d{2}-\d{6}|\d{11,14})(?:-\d+)?/'
     
     target = 'github:bigbugcc/OpenWrts'
 

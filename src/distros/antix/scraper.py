@@ -15,7 +15,7 @@ def init():
     
     exclude = ['archlinux-x86_64', 'arch/', 'latest/']
 
-    for url, size in get.urls(target, exclude=exclude, recursive=True):
+    for url, size in get.urls(target, exclude=exclude):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

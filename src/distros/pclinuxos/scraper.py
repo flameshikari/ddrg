@@ -11,7 +11,7 @@ def init():
 
     regexp = r'-(\d+.\d+(.\d+)?)'
 
-    target = 'http://ftp.nluug.nl/pub/os/Linux/distr/pclinuxos/pclinuxos/iso/'
+    target = 'https://pclinuxos.mirror.garr.it/mirrors/pclinuxos/iso/'
     
     for url, size in get.urls(target):
 
