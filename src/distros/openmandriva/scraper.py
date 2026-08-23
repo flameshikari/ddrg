@@ -9,11 +9,11 @@ info = ns(
 def init():
     values = []
 
-    regexp = r'-(\d+\.\d+)'
+    regexp = r'release_current\/(\d+\.\d+|\w+)\/'
 
-    target = 'https://mirror.yandex.ru/openmandriva/release_current/'
+    target = 'https://mirror.openmandriva.org/downloads'
     
-    for url, size in get.urls(target, recursive=True):
+    for url, size in get.urls(target):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

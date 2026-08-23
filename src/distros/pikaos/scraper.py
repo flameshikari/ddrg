@@ -2,7 +2,7 @@ from shared import *
 
 info = ns(
     name='PikaOS',
-    url='https://wiki.pika-os.com',
+    url='https://pika-os.com',
 )
 
 @scraper
@@ -11,7 +11,7 @@ def init():
 
     regexp = r'-(\d+.\d+(.\d+)?)'
 
-    target = 'https://wiki.pika-os.com/home'
+    target = 'https://git.pika-os.com/website/site/raw/commit/849bb5c9a57bd79bbc5d08b6b3c27f3b47a013f5/src/lib/content/wiki.json'
     
     for url, size in get.urls(target):
 

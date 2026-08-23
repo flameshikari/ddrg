@@ -14,7 +14,7 @@ from datetime import datetime
 
 from importlib.machinery import SourceFileLoader
 
-from os import listdir
+from os import getenv, listdir
 from os.path import exists, join
 
 from itertools import chain
@@ -25,6 +25,7 @@ from log import log
 try:
     import yaml
     from requests import Session
+    from requests.auth import AuthBase
     from requests.adapters import HTTPAdapter
     from requests.packages.urllib3.util.retry import Retry
     from requests.exceptions import RequestException
@@ -111,8 +112,23 @@ def requests_wrapper():
             log.custom.net('retry', f"{method or '?'} {url or '?'} # left={attempt} reason={reason}", 'debug')
             return super().increment(method=method, url=url, response=response, error=error, _pool=_pool, _stacktrace=_stacktrace)
 
+    class GitHubTokenAuth(AuthBase):
+        def __init__(self, token):
+            self.token = token
+
+        def __call__(self, request):
+            if urlparse(request.url).hostname == 'api.github.com':
+                request.headers['Authorization'] = f'Bearer {self.token}'
+                request.headers['Accept'] = 'application/vnd.github+json'
+                request.headers['X-GitHub-Api-Version'] = '2022-11-28'
+            return request
+
     retries = LoggingRetry(total=10, status_forcelist=[429, 500, 502, 503, 504])
     rq = Session()
+
+    github_token = getenv('GITHUB_TOKEN') or getenv('GH_TOKEN')
+    if github_token:
+        rq.auth = GitHubTokenAuth(github_token)
 
     rq.headers.update({
         'User-Agent': str(UserAgent().firefox)

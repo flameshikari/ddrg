@@ -40,6 +40,8 @@ jobs:
 
     - name: Build
       continue-on-error: true
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       run: python -u src/main.py -f "${{ env.fallback }}" -vH -o "${{ env.output }}" ${{ inputs.arguments }}
 
     - name: Upload Artifacts

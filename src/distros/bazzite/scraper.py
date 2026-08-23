@@ -1,4 +1,5 @@
 from shared import *
+from itertools import product
 
 info = ns(
     name='Bazzite',
@@ -6,20 +7,49 @@ info = ns(
 )
 
 def get_urls():
-    base_url = 'https://download.bazzite.gg'
-    target_url = 'https://github.com/ublue-os/bazzite/raw/main/.github/workflows/{0}.yml'
-    filenames = ['build_iso', 'build_iso_titanoboa']
-    urls = []
-    for filename in filenames:
-        url = target_url.format(filename)
-        parsed = yaml.safe_load(rq.get(url).text)
-        image_names = parsed['jobs']['build-iso']['strategy']['matrix']['image_name']
-        for image_name in image_names:
-            url = f'{base_url}/{image_name}'
-            if 'titanoboa' in filename: url += '-stable-live-amd64.iso'
-            else: url += '-stable-amd64.iso'
-            urls.append(url)
-    return urls
+    URLS = []
+    BASE = 'https://download.bazzite.gg'
+    HANDHELD = {'steamdeck','ally','legion','gpd','ayn','ayaneo','handheld','onexplayer','aokzoe','claw'}
+    NO_GAMEMODE = {'nvidia','old-intel','surface','old-amd'}
+    NO_PROP_NVIDIA = {'surface'}
+    ASUS = {'asus'}
+    DECK = HANDHELD | set()
+    HARDWARE = ['desktop','htpc','framework-desktop','steamdeck','legion','ally','gpd','onexplayer',
+                'aokzoe','ayn','ayaneo','claw','handheld','framework','laptop','asus-flow',
+                'minisforum','virtualmachine','asus','surface']
+    DE = ['kde','gnome','']
+    GPU = ['amd','nvidia-open','intel','old-amd','nvidia','old-intel','']
+    GM = ['yes','no','']
+    def name_for(hw, de, gpu, gm):
+        if hw == 'htpc':
+            gm = 'yes'
+        n = 'bazzite'
+        if hw in DECK:
+            n += '-deck'
+        elif hw == 'asus' and gm == 'yes' and gpu != 'nvidia-open':
+            n += '-ally'
+        if gpu == 'nvidia-open' and gm == 'yes' and hw not in HANDHELD:
+            n += '-nvidia'
+        if de == 'gnome':
+            n += '-gnome'
+        if hw == 'asus' and gm != 'yes':
+            n += '-asus'
+        if hw == 'surface':
+            n += '-surface'
+        if gpu == 'nvidia' and hw not in HANDHELD and hw not in NO_PROP_NVIDIA:
+            n += '-nvidia'
+        if gpu == 'nvidia-open' and gm != 'yes' and hw not in HANDHELD:
+            n += '-nvidia-open'
+        if gpu == 'nvidia-open' and gm == 'yes':
+            n = n.replace('bazzite', 'bazzite-deck', 1)
+        elif gpu not in NO_GAMEMODE and hw not in NO_GAMEMODE and hw not in ASUS and gm == 'yes':
+            n = n.replace('bazzite', 'bazzite-deck', 1)
+        return n.replace('deck-deck', 'deck')
+    names = sorted({name_for(*c) for c in product(HARDWARE, DE, GPU, GM)})
+    for n in names:
+        URLS.append(f'{BASE}/{n}-stable-amd64.iso')
+        URLS.append(f'{BASE}/{n}-stable-live-amd64.iso')
+    return URLS
 
 @scraper
 def init():
@@ -30,7 +60,6 @@ def init():
     arch = 'x86_64'
 
     for url, size in get.urls(get_urls()):
-
         values.append(ns(
             arch=arch,
             size=size,
