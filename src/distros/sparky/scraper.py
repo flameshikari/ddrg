@@ -11,7 +11,10 @@ def init():
 
     regexp = r'-(\d+\.\d+)'
 
-    target = 'https://sourceforge.net/projects/sparkylinux/files/'
+    target = [
+        'https://sparkylinux.org/download/stable/',
+        'https://sparkylinux.org/download/rolling/',
+    ]
     
     exclude = [
         'repo',
@@ -21,7 +24,12 @@ def init():
         'files',
     ]
 
-    for url, size in get.urls(target, exclude=exclude):
+    for url, size in get.urls(
+        target,
+        exclude=exclude + ['sourceforge.net'],
+        follow=True,
+        filter=r'^https://archive.org/.*\.iso$',
+    ):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

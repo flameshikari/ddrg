@@ -9,9 +9,12 @@ info = ns(
 def init():
     values = []
 
-    regexp = r'\/(\d+\.\d+\.\d+-\d+|\d+-\w+)\/'
+    regexp = r'(?:/|live-)(\d+\.\d+\.\d+-\d+|\d+-\w+)(?:/|-)'
 
-    target = 'https://sourceforge.net/projects/clonezilla/files/'
+    target = [
+        'https://free.nchc.org.tw/clonezilla-live/stable/',
+        'https://free.nchc.org.tw/clonezilla-live/alternative/stable/',
+    ]
     
     exclude = ['testing', 'OldFiles', 'source/']
 

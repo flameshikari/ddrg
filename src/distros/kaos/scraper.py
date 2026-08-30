@@ -11,7 +11,7 @@ def init():
 
     regexp = r'-(\d+\.\d+(\.\d+)?)-'
 
-    target = 'https://sourceforge.net/projects/kaosx/files/ISO/'
+    target = 'https://mirror.math.princeton.edu/pub/kaoslinux/'
     
     for url, size in get.urls(target):
 

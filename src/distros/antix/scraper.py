@@ -11,11 +11,11 @@ def init():
 
     regexp = r'-(\d+(\.\d+)?)[-|_]'
 
-    target = 'https://sourceforge.net/projects/antix-linux/files/Final/'
+    target = 'https://mirror.yandex.ru/mirrors/MX-Linux/MX-ISOs/ANTIX/Final/'
     
     exclude = ['archlinux-x86_64', 'arch/', 'latest/']
 
-    for url, size in get.urls(target, exclude=exclude):
+    for url, size in get.urls(target, exclude=exclude, recursive=True):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

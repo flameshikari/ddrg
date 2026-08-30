@@ -11,9 +11,9 @@ def init():
 
     regexp = r'-(\d+\.\d+(\.\d+)?)-'
 
-    target = 'https://sourceforge.net/projects/linux-lite/files/'
+    target = 'https://mirror.alpix.eu/linuxliteos/isos/'
     
-    for url, size in get.urls(target):
+    for url, size in get.urls(target, recursive=True):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

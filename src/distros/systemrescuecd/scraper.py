@@ -11,10 +11,15 @@ def init():
 
     regexp = r'-(\d+\.\d+(\.\d+)?)'
 
-    target = 'https://sourceforge.net/projects/systemrescuecd/files/sysresccd-x86/'
+    target = 'https://www.system-rescue.org/Download/'
     
 
-    for url, size in get.urls(target):
+    for url, size in get.urls(
+        target,
+        exclude=['sourceforge.net'],
+        follow=True,
+        filter=r'^https://fastly-cdn.system-rescue.org/.*\.iso$',
+    ):
 
         arch = get.arch(url)
         version = get.version(url, regexp)

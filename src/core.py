@@ -312,9 +312,26 @@ class parser:
             return response
 
         def scrape(path = '', limit = 5000):
-            rss = fetch(target.replace('/files/', f'/rss?limit={limit}&path=/') + path).text
+            rss_url = target.replace('/files/', f'/rss?limit={limit}&path=/') + path
+            response = fetch(rss_url)
+            if response.status_code == 400 and limit > 100:
+                log.custom.net(
+                    'rss',
+                    f"sourceforge rejected limit={limit} for {target}{path}, retrying with limit=100",
+                    'debug',
+                )
+                scrape(path, limit=100)
+                return
+            if response.status_code != 200 or 'xml' not in response.headers.get('Content-Type', ''):
+                log.custom.net(
+                    'parse',
+                    f"sourceforge rss unavailable for {target}{path} # "
+                    f"status={response.status_code} content-type={response.headers.get('Content-Type', 'unknown')}",
+                    'debug',
+                )
+                return
             try:
-                xml = xml_to_dict(rss)['rss']['channel']['item']
+                xml = xml_to_dict(response.text)['rss']['channel']['item']
             except Exception as error:
                 log.custom.net('parse', f"sourceforge rss empty or malformed for {target}{path} # {type(error).__name__}: {error}", 'debug')
                 return
@@ -352,7 +369,7 @@ class parser:
                 scrape(title)
 
         else:
-            scrape()
+            scrape(limit=args['rss_limit'])
 
         return values
 
@@ -530,6 +547,7 @@ class get:
         args.setdefault('follow', True)
         args.setdefault('fix_scheme', None)
         args.setdefault('filter', None)
+        args.setdefault('rss_limit', 5000)
 
         if 'exclude' in args:
             args['exclude'] = exclude + args['exclude']
